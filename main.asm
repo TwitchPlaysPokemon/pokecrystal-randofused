@@ -247,7 +247,7 @@ INCLUDE "engine/stats_screen.asm"
 INCLUDE "engine/events/catch_tutorial.asm"
 INCLUDE "engine/evolution_animation.asm"
 INCLUDE "engine/init_hof_credits.asm"
-INCLUDE "mobile/get_trainer_class.asm"
+INCLUDE "engine/events/battle_tower/get_trainer_class.asm"
 INCLUDE "engine/battle/sliding_intro.asm"
 INCLUDE "mobile/print_opp_message.asm"
 INCLUDE "engine/battle/checkbattlescene.asm"
@@ -324,7 +324,7 @@ INCLUDE "mobile/mobile_22.asm"
 INCLUDE "engine/events/crystal_unown.asm"
 INCLUDE "engine/events/buena.asm"
 INCLUDE "engine/events/dratini.asm"
-INCLUDE "engine/events/battle_tower_rules.asm"
+INCLUDE "engine/events/battle_tower/rules.asm"
 INCLUDE "mobile/mobile_22_2.asm"
 
 
@@ -537,7 +537,7 @@ INCLUDE "mobile/mobile_46.asm"
 
 SECTION "Battle Tower", ROMX
 
-INCLUDE "mobile/battle_tower_47.asm"
+INCLUDE "engine/events/battle_tower/trainer_text.asm"
 
 
 SECTION "bank5B", ROMX
@@ -632,7 +632,7 @@ INCLUDE "text/battle_tower.asm"
 
 SECTION "Battle Tower Trainer Data", ROMX
 
-INCLUDE "data/battle_tower_2.asm"
+INCLUDE "data/battle_tower/unknown.asm"
 
 
 SECTION "Mobile News Data", ROMX
@@ -642,7 +642,7 @@ INCLUDE "mobile/news/news.asm"
 
 SECTION "Crystal Events", ROMX
 
-INCLUDE "engine/events/battle_tower.asm"
+INCLUDE "engine/events/battle_tower/load_trainer.asm"
 INCLUDE "engine/events/odd_egg.asm"
 
 
