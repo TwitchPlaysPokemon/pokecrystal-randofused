@@ -48,7 +48,7 @@ TrainerGruntM1:
 	pause 15
 	special Special_FadeInQuickly
 	disappear SLOWPOKEWELLB1F_KURT
-	moveobject SLOWPOKEWELLB1F_KURT, $b, $6
+	moveobject SLOWPOKEWELLB1F_KURT, 11, 6
 	appear SLOWPOKEWELLB1F_KURT
 	applymovement SLOWPOKEWELLB1F_KURT, KurtSlowpokeWellVictoryMovementData
 	spriteface PLAYER, RIGHT
@@ -58,7 +58,7 @@ TrainerGruntM1:
 	closetext
 	setevent EVENT_CLEARED_SLOWPOKE_WELL
 	variablesprite SPRITE_AZALEA_ROCKET, SPRITE_SILVER
-	setmapscene AZALEA_TOWN, $1
+	setmapscene AZALEA_TOWN, 1
 	clearevent EVENT_ILEX_FOREST_APPRENTICE
 	clearevent EVENT_ILEX_FOREST_FARFETCHD
 	setevent EVENT_CHARCOAL_KILN_FARFETCH_D
@@ -71,7 +71,7 @@ TrainerGruntM1:
 	special FadeOutPalettes
 	special HealParty
 	pause 15
-	warp KURTS_HOUSE, $3, $3
+	warp KURTS_HOUSE, 3, 3
 	end
 
 TrainerGruntM2:

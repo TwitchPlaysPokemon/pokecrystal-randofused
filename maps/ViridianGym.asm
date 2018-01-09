@@ -18,7 +18,7 @@ ViridianGymBlueScript:
 	waitbutton
 	closetext
 	winlosstext LeaderBlueWinText, 0
-	loadtrainer BLUE, 1
+	loadtrainer BLUE, BLUE1
 	startbattle
 	reloadmapafterbattle
 	setevent EVENT_BEAT_BLUE
@@ -73,7 +73,7 @@ ViridianGymStatue:
 	jumpstd gymstatue1
 
 .Beaten:
-	trainertotext BLUE, 1, $1
+	trainertotext BLUE, BLUE1, $1
 	jumpstd gymstatue2
 
 LeaderBlueBeforeText:

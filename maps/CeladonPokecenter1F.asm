@@ -139,7 +139,7 @@ NoBeastsText:
 	text_from_ram StringBuffer4
 	text "?"
 
-	para $56, $56, $56
+	para "<......><......><......>"
 
 	para "Okay…"
 
