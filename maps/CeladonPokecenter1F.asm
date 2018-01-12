@@ -47,7 +47,7 @@ CeladonEusine:
 	waitbutton
 	closetext
 	checkcode VAR_FACING
-	if_equal $1, .Location1
+	if_equal UP, .Location1
 	applymovement CELADONPOKECENTER1F_EUSINE, .Movement1
 	jump .Continue
 

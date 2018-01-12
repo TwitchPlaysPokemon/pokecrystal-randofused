@@ -124,7 +124,7 @@ SaffronGymStatue:
 	iftrue .Beaten
 	jumpstd gymstatue1
 .Beaten:
-	trainertotext SABRINA, SABRINA1, $1
+	trainertotext SABRINA, SABRINA1, MEM_BUFFER_1
 	jumpstd gymstatue2
 
 UnknownText_0x189cdf:

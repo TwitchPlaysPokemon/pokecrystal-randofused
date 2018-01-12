@@ -77,8 +77,8 @@ BillsSister:
 	iftrue UnknownScript_0x54c58
 	writetext UnknownText_0x54f9e
 	askforphonenumber PHONE_BILL
-	if_equal $1, UnknownScript_0x54c64
-	if_equal $2, UnknownScript_0x54c5e
+	if_equal PHONE_CONTACTS_FULL, UnknownScript_0x54c64
+	if_equal PHONE_CONTACT_REFUSED, UnknownScript_0x54c5e
 	waitsfx
 	addcellnum PHONE_BILL
 	writetext UnknownText_0x54fd9

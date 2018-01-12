@@ -161,7 +161,7 @@ CyndaquilPokeBallScript:
 	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
 	iftrue LookAtElmPokeBallScript
 	spriteface ELMSLAB_ELM, DOWN
-	refreshscreen $0
+	refreshscreen
 	pokenamemem TOGEPI, $0
 	pokepic TOGEPI
 	cry TOGEPI
@@ -191,7 +191,7 @@ TotodilePokeBallScript:
 	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
 	iftrue LookAtElmPokeBallScript
 	spriteface ELMSLAB_ELM, DOWN
-	refreshscreen $0
+	refreshscreen
 	pokenamemem PARAS, $0
 	pokepic PARAS
 	cry PARAS
@@ -219,7 +219,7 @@ ChikoritaPokeBallScript:
 	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
 	iftrue LookAtElmPokeBallScript
 	spriteface ELMSLAB_ELM, DOWN
-	refreshscreen $0
+	refreshscreen
 	pokenamemem ODDISH, $0
 	pokepic ODDISH
 	cry ODDISH
@@ -311,7 +311,7 @@ ElmsLabHealingMachine_HealParty:
 	special TrainerRankings_Healings
 	special HealParty
 	playmusic MUSIC_NONE
-	writebyte 1 ; Machine is in Elm's Lab
+	writebyte HEALMACHINE_ELMS_LAB
 	special HealMachineAnim
 	pause 30
 	special RestartMapMusic

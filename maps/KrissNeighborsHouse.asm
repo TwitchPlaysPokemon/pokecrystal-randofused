@@ -32,7 +32,7 @@ KrissNeighborsHouseRadio:
 	pause 45
 	writetext KrisNeighborRadioText3
 	pause 45
-	musicfadeout MUSIC_NEW_BARK_TOWN, $10
+	musicfadeout MUSIC_NEW_BARK_TOWN, 16
 	writetext KrisNeighborRadioText4
 	pause 45
 	closetext
