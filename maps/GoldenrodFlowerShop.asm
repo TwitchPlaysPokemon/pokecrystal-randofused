@@ -10,8 +10,6 @@ GoldenrodFlowerShop_MapScriptHeader:
 	db 0
 
 FlowerShopTeacherScript:
-	checkevent EVENT_FOUGHT_SUDOWOODO
-	iftrue .Lalala
 	checkevent EVENT_GOT_SQUIRTBOTTLE
 	iftrue .GotSquirtbottle
 	checkevent EVENT_MET_FLORIA
