@@ -84,9 +84,9 @@ UnknownText_0x5485f:
 	done
 
 UnknownText_0x54898:
-	text "...sigh.. Oh, for"
+	text "...sigh... Oh, for"
 	line "the kindness of"
-	cont "people…"
+	cont "people..."
 	done
 
 ; possibly unused
