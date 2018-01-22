@@ -49,7 +49,7 @@ MapGoldenrodBikeShopSignpost8Script:
 	jumptext UnknownText_0x548ed
 
 UnknownText_0x54787:
-	text "…sigh… I moved"
+	text "...sigh... I moved"
 	line "here, but I can't"
 
 	para "sell my BICYCLES."
@@ -84,7 +84,7 @@ UnknownText_0x5485f:
 	done
 
 UnknownText_0x54898:
-	text "…sigh… Oh, for"
+	text "...sigh.. Oh, for"
 	line "the kindness of"
 	cont "people…"
 	done
