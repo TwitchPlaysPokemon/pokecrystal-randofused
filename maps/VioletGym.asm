@@ -138,7 +138,7 @@ UnknownText_0x68473:
 UnknownText_0x6854a:
 	text "…Darn! My dad's"
 	line "cherished bird"
-	cont "#MON…"
+	cont "#MON..."
 
 	para "All right."
 	line "Take this."
