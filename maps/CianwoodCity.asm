@@ -192,7 +192,7 @@ ChucksWifeEasierToFlyText:
 	line "easier if your"
 
 	para "#MON knew how"
-	line "to FLY…"
+	line "to FLY..."
 	done
 
 ChucksWifeBeatChuckText:
