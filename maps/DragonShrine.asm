@@ -636,7 +636,7 @@ UnknownText_0x18d9ae:
 
 UnknownText_0x18d9bf:
 	text "Here, this is the"
-	line "RISINGBADGE…"
+	line "RISINGBADGE..."
 
 	para "Hurry up! Take it!"
 	done
