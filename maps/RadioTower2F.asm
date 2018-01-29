@@ -101,8 +101,6 @@ TrainerGruntF2:
 Buena:
 	faceplayer
 	opentext
-	checkflag ENGINE_ROCKETS_IN_RADIO_TOWER
-	iftrue UnknownScript_0x5d865
 	checkevent EVENT_MET_BUENA
 	iffalse UnknownScript_0x5d800
 	checkflag ENGINE_BUENAS_PASSWORD_2
