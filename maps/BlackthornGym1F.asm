@@ -31,10 +31,8 @@ BlackthornGym1F_MapScriptHeader:
 BlackthornGymClairScript:
 	faceplayer
 	opentext
-	checkflag ENGINE_RISINGBADGE
-	iftrue .AlreadyGotBadge
 	checkevent EVENT_BEAT_CLAIR
-	iftrue .FightDone
+	iftrue .AlreadyGotBadge
 	writetext ClairIntroText
 	waitbutton
 	closetext
