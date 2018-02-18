@@ -27,6 +27,7 @@ UnknownScript_0x60ba5:
 	end
 
 UnknownScript_0x60bab:
+	setevent EVENT_JASMINE_EXPLAINED_AMPHYS_SICKNESS
 	writetext UnknownText_0x60d99
 	yesorno
 	iffalse UnknownScript_0x60c25
