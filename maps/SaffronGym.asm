@@ -142,16 +142,16 @@ UnknownText_0x189cdf:
 
 UnknownText_0x189df4:
 	text "SABRINA: Your"
-	line "power…"
+	line "power..."
 
 	para "It far exceeds"
-	line "what I foresaw…"
+	line "what I foresaw..."
 
 	para "Maybe it isn't"
 	line "possible to fully"
 
 	para "predict what the"
-	line "future holds…"
+	line "future holds..."
 
 	para "OK, you win. You"
 	line "earned yourself"
