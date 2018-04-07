@@ -84,7 +84,6 @@ UnknownScript_0x7491f:
 	opentext
 	checkevent EVENT_FAST_SHIP_FIRST_TIME
 	iffalse UnknownScript_0x7494e
-	checkcode VAR_WEEKDAY
 UnknownScript_0x7494e:
 	writetext UnknownText_0x74a9c
 	yesorno
