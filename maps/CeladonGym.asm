@@ -142,13 +142,13 @@ UnknownText_0x72b28:
 
 UnknownText_0x72c3e:
 	text "ERIKA: Oh!"
-	line "I concede defeat…"
+	line "I concede defeat..."
 
 	para "You are remarkably"
-	line "strong…"
+	line "strong..."
 
 	para "I shall give you"
-	line "RAINBOWBADGE…"
+	line "RAINBOWBADGE..."
 	done
 
 UnknownText_0x72c96:
