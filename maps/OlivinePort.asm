@@ -85,11 +85,6 @@ UnknownScript_0x7491f:
 	checkevent EVENT_FAST_SHIP_FIRST_TIME
 	iffalse UnknownScript_0x7494e
 	checkcode VAR_WEEKDAY
-	if_equal SUNDAY, UnknownScript_0x74977
-	if_equal SATURDAY, UnknownScript_0x74977
-	if_equal TUESDAY, UnknownScript_0x74981
-	if_equal WEDNESDAY, UnknownScript_0x74981
-	if_equal THURSDAY, UnknownScript_0x74981
 UnknownScript_0x7494e:
 	writetext UnknownText_0x74a9c
 	yesorno

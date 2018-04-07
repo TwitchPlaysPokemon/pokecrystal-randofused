@@ -148,12 +148,6 @@ SailorScript_0x74e97:
 	opentext
 	checkevent EVENT_GAVE_KURT_APRICORNS
 	iftrue UnknownScript_0x74e1a
-	checkcode VAR_WEEKDAY
-	if_equal MONDAY, UnknownScript_0x74eda
-	if_equal TUESDAY, UnknownScript_0x74eda
-	if_equal THURSDAY, UnknownScript_0x74ee0
-	if_equal FRIDAY, UnknownScript_0x74ee0
-	if_equal SATURDAY, UnknownScript_0x74ee0
 	writetext UnknownText_0x74f4d
 	yesorno
 	iffalse UnknownScript_0x74e87
