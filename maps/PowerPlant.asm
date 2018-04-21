@@ -333,8 +333,8 @@ UnknownText_0x189264:
 	para "If I catch him,"
 	line "he's going to get"
 
-	para "a taste of my ZAP"
-	line "CANNON!"
+	para "a taste of my "
+	line "ZAP CANNON!"
 	done
 
 UnknownText_0x189308:

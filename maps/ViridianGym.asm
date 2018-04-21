@@ -102,9 +102,9 @@ LeaderBlueWinText:
 	para "How the heck did I"
 	line "lose to you?"
 
-	para "…"
+	para "..."
 
-	para "Tch, all right…"
+	para "Tch, all right..."
 	line "Here, take this--"
 	cont "it's EARTHBADGE."
 	done

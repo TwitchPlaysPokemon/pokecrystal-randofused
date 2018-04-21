@@ -92,7 +92,7 @@ UnknownText_0x1ab548:
 
 UnknownText_0x1ab646:
 	text "BLAINE: Awesome."
-	line "I've burned out…"
+	line "I've burned out..."
 
 	para "You've earned"
 	line "VOLCANOBADGE!"

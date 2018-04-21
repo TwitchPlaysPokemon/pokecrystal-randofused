@@ -259,10 +259,10 @@ UnknownText_0x188674:
 
 UnknownText_0x18870c:
 	text "MISTY: You really"
-	line "are good…"
+	line "are good..."
 
 	para "I'll admit that"
-	line "you are skilled…"
+	line "you are skilled..."
 
 	para "Here you go. It's"
 	line "CASCADEBADGE."

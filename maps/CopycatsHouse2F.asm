@@ -246,7 +246,7 @@ CopycatText_Worried:
 	cont "do?"
 
 	para "But I'm really"
-	line "worried… What if"
+	line "worried... What if"
 	cont "someone finds it?"
 	done
 
@@ -332,7 +332,7 @@ CopycatText_Female_3:
 	text "<PLAYER>: Thank you"
 	line "for the rail PASS!"
 
-	para "<PLAYER>: …Pardon?"
+	para "<PLAYER>: ...Pardon?"
 
 	para "<PLAYER>: Is it"
 	line "really that fun to"

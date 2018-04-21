@@ -171,7 +171,7 @@ UnknownText_0x1a9cc4:
 
 UnknownText_0x1a9d86:
 	text "TM42 contains"
-	line "DREAM EATER…"
+	line "DREAM EATER..."
 
 	para "…Zzzzz…"
 	done
