@@ -36,6 +36,8 @@ SabrinaScript_0x189c2e:
 	waitsfx
 	setflag ENGINE_MARSHBADGE
 	writetext UnknownText_0x189ead
+	checkcode VAR_BADGES
+	scall SaffronGymActivateRockets
 	waitbutton
 	closetext
 	end
@@ -45,6 +47,17 @@ SabrinaScript_0x189c2e:
 	waitbutton
 	closetext
 	end
+
+SaffronGymActivateRockets:
+	if_equal 7, .RadioTowerRockets
+	if_equal 6, .GoldenrodRockets
+	end
+
+.GoldenrodRockets:
+	jumpstd goldenrodrockets
+
+.RadioTowerRockets:
+	jumpstd radiotowerrockets
 
 TrainerMediumRebecca:
 	trainer EVENT_BEAT_MEDIUM_REBECCA, MEDIUM, REBECCA, MediumRebeccaSeenText, MediumRebeccaBeatenText, 0, .Script

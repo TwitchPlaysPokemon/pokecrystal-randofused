@@ -29,6 +29,8 @@ BrockScript_0x1a2864:
 	playsound SFX_GET_BADGE
 	waitsfx
 	setflag ENGINE_BOULDERBADGE
+	checkcode VAR_BADGES
+	scall PewterGymActivateRockets
 	writetext UnknownText_0x1a2a57
 	waitbutton
 	closetext
@@ -39,6 +41,18 @@ BrockScript_0x1a2864:
 	waitbutton
 	closetext
 	end
+
+PewterGymActivateRockets:
+	if_equal 7, .RadioTowerRockets
+	if_equal 6, .GoldenrodRockets
+	end
+
+.GoldenrodRockets:
+	jumpstd goldenrodrockets
+
+.RadioTowerRockets:
+	jumpstd radiotowerrockets
+
 
 TrainerCamperJerry:
 	trainer EVENT_BEAT_CAMPER_JERRY, CAMPER, JERRY, CamperJerrySeenText, CamperJerryBeatenText, 0, .Script

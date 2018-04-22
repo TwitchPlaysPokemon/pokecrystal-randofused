@@ -34,6 +34,8 @@ SurgeScript_0x1920a5:
 	waitsfx
 	setflag ENGINE_THUNDERBADGE
 	writetext UnknownText_0x192291
+	checkcode VAR_BADGES
+	scall VermilionGymActivateRockets
 	waitbutton
 	closetext
 	end
@@ -43,6 +45,17 @@ SurgeScript_0x1920a5:
 	waitbutton
 	closetext
 	end
+
+VermilionGymActivateRockets:
+	if_equal 7, .RadioTowerRockets
+	if_equal 6, .GoldenrodRockets
+	end
+
+.GoldenrodRockets:
+	jumpstd goldenrodrockets
+
+.RadioTowerRockets:
+	jumpstd radiotowerrockets
 
 TrainerGentlemanGregory:
 	trainer EVENT_BEAT_GENTLEMAN_GREGORY, GENTLEMAN, GREGORY, GentlemanGregorySeenText, GentlemanGregoryBeatenText, 0, .Script
