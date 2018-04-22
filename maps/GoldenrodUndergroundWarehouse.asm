@@ -73,6 +73,8 @@ GentlemanScript_0x7d9bf:
 	opentext
 	checkevent EVENT_RECEIVED_CARD_KEY
 	iftrue UnknownScript_0x7d9de
+	checkcode VAR_BADGES
+	if_less_than 7, UnknownScript_0x7d9de
 	writetext UnknownText_0x7dbc6
 	buttonsound
 	verbosegiveitem CARD_KEY
