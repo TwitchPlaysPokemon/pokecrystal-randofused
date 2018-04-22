@@ -86,12 +86,6 @@ UnknownScript_0x74e20:
 	iftrue UnknownScript_0x74e86
 	spriteface PLAYER, LEFT
 	opentext
-	checkcode VAR_WEEKDAY
-	if_equal MONDAY, UnknownScript_0x74e72
-	if_equal TUESDAY, UnknownScript_0x74e72
-	if_equal THURSDAY, UnknownScript_0x74e7c
-	if_equal FRIDAY, UnknownScript_0x74e7c
-	if_equal SATURDAY, UnknownScript_0x74e7c
 	writetext UnknownText_0x74f4d
 	yesorno
 	iffalse UnknownScript_0x74e8d
