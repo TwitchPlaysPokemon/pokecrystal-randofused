@@ -136,6 +136,8 @@ UnknownScript_0x188e5f:
 PowerPlantManager:
 	faceplayer
 	opentext
+	setscene $1
+	setmapscene CERULEAN_GYM, $1
 	checkevent EVENT_RETURNED_MACHINE_PART
 	iftrue UnknownScript_0x188eac
 	checkitem MACHINE_PART

@@ -56,6 +56,7 @@ CeruleanGym_MapScriptHeader:
 	pause 15
 	spriteface PLAYER, DOWN
 	pause 15
+	clearevent EVENT_FOUND_MACHINE_PART_IN_CERULEAN_GYM
 	end
 
 MistyScript_0x188432:
