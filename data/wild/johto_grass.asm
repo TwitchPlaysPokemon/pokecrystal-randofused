@@ -1036,16 +1036,16 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 42, ONIX
 	db 45, MAGMAR
 	db 45, GOLBAT
-	db 20, LARVITAR
-	db 15, LARVITAR
+	db 42, LARVITAR
+	db 42, LARVITAR
 	; day
 	db 43, GRAVELER
 	db 44, URSARING
 	db 42, ONIX
 	db 45, MAGMAR
 	db 45, GOLBAT
-	db 20, LARVITAR
-	db 15, LARVITAR
+	db 42, LARVITAR
+	db 42, LARVITAR
 	; nite
 	db 43, GRAVELER
 	db 44, GOLBAT
@@ -1063,16 +1063,16 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 47, URSARING
 	db 46, PARASECT
 	db 48, PARASECT
-	db 15, LARVITAR
-	db 20, LARVITAR
+	db 45, LARVITAR
+	db 48, LARVITAR
 	; day
 	db 48, GOLBAT
 	db 48, MACHOKE
 	db 47, URSARING
 	db 46, PARASECT
 	db 48, PARASECT
-	db 15, LARVITAR
-	db 20, LARVITAR
+	db 45, LARVITAR
+	db 45, LARVITAR
 	; nite
 	db 48, GOLBAT
 	db 48, GOLDUCK
@@ -1089,17 +1089,17 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 48, ONIX
 	db 48, GRAVELER
 	db 50, URSARING
-	db 20, LARVITAR
-	db 15, LARVITAR
-	db 20, PUPITAR
+	db 48, LARVITAR
+	db 48, LARVITAR
+	db 48, PUPITAR
 	; day
 	db 51, GOLBAT
 	db 48, ONIX
 	db 48, GRAVELER
 	db 50, URSARING
-	db 20, LARVITAR
-	db 15, LARVITAR
-	db 20, PUPITAR
+	db 48, LARVITAR
+	db 48, LARVITAR
+	db 48, PUPITAR
 	; nite
 	db 51, GOLBAT
 	db 48, ONIX
