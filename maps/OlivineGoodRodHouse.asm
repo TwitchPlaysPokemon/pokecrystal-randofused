@@ -18,7 +18,7 @@ GoodRodGuru:
 	iffalse .DontWantIt
 	writetext GiveGoodRodText
 	buttonsound
-	verbosegiveitem GOOD_ROD
+	verbosegiveitem REVIVE
 	writetext GaveGoodRodText
 	waitbutton
 	closetext

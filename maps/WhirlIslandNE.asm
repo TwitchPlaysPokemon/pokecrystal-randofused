@@ -9,7 +9,7 @@ WhirlIslandNE_MapScriptHeader:
 	db 0
 
 WhirlIslandNEUltraBall:
-	itemball ULTRA_BALL
+	itemball GUARD_SPEC
 
 WhirlIslandNE_MapEventHeader:
 	; filler

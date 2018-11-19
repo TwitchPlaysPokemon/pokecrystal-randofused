@@ -71,10 +71,10 @@ TrainerCooltrainerfEmma:
 	end
 
 UnionCaveB2FElixer:
-	itemball ELIXER
+	itemball EXP_SHARE
 
 UnionCaveB2FHyperPotion:
-	itemball HYPER_POTION
+	itemball ULTRA_BALL
 
 CooltrainermNickSeenText:
 	text "There are two"

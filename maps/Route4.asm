@@ -48,7 +48,7 @@ MtMoonSquareSign:
 	jumptext MtMoonSquareSignText
 
 Route4HPUp:
-	itemball HP_UP
+	itemball MAX_ELIXER
 
 Route4HiddenUltraBall:
 	dwb EVENT_ROUTE_4_HIDDEN_ULTRA_BALL, ULTRA_BALL

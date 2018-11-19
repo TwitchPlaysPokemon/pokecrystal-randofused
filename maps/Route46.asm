@@ -162,7 +162,7 @@ Route46Sign:
 	jumptext Route46SignText
 
 Route46XSpeed:
-	itemball X_SPEED
+	itemball POTION
 
 FruitTreeScript_0x1a978f:
 	fruittree FRUITTREE_ROUTE_46_1

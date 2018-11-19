@@ -9,7 +9,7 @@ WhirlIslandSW_MapScriptHeader:
 	db 0
 
 WhirlIslandSWUltraBall:
-	itemball ULTRA_BALL
+	itemball ICE_HEAL
 
 WhirlIslandSW_MapEventHeader:
 	; filler

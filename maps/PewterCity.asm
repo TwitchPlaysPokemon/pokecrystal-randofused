@@ -30,7 +30,7 @@ GrampsScript_0x18c00f:
 	iftrue UnknownScript_0x18c023
 	writetext UnknownText_0x18c0c6
 	buttonsound
-	verbosegiveitem SILVER_WING
+	verbosegiveitem TM_FURY_CUTTER
 	setevent EVENT_GOT_SILVER_WING
 	closetext
 	end

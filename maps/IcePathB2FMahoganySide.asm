@@ -17,10 +17,10 @@ BoulderScript_0x7e5a3:
 	jumptext UnknownText_0x7e5ad
 
 IcePathB2FMahoganySideFullHeal:
-	itemball FULL_HEAL
+	itemball MIRACLE_SEED
 
 IcePathB2FMahoganySideMaxPotion:
-	itemball MAX_POTION
+	itemball CALCIUM
 
 IcePathB2FMahoganySideHiddenCarbos:
 	dwb EVENT_ICE_PATH_B2F_MAHOGANY_SIDE_HIDDEN_CARBOS, CARBOS

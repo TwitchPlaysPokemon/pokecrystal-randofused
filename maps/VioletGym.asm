@@ -28,7 +28,7 @@ FalknerScript_0x683c2:
 	writetext UnknownText_0x685af
 	playsound SFX_GET_BADGE
 	waitsfx
-	setflag ENGINE_ZEPHYRBADGE
+	setflag ENGINE_GLACIERBADGE
 	checkcode VAR_BADGES
 	scall VioletGymActivateRockets
 .FightDone:
@@ -40,7 +40,7 @@ FalknerScript_0x683c2:
 	specialphonecall SPECIALCALL_ASSISTANT
 	writetext UnknownText_0x685c8
 	buttonsound
-	verbosegiveitem TM_MUD_SLAP
+	verbosegiveitem SQUIRTBOTTLE
 	iffalse .NoRoomForMudSlap
 	setevent EVENT_GOT_TM31_MUD_SLAP
 	writetext UnknownText_0x68648
@@ -145,12 +145,12 @@ UnknownText_0x6854a:
 
 	para "It's the official"
 	line "#MON LEAGUE"
-	cont "ZEPHYRBADGE."
+	cont "GLACIER BADGE."
 	done
 
 UnknownText_0x685af:
 	text "<PLAYER> received"
-	line "ZEPHYRBADGE."
+	line "GLACIER BADGE."
 	done
 
 UnknownText_0x685c8:
@@ -180,7 +180,7 @@ UnknownText_0x68648:
 	cont "used only once."
 
 	para "TM31 contains"
-	line "MUD-SLAP."
+	line "Squirtbottle."
 
 	para "It reduces the"
 	line "enemy's accuracy"

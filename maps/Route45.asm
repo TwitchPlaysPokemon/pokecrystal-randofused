@@ -300,16 +300,16 @@ FruitTreeScript_0x19e294:
 	fruittree FRUITTREE_ROUTE_45
 
 Route45Nugget:
-	itemball NUGGET
+	itemball FULL_HEAL
 
 Route45Revive:
-	itemball REVIVE
+	itemball ENERGY_ROOT
 
 Route45Elixer:
-	itemball ELIXER
+	itemball HYPER_POTION
 
 Route45MaxPotion:
-	itemball MAX_POTION
+	itemball FULL_HEAL
 
 Route45HiddenPpUp:
 	dwb EVENT_ROUTE_45_HIDDEN_PP_UP, PP_UP

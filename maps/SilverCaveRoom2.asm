@@ -11,13 +11,13 @@ SilverCaveRoom2_MapScriptHeader:
 	db 0
 
 SilverCaveRoom2Calcium:
-	itemball CALCIUM
+	itemball IRON
 
 SilverCaveRoom2UltraBall:
-	itemball ULTRA_BALL
+	itemball TM_IRON_TAIL
 
 SilverCaveRoom2PPUp:
-	itemball PP_UP
+	itemball NUGGET
 
 SilverCaveRoom2HiddenMaxPotion:
 	dwb EVENT_SILVER_CAVE_ROOM_2_HIDDEN_MAX_POTION, MAX_POTION

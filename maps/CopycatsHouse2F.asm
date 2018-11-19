@@ -121,7 +121,7 @@ Copycat:
 .GivePass:
 	writetext CopycatText_GivePass
 	buttonsound
-	verbosegiveitem PASS
+	verbosegiveitem ESCAPE_ROPE
 	iffalse .Cancel
 	setevent EVENT_GOT_PASS_FROM_COPYCAT
 	writetext CopycatText_ExplainPass
@@ -228,7 +228,7 @@ CopycatText_Male_2:
 
 	para "<PLAYER>: If I find"
 	line "it, you'll give me"
-	cont "a rail PASS?"
+	cont "a rail ESCAPE ROPE?"
 
 	para "<PLAYER>: I'll go"
 	line "find it for you."
@@ -264,13 +264,13 @@ CopycatText_GiveDoll:
 
 CopycatText_GivePass:
 	text "OK. Here's the"
-	line "MAGNET TRAIN PASS"
+	line "MAGNET TRAIN ESCAPE ROPE"
 	cont "like I promised!"
 	done
 
 CopycatText_ExplainPass:
 	text "COPYCAT: That's"
-	line "the PASS for the"
+	line "the ESCAPE ROPE for the"
 	cont "MAGNET TRAIN."
 
 	para "The rail company"
@@ -284,7 +284,7 @@ CopycatText_ExplainPass:
 CopycatText_Male_3:
 	text "<PLAYER>: Hi!"
 	line "Thanks a lot for"
-	cont "the rail PASS!"
+	cont "the rail ESCAPE ROPE!"
 
 	para "<PLAYER>: Pardon?"
 
@@ -317,7 +317,7 @@ CopycatText_Female_2:
 	para "<PLAYER>: You'll"
 	line "really give me a"
 
-	para "rail PASS if I"
+	para "rail ESCAPE ROPE if I"
 	line "find it for you?"
 
 	para "<PLAYER>: Sure,"
@@ -330,7 +330,7 @@ CopycatText_Female_2:
 
 CopycatText_Female_3:
 	text "<PLAYER>: Thank you"
-	line "for the rail PASS!"
+	line "for the rail ESCAPE ROPE!"
 
 	para "<PLAYER>: ...Pardon?"
 

@@ -15,7 +15,7 @@ FisherScript_0x9b847:
 	iftrue .GotItem
 	writetext UnknownText_0x9b865
 	buttonsound
-	verbosegiveitem NUGGET
+	verbosegiveitem ULTRA_BALL
 	iffalse .Done
 	setevent EVENT_GOT_NUGGET_FROM_GUY
 .GotItem:
@@ -43,10 +43,10 @@ UnknownText_0x9b865:
 	done
 
 UnknownText_0x9b8e5:
-	text "That's a NUGGET."
+	text "That's a ULTRA BALL."
 
 	para "I can't give you"
-	line "any nuggets of"
+	line "any ULTRA BALLs of"
 
 	para "wisdom, so that'll"
 	line "have to do!"

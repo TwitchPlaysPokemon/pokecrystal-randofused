@@ -31,7 +31,7 @@ AzaleaGymBugsyScript:
 	writetext Text_ReceivedHiveBadge
 	playsound SFX_GET_BADGE
 	waitsfx
-	setflag ENGINE_HIVEBADGE
+	setflag ENGINE_RISINGBADGE
 	checkcode VAR_BADGES
 	scall AzaleaGymActivateRockets
 .FightDone:
@@ -43,7 +43,7 @@ AzaleaGymBugsyScript:
 	setevent EVENT_BEAT_BUG_CATCHER_JOSH
 	writetext BugsyText_HiveBadgeSpeech
 	buttonsound
-	verbosegiveitem TM_FURY_CUTTER
+	verbosegiveitem ESCAPE_ROPE
 	iffalse .NoRoomForFuryCutter
 	setevent EVENT_GOT_TM49_FURY_CUTTER
 	writetext BugsyText_FuryCutterSpeech
@@ -181,7 +181,7 @@ BugsyText_ResearchIncomplete:
 
 Text_ReceivedHiveBadge:
 	text "<PLAYER> received"
-	line "HIVEBADGE."
+	line "RISING BADGE."
 	done
 
 BugsyText_HiveBadgeSpeech:
@@ -207,7 +207,7 @@ BugsyText_HiveBadgeSpeech:
 
 BugsyText_FuryCutterSpeech:
 	text "TM49 contains"
-	line "FURY CUTTER."
+	line "ESCAPE ROPE."
 
 	para "If you don't miss,"
 	line "it gets stronger"

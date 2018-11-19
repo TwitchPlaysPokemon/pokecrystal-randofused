@@ -462,7 +462,7 @@ TrainerCooltrainerfKate:
 	iftrue .GotSoftSand
 	writetext CooltrainerfKateOfferSoftSandText
 	buttonsound
-	verbosegiveitem SOFT_SAND
+	verbosegiveitem AWAKENING
 	iffalse .BagFull
 	setevent EVENT_GOT_SOFT_SAND_FROM_KATE
 .GotSoftSand:
@@ -485,7 +485,7 @@ DayCareSign:
 	jumptext DayCareSignText
 
 Route34Nugget:
-	itemball NUGGET
+	itemball TM_RAIN_DANCE
 
 Route34HiddenRareCandy:
 	dwb EVENT_ROUTE_34_HIDDEN_RARE_CANDY, RARE_CANDY

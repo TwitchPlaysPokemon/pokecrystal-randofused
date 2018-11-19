@@ -76,7 +76,7 @@ WateredWeirdTreeScript:: ; export (for when you use Squirtbottle from pack)
 	writetext SudowoodoAttackedText
 	waitbutton
 	closetext
-	loadwildmon SUDOWOODO, 20
+	loadwildmon EXEGGCUTE, 11
 	startbattle
 	setevent EVENT_FOUGHT_SUDOWOODO
 	if_equal $2, DidntCatchSudowoodo
@@ -140,7 +140,7 @@ Route36RockSmashGuyScript:
 .ClearedSudowoodo:
 	writetext RockSmashGuyText2
 	buttonsound
-	verbosegiveitem TM_ROCK_SMASH
+	verbosegiveitem REVIVE
 	iffalse .NoRoomForTM
 	setevent EVENT_GOT_TM08_ROCK_SMASH
 .AlreadyGotRockSmash:
@@ -498,7 +498,7 @@ UnknownText_0x19451a:
 
 RockSmashGuyText3:
 	text "That happens to be"
-	line "ROCK SMASH."
+	line "REVIVE."
 
 	para "You can shatter"
 	line "rocks with just a"

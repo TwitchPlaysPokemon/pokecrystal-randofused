@@ -18,7 +18,7 @@ FishingGuruScript_0x7f484:
 	iffalse UnknownScript_0x7f4a6
 	writetext UnknownText_0x7f52f
 	buttonsound
-	verbosegiveitem SUPER_ROD
+	verbosegiveitem ELIXER
 	iffalse UnknownScript_0x7f4aa
 	setevent EVENT_GOT_SUPER_ROD
 UnknownScript_0x7f4a0:
@@ -59,7 +59,7 @@ UnknownText_0x7f52f:
 
 	para "Here, fishing fan!"
 	line "Take this--it's a"
-	cont "SUPER ROD."
+	cont "ELIXER."
 	done
 
 UnknownText_0x7f57c:

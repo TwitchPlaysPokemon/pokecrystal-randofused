@@ -66,7 +66,7 @@ WhitneyScript_0x5400c:
 UnknownScript_0x54064:
 	writetext UnknownText_0x5428b
 	buttonsound
-	verbosegiveitem TM_ATTRACT
+	verbosegiveitem PARLYZ_HEAL
 	iffalse UnknownScript_0x5407b
 	setevent EVENT_GOT_TM45_ATTRACT
 	writetext UnknownText_0x54302
@@ -227,12 +227,12 @@ UnknownText_0x54222:
 
 	para "Oh, right."
 	line "I forgot. Here's"
-	cont "PLAINBADGE."
+	cont "PLAIN BADGE."
 	done
 
 UnknownText_0x54273:
 	text "<PLAYER> received"
-	line "PLAINBADGE."
+	line "PLAIN BADGE."
 	done
 
 UnknownText_0x5428b:
@@ -251,7 +251,7 @@ UnknownText_0x5428b:
 	done
 
 UnknownText_0x54302:
-	text "It's ATTRACT!"
+	text "It's PARLYZ HEAL!"
 	line "It makes full use"
 
 	para "of a #MON's"

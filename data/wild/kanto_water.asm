@@ -4,9 +4,9 @@ KantoWaterWildMons: ; 0x2b7f7
 
 	map TOHJO_FALLS
 	db 4 percent ; encounter rate
-	db 20, GOLDEEN
-	db 20, SLOWPOKE
-	db 20, SEAKING
+	db 11, HORSEA
+	db 11, NIDORAN_M
+	db 11, DEWGONG
 
 	map VERMILION_PORT
 	db 2 percent ; encounter rate
@@ -16,21 +16,21 @@ KantoWaterWildMons: ; 0x2b7f7
 
 	map ROUTE_4
 	db 4 percent ; encounter rate
-	db 10, GOLDEEN
-	db 5, GOLDEEN
-	db 10, SEAKING
+	db 27, JIGGLYPUFF
+	db 22, ARIADOS
+	db 27, MUK
 
 	map ROUTE_6
 	db 2 percent ; encounter rate
-	db 10, PSYDUCK
-	db 5, PSYDUCK
-	db 10, GOLDUCK
+	db 17, GOLDEEN
+	db 12, SEEL
+	db 17, BLASTOISE
 
 	map ROUTE_9
 	db 4 percent ; encounter rate
-	db 15, GOLDEEN
-	db 10, GOLDEEN
-	db 15, SEAKING
+	db 22, GOLDEEN
+	db 17, SQUIRTLE
+	db 22, AZUMARILL
 
 	map ROUTE_10_NORTH
 	db 4 percent ; encounter rate
@@ -40,9 +40,9 @@ KantoWaterWildMons: ; 0x2b7f7
 
 	map ROUTE_12
 	db 6 percent ; encounter rate
-	db 25, TENTACOOL
-	db 25, QUAGSIRE
-	db 25, TENTACRUEL
+	db 15, GOLDEEN
+	db 15, MISDREAVUS
+	db 15, SLOWKING
 
 	map ROUTE_13
 	db 6 percent ; encounter rate
@@ -58,51 +58,51 @@ KantoWaterWildMons: ; 0x2b7f7
 
 	map ROUTE_20
 	db 6 percent ; encounter rate
-	db 35, TENTACOOL
-	db 30, TENTACOOL
-	db 35, TENTACRUEL
+	db 26, QUILAVA
+	db 21, CROCONAW
+	db 26, MAGNETON
 
 	map ROUTE_21
 	db 6 percent ; encounter rate
-	db 35, TENTACOOL
-	db 30, TENTACOOL
-	db 35, TENTACRUEL
+	db 27, STARYU
+	db 22, GROWLITHE
+	db 27, SANDSLASH
 
 	map ROUTE_22
 	db 2 percent ; encounter rate
-	db 10, POLIWAG
-	db 5, POLIWAG
-	db 10, POLIWHIRL
+	db 25, FLAAFFY
+	db 20, CHINCHOU
+	db 25, GROWLITHE
 
 	map ROUTE_24
 	db 4 percent ; encounter rate
-	db 10, GOLDEEN
-	db 5, GOLDEEN
-	db 10, SEAKING
+	db 19, DRATINI
+	db 14, DRATINI
+	db 19, POLIWHIRL
 
 	map ROUTE_25
 	db 4 percent ; encounter rate
-	db 10, GOLDEEN
-	db 5, GOLDEEN
-	db 10, SEAKING
+	db 19, STARYU
+	db 14, POLIWHIRL
+	db 19, GOLDUCK
 
 	map ROUTE_26
 	db 6 percent ; encounter rate
-	db 30, TENTACOOL
-	db 25, TENTACOOL
-	db 30, TENTACRUEL
+	db 26, MANKEY
+	db 21, ONIX
+	db 26, VICTREEBEL
 
 	map ROUTE_27
 	db 6 percent ; encounter rate
-	db 20, TENTACOOL
-	db 15, TENTACOOL
-	db 20, TENTACRUEL
+	db 16, STARYU
+	db 11, SEEL
+	db 16, SLOWKING
 
 	map ROUTE_28
 	db 2 percent ; encounter rate
-	db 40, POLIWAG
-	db 35, POLIWAG
-	db 40, POLIWHIRL
+	db 28, TOGEPI
+	db 23, POLIWHIRL
+	db 28, REMORAID
 
 	map PALLET_TOWN
 	db 6 percent ; encounter rate

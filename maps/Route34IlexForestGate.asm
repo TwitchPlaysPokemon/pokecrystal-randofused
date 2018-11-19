@@ -51,7 +51,7 @@ TeacherScript_0x62d63:
 	iftrue UnknownScript_0x62d7e
 	writetext UnknownText_0x62d9d
 	buttonsound
-	verbosegiveitem TM_SWEET_SCENT
+	verbosegiveitem SECRETPOTION
 	iffalse UnknownScript_0x62d82
 	setevent EVENT_GOT_TM12_SWEET_SCENT
 UnknownScript_0x62d7e:
@@ -100,7 +100,7 @@ UnknownText_0x62d9d:
 	done
 
 UnknownText_0x62df6:
-	text "It's SWEET SCENT."
+	text "It's Secret Potion."
 
 	para "Use it wherever"
 	line "#MON appear."

@@ -72,16 +72,16 @@ TrainerFirebreatherRay:
 	end
 
 UnionCave1FGreatBall:
-	itemball GREAT_BALL
+	itemball TM_EARTHQUAKE
 
 UnionCave1FXAttack:
-	itemball X_ATTACK
+	itemball CLEAR_BELL
 
 UnionCave1FPotion:
-	itemball POTION
+	itemball TM_ROLLOUT
 
 UnionCave1FAwakening:
-	itemball AWAKENING
+	itemball ULTRA_BALL
 
 UnknownScript_0x59c08:
 	jumptext UnknownText_0x59f29

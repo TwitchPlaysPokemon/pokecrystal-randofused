@@ -52,10 +52,10 @@ VermilionSnorlax:
 UnknownScript_0x1aa9ab:
 	writetext UnknownText_0x1aab84
 	pause 15
-	cry SNORLAX
+	cry MAGNETON
 	closetext
 	writecode VAR_BATTLETYPE, BATTLETYPE_FORCEITEM
-	loadwildmon SNORLAX, 50
+	loadwildmon MAGNETON, 34
 	startbattle
 	disappear VERMILIONCITY_BIG_SNORLAX
 	setevent EVENT_FOUGHT_SNORLAX

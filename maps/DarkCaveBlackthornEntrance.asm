@@ -17,7 +17,7 @@ DarkCaveBlackthornEntrancePharmacistScript:
 	iftrue .GotBlackglasses
 	writetext DarkCaveBlackthornEntrancePharmacistText1
 	buttonsound
-	verbosegiveitem BLACKGLASSES
+	verbosegiveitem MAX_ELIXER
 	iffalse .PackFull
 	setevent EVENT_GOT_BLACKGLASSES_IN_DARK_CAVE
 .GotBlackglasses:
@@ -28,16 +28,16 @@ DarkCaveBlackthornEntrancePharmacistScript:
 	end
 
 DarkCaveBlackthornEntranceRevive:
-	itemball REVIVE
+	itemball ANTIDOTE
 
 DarkCaveBlackthornEntranceTMSnore:
-	itemball TM_SNORE
+	itemball MAX_POTION
 
 DarkCaveBlackthornEntrancePharmacistText1:
 	text "Whoa! You startled"
 	line "me there!"
 
-	para "I had my BLACK-"
+	para "I had my MAX ELIXER-"
 	line "GLASSES on, so I"
 
 	para "didn't notice you"
@@ -50,7 +50,7 @@ DarkCaveBlackthornEntrancePharmacistText1:
 	line "worry about it."
 
 	para "I'll give you a"
-	line "pair of BLACK-"
+	line "pair of MAX ELIXER-"
 	cont "GLASSES, so forget"
 	cont "you saw me, OK?"
 	done

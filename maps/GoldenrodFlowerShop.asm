@@ -22,7 +22,7 @@ FlowerShopTeacherScript:
 	opentext
 	writetext UnknownText_0x554c2
 	buttonsound
-	verbosegiveitem SQUIRTBOTTLE
+	verbosegiveitem HM_FLASH
 	setevent EVENT_GOT_SQUIRTBOTTLE
 	closetext
 	setevent EVENT_FLORIA_AT_SUDOWOODO
@@ -117,7 +117,7 @@ UnknownText_0x554c2:
 
 	para "You'll be OK,"
 	line "then. Here's the"
-	cont "SQUIRTBOTTLE!"
+	cont "Flash!"
 	done
 
 UnknownText_0x5550d:

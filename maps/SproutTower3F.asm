@@ -78,7 +78,7 @@ SageLiScript:
 	opentext
 	writetext UnknownText_0x184cc2
 	buttonsound
-	verbosegiveitem HM_FLASH
+	verbosegiveitem MAX_ETHER
 	setevent EVENT_GOT_HM05_FLASH
 	setevent EVENT_BEAT_SAGE_LI
 	writetext UnknownText_0x184d13
@@ -132,10 +132,10 @@ MapSproutTower3FSignpost5Script:
 	jumptext UnknownText_0x184f61
 
 SproutTower3FPotion:
-	itemball POTION
+	itemball HYPER_POTION
 
 SproutTower3FEscapeRope:
-	itemball ESCAPE_ROPE
+	itemball S_S_TICKET
 
 MovementData_0x184a1d:
 	step UP
@@ -239,12 +239,12 @@ UnknownText_0x184cc2:
 	para "no problem using"
 	line "this move."
 
-	para "Take this FLASH"
+	para "Take this MAX ETHER"
 	line "HM."
 	done
 
 UnknownText_0x184d13:
-	text "FLASH illuminates"
+	text "MAX ETHER illuminates"
 	line "even the darkest"
 	cont "of all places."
 

@@ -13,7 +13,7 @@ MountMortar1FOutsideEther:
 	itemball ETHER
 
 MountMortar1FOutsideRevive:
-	itemball REVIVE
+	itemball REPEL
 
 MountMortar1FOutsideHiddenHyperPotion:
 	dwb EVENT_MOUNT_MORTAR_1F_OUTSIDE_HIDDEN_HYPER_POTION, HYPER_POTION

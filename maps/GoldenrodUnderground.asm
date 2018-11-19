@@ -403,7 +403,7 @@ GoldenrodUndergroundScript_ShopClosed:
 	end
 
 GoldenrodUndergroundCoinCase:
-	itemball COIN_CASE
+	itemball HM_FLY
 
 MapGoldenrodUndergroundSignpost1Script:
 	jumptext UnknownText_0x7c91a

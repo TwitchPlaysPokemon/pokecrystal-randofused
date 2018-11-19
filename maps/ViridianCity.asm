@@ -56,7 +56,7 @@ FisherScript_0x1a9a75:
 	iftrue .GotDreamEater
 	writetext UnknownText_0x1a9cc4
 	buttonsound
-	verbosegiveitem TM_DREAM_EATER
+	verbosegiveitem MAX_POTION
 	iffalse .NoRoomForDreamEater
 	setevent EVENT_GOT_TM42_DREAM_EATER
 .GotDreamEater:

@@ -13,7 +13,7 @@ PewterGym_MapScriptHeader:
 BrockScript_0x1a2864:
 	faceplayer
 	opentext
-	checkflag ENGINE_BOULDERBADGE
+	checkflag ENGINE_CASCADEBADGE
 	iftrue .FightDone
 	writetext UnknownText_0x1a28d0
 	waitbutton
@@ -28,7 +28,7 @@ BrockScript_0x1a2864:
 	writetext UnknownText_0x1a2a3d
 	playsound SFX_GET_BADGE
 	waitsfx
-	setflag ENGINE_BOULDERBADGE
+	setflag ENGINE_CASCADEBADGE
 	checkcode VAR_BADGES
 	scall PewterGymActivateRockets
 	writetext UnknownText_0x1a2a57
@@ -129,7 +129,7 @@ UnknownText_0x1a29bb:
 
 UnknownText_0x1a2a3d:
 	text "<PLAYER> received"
-	line "BOULDERBADGE."
+	line "CASCADE BADGE."
 	done
 
 UnknownText_0x1a2a57:
@@ -140,7 +140,7 @@ UnknownText_0x1a2a57:
 	line "though I am a bit"
 	cont "upset."
 
-	para "That BOULDERBADGE"
+	para "That CASCADE BADGE"
 	line "will make your"
 
 	para "#MON even more"

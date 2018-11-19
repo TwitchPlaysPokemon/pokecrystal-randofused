@@ -16,7 +16,7 @@ SaffronGym_MapScriptHeader:
 SabrinaScript_0x189c2e:
 	faceplayer
 	opentext
-	checkflag ENGINE_MARSHBADGE
+	checkflag ENGINE_THUNDERBADGE
 	iftrue .FightDone
 	writetext UnknownText_0x189cdf
 	waitbutton
@@ -34,7 +34,7 @@ SabrinaScript_0x189c2e:
 	writetext UnknownText_0x189e95
 	playsound SFX_GET_BADGE
 	waitsfx
-	setflag ENGINE_MARSHBADGE
+	setflag ENGINE_THUNDERBADGE
 	writetext UnknownText_0x189ead
 	checkcode VAR_BADGES
 	scall SaffronGymActivateRockets
@@ -168,12 +168,12 @@ UnknownText_0x189df4:
 
 	para "OK, you win. You"
 	line "earned yourself"
-	cont "MARSHBADGE."
+	cont "THUNDER BADGE."
 	done
 
 UnknownText_0x189e95:
 	text "<PLAYER> received"
-	line "MARSHBADGE."
+	line "THUNDER BADGE."
 	done
 
 UnknownText_0x189ead:

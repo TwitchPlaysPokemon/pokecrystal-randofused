@@ -12,16 +12,16 @@ RuinsOfAlphAerodactylItemRoom_MapScriptHeader:
 	db 0
 
 RuinsOfAlphAerodactylItemRoomGoldBerry:
-	itemball GOLD_BERRY
+	itemball HP_UP
 
 RuinsOfAlphAerodactylItemRoomMoonStone:
-	itemball MOON_STONE
+	itemball TM_ENDURE
 
 RuinsOfAlphAerodactylItemRoomHealPowder:
-	itemball HEAL_POWDER
+	itemball POTION
 
 RuinsOfAlphAerodactylItemRoomEnergyRoot:
-	itemball ENERGY_ROOT
+	itemball REVIVE
 
 MapRuinsOfAlphAerodactylItemRoomSignpost1Script:
 	jumptext UnknownText_0x59ac1

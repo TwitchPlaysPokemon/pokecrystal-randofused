@@ -68,7 +68,7 @@ Route32CooltrainerMContinueScene:
 .GiveMiracleSeed:
 	writetext Route32CooltrainerMText_HaveThisSeed
 	buttonsound
-	verbosegiveitem MIRACLE_SEED
+	verbosegiveitem TM_HEADBUTT
 	iffalse .BagFull
 	setevent EVENT_GOT_MIRACLE_SEED_IN_ROUTE_32
 	jump .GotMiracleSeed
@@ -109,7 +109,7 @@ Route32RoarTMGuyScript:
 	iftrue .AlreadyHaveRoar
 	writetext Text_RoarIntro
 	buttonsound
-	verbosegiveitem TM_ROAR
+	verbosegiveitem OLD_ROD
 	iffalse .Finish
 	setevent EVENT_GOT_TM05_ROAR
 .AlreadyHaveRoar:
@@ -488,10 +488,10 @@ FriedaScript:
 	end
 
 Route32GreatBall:
-	itemball GREAT_BALL
+	itemball TM_GIGA_DRAIN
 
 Route32Repel:
-	itemball REPEL
+	itemball TM_DREAM_EATER
 
 Route32Sign:
 	jumptext Route32SignText
@@ -850,7 +850,7 @@ Text_RoarIntro:
 	text "WROOOOAR!"
 	line "PEOPLE RUN WHEN I"
 
-	para "ROAR! BUT YOU"
+	para "OLD ROD! BUT YOU"
 	line "CAME LOOKING!"
 
 	para "THAT PLEASES ME!"
@@ -859,10 +859,10 @@ Text_RoarIntro:
 
 Text_RoarOutro:
 	text "WROOOAR!"
-	line "IT'S ROAR!"
+	line "IT'S OLD ROD!"
 
 	para "EVEN #MON RUN"
-	line "FROM A GOOD ROAR!"
+	line "FROM A GOOD OLD ROD!"
 	done
 
 MeetFriedaText:

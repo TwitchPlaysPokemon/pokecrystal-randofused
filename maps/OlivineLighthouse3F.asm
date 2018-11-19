@@ -45,7 +45,7 @@ TrainerSailorTerrell:
 	end
 
 OlivineLighthouse3FEther:
-	itemball ETHER
+	itemball ELIXER
 
 BirdKeeperTheoSeenText:
 	text "Why are you here?"

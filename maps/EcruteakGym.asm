@@ -40,7 +40,7 @@ MortyScript_0x99d58:
 	writetext Text_ReceivedFogBadge
 	playsound SFX_GET_BADGE
 	waitsfx
-	setflag ENGINE_FOGBADGE
+	setflag ENGINE_ZEPHYRBADGE
 	checkcode VAR_BADGES
 	scall EcruteakGymActivateRockets
 	setmapscene ECRUTEAK_HOUSE, $1
@@ -55,7 +55,7 @@ MortyScript_0x99d58:
 	setevent EVENT_BEAT_MEDIUM_GRACE
 	writetext MortyText_FogBadgeSpeech
 	buttonsound
-	verbosegiveitem TM_SHADOW_BALL
+	verbosegiveitem HM_STRENGTH
 	iffalse .NoRoomForShadowBall
 	setevent EVENT_GOT_TM30_SHADOW_BALL
 	writetext MortyText_ShadowBallSpeech
@@ -230,7 +230,7 @@ UnknownText_0x9a00a:
 
 Text_ReceivedFogBadge:
 	text "<PLAYER> received"
-	line "FOGBADGE."
+	line "ZEPHYR BADGE."
 	done
 
 MortyText_FogBadgeSpeech:
@@ -251,7 +251,7 @@ MortyText_FogBadgeSpeech:
 	done
 
 MortyText_ShadowBallSpeech:
-	text "It's SHADOW BALL."
+	text "It's Strength."
 	line "It causes damage"
 
 	para "and may reduce"

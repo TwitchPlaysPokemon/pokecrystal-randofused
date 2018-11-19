@@ -30,7 +30,7 @@ MrPokemonsHouse_MapScriptHeader:
 	writetext MrPokemonIntroText2
 	buttonsound
 	waitsfx
-	giveitem MYSTERY_EGG
+	verbosegiveitem MYSTERY_EGG
 	writetext MrPokemonsHouse_GotEggText
 	playsound SFX_KEY_ITEM
 	waitsfx
@@ -71,7 +71,7 @@ MrPokemonsHouse_MrPokemonScript:
 	writetext MrPokemonText_GimmeTheScale
 	yesorno
 	iffalse .refused
-	verbosegiveitem EXP_SHARE
+	verbosegiveitem PP_UP
 	iffalse .full
 	takeitem RED_SCALE
 	jump .AlwaysNewDiscoveries
@@ -188,7 +188,7 @@ MrPokemonIntroText2:
 
 MrPokemonsHouse_GotEggText:
 	text "<PLAYER> received"
-	line "MYSTERY EGG."
+	line "Mystery Egg."
 	done
 
 MrPokemonIntroText3:
@@ -340,7 +340,7 @@ MrPokemonText_GimmeTheScale:
 	line "care to trade it?"
 
 	para "I can offer this"
-	line "EXP.SHARE I got"
+	line "PP UP I got"
 	cont "from PROF.OAK."
 	done
 

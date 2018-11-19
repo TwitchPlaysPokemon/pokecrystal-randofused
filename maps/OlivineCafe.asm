@@ -17,7 +17,7 @@ SailorScript_0x9c8c1:
 	iftrue UnknownScript_0x9c8d3
 	writetext UnknownText_0x9c8df
 	buttonsound
-	verbosegiveitem HM_STRENGTH
+	verbosegiveitem X_ATTACK
 	setevent EVENT_GOT_HM04_STRENGTH
 UnknownScript_0x9c8d3:
 	writetext UnknownText_0x9c965
@@ -42,7 +42,7 @@ UnknownText_0x9c8df:
 
 	para "Here, use this"
 	line "and teach them"
-	cont "STRENGTH!"
+	cont "X ATTACK!"
 	done
 
 UnknownText_0x9c965:

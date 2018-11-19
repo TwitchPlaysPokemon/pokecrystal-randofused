@@ -12,16 +12,16 @@ SilverCaveRoom1_MapScriptHeader:
 	db 0
 
 SilverCaveRoom1MaxElixer:
-	itemball MAX_ELIXER
+	itemball TM_STEEL_WING
 
 SilverCaveRoom1Protein:
-	itemball PROTEIN
+	itemball HYPER_POTION
 
 SilverCaveRoom1EscapeRope:
-	itemball ESCAPE_ROPE
+	itemball NUGGET
 
 SilverCaveRoom1UltraBall:
-	itemball ULTRA_BALL
+	itemball GOLD_BERRY
 
 SilverCaveRoom1HiddenDireHit:
 	dwb EVENT_SILVER_CAVE_ROOM_1_HIDDEN_DIRE_HIT, DIRE_HIT

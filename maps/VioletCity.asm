@@ -89,10 +89,10 @@ VioletCityMartSign:
 	jumpstd martsign
 
 VioletCityPPUp:
-	itemball PP_UP
+	itemball LURE_BALL
 
 VioletCityRareCandy:
-	itemball RARE_CANDY
+	itemball ELIXER
 
 VioletCityFruitTreeScript:
 	fruittree FRUITTREE_VIOLET_CITY

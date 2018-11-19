@@ -239,7 +239,7 @@ Route30TrainerTips:
 	jumptext Route30TrainerTipsText
 
 Route30Antidote:
-	itemball ANTIDOTE
+	itemball PSNCUREBERRY
 
 Route30FruitTree1:
 	fruittree FRUITTREE_ROUTE_30_1

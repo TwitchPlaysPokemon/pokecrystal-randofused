@@ -21,7 +21,7 @@ CianwoodPharmacist:
 	iffalse .Mart
 	writetext PharmacistGiveSecretpotionText
 	buttonsound
-	giveitem SECRETPOTION
+	verbosegiveitem X_SPEED
 	writetext ReceivedSecretpotionText
 	playsound SFX_KEY_ITEM
 	waitsfx
@@ -61,11 +61,11 @@ PharmacistGiveSecretpotionText:
 
 ReceivedSecretpotionText:
 	text "<PLAYER> received"
-	line "SECRETPOTION."
+	line "X SPEED."
 	done
 
 PharmacistDescribeSecretpotionText:
-	text "My SECRETPOTION is"
+	text "My X SPEED is"
 	line "a tad too strong."
 
 	para "I only offer it in"

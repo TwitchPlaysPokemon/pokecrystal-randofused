@@ -14,19 +14,19 @@ WhirlIslandB1F_MapScriptHeader:
 	db 0
 
 WhirlIslandB1FFullRestore:
-	itemball FULL_RESTORE
+	itemball POTION
 
 WhirlIslandB1FCarbos:
-	itemball CARBOS
+	itemball POKE_BALL
 
 WhirlIslandB1FCalcium:
-	itemball CALCIUM
+	itemball TM_ATTRACT
 
 WhirlIslandB1FNugget:
 	itemball NUGGET
 
 WhirlIslandB1FEscapeRope:
-	itemball ESCAPE_ROPE
+	itemball CHARCOAL
 
 WhirlIslandB1FBoulder:
 	jumpstd strengthboulder

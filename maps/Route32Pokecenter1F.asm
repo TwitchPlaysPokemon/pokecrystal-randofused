@@ -23,7 +23,7 @@ FishingGuruScript_0x69b55:
 	iffalse UnknownScript_0x69b74
 	writetext UnknownText_0x69be8
 	buttonsound
-	verbosegiveitem OLD_ROD
+	verbosegiveitem MAX_REVIVE
 	writetext UnknownText_0x69c1b
 	waitbutton
 	closetext
@@ -54,7 +54,7 @@ UnknownText_0x69b83:
 	cont "about you?"
 
 	para "Would you like one"
-	line "of my RODS?"
+	line "of my MAX REVIVES?"
 	done
 
 UnknownText_0x69be8:
@@ -72,7 +72,7 @@ UnknownText_0x69c1b:
 	line "be it the sea or a"
 
 	para "stream, try out"
-	line "your ROD."
+	line "your MAX REVIVE."
 	done
 
 UnknownText_0x69c6c:

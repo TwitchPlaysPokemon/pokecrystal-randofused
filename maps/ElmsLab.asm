@@ -162,8 +162,8 @@ CyndaquilPokeBallScript:
 	iftrue LookAtElmPokeBallScript
 	spriteface ELMSLAB_ELM, DOWN
 	refreshscreen $0
-	pokepic CYNDAQUIL
-	cry CYNDAQUIL
+	pokepic TOGEPI
+	cry TOGEPI
 	waitbutton
 	closepokepic
 	opentext
@@ -175,12 +175,12 @@ CyndaquilPokeBallScript:
 	writetext ChoseStarterText
 	buttonsound
 	waitsfx
-	pokenamemem CYNDAQUIL, $0
+	pokenamemem TOGEPI, $0
 	writetext ReceivedStarterText
 	playsound SFX_CAUGHT_MON
 	waitsfx
 	buttonsound
-	givepoke CYNDAQUIL, 5, BERRY
+	givepoke TOGEPI, 5, BERRY
 	closetext
 	checkcode VAR_FACING
 	if_equal RIGHT, ElmDirectionsScript
@@ -192,8 +192,8 @@ TotodilePokeBallScript:
 	iftrue LookAtElmPokeBallScript
 	spriteface ELMSLAB_ELM, DOWN
 	refreshscreen $0
-	pokepic TOTODILE
-	cry TOTODILE
+	pokepic PARAS
+	cry PARAS
 	waitbutton
 	closepokepic
 	opentext
@@ -205,12 +205,12 @@ TotodilePokeBallScript:
 	writetext ChoseStarterText
 	buttonsound
 	waitsfx
-	pokenamemem TOTODILE, $0
+	pokenamemem PARAS, $0
 	writetext ReceivedStarterText
 	playsound SFX_CAUGHT_MON
 	waitsfx
 	buttonsound
-	givepoke TOTODILE, 5, BERRY
+	givepoke PARAS, 5, BERRY
 	closetext
 	applymovement PLAYER, AfterTotodileMovement
 	jump ElmDirectionsScript
@@ -220,8 +220,8 @@ ChikoritaPokeBallScript:
 	iftrue LookAtElmPokeBallScript
 	spriteface ELMSLAB_ELM, DOWN
 	refreshscreen $0
-	pokepic CHIKORITA
-	cry CHIKORITA
+	pokepic GLOOM
+	cry GLOOM
 	waitbutton
 	closepokepic
 	opentext
@@ -233,12 +233,12 @@ ChikoritaPokeBallScript:
 	writetext ChoseStarterText
 	buttonsound
 	waitsfx
-	pokenamemem CHIKORITA, $0
+	pokenamemem GLOOM, $0
 	writetext ReceivedStarterText
 	playsound SFX_CAUGHT_MON
 	waitsfx
 	buttonsound
-	givepoke CHIKORITA, 5, BERRY
+	givepoke GLOOM, 5, BERRY
 	closetext
 	applymovement PLAYER, AfterChikoritaMovement
 	jump ElmDirectionsScript
@@ -400,7 +400,7 @@ ElmScript_NoRoomForEverstone:
 ElmGiveMasterBallScript:
 	writetext ElmGiveMasterBallText1
 	buttonsound
-	verbosegiveitem MASTER_BALL
+	verbosegiveitem FOCUS_BAND
 	iffalse .notdone
 	setevent EVENT_GOT_MASTER_BALL_FROM_ELM
 	writetext ElmGiveMasterBallText2
@@ -412,7 +412,7 @@ ElmGiveMasterBallScript:
 ElmGiveTicketScript:
 	writetext ElmGiveTicketText1
 	buttonsound
-	verbosegiveitem S_S_TICKET
+	verbosegiveitem MAX_REVIVE
 	setevent EVENT_GOT_SS_TICKET_FROM_ELM
 	writetext ElmGiveTicketText2
 	waitbutton
@@ -475,7 +475,7 @@ AideScript_GivePotions:
 	opentext
 	writetext AideText_GiveYouPotions
 	buttonsound
-	verbosegiveitem POTION
+	verbosegiveitem TM_SOLARBEAM
 	writetext AideText_AlwaysBusy
 	waitbutton
 	closetext
@@ -500,9 +500,9 @@ AideScript_GiveYouBalls:
 	opentext
 	writetext AideText_GiveYouBalls
 	buttonsound
-	itemtotext POKE_BALL, $1
+	itemtotext MAX_REVIVE, $1
 	scall AideScript_ReceiveTheBalls
-	giveitem POKE_BALL, 5
+	giveitem MAX_REVIVE, 5
 	writetext AideText_ExplainBalls
 	buttonsound
 	itemnotify
@@ -1161,7 +1161,7 @@ ElmGiveMasterBallText1:
 	done
 
 ElmGiveMasterBallText2:
-	text "The MASTER BALL is"
+	text "The FOCUS BAND is"
 	line "the best!"
 
 	para "It's the ultimate"
@@ -1190,7 +1190,7 @@ ElmGiveTicketText1:
 	cont "you."
 
 	para "See? It's an"
-	line "S.S.TICKET."
+	line "MAX REVIVE."
 
 	para "Now you can catch"
 	line "#MON in KANTO."
@@ -1266,7 +1266,7 @@ AideText_ExplainBalls:
 	line "#DEX, you have"
 	cont "to catch #MON."
 
-	para "Throw # BALLS"
+	para "Throw MAX REVIVES"
 	line "at wild #MON"
 	cont "to get them."
 	done

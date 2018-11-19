@@ -43,25 +43,25 @@ MountMortar1FBoulder:
 	jumpstd strengthboulder
 
 MountMortar1FInsideEscapeRope:
-	itemball ESCAPE_ROPE
+	itemball PP_UP
 
 MountMortar1FInsideMaxRevive:
 	itemball MAX_REVIVE
 
 MountMortar1FInsideHyperPotion:
-	itemball HYPER_POTION
+	itemball NUGGET
 
 MountMortar1FInsideMaxPotion:
 	itemball MAX_POTION
 
 MountMortar1FInsideNugget:
-	itemball NUGGET
+	itemball MACHINE_PART
 
 MountMortar1FInsideIron:
 	itemball IRON
 
 MountMortar1FInsideUltraBall:
-	itemball ULTRA_BALL
+	itemball TM_SWIFT
 
 MountMortar1FInsideHiddenMaxRepel:
 	dwb EVENT_MOUNT_MORTAR_1F_INSIDE_HIDDEN_MAX_REPEL, MAX_REPEL

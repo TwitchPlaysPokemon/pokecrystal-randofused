@@ -84,9 +84,9 @@ GyaradosScript_0x70063:
 	opentext
 	writetext UnknownText_0x703cb
 	pause 15
-	cry GYARADOS
+	cry CELEBI
 	closetext
-	loadwildmon GYARADOS, 30
+	loadwildmon CELEBI, 22
 	writecode VAR_BATTLETYPE, BATTLETYPE_SHINY
 	startbattle
 	if_equal $1, UnknownScript_0x7007a
@@ -94,7 +94,7 @@ GyaradosScript_0x70063:
 UnknownScript_0x7007a:
 	reloadmapafterbattle
 	opentext
-	giveitem RED_SCALE
+	verbosegiveitem SOFT_SAND
 	waitsfx
 	writetext UnknownText_0x703df
 	playsound SFX_ITEM
@@ -226,10 +226,10 @@ WesleyNotWednesdayScript:
 	end
 
 LakeOfRageElixer:
-	itemball ELIXER
+	itemball HP_UP
 
 LakeOfRageTMDetect:
-	itemball TM_DETECT
+	itemball MAX_POTION
 
 LakeOfRageHiddenFullRestore:
 	dwb EVENT_LAKE_OF_RAGE_HIDDEN_FULL_RESTORE, FULL_RESTORE
@@ -321,7 +321,7 @@ UnknownText_0x703cb:
 
 UnknownText_0x703df:
 	text "<PLAYER> obtained a"
-	line "RED SCALE."
+	line "SOFT SAND."
 	done
 
 UnknownText_0x703f8:

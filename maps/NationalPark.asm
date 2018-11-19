@@ -34,7 +34,7 @@ TeacherScript_0x5c008:
 	iftrue UnknownScript_0x5c01d
 	writetext UnknownText_0x5c265
 	buttonsound
-	verbosegiveitem QUICK_CLAW
+	verbosegiveitem ULTRA_BALL
 	iffalse UnknownScript_0x5c021
 	setevent EVENT_GOT_QUICK_CLAW
 UnknownScript_0x5c01d:
@@ -299,10 +299,10 @@ MapNationalParkSignpost3Script:
 	jumptext UnknownText_0x5c7c6
 
 NationalParkParlyzHeal:
-	itemball PARLYZ_HEAL
+	itemball MOON_STONE
 
 NationalParkTMDig:
-	itemball TM_DIG
+	itemball NUGGET
 
 NationalParkHiddenFullHeal:
 	dwb EVENT_NATIONAL_PARK_HIDDEN_FULL_HEAL, FULL_HEAL
@@ -347,7 +347,7 @@ UnknownText_0x5c265:
 
 UnknownText_0x5c30d:
 	text "Let a #MON hold"
-	line "that QUICK CLAW."
+	line "that ULTRA BALL."
 
 	para "Sometimes it will"
 	line "strike first"

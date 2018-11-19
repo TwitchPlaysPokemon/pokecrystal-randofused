@@ -10,10 +10,10 @@ RockTunnel1F_MapScriptHeader:
 	db 0
 
 RockTunnel1FElixer:
-	itemball ELIXER
+	itemball TM_SUNNY_DAY
 
 RockTunnel1FTMSteelWing:
-	itemball TM_STEEL_WING
+	itemball NEVERMELTICE
 
 RockTunnel1FHiddenXAccuracy:
 	dwb EVENT_ROCK_TUNNEL_1F_HIDDEN_X_ACCURACY, X_ACCURACY

@@ -15,7 +15,7 @@ HiddenPowerGuy:
 	iftrue .AlreadyGotItem
 	writetext HiddenPowerGuyText1
 	buttonsound
-	verbosegiveitem TM_HIDDEN_POWER
+	verbosegiveitem BLACKGLASSES
 	iffalse .Done
 	setevent EVENT_GOT_TM10_HIDDEN_POWER
 	writetext HiddenPowerGuyText2
@@ -51,7 +51,7 @@ HiddenPowerGuyText1:
 
 HiddenPowerGuyText2:
 	text "Do you see it? It"
-	line "is HIDDEN POWER!"
+	line "is BLACKGLASSES!"
 
 	para "It draws out the"
 	line "power of #MON"

@@ -175,7 +175,7 @@ UnknownScript_0x188eac:
 	iftrue UnknownScript_0x188ec5
 	writetext UnknownText_0x1893c4
 	buttonsound
-	verbosegiveitem TM_ZAP_CANNON
+	verbosegiveitem TM_SWEET_SCENT
 	iffalse UnknownScript_0x188ec3
 	setevent EVENT_GOT_TM07_ZAP_CANNON
 	writetext UnknownText_0x1893f4
@@ -336,7 +336,7 @@ UnknownText_0x189264:
 	line "he's going to get"
 
 	para "a taste of my "
-	line "ZAP CANNON!"
+	line "SWEET SCENT!"
 	done
 
 UnknownText_0x189308:
@@ -370,7 +370,7 @@ UnknownText_0x1893c4:
 
 UnknownText_0x1893f4:
 	text "MANAGER: TM07 is"
-	line "my ZAP CANNON."
+	line "my SWEET SCENT."
 
 	para "It's a powerful"
 	line "technique!"

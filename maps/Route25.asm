@@ -164,7 +164,7 @@ CooltrainerMScript_0x19efac:
 	iftrue UnknownScript_0x19efc7
 	writetext UnknownText_0x19f43b
 	buttonsound
-	verbosegiveitem NUGGET
+	verbosegiveitem HP_UP
 	iffalse UnknownScript_0x19efde
 	setevent EVENT_CLEARED_NUGGET_BRIDGE
 UnknownScript_0x19efc7:
@@ -188,7 +188,7 @@ BillsHouseSign:
 	jumptext BillsHouseSignText
 
 Route25Protein:
-	itemball PROTEIN
+	itemball BLUE_CARD
 
 Route25HiddenPotion:
 	dwb EVENT_ROUTE_25_HIDDEN_POTION, POTION

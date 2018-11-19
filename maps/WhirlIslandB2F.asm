@@ -11,13 +11,13 @@ WhirlIslandB2F_MapScriptHeader:
 	db 0
 
 WhirlIslandB2FFullRestore:
-	itemball FULL_RESTORE
+	itemball TM_SLEEP_TALK
 
 WhirlIslandB2FMaxRevive:
-	itemball MAX_REVIVE
+	itemball DRAGON_FANG
 
 WhirlIslandB2FMaxElixer:
-	itemball MAX_ELIXER
+	itemball GREAT_BALL
 
 WhirlIslandB2F_MapEventHeader:
 	; filler

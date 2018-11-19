@@ -11,13 +11,13 @@ RockTunnelB1F_MapScriptHeader:
 	db 0
 
 RockTunnelB1FIron:
-	itemball IRON
+	itemball PROTEIN
 
 RockTunnelB1FPPUp:
-	itemball PP_UP
+	itemball TM_DETECT
 
 RockTunnelB1FRevive:
-	itemball REVIVE
+	itemball ENERGYPOWDER
 
 RockTunnelB1FHiddenMaxPotion:
 	dwb EVENT_ROCK_TUNNEL_B1F_HIDDEN_MAX_POTION, MAX_POTION

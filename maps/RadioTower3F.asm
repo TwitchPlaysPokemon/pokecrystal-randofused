@@ -67,7 +67,7 @@ UnknownScript_0x5e584:
 UnknownScript_0x5e58a:
 	writetext UnknownText_0x5e7e2
 	buttonsound
-	verbosegiveitem TM_SUNNY_DAY
+	verbosegiveitem SMOKE_BALL
 	iffalse UnknownScript_0x5e5a1
 	writetext UnknownText_0x5e821
 	waitbutton
@@ -219,7 +219,7 @@ UnknownText_0x5e7e2:
 	done
 
 UnknownText_0x5e821:
-	text "It's SUNNY DAY."
+	text "It's SMOKE BALL."
 	line "It powers up fire-"
 	cont "type moves for a"
 	cont "while."

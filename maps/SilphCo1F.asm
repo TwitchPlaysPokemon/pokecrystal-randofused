@@ -19,7 +19,7 @@ OfficerScript_0x18abe8:
 	iftrue UnknownScript_0x18abfd
 	writetext UnknownText_0x18ac36
 	buttonsound
-	verbosegiveitem UP_GRADE
+	verbosegiveitem ETHER
 	iffalse UnknownScript_0x18ac01
 	setevent EVENT_GOT_UP_GRADE
 UnknownScript_0x18abfd:

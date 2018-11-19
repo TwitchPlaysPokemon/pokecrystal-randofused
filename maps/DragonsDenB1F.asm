@@ -55,7 +55,7 @@ DragonsDenB1F_ClairScene:
 	opentext
 	writetext ClairText_GiveDragonbreathDragonDen
 	buttonsound
-	giveitem TM_DRAGONBREATH
+	verbosegiveitem SILVER_WING
 	iffalse .BagFull
 	itemtotext TM_DRAGONBREATH, $0
 	writetext NotifyReceiveDragonbreath
@@ -131,11 +131,11 @@ PokeBallScript_0x18c95a:
 ; This whole script is written out rather than as an
 ; item fragment because it's left over from the GS
 ; event.
-	giveitem DRAGON_FANG
+	giveitem NUGGET
 	iffalse .BagFull
 	disappear DRAGONSDENB1F_POKE_BALL1
 	opentext
-	itemtotext DRAGON_FANG, $0
+	itemtotext NUGGET, $0
 	writetext Text_FoundDragonFang
 	playsound SFX_ITEM
 	waitsfx
@@ -177,10 +177,10 @@ MapDragonsDenB1FSignpost0Script:
 	jumptext DragonShrineSignpostText
 
 DragonsDenB1FCalcium:
-	itemball CALCIUM
+	itemball FULL_RESTORE
 
 DragonsDenB1FMaxElixer:
-	itemball MAX_ELIXER
+	itemball REVIVE
 
 DragonsDenB1FHiddenRevive:
 	dwb EVENT_DRAGONS_DEN_B1F_HIDDEN_REVIVE, REVIVE
@@ -219,12 +219,12 @@ ClairText_GiveDragonbreathDragonDen:
 
 NotifyReceiveDragonbreath:
 	text "<PLAYER> received"
-	line "TM24."
+	line "SILVER WING."
 	done
 
 ClairText_DescribeDragonbreathDragonDen:
 	text "That contains"
-	line "DRAGONBREATH."
+	line "SILVER WING."
 
 	para "No, it doesn't"
 	line "have anything to"

@@ -207,7 +207,7 @@ Route31MailRecipientScript:
 	writetext Text_Route31ReadingMail
 	buttonsound
 	setevent EVENT_GAVE_KENYA
-	verbosegiveitem TM_NIGHTMARE
+	verbosegiveitem ULTRA_BALL
 	iffalse .NoRoomForItems
 	setevent EVENT_GOT_TM50_NIGHTMARE
 .DescribeNightmare:
@@ -261,10 +261,10 @@ Route31FruitTree:
 	fruittree FRUITTREE_ROUTE_31
 
 Route31Potion:
-	itemball POTION
+	itemball HEAL_POWDER
 
 Route31PokeBall:
-	itemball POKE_BALL
+	itemball X_ATTACK
 
 Route31CooltrainerMText:
 	text "DARK CAVE…"
@@ -351,7 +351,7 @@ Text_Route31ReadingMail:
 	done
 
 Text_Route31DescribeNightmare:
-	text "TM50 is NIGHTMARE."
+	text "ULTRA BALL is NIGHTMARE."
 
 	para "It's a wicked move"
 	line "that steadily cuts"

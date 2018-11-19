@@ -10,10 +10,10 @@ SilverCaveItemRooms_MapScriptHeader:
 	db 0
 
 SilverCaveItemRoomsMaxRevive:
-	itemball MAX_REVIVE
+	itemball PP_UP
 
 SilverCaveItemRoomsFullRestore:
-	itemball FULL_RESTORE
+	itemball BERRY
 
 SilverCaveItemRooms_MapEventHeader:
 	; filler

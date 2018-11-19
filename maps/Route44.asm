@@ -309,13 +309,13 @@ FruitTreeScript_0x19da40:
 	fruittree FRUITTREE_ROUTE_44
 
 Route44MaxRevive:
-	itemball MAX_REVIVE
+	itemball RARE_CANDY
 
 Route44UltraBall:
-	itemball ULTRA_BALL
+	itemball TM_ICY_WIND
 
 Route44MaxRepel:
-	itemball MAX_REPEL
+	itemball IRON
 
 Route44HiddenElixer:
 	dwb EVENT_ROUTE_44_HIDDEN_ELIXER, ELIXER

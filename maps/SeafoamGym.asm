@@ -16,7 +16,7 @@ SeafoamGym_MapScriptHeader:
 BlaineScript_0x1ab4fb:
 	faceplayer
 	opentext
-	checkflag ENGINE_VOLCANOBADGE
+	checkflag ENGINE_MARSHBADGE
 	iftrue .FightDone
 	writetext UnknownText_0x1ab548
 	waitbutton
@@ -33,7 +33,7 @@ BlaineScript_0x1ab4fb:
 	writetext UnknownText_0x1ab683
 	playsound SFX_GET_BADGE
 	waitsfx
-	setflag ENGINE_VOLCANOBADGE
+	setflag ENGINE_MARSHBADGE
 	checkcode VAR_BADGES
 	scall SeafoamGymActivateRockets
 	writetext UnknownText_0x1ab69d

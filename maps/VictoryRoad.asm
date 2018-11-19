@@ -97,19 +97,19 @@ UnknownScript_0x7451f:
 	end
 
 VictoryRoadTMEarthquake:
-	itemball TM_EARTHQUAKE
+	itemball ULTRA_BALL
 
 VictoryRoadMaxRevive:
-	itemball MAX_REVIVE
+	itemball MAX_ETHER
 
 VictoryRoadFullRestore:
 	itemball FULL_RESTORE
 
 VictoryRoadFullHeal:
-	itemball FULL_HEAL
+	itemball AMULET_COIN
 
 VictoryRoadHPUp:
-	itemball HP_UP
+	itemball ESCAPE_ROPE
 
 VictoryRoadHiddenMaxPotion:
 	dwb EVENT_VICTORY_ROAD_HIDDEN_MAX_POTION, MAX_POTION

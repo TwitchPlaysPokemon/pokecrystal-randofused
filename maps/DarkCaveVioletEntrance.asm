@@ -16,16 +16,16 @@ DarkCaveVioletEntrance_MapScriptHeader:
 	db 0
 
 DarkCaveVioletEntrancePotion:
-	itemball POTION
+	itemball TM_ZAP_CANNON
 
 DarkCaveVioletEntranceFullHeal:
-	itemball FULL_HEAL
+	itemball RED_SCALE
 
 DarkCaveVioletEntranceHyperPotion:
-	itemball HYPER_POTION
+	itemball POTION
 
 DarkCaveVioletEntranceDireHit:
-	itemball DIRE_HIT
+	itemball MAX_ETHER
 
 DarkCaveVioletEntranceRock:
 	jumpstd smashrock

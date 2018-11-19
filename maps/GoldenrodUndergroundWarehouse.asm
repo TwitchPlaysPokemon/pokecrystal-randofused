@@ -77,7 +77,7 @@ GentlemanScript_0x7d9bf:
 	if_less_than 7, UnknownScript_0x7d9de
 	writetext UnknownText_0x7dbc6
 	buttonsound
-	verbosegiveitem CARD_KEY
+	verbosegiveitem ELIXER
 	setevent EVENT_RECEIVED_CARD_KEY
 	setevent EVENT_GOLDENROD_DEPT_STORE_B1F_LAYOUT_1
 	clearevent EVENT_GOLDENROD_DEPT_STORE_B1F_LAYOUT_2
@@ -91,13 +91,13 @@ UnknownScript_0x7d9de:
 	end
 
 GoldenrodUndergroundWarehouseMaxEther:
-	itemball MAX_ETHER
+	itemball MAX_REPEL
 
 GoldenrodUndergroundWarehouseTMSleepTalk:
-	itemball TM_SLEEP_TALK
+	itemball ULTRA_BALL
 
 GoldenrodUndergroundWarehouseUltraBall:
-	itemball ULTRA_BALL
+	itemball TM_THIEF
 
 GruntM24SeenText:
 	text "How did you get"
@@ -177,7 +177,7 @@ UnknownText_0x7dbc6:
 	line "ROCKET?"
 
 	para "Here. Take this"
-	line "CARD KEY."
+	line "ELIXER."
 	done
 
 UnknownText_0x7dc5b:

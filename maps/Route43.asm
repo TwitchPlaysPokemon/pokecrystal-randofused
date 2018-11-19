@@ -322,7 +322,7 @@ FruitTreeScript_0x19d266:
 	fruittree FRUITTREE_ROUTE_43
 
 Route43MaxEther:
-	itemball MAX_ETHER
+	itemball GOOD_ROD
 
 PokemaniacBenSeenText:
 	text "I love #MON!"

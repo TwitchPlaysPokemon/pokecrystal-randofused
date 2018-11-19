@@ -31,7 +31,7 @@ PryceScript_0x199a9e:
 	writetext Text_ReceivedGlacierBadge
 	playsound SFX_GET_BADGE
 	waitsfx
-	setflag ENGINE_GLACIERBADGE
+	setflag ENGINE_RAINBOWBADGE
 	checkcode VAR_BADGES
 	scall MahoganyGymActivateRockets
 .FightDone:
@@ -44,7 +44,7 @@ PryceScript_0x199a9e:
 	setevent EVENT_BEAT_BOARDER_DOUGLAS
 	writetext PryceText_GlacierBadgeSpeech
 	buttonsound
-	verbosegiveitem TM_ICY_WIND
+	verbosegiveitem TM_MUD_SLAP
 	iffalse MahoganyGym_NoRoomForIcyWind
 	setevent EVENT_GOT_TM16_ICY_WIND
 	writetext PryceText_IcyWindSpeech
@@ -196,7 +196,7 @@ PryceText_Impressed:
 
 Text_ReceivedGlacierBadge:
 	text "<PLAYER> received"
-	line "GLACIERBADGE."
+	line "RAINBOW BADGE."
 	done
 
 PryceText_GlacierBadgeSpeech:
@@ -215,7 +215,7 @@ PryceText_GlacierBadgeSpeech:
 
 PryceText_IcyWindSpeech:
 	text "That TM contains"
-	line "ICY WIND."
+	line "MUD SLAP."
 
 	para "It inflicts damage"
 	line "and lowers speed."

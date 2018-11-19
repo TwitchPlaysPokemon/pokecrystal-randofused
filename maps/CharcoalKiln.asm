@@ -49,7 +49,7 @@ CharcoalKilnApprentice:
 .Thanks:
 	writetext CharcoalKilnApprenticeText2
 	buttonsound
-	verbosegiveitem CHARCOAL
+	verbosegiveitem MAX_POTION
 	iffalse .Done
 	setevent EVENT_GOT_CHARCOAL_IN_CHARCOAL_KILN
 	closetext
@@ -127,7 +127,7 @@ CharcoalKilnApprenticeText2:
 	text "I'm sorry--I for-"
 	line "got to thank you."
 
-	para "This is CHARCOAL"
+	para "This is MAX POTION"
 	line "that I made."
 
 	para "Fire-type #MON"

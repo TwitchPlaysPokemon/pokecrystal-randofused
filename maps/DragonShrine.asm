@@ -160,7 +160,7 @@ DragonShrine_MapScriptHeader:
 	opentext
 	writetext UnknownText_0x18d9bf
 	waitbutton
-	setflag ENGINE_RISINGBADGE
+	setflag ENGINE_VOLCANOBADGE
 	playsound SFX_GET_BADGE
 	waitsfx
 	special RestartMapMusic
@@ -636,14 +636,14 @@ UnknownText_0x18d9ae:
 
 UnknownText_0x18d9bf:
 	text "Here, this is the"
-	line "RISINGBADGE..."
+	line "VOLCANO BADGE..."
 
 	para "Hurry up! Take it!"
 	done
 
 UnknownText_0x18d9f2:
 	text "<PLAYER> received"
-	line "RISINGBADGE."
+	line "VOLCANO BADGE."
 	done
 
 UnknownText_0x18da0b:

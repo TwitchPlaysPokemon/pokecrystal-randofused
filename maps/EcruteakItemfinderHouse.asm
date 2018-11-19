@@ -19,7 +19,7 @@ EcruteakItemfinderGuy:
 	iffalse .no
 	writetext EcruteakItemfinderTrueSpiritText
 	buttonsound
-	verbosegiveitem ITEMFINDER
+	verbosegiveitem HM_CUT
 	setevent EVENT_GOT_ITEMFINDER
 .itemfinder:
 	writetext ItemfinderExplanationText
@@ -88,7 +88,7 @@ ItemfinderExplanationText:
 	para "that aren't ob-"
 	line "vious."
 
-	para "Use ITEMFINDER to"
+	para "Use Cut to"
 	line "check if there is"
 
 	para "an item on the"

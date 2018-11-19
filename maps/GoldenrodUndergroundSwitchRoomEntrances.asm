@@ -624,10 +624,10 @@ GoldenrodUndergroundSwitchRoomEntrances_UpdateDoors:
 	end
 
 GoldenrodUndergroundSwitchRoomEntrancesSmokeBall:
-	itemball SMOKE_BALL
+	itemball HYPER_POTION
 
 GoldenrodUndergroundSwitchRoomEntrancesFullHeal:
-	itemball FULL_HEAL
+	itemball MOON_STONE
 
 GoldenrodUndergroundSwitchRoomEntrancesHiddenMaxPotion:
 	dwb EVENT_GOLDENROD_UNDERGROUND_SWITCH_ROOM_ENTRANCES_HIDDEN_MAX_POTION, MAX_POTION

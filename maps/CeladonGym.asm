@@ -16,7 +16,7 @@ CeladonGym_MapScriptHeader:
 ErikaScript_0x72a6a:
 	faceplayer
 	opentext
-	checkflag ENGINE_RAINBOWBADGE
+	checkflag ENGINE_MINERALBADGE
 	iftrue .FightDone
 	writetext UnknownText_0x72b28
 	waitbutton
@@ -34,7 +34,7 @@ ErikaScript_0x72a6a:
 	writetext UnknownText_0x72c96
 	playsound SFX_GET_BADGE
 	waitsfx
-	setflag ENGINE_RAINBOWBADGE
+	setflag ENGINE_MINERALBADGE
 	checkcode VAR_BADGES
 	scall CeladonGymActivateRockets
 .FightDone:
@@ -42,7 +42,7 @@ ErikaScript_0x72a6a:
 	iftrue UnknownScript_0x72aae
 	writetext UnknownText_0x72cb0
 	buttonsound
-	verbosegiveitem TM_GIGA_DRAIN
+	verbosegiveitem ULTRA_BALL
 	iffalse UnknownScript_0x72aae
 	setevent EVENT_GOT_TM19_GIGA_DRAIN
 UnknownScript_0x72aae:
@@ -162,12 +162,12 @@ UnknownText_0x72c3e:
 	line "strong..."
 
 	para "I shall give you"
-	line "RAINBOWBADGE..."
+	line "MINERAL BADGE..."
 	done
 
 UnknownText_0x72c96:
 	text "<PLAYER> received"
-	line "RAINBOWBADGE."
+	line "MINERAL BADGE."
 	done
 
 UnknownText_0x72cb0:
@@ -178,7 +178,7 @@ UnknownText_0x72cb0:
 	line "Please, I wish you"
 	cont "to have this TM."
 
-	para "It is GIGA DRAIN."
+	para "It is ULTRA BALL."
 
 	para "It is a wonderful"
 	line "move that drains"

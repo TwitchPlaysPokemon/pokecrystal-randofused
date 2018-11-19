@@ -26,22 +26,22 @@ TrainerSupernerdHugh:
 	end
 
 MountMortar2FInsideMaxPotion:
-	itemball MAX_POTION
+	itemball BURN_HEAL
 
 MountMortar2FInsideRareCandy:
-	itemball RARE_CANDY
+	itemball TM_ROAR
 
 MountMortar2FInsideTMDefenseCurl:
-	itemball TM_DEFENSE_CURL
+	itemball HYPER_POTION
 
 MountMortar2FInsideDragonScale:
-	itemball DRAGON_SCALE
+	itemball QUICK_CLAW
 
 MountMortar2FInsideElixer:
-	itemball ELIXER
+	itemball SUPER_POTION
 
 MountMortar2FInsideEscapeRope:
-	itemball ESCAPE_ROPE
+	itemball BERRY
 
 MountMortar2FInsideHiddenFullRestore:
 	dwb EVENT_MOUNT_MORTAR_2F_INSIDE_HIDDEN_FULL_RESTORE, FULL_RESTORE

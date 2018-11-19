@@ -19,7 +19,7 @@ MapFightingDojoSignpost1Script:
 	jumptext FightingDojoSign1Text
 
 FightingDojoFocusBand:
-	itemball FOCUS_BAND
+	itemball TM_ROCK_SMASH
 
 FightingDojoBlackBeltText:
 	text "Hello!"

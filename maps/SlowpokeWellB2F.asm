@@ -16,7 +16,7 @@ GymGuyScript_0x5ad0b:
 	iftrue UnknownScript_0x5ad22
 	writetext UnknownText_0x5ad2a
 	buttonsound
-	verbosegiveitem KINGS_ROCK
+	verbosegiveitem SUPER_ROD
 	iffalse UnknownScript_0x5ad20
 	setevent EVENT_GOT_KINGS_ROCK_IN_SLOWPOKE_WELL
 UnknownScript_0x5ad20:
@@ -30,7 +30,7 @@ UnknownScript_0x5ad22:
 	end
 
 SlowpokeWellB2FTMRainDance:
-	itemball TM_RAIN_DANCE
+	itemball CARBOS
 
 UnknownText_0x5ad2a:
 	text "I'm waiting to see"
@@ -48,7 +48,7 @@ UnknownText_0x5ad2a:
 	line "SHELLDER."
 
 	para "Here, I'll share a"
-	line "KING'S ROCK with"
+	line "SUPER ROD with"
 	cont "you."
 	done
 

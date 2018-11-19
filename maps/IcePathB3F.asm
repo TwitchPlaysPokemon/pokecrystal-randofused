@@ -10,7 +10,7 @@ IcePathB3F_MapScriptHeader:
 	db 0
 
 IcePathB3FNevermeltice:
-	itemball NEVERMELTICE
+	itemball HM_WATERFALL
 
 IcePathB3FRock:
 	jumpstd smashrock

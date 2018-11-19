@@ -11,13 +11,13 @@ IcePath1F_MapScriptHeader:
 	db 0
 
 IcePath1FHMWaterfall:
-	itemball HM_WATERFALL
+	itemball ELIXER
 
 IcePath1FPPUp:
-	itemball PP_UP
+	itemball MYSTIC_WATER
 
 IcePath1FProtein:
-	itemball PROTEIN
+	itemball TM_DYNAMICPUNCH
 
 IcePath1F_MapEventHeader:
 	; filler

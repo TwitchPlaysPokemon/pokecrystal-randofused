@@ -64,16 +64,16 @@ MachopScript_0x7d7b9:
 	end
 
 GoldenrodDeptStoreB1FEther:
-	itemball ETHER
+	itemball RARE_CANDY
 
 GoldenrodDeptStoreB1FAmuletCoin:
-	itemball AMULET_COIN
+	itemball RARE_CANDY
 
 GoldenrodDeptStoreB1FBurnHeal:
-	itemball BURN_HEAL
+	itemball TM_DIG
 
 GoldenrodDeptStoreB1FUltraBall:
-	itemball ULTRA_BALL
+	itemball RARE_CANDY
 
 GoldenrodDeptStoreB1FBlackBelt1Text:
 	text "Hey, kid! You're"

@@ -99,7 +99,7 @@ CianwoodCityChucksWife:
 .BeatChuck:
 	writetext ChucksWifeGiveHMText
 	buttonsound
-	verbosegiveitem HM_FLY
+	verbosegiveitem TM_TOXIC
 	iffalse .Done
 	setevent EVENT_GOT_HM02_FLY
 	writetext ChucksWifeFlySpeechText
@@ -192,7 +192,7 @@ ChucksWifeEasierToFlyText:
 	line "easier if your"
 
 	para "#MON knew how"
-	line "to FLY..."
+	line "to TOXIC..."
 	done
 
 ChucksWifeBeatChuckText:
@@ -213,15 +213,15 @@ ChucksWifeGiveHMText:
 	line "GYM BADGE!"
 
 	para "Then you should"
-	line "take this HM."
+	line "take this TOXIC."
 	done
 
 ChucksWifeFlySpeechText:
-	text "Teach FLY to your"
+	text "Teach TOXIC to your"
 	line "#MON."
 
 	para "You will be able"
-	line "to FLY instantly"
+	line "to TOXIC instantly"
 
 	para "to anywhere you "
 	line "have visited."

@@ -36,7 +36,7 @@ MapSproutTower2FSignpost0Script:
 	jumptext UnknownText_0x1848c8
 
 SproutTower2FXAccuracy:
-	itemball X_ACCURACY
+	itemball ULTRA_BALL
 
 SageNicoSeenText:
 	text "However hard we"

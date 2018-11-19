@@ -15,7 +15,7 @@ MrPsychic:
 	iftrue .AlreadyGotItem
 	writetext MrPsychicText1
 	buttonsound
-	verbosegiveitem TM_PSYCHIC_M
+	verbosegiveitem SUPER_POTION
 	iffalse .Done
 	setevent EVENT_GOT_TM29_PSYCHIC
 .AlreadyGotItem:
@@ -41,7 +41,7 @@ MrPsychicText1:
 	done
 
 MrPsychicText2:
-	text "TM29 is PSYCHIC."
+	text "TM29 is SUPER POTION."
 
 	para "It may lower the"
 	line "target's SPCL.DEF."

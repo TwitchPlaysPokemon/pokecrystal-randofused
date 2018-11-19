@@ -205,19 +205,19 @@ TeamRocketBaseB3FOathScript:
 	jumpstd teamrocketoath
 
 TeamRocketBaseB3FProtein:
-	itemball PROTEIN
+	itemball ULTRA_BALL
 
 TeamRocketBaseB3FXSpecial:
-	itemball X_SPECIAL
+	itemball CALCIUM
 
 TeamRocketBaseB3FFullHeal:
-	itemball FULL_HEAL
+	itemball TM_SHADOW_BALL
 
 TeamRocketBaseB3FIceHeal:
-	itemball ICE_HEAL
+	itemball TM_HIDDEN_POWER
 
 TeamRocketBaseB3FUltraBall:
-	itemball ULTRA_BALL
+	itemball TM_REST
 
 MovementData_0x6e12a:
 	step RIGHT

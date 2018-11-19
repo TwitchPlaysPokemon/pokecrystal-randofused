@@ -271,7 +271,7 @@ Route35Sign:
 	jumptext Route35SignText
 
 Route35TMRollout:
-	itemball TM_ROLLOUT
+	itemball DIRE_HIT
 
 FruitTreeScript_0x19ca7e:
 	fruittree FRUITTREE_ROUTE_35

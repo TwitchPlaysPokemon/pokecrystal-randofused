@@ -59,10 +59,10 @@ TrainerHikerLeonard:
 	end
 
 UnionCaveB1FTMSwift:
-	itemball TM_SWIFT
+	itemball HP_UP
 
 UnionCaveB1FXDefend:
-	itemball X_DEFEND
+	itemball FULL_HEAL
 
 UnionCaveB1FBoulder:
 	jumpstd strengthboulder

@@ -48,7 +48,7 @@ ChuckScript_0x9d60f:
 	writetext GetStormBadgeText
 	playsound SFX_GET_BADGE
 	waitsfx
-	setflag ENGINE_STORMBADGE
+	setflag ENGINE_BOULDERBADGE
 	checkcode VAR_BADGES
 	scall CianwoodGymActivateRockets
 .FightDone:
@@ -60,7 +60,7 @@ ChuckScript_0x9d60f:
 	setevent EVENT_BEAT_BLACKBELT_LUNG
 	writetext ChuckExplainBadgeText
 	buttonsound
-	verbosegiveitem TM_DYNAMICPUNCH
+	verbosegiveitem NUGGET
 	iffalse .BagFull
 	setevent EVENT_GOT_TM01_DYNAMICPUNCH
 	writetext ChuckExplainTMText
@@ -192,12 +192,12 @@ ChuckLossText:
 
 	para "How about that!"
 	line "You're worthy of"
-	cont "STORMBADGE!"
+	cont "BOULDER BADGE!"
 	done
 
 GetStormBadgeText:
 	text "<PLAYER> received"
-	line "STORMBADGE."
+	line "BOULDER BADGE."
 	done
 
 ChuckExplainBadgeText:
@@ -218,7 +218,7 @@ ChuckExplainBadgeText:
 	done
 
 ChuckExplainTMText:
-	text "That is DYNAMIC-"
+	text "That is NUGGET-"
 	line "PUNCH."
 
 	para "It doesn't always"

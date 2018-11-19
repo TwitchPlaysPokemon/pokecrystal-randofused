@@ -449,31 +449,31 @@ ExplodingTrap22:
 
 VoltorbExplodingTrap:
 	special FadeOutPalettes
-	cry VOLTORB
+	cry NIDORAN_M
 	special FadeInPalettes
 	setlasttalked -1
 	writecode VAR_BATTLETYPE, BATTLETYPE_TRAP
-	loadwildmon VOLTORB, 23
+	loadwildmon NIDORAN_M, 18
 	startbattle
 	end
 
 GeodudeExplodingTrap:
 	special FadeOutPalettes
-	cry GEODUDE
+	cry BULBASAUR
 	special FadeInPalettes
 	setlasttalked -1
 	writecode VAR_BATTLETYPE, BATTLETYPE_TRAP
-	loadwildmon GEODUDE, 21
+	loadwildmon BULBASAUR, 16
 	startbattle
 	end
 
 KoffingExplodingTrap:
 	special FadeOutPalettes
-	cry KOFFING
+	cry SUNFLORA
 	special FadeInPalettes
 	setlasttalked -1
 	writecode VAR_BATTLETYPE, BATTLETYPE_TRAP
-	loadwildmon KOFFING, 21
+	loadwildmon SUNFLORA, 16
 	startbattle
 	end
 
@@ -531,13 +531,13 @@ UnknownScript_0x6cabe:
 	end
 
 TeamRocketBaseB1FHyperPotion:
-	itemball HYPER_POTION
+	itemball CARD_KEY
 
 TeamRocketBaseB1FNugget:
-	itemball NUGGET
+	itemball HM_WHIRLPOOL
 
 TeamRocketBaseB1FGuardSpec:
-	itemball GUARD_SPEC
+	itemball PROTEIN
 
 TeamRocketBaseB1FHiddenRevive:
 	dwb EVENT_TEAM_ROCKET_BASE_B1F_HIDDEN_REVIVE, REVIVE

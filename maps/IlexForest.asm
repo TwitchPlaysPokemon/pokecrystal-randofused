@@ -351,7 +351,7 @@ IlexForestCharcoalMasterScript:
 	iftrue .AlreadyGotCut
 	writetext Text_CharcoalMasterIntro
 	buttonsound
-	verbosegiveitem HM_CUT
+	verbosegiveitem UP_GRADE
 	setevent EVENT_GOT_HM01_CUT
 	writetext Text_CharcoalMasterOutro
 	waitbutton
@@ -377,7 +377,7 @@ IlexForestHeadbuttGuyScript:
 	iftrue .AlreadyGotHeadbutt
 	writetext Text_HeadbuttIntro
 	buttonsound
-	verbosegiveitem TM_HEADBUTT
+	verbosegiveitem TM_PSYCHIC_M
 	iffalse .BagFull
 	setevent EVENT_GOT_TM02_HEADBUTT
 .AlreadyGotHeadbutt:
@@ -402,16 +402,16 @@ IlexForestLassScript:
 	jumptextfaceplayer Text_IlexForestLass
 
 IlexForestRevive:
-	itemball REVIVE
+	itemball X_DEFEND
 
 IlexForestXAttack:
-	itemball X_ATTACK
+	itemball METAL_COAT
 
 IlexForestAntidote:
-	itemball ANTIDOTE
+	itemball CALCIUM
 
 IlexForestEther:
-	itemball ETHER
+	itemball PP_UP
 
 IlexForestHiddenEther:
 	dwb EVENT_ILEX_FOREST_HIDDEN_ETHER, ETHER
@@ -800,7 +800,7 @@ Text_CharcoalMasterIntro:
 	done
 
 Text_CharcoalMasterOutro:
-	text "That's the CUT HM."
+	text "That's the UP GRADE."
 	line "Teach that to a"
 
 	para "#MON to clear"
@@ -828,7 +828,7 @@ Text_HeadbuttIntro:
 	text "What am I doing?"
 
 	para "I'm shaking trees"
-	line "using HEADBUTT."
+	line "using PSYCHIC M."
 
 	para "It's fun. Here,"
 	line "you try it too!"

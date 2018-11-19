@@ -129,7 +129,7 @@ UnknownScript_0x60c51:
 	end
 
 OlivineLighthouse6FSuperPotion:
-	itemball SUPER_POTION
+	itemball POTION
 
 MovementData_0x60c68:
 	slow_step UP

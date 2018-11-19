@@ -11,7 +11,7 @@ RadioTower5F_MapScriptHeader:
 	scene_script .DummyScene0
 	scene_script .DummyScene1
 	scene_script .DummyScene2
-	scene_script .DummyScene3
+	scene_script .DummyScene2
 
 .MapCallbacks:
 	db 0
@@ -46,7 +46,7 @@ FakeDirectorScript:
 	opentext
 	writetext FakeDirectorTextAfter
 	buttonsound
-	verbosegiveitem BASEMENT_KEY
+	verbosegiveitem X_SPECIAL
 	closetext
 	setscene $1
 	setevent EVENT_BEAT_ROCKET_EXECUTIVEM_3
@@ -73,7 +73,7 @@ FakeDirectorScriptB:
 	opentext
 	writetext FakeDirectorTextAfter
 	buttonsound
-	verbosegiveitem BASEMENT_KEY
+	verbosegiveitem X_SPECIAL
 	closetext
 	setscene $2
 	setevent EVENT_BEAT_ROCKET_EXECUTIVEM_3
@@ -150,7 +150,7 @@ RadioTower5FRocketBossScene:
 	opentext
 	writetext RadioTower5FDirectorThankYouText
 	buttonsound
-	verbosegiveitem CLEAR_BELL
+	verbosegiveitem COIN_CASE
 	writetext RadioTower5FDirectorDescribeClearBellText
 	waitbutton
 	closetext
@@ -210,7 +210,7 @@ RadioTower5FRocketBossSceneB:
 	opentext
 	writetext RadioTower5FDirectorThankYouText
 	buttonsound
-	verbosegiveitem CLEAR_BELL
+	verbosegiveitem COIN_CASE
 	writetext RadioTower5FDirectorDescribeClearBellText
 	waitbutton
 	closetext
@@ -230,7 +230,7 @@ Ben:
 	jumptextfaceplayer BenText
 
 RadioTower5FUltraBall:
-	itemball ULTRA_BALL
+	itemball SUPER_POTION
 
 MapRadioTower5FSignpost0Script:
 	jumptext SignpostRadioTower5FOffice

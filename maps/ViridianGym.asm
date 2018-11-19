@@ -12,7 +12,7 @@ ViridianGym_MapScriptHeader:
 ViridianGymBlueScript:
 	faceplayer
 	opentext
-	checkflag ENGINE_EARTHBADGE
+	checkflag ENGINE_SOULBADGE
 	iftrue .FightDone
 	writetext LeaderBlueBeforeText
 	waitbutton
@@ -26,7 +26,7 @@ ViridianGymBlueScript:
 	writetext Text_ReceivedEarthBadge
 	playsound SFX_GET_BADGE
 	waitsfx
-	setflag ENGINE_EARTHBADGE
+	setflag ENGINE_SOULBADGE
 	checkcode VAR_BADGES
 	scall ViridianGymActivateRockets
 	writetext LeaderBlueAfterText
@@ -119,12 +119,12 @@ LeaderBlueWinText:
 
 	para "Tch, all right..."
 	line "Here, take this--"
-	cont "it's EARTHBADGE."
+	cont "it's SOUL BADGE."
 	done
 
 Text_ReceivedEarthBadge:
 	text "<PLAYER> received"
-	line "EARTHBADGE."
+	line "SOUL BADGE."
 	done
 
 LeaderBlueAfterText:

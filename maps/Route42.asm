@@ -197,10 +197,10 @@ Route42Sign2:
 	jumptext Route42Sign2Text
 
 Route42UltraBall:
-	itemball ULTRA_BALL
+	itemball CALCIUM
 
 Route42SuperPotion:
-	itemball SUPER_POTION
+	itemball BASEMENT_KEY
 
 FruitTreeScript_0x1a934d:
 	fruittree FRUITTREE_ROUTE_42_1

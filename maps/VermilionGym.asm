@@ -15,7 +15,7 @@ VermilionGym_MapScriptHeader:
 SurgeScript_0x1920a5:
 	faceplayer
 	opentext
-	checkflag ENGINE_THUNDERBADGE
+	checkflag ENGINE_EARTHBADGE
 	iftrue .FightDone
 	writetext UnknownText_0x192142
 	waitbutton
@@ -32,7 +32,7 @@ SurgeScript_0x1920a5:
 	writetext UnknownText_0x192277
 	playsound SFX_GET_BADGE
 	waitsfx
-	setflag ENGINE_THUNDERBADGE
+	setflag ENGINE_EARTHBADGE
 	writetext UnknownText_0x192291
 	checkcode VAR_BADGES
 	scall VermilionGymActivateRockets
@@ -145,12 +145,12 @@ UnknownText_0x192238:
 	line "You are strong!"
 
 	para "OK, kid. You get"
-	line "THUNDERBADGE!"
+	line "EARTH BADGE!"
 	done
 
 UnknownText_0x192277:
 	text "<PLAYER> received"
-	line "THUNDERBADGE."
+	line "EARTH BADGE."
 	done
 
 UnknownText_0x192291:

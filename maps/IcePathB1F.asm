@@ -67,7 +67,7 @@ IcePathB1FBoulder:
 	jumpstd strengthboulder
 
 IcePathB1FIron:
-	itemball IRON
+	itemball ITEMFINDER
 
 IcePathB1FHiddenMaxPotion:
 	dwb EVENT_ICE_PATH_B1F_HIDDEN_MAX_POTION, MAX_POTION

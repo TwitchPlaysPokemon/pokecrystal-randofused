@@ -9,7 +9,7 @@ TohjoFalls_MapScriptHeader:
 	db 0
 
 TohjoFallsMoonStone:
-	itemball MOON_STONE
+	itemball CARBOS
 
 TohjoFalls_MapEventHeader:
 	; filler

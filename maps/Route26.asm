@@ -252,7 +252,7 @@ FruitTreeScript_0x1a4ec2:
 	fruittree FRUITTREE_ROUTE_26
 
 Route26MaxElixer:
-	itemball MAX_ELIXER
+	itemball X_ACCURACY
 
 CooltrainermJakeSeenText:
 	text "I'm making my"

@@ -15,7 +15,7 @@ PokefanMScript_0x196d64:
 	iftrue UnknownScript_0x196d79
 	writetext UnknownText_0x196d82
 	buttonsound
-	verbosegiveitem BERRY
+	verbosegiveitem KINGS_ROCK
 	iffalse UnknownScript_0x196d7d
 	setevent EVENT_GOT_BERRY_FROM_ROUTE_30_HOUSE
 UnknownScript_0x196d79:
@@ -34,7 +34,7 @@ UnknownText_0x196d82:
 
 	para "Well, my #MON"
 	line "got healthier by"
-	cont "eating a BERRY."
+	cont "eating a KINGS ROCK."
 
 	para "Here. I'll share"
 	line "one with you!"

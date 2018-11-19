@@ -64,10 +64,10 @@ FishingSpotSign:
 	jumptext FishingSpotSignText
 
 Route12Calcium:
-	itemball CALCIUM
+	itemball MAX_REVIVE
 
 Route12Nugget:
-	itemball NUGGET
+	itemball FULL_RESTORE
 
 Route12HiddenElixer:
 	dwb EVENT_ROUTE_12_HIDDEN_ELIXER, ELIXER

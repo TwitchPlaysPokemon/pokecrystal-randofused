@@ -26,7 +26,7 @@ JasmineScript_0x9c12f:
 	writetext Text_ReceivedMineralBadge
 	playsound SFX_GET_BADGE
 	waitsfx
-	setflag ENGINE_MINERALBADGE
+	setflag ENGINE_FOGBADGE
 	checkcode VAR_BADGES
 	scall OlivineGymActivateRockets
 .FightDone:
@@ -34,7 +34,7 @@ JasmineScript_0x9c12f:
 	iftrue .GotIronTail
 	writetext Jasmine_BadgeSpeech
 	buttonsound
-	verbosegiveitem TM_IRON_TAIL
+	verbosegiveitem MAX_ELIXER
 	iffalse .NoRoomForIronTail
 	setevent EVENT_GOT_TM23_IRON_TAIL
 	writetext Jasmine_IronTailSpeech
@@ -135,7 +135,7 @@ Jasmine_BetterTrainer:
 
 Text_ReceivedMineralBadge:
 	text "<PLAYER> received"
-	line "MINERALBADGE."
+	line "FOG BADGE."
 	done
 
 Jasmine_BadgeSpeech:
@@ -155,7 +155,7 @@ Text_ReceivedTM09:
 Jasmine_IronTailSpeech:
 	text "…You could use"
 	line "that TM to teach"
-	cont "IRON TAIL."
+	cont "MAX ELIXER."
 	done
 
 Jasmine_GoodLuck:

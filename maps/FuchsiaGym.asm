@@ -14,7 +14,7 @@ FuchsiaGym_MapScriptHeader:
 	db 0
 
 FuchsiaGymJanineScript:
-	checkflag ENGINE_SOULBADGE
+	checkflag ENGINE_HIVEBADGE
 	iftrue .FightDone
 	applymovement FUCHSIAGYM_JANINE, Movement_NinjaSpin
 	faceplayer
@@ -40,7 +40,7 @@ FuchsiaGymJanineScript:
 	writetext Text_ReceivedSoulBadge
 	playsound SFX_GET_BADGE
 	waitsfx
-	setflag ENGINE_SOULBADGE
+	setflag ENGINE_HIVEBADGE
 	checkcode VAR_BADGES
 	scall FuchsiaGymActivateRockets
 	jump .AfterBattle
@@ -52,7 +52,7 @@ FuchsiaGymJanineScript:
 	iftrue .AfterTM
 	writetext JanineText_ToxicSpeech
 	buttonsound
-	verbosegiveitem TM_TOXIC
+	verbosegiveitem TM_NIGHTMARE
 	iffalse .AfterTM
 	setevent EVENT_GOT_TM06_TOXIC
 .AfterTM:
@@ -268,13 +268,13 @@ JanineText_ToughOne:
 	line "tough one. You"
 	cont "definitely won…"
 
-	para "Here's SOULBADGE."
+	para "Here's HIVE BADGE."
 	line "Take it."
 	done
 
 Text_ReceivedSoulBadge:
 	text "<PLAYER> received"
-	line "SOULBADGE."
+	line "HIVE BADGE."
 	done
 
 JanineText_ToxicSpeech:
@@ -282,7 +282,7 @@ JanineText_ToxicSpeech:
 	line "tough! I have a"
 	cont "special gift!"
 
-	para "It's TOXIC, a pow-"
+	para "It's NIGHTMARE, a pow-"
 	line "erful poison that"
 
 	para "steadily saps the"

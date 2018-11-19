@@ -55,16 +55,16 @@ MapRoute2Signpost1Script:
 	jumptext UnknownText_0x1ac49f
 
 Route2DireHit:
-	itemball DIRE_HIT
+	itemball PROTEIN
 
 Route2MaxPotion:
-	itemball MAX_POTION
+	itemball ANTIDOTE
 
 Route2Carbos:
-	itemball CARBOS
+	itemball FULL_HEAL
 
 Route2Elixer:
-	itemball ELIXER
+	itemball NUGGET
 
 FruitTreeScript_0x1ac306:
 	fruittree FRUITTREE_ROUTE_2

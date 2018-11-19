@@ -35,13 +35,13 @@ TrainerSailorErnest:
 	end
 
 OlivineLighthouse5FRareCandy:
-	itemball RARE_CANDY
+	itemball DRAGON_SCALE
 
 OlivineLighthouse5FSuperRepel:
-	itemball SUPER_REPEL
+	itemball TM_SLUDGE_BOMB
 
 OlivineLighthouse5FTMSwagger:
-	itemball TM_SWAGGER
+	itemball ESCAPE_ROPE
 
 OlivineLighthouse5FHiddenHyperPotion:
 	dwb EVENT_OLIVINE_LIGHTHOUSE_5F_HIDDEN_HYPER_POTION, HYPER_POTION

@@ -12,16 +12,16 @@ RuinsOfAlphKabutoItemRoom_MapScriptHeader:
 	db 0
 
 RuinsOfAlphKabutoItemRoomBerry:
-	itemball BERRY
+	itemball GREAT_BALL
 
 RuinsOfAlphKabutoItemRoomPsncureberry:
-	itemball PSNCUREBERRY
+	itemball PASS
 
 RuinsOfAlphKabutoItemRoomHealPowder:
-	itemball HEAL_POWDER
+	itemball PP_UP
 
 RuinsOfAlphKabutoItemRoomEnergypowder:
-	itemball ENERGYPOWDER
+	itemball ETHER
 
 MapRuinsOfAlphKabutoItemRoomSignpost1Script:
 	jumptext UnknownText_0x599ad

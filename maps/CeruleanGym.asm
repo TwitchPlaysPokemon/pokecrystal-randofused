@@ -62,7 +62,7 @@ CeruleanGym_MapScriptHeader:
 MistyScript_0x188432:
 	faceplayer
 	opentext
-	checkflag ENGINE_CASCADEBADGE
+	checkflag ENGINE_STORMBADGE
 	iftrue .FightDone
 	writetext UnknownText_0x188674
 	waitbutton
@@ -79,7 +79,7 @@ MistyScript_0x188432:
 	writetext UnknownText_0x188768
 	playsound SFX_GET_BADGE
 	waitsfx
-	setflag ENGINE_CASCADEBADGE
+	setflag ENGINE_STORMBADGE
 	checkcode VAR_BADGES
 	scall CeruleanGymActivateRockets
 .FightDone:
@@ -150,7 +150,7 @@ CeruleanGymGuyScript:
 	end
 
 CeruleanGymHiddenMachinePart:
-	dwb EVENT_FOUND_MACHINE_PART_IN_CERULEAN_GYM, MACHINE_PART
+	dwb EVENT_FOUND_MACHINE_PART_IN_CERULEAN_GYM, TM_STEEL_WING
 
 
 CeruleanGymStatue1:
@@ -280,12 +280,12 @@ UnknownText_0x18870c:
 	line "you are skilled..."
 
 	para "Here you go. It's"
-	line "CASCADEBADGE."
+	line "STORM BADGE."
 	done
 
 UnknownText_0x188768:
 	text "<PLAYER> received"
-	line "CASCADEBADGE."
+	line "STORM BADGE."
 	done
 
 UnknownText_0x188782:

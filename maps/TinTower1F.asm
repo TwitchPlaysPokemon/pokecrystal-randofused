@@ -116,9 +116,9 @@ TinTower1F_MapScriptHeader:
 	pause 10
 	applymovement PLAYER, TinTowerPlayerMovement2
 	applymovement TINTOWER1F_SUICUNE, TinTowerSuicuneMovement
-	cry SUICUNE
+	cry VENUSAUR
 	pause 20
-	loadwildmon SUICUNE, 40
+	loadwildmon VENUSAUR, 14
 	writecode VAR_BATTLETYPE, BATTLETYPE_SUICUNE
 	startbattle
 	dontrestartmapmusic

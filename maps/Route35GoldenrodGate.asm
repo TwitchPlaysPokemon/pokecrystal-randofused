@@ -30,7 +30,7 @@ OfficerScript_0x69d37:
 	writetext UnknownText_0x69eb8
 	playsound SFX_KEY_ITEM
 	waitsfx
-	givepoke SPEAROW, 10, NO_ITEM, 1, GiftSpearowName, GiftSpearowOTName
+	givepoke CHARMANDER, 4, NO_ITEM, 1, GiftSpearowName, GiftSpearowOTName
 	givepokeitem GiftSpearowMail
 	setevent EVENT_GOT_KENYA
 .alreadyhavekenya
@@ -54,7 +54,7 @@ OfficerScript_0x69d37:
 .questcomplete
 	writetext UnknownText_0x69f8b
 	buttonsound
-	verbosegiveitem HP_UP
+	verbosegiveitem LOST_ITEM
 	iffalse .bagfull
 	setevent EVENT_GOT_HP_UP_FROM_RANDY
 .gothpup

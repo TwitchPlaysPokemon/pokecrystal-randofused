@@ -57,19 +57,19 @@ MountMortarB1FBoulder:
 	jumpstd strengthboulder
 
 MountMortarB1FHyperPotion:
-	itemball HYPER_POTION
+	itemball POTION
 
 MountMortarB1FCarbos:
-	itemball CARBOS
+	itemball ESCAPE_ROPE
 
 MountMortarB1FFullRestore:
-	itemball FULL_RESTORE
+	itemball TM_DEFENSE_CURL
 
 MountMortarB1FMaxEther:
 	itemball MAX_ETHER
 
 MountMortarB1FPPUp:
-	itemball PP_UP
+	itemball TM_SNORE
 
 MountMortarB1FHiddenMaxRevive:
 	dwb EVENT_MOUNT_MORTAR_B1F_HIDDEN_MAX_REVIVE, MAX_REVIVE

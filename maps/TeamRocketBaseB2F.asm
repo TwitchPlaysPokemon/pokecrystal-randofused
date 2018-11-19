@@ -222,8 +222,8 @@ TrainerGruntM19:
 	end
 
 RocketElectrode1:
-	cry ELECTRODE
-	loadwildmon ELECTRODE, 23
+	cry BLISSEY
+	loadwildmon BLISSEY, 19
 	startbattle
 	iftrue UnknownScript_0x6d182
 	disappear TEAMROCKETBASEB2F_ELECTRODE1
@@ -240,8 +240,8 @@ RocketElectrode1:
 	jump UnknownScript_0x6d184
 
 RocketElectrode2:
-	cry ELECTRODE
-	loadwildmon ELECTRODE, 23
+	cry STEELIX
+	loadwildmon STEELIX, 19
 	startbattle
 	iftrue UnknownScript_0x6d182
 	disappear TEAMROCKETBASEB2F_ELECTRODE2
@@ -258,8 +258,8 @@ RocketElectrode2:
 	jump UnknownScript_0x6d184
 
 RocketElectrode3:
-	cry ELECTRODE
-	loadwildmon ELECTRODE, 23
+	cry OMASTAR
+	loadwildmon OMASTAR, 19
 	startbattle
 	iftrue UnknownScript_0x6d182
 	disappear TEAMROCKETBASEB2F_ELECTRODE3
@@ -287,7 +287,7 @@ UnknownScript_0x6d184:
 	opentext
 	writetext UnknownText_0x6d809
 	buttonsound
-	verbosegiveitem HM_WHIRLPOOL
+	verbosegiveitem FULL_HEAL
 	setevent EVENT_GOT_HM06_WHIRLPOOL
 	writetext UnknownText_0x6d8f8
 	waitbutton
@@ -353,7 +353,7 @@ TeamRocketBaseB2FTransmitterScript:
 	end
 
 TeamRocketBaseB2FTMThief:
-	itemball TM_THIEF
+	itemball RARE_CANDY
 
 TeamRocketBaseB2FHiddenFullHeal:
 	dwb EVENT_TEAM_ROCKET_BASE_B2F_HIDDEN_FULL_HEAL, FULL_HEAL
@@ -736,11 +736,11 @@ UnknownText_0x6d809:
 
 UnknownText_0x6d8e6:
 	text "<PLAYER> received"
-	line "HM06."
+	line "FULL HEAL."
 	done
 
 UnknownText_0x6d8f8:
-	text "That's WHIRLPOOL."
+	text "That's FULL HEAL."
 	line "Teach it to a"
 
 	para "#MON to get"

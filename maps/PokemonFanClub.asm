@@ -28,7 +28,7 @@ GentlemanScript_0x1917e9:
 UnknownScript_0x191802:
 	writetext UnknownText_0x191a3d
 	buttonsound
-	verbosegiveitem RARE_CANDY
+	verbosegiveitem MASTER_BALL
 	iffalse UnknownScript_0x19181f
 	setevent EVENT_LISTENED_TO_FAN_CLUB_PRESIDENT
 	writetext UnknownText_0x191a72
@@ -77,7 +77,7 @@ UnknownScript_0x191844:
 	writetext UnknownText_0x191c5a
 	buttonsound
 	waitsfx
-	giveitem LOST_ITEM
+	giveitem REVIVE
 	iffalse UnknownScript_0x191865
 	disappear POKEMONFANCLUB_FAIRY
 	writetext UnknownText_0x191d0a
@@ -170,7 +170,7 @@ UnknownText_0x191a3d:
 	done
 
 UnknownText_0x191a72:
-	text "It's a RARE CANDY"
+	text "It's a MASTER BALL"
 	line "that makes #MON"
 	cont "stronger."
 
@@ -223,7 +223,7 @@ UnknownText_0x191bff:
 	para "catch one. So I'm"
 	line "making do with a"
 
-	para "# DOLL that I"
+	para "REVIVE that I"
 	line "found."
 	done
 
@@ -231,10 +231,10 @@ UnknownText_0x191c5a:
 	text "Oh, I see now. The"
 	line "girl who lost this"
 
-	para "# DOLL is sad…"
+	para "REVIVE is sad…"
 
 	para "OK. Could you take"
-	line "this # DOLL"
+	line "this REVIVE"
 
 	para "back to that poor"
 	line "little girl?"
@@ -248,7 +248,7 @@ UnknownText_0x191c5a:
 
 UnknownText_0x191d0a:
 	text "<PLAYER> received"
-	line "# DOLL."
+	line "REVIVE."
 	done
 
 UnknownText_0x191d1e:

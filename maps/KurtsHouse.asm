@@ -70,7 +70,7 @@ KurtScript_0x18e178:
 .ClearedSlowpokeWell:
 	writetext UnknownText_0x18e615
 	buttonsound
-	verbosegiveitem LURE_BALL
+	verbosegiveitem MAX_ELIXER
 	iffalse .NoRoomForBall
 	setevent EVENT_KURT_GAVE_YOU_LURE_BALL
 .GotLureBall:
