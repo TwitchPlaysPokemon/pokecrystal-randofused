@@ -14,8 +14,8 @@ const_value set 4
 	const BATTLE_SCENE   ; 7
 
 ; Options: (bits 0-2)
-TEXT_DELAY_FAST EQU 0
-TEXT_DELAY_MED  EQU 1
+TEXT_DELAY_FAST EQU 1
+TEXT_DELAY_MED  EQU 5
 TEXT_DELAY_SLOW EQU 3
 
 ; TextBoxFrame: ; cfce
