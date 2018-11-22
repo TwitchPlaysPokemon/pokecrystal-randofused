@@ -64,6 +64,7 @@ ROMX $0f
 	"Battle Core"
 ROMX $10
 	"bank10"
+	"Evolutions and Attacks"
 ROMX $11
 	"bank11"
 ROMX $12
@@ -227,7 +228,7 @@ ROMX $5a
 ROMX $5b
 	"bank5B"
 ROMX $5c
-	"Evolutions and Attacks"
+	"Pokedex Code"
 ROMX $5d
 	"Crystal Phone Text 2"
 ROMX $5e

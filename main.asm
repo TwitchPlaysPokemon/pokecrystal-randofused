@@ -175,9 +175,12 @@ INCLUDE "engine/battle/core.asm"
 INCLUDE "data/battle_command_pointers.asm"
 
 
-SECTION "bank10", ROMX
+SECTION "Pokedex Code", ROMX
 
 INCLUDE "engine/pokedex.asm"
+
+SECTION "bank10", ROMX
+
 INCLUDE "data/moves/moves.asm"
 INCLUDE "engine/evolve.asm"
 
