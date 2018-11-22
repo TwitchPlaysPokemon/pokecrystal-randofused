@@ -295,7 +295,7 @@
             "spdef": 88
         },
         "type1": "Grass",
-        "type2": "Poison",
+        "type2": "Ground",
         "catchRate": 45,
         "baseExp": 202,
         "genderRatio": 16,
@@ -4129,7 +4129,7 @@
             "spatk": 93,
             "spdef": 88
         },
-        "type1": "Ground",
+        "type1": "Poison",
         "type2": "Grass",
         "catchRate": 45,
         "baseExp": 202,
