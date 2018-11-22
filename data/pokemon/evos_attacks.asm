@@ -2886,10 +2886,12 @@ DittoEvosAttacks:
 	db 1, TAIL_WHIP
 	db 6, SAND_ATTACK
 	db 12, BATON_PASS
+	db 15, TRANSFORM
 	db 19, FURY_SWIPES
 	db 27, SWIFT
 	db 36, SCREECH
 	db 46, AGILITY
+	db 50, TRANSFORM
 	db 0 ; no more level-up moves
 
 EeveeEvosAttacks:
@@ -3293,6 +3295,7 @@ MewtwoEvosAttacks:
 	db 44, FUTURE_SIGHT
 	db 50, ANCIENTPOWER
 	db 55, MIST
+	db 60, METRONOME
 	db 66, PSYCHIC_M
 	db 77, AMNESIA
 	db 88, RECOVER
@@ -3313,6 +3316,7 @@ MewEvosAttacks:
 	db 40, PSYCHIC_M
 	db 49, ICE_BEAM
 	db 50, ANCIENTPOWER
+	db 55, METRONOME
 	db 61, REFLECT
 	db 73, BLIZZARD
 	db 0 ; no more level-up moves
