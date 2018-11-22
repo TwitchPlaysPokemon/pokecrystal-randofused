@@ -2733,7 +2733,7 @@
             "spdef": 50
         },
         "type1": "Poison",
-        "type2": "Grass",
+        "type2": "Psychic",
         "catchRate": 151,
         "baseExp": 80,
         "genderRatio": 127,
@@ -2860,7 +2860,7 @@
             "spdef": 72
         },
         "type1": "Poison",
-        "type2": "Grass",
+        "type2": "Psychic",
         "catchRate": 64,
         "baseExp": 180,
         "genderRatio": 127,
@@ -4129,7 +4129,7 @@
             "spatk": 93,
             "spdef": 88
         },
-        "type1": "Poison",
+        "type1": "Ground",
         "type2": "Grass",
         "catchRate": 45,
         "baseExp": 202,
@@ -7757,7 +7757,7 @@
             "spatk": 100,
             "spdef": 83
         },
-        "type1": "Water",
+        "type1": "Fighting",
         "type2": "Ghost",
         "catchRate": 45,
         "baseExp": 188,
@@ -9644,7 +9644,7 @@
             "spdef": 83
         },
         "type1": "Rock",
-        "type2": "Ground",
+        "type2": "Dark",
         "catchRate": 45,
         "baseExp": 198,
         "genderRatio": 127,
@@ -10066,7 +10066,7 @@
             "spatk": 48,
             "spdef": 43
         },
-        "type1": "Water",
+        "type1": "Psychic",
         "type2": "Rock",
         "catchRate": 92,
         "baseExp": 109,
@@ -10193,7 +10193,7 @@
             "spatk": 83,
             "spdef": 75
         },
-        "type1": "Water",
+        "type1": "Psychic",
         "type2": "Rock",
         "catchRate": 58,
         "baseExp": 183,
@@ -11082,8 +11082,8 @@
             "spatk": 63,
             "spdef": 88
         },
-        "type1": "Water",
-        "type2": "Bug",
+        "type1": "Ice",
+        "type2": "Steel",
         "catchRate": 43,
         "baseExp": 188,
         "genderRatio": 127,
@@ -11463,7 +11463,7 @@
             "spatk": 38,
             "spdef": 28
         },
-        "type1": "Water",
+        "type1": "Ice",
         "type2": "Ground",
         "catchRate": 151,
         "baseExp": 116,
@@ -11584,7 +11584,7 @@
             "spatk": 65,
             "spdef": 45
         },
-        "type1": "Water",
+        "type1": "Ice",
         "type2": "Ground",
         "catchRate": 60,
         "baseExp": 204,
@@ -15745,7 +15745,7 @@
             "spdef": 68
         },
         "type1": "Bug",
-        "type2": "Electric",
+        "type2": "Steel",
         "catchRate": 92,
         "baseExp": 138,
         "genderRatio": 127,
@@ -17257,7 +17257,7 @@
             "spdef": 163
         },
         "type1": "Electric",
-        "type2": "Bug",
+        "type2": "Rock",
         "catchRate": 92,
         "baseExp": 139,
         "genderRatio": 79,
@@ -17668,7 +17668,7 @@
             "spdef": 48
         },
         "type1": "Rock",
-        "type2": "Water",
+        "type2": "Psychic",
         "catchRate": 92,
         "baseExp": 110,
         "genderRatio": 79,
@@ -17795,7 +17795,7 @@
             "spdef": 75
         },
         "type1": "Rock",
-        "type2": "Water",
+        "type2": "Psychic",
         "catchRate": 58,
         "baseExp": 182,
         "genderRatio": 79,
@@ -20195,7 +20195,7 @@
             "spdef": 90
         },
         "type1": "Fire",
-        "type2": "Water",
+        "type2": "Dragon",
         "catchRate": 45,
         "baseExp": 208,
         "genderRatio": 79,
@@ -21767,7 +21767,7 @@
             "spdef": 85
         },
         "type1": "Poison",
-        "type2": "Water",
+        "type2": "Fighting",
         "catchRate": 64,
         "baseExp": 195,
         "genderRatio": 127,
@@ -24623,7 +24623,7 @@
             "spdef": 65
         },
         "type1": "Bug",
-        "type2": "Water",
+        "type2": "Rock",
         "catchRate": 67,
         "baseExp": 130,
         "genderRatio": 159,
@@ -24749,7 +24749,7 @@
             "spatk": 55,
             "spdef": 45
         },
-        "type1": "Water",
+        "type1": "Ground",
         "type2": "Ice",
         "catchRate": 107,
         "baseExp": 70,
@@ -24873,7 +24873,7 @@
     {
         "id": 195,
         "dexNumber": 195,
-        "name": "Quagjynx",
+        "name": "Quagynx",
         "baseStats": {
             "hp": 80,
             "atk": 68,
@@ -24882,7 +24882,7 @@
             "spatk": 90,
             "spdef": 80
         },
-        "type1": "Water",
+        "type1": "Ground",
         "type2": "Ice",
         "catchRate": 64,
         "baseExp": 137,
@@ -25300,7 +25300,7 @@
             "spdef": 49
         },
         "type1": "Dark",
-        "type2": "Water",
+        "type2": "Poison",
         "catchRate": 37,
         "baseExp": 104,
         "genderRatio": 127,
@@ -25414,7 +25414,7 @@
             "spatk": 70,
             "spdef": 90
         },
-        "type1": "Water",
+        "type1": "Psychic",
         "type2": "Steel",
         "catchRate": 42,
         "baseExp": 166,
@@ -25814,7 +25814,7 @@
             "spatk": 95,
             "spdef": 88
         },
-        "type1": "Water",
+        "type1": "Psychic",
         "type2": "Psychic",
         "catchRate": 65,
         "baseExp": 157,
@@ -26074,7 +26074,7 @@
             "spatk": 68,
             "spdef": 78
         },
-        "type1": "Bug",
+        "type1": "Steel",
         "type2": "Flying",
         "catchRate": 82,
         "baseExp": 140,
@@ -26842,7 +26842,7 @@
             "spatk": 45,
             "spdef": 65
         },
-        "type1": "Water",
+        "type1": "Poison",
         "type2": "Dark",
         "catchRate": 52,
         "baseExp": 116,
@@ -26981,8 +26981,8 @@
             "spatk": 88,
             "spdef": 75
         },
-        "type1": "Bug",
-        "type2": "Electric",
+        "type1": "Steel",
+        "type2": "Steel",
         "catchRate": 39,
         "baseExp": 181,
         "genderRatio": 127,
@@ -27871,7 +27871,7 @@
             "spdef": 70
         },
         "type1": "Fire",
-        "type2": "Bug",
+        "type2": "Steel",
         "catchRate": 75,
         "baseExp": 136,
         "genderRatio": 127,
@@ -28233,7 +28233,7 @@
             "spatk": 65,
             "spdef": 65
         },
-        "type1": "Water",
+        "type1": "Rock",
         "type2": "Ice",
         "catchRate": 52,
         "baseExp": 148,
@@ -29177,7 +29177,7 @@
             "spatk": 75,
             "spdef": 80
         },
-        "type1": "Water",
+        "type1": "Dragon",
         "type2": "Rock",
         "catchRate": 45,
         "baseExp": 192,
