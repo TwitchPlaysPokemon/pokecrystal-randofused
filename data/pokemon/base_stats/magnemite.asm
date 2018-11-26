@@ -1,22 +1,22 @@
-	db MAGNEMITE ; 081
+	db MAGNEMITE ; 81
 
-	db  25,  35,  70,  45,  95,  55
+	db  33,  48,  50,  58, 63,  43
 	;   hp  atk  def  spd  sat  sdf
 
-	db ELECTRIC, STEEL
-	db 190 ; catch rate
-	db 89 ; base exp
+	db ELECTRIC, FLYING
+	db 220 ; catch rate
+	db 74 ; base exp
 	db NO_ITEM ; item 1
 	db METAL_COAT ; item 2
-	db GENDERLESS ; gender
+	db 255 ; gender
 	db 100 ; unknown
-	db 20 ; step cycles to hatch
+	db 17 ; step cycles to hatch
 	db 5 ; unknown
 	INCBIN "gfx/pokemon/magnemite/front.dimensions"
 	db 0, 0, 0, 0 ; padding
 	db MEDIUM_FAST ; growth rate
-	dn INANIMATE, INANIMATE ; egg groups
+	dn INANIMATE , AVIAN ; egg groups
 
 	; tmhm
-	tmhm CURSE, ROLLOUT, TOXIC, ZAP_CANNON, HIDDEN_POWER, SNORE, PROTECT, RAIN_DANCE, ENDURE, FRUSTRATION, THUNDER, RETURN, DOUBLE_TEAM, SWAGGER, SLEEP_TALK, SWIFT, REST, FLASH, THUNDERBOLT
+	tmhm CURSE, ROLLOUT, TOXIC, ZAP_CANNON, HIDDEN_POWER, SUNNY_DAY, SNORE, PROTECT, RAIN_DANCE, ENDURE, FRUSTRATION, THUNDER, RETURN, MUD_SLAP, DOUBLE_TEAM, SWAGGER, SLEEP_TALK, SWIFT, DETECT, REST, ATTRACT, THIEF, STEEL_WING, FLY, FLASH, THUNDERBOLT
 	; end

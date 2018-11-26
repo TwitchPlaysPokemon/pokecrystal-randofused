@@ -1,16 +1,16 @@
 	db MEW ; 151
 
-	db 100, 100, 100, 100, 100, 100
+	db  95,  93,  100,  93, 98,  113
 	;   hp  atk  def  spd  sat  sdf
 
-	db PSYCHIC, PSYCHIC
-	db 45 ; catch rate
-	db 64 ; base exp
+	db PSYCHIC, ICE
+	db 12 ; catch rate
+	db 140 ; base exp
 	db NO_ITEM ; item 1
 	db MIRACLEBERRY ; item 2
-	db GENDERLESS ; gender
+	db 255 ; gender
 	db 100 ; unknown
-	db 120 ; step cycles to hatch
+	db 100 ; step cycles to hatch
 	db 5 ; unknown
 	INCBIN "gfx/pokemon/mew/front.dimensions"
 	db 0, 0, 0, 0 ; padding

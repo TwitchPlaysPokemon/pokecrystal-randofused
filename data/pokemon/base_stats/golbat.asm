@@ -1,22 +1,22 @@
-	db GOLBAT ; 042
+	db GOLBAT ; 42
 
-	db  75,  80,  70,  90,  65,  75
+	db  70,  73,  68,  90, 58,  63
 	;   hp  atk  def  spd  sat  sdf
 
-	db POISON, FLYING
-	db 90 ; catch rate
-	db 171 ; base exp
+	db POISON, WATER
+	db 104 ; catch rate
+	db 151 ; base exp
 	db NO_ITEM ; item 1
-	db NO_ITEM ; item 2
-	db GENDER_F50 ; gender
+	db KINGS_ROCK ; item 2
+	db 127 ; gender
 	db 100 ; unknown
-	db 15 ; step cycles to hatch
+	db 17 ; step cycles to hatch
 	db 5 ; unknown
 	INCBIN "gfx/pokemon/golbat/front.dimensions"
 	db 0, 0, 0, 0 ; padding
 	db MEDIUM_FAST ; growth rate
-	dn AVIAN, AVIAN ; egg groups
+	dn AVIAN, AMPHIBIAN ; egg groups
 
 	; tmhm
-	tmhm CURSE, TOXIC, HIDDEN_POWER, SUNNY_DAY, SNORE, HYPER_BEAM, PROTECT, GIGA_DRAIN, ENDURE, FRUSTRATION, RETURN, DOUBLE_TEAM, SWAGGER, SLEEP_TALK, SWIFT, DETECT, REST, ATTRACT, THIEF, STEEL_WING
+	tmhm HEADBUTT, CURSE, TOXIC, ROCK_SMASH, HIDDEN_POWER, SUNNY_DAY, SNORE, BLIZZARD, HYPER_BEAM, ICY_WIND, PROTECT, RAIN_DANCE, GIGA_DRAIN, ENDURE, FRUSTRATION, EARTHQUAKE, RETURN, PSYCHIC_M, MUD_SLAP, DOUBLE_TEAM, ICE_PUNCH, SWAGGER, SLEEP_TALK, SWIFT, DEFENSE_CURL, DETECT, REST, ATTRACT, THIEF, STEEL_WING, SURF, STRENGTH, WHIRLPOOL, WATERFALL, ICE_BEAM
 	; end

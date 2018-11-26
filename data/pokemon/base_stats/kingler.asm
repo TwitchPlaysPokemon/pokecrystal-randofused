@@ -1,22 +1,22 @@
-	db KINGLER ; 099
+	db KINGLER ; 99
 
-	db  55, 130, 115,  75,  50,  50
+	db  53,  113,  105,  73, 43,  80
 	;   hp  atk  def  spd  sat  sdf
 
-	db WATER, WATER
-	db 60 ; catch rate
-	db 206 ; base exp
+	db WATER, FIGHTING
+	db 52 ; catch rate
+	db 172 ; base exp
 	db NO_ITEM ; item 1
 	db NO_ITEM ; item 2
-	db GENDER_F50 ; gender
+	db 64 ; gender
 	db 100 ; unknown
-	db 20 ; step cycles to hatch
+	db 22 ; step cycles to hatch
 	db 5 ; unknown
 	INCBIN "gfx/pokemon/kingler/front.dimensions"
 	db 0, 0, 0, 0 ; padding
 	db MEDIUM_FAST ; growth rate
-	dn INVERTEBRATE, INVERTEBRATE ; egg groups
+	dn INVERTEBRATE, HUMANSHAPE ; egg groups
 
 	; tmhm
-	tmhm CURSE, TOXIC, ROCK_SMASH, HIDDEN_POWER, SNORE, BLIZZARD, HYPER_BEAM, ICY_WIND, PROTECT, RAIN_DANCE, ENDURE, FRUSTRATION, RETURN, MUD_SLAP, DOUBLE_TEAM, SWAGGER, SLEEP_TALK, REST, ATTRACT, THIEF, FURY_CUTTER, CUT, SURF, STRENGTH, WHIRLPOOL, ICE_BEAM
+	tmhm HEADBUTT, CURSE, TOXIC, ROCK_SMASH, HIDDEN_POWER, SUNNY_DAY, SNORE, BLIZZARD, HYPER_BEAM, ICY_WIND, PROTECT, RAIN_DANCE, ENDURE, FRUSTRATION, RETURN, DIG, MUD_SLAP, DOUBLE_TEAM, SWAGGER, SLEEP_TALK, SWIFT, DETECT, REST, ATTRACT, THIEF, FURY_CUTTER, CUT, SURF, STRENGTH, WHIRLPOOL, ICE_BEAM
 	; end

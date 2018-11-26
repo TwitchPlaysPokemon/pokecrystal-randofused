@@ -1,16 +1,16 @@
 	db HOOTHOOT ; 163
 
-	db  60,  30,  30,  50,  36,  56
+	db  48,  58,  38,  63, 36,  46
 	;   hp  atk  def  spd  sat  sdf
 
-	db NORMAL, FLYING
-	db 255 ; catch rate
-	db 58 ; base exp
+	db FLYING, NORMAL
+	db 220 ; catch rate
+	db 77 ; base exp
 	db NO_ITEM ; item 1
 	db NO_ITEM ; item 2
-	db GENDER_F50 ; gender
+	db 127 ; gender
 	db 100 ; unknown
-	db 15 ; step cycles to hatch
+	db 17 ; step cycles to hatch
 	db 5 ; unknown
 	INCBIN "gfx/pokemon/hoothoot/front.dimensions"
 	db 0, 0, 0, 0 ; padding

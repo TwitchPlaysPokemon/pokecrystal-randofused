@@ -1,22 +1,22 @@
 	db CROBAT ; 169
 
-	db  85,  90,  80, 130,  70,  80
+	db  88,  88,  88,  100, 70,  85
 	;   hp  atk  def  spd  sat  sdf
 
-	db POISON, FLYING
-	db 90 ; catch rate
-	db 204 ; base exp
+	db POISON, FIGHTING
+	db 64 ; catch rate
+	db 195 ; base exp
 	db NO_ITEM ; item 1
-	db NO_ITEM ; item 2
-	db GENDER_F50 ; gender
+	db KINGS_ROCK ; item 2
+	db 127 ; gender
 	db 100 ; unknown
-	db 15 ; step cycles to hatch
+	db 17 ; step cycles to hatch
 	db 5 ; unknown
 	INCBIN "gfx/pokemon/crobat/front.dimensions"
 	db 0, 0, 0, 0 ; padding
 	db MEDIUM_FAST ; growth rate
-	dn AVIAN, AVIAN ; egg groups
+	dn AVIAN, AMPHIBIAN ; egg groups
 
 	; tmhm
-	tmhm CURSE, TOXIC, HIDDEN_POWER, SUNNY_DAY, SNORE, HYPER_BEAM, PROTECT, GIGA_DRAIN, ENDURE, FRUSTRATION, RETURN, DOUBLE_TEAM, SWAGGER, SLEEP_TALK, SWIFT, DETECT, REST, ATTRACT, THIEF, STEEL_WING, FLY
+	tmhm DYNAMICPUNCH, HEADBUTT, CURSE, TOXIC, ROCK_SMASH, HIDDEN_POWER, SUNNY_DAY, SNORE, BLIZZARD, HYPER_BEAM, ICY_WIND, PROTECT, RAIN_DANCE, GIGA_DRAIN, ENDURE, FRUSTRATION, EARTHQUAKE, RETURN, PSYCHIC_M, MUD_SLAP, DOUBLE_TEAM, ICE_PUNCH, SWAGGER, SLEEP_TALK, SWIFT, DEFENSE_CURL, DETECT, REST, ATTRACT, THIEF, STEEL_WING, FLY, SURF, STRENGTH, WHIRLPOOL, WATERFALL, ICE_BEAM
 	; end

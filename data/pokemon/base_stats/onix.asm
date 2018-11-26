@@ -1,22 +1,22 @@
-	db ONIX ; 095
+	db ONIX ; 95
 
-	db  35,  45, 160,  70,  30,  45
+	db  35,  46,  97,  45, 33,  45
 	;   hp  atk  def  spd  sat  sdf
 
-	db ROCK, GROUND
-	db 45 ; catch rate
-	db 108 ; base exp
+	db ROCK, NORMAL
+	db 107 ; catch rate
+	db 83 ; base exp
 	db NO_ITEM ; item 1
-	db NO_ITEM ; item 2
-	db GENDER_F50 ; gender
+	db BERRY ; item 2
+	db 127 ; gender
 	db 100 ; unknown
-	db 25 ; step cycles to hatch
+	db 20 ; step cycles to hatch
 	db 5 ; unknown
 	INCBIN "gfx/pokemon/onix/front.dimensions"
 	db 0, 0, 0, 0 ; padding
 	db MEDIUM_FAST ; growth rate
-	dn INANIMATE, INANIMATE ; egg groups
+	dn INANIMATE , FIELD ; egg groups
 
 	; tmhm
-	tmhm HEADBUTT, CURSE, ROAR, TOXIC, ROCK_SMASH, HIDDEN_POWER, SUNNY_DAY, SNORE, PROTECT, ENDURE, FRUSTRATION, IRON_TAIL, EARTHQUAKE, RETURN, DIG, MUD_SLAP, DOUBLE_TEAM, SWAGGER, SLEEP_TALK, SANDSTORM, REST, ATTRACT, STRENGTH
+	tmhm DYNAMICPUNCH, HEADBUTT, CURSE, ROLLOUT, ROAR, TOXIC, ROCK_SMASH, HIDDEN_POWER, SUNNY_DAY, SNORE, PROTECT, ENDURE, FRUSTRATION, IRON_TAIL, EARTHQUAKE, RETURN, DIG, SHADOW_BALL, MUD_SLAP, DOUBLE_TEAM, ICE_PUNCH, SWAGGER, SLEEP_TALK, SANDSTORM, SWIFT, DEFENSE_CURL, THUNDERPUNCH, DETECT, REST, ATTRACT, THIEF, FIRE_PUNCH, FURY_CUTTER, CUT, SURF, STRENGTH
 	; end

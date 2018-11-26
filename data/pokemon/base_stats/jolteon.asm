@@ -1,22 +1,22 @@
 	db JOLTEON ; 135
 
-	db  65,  65,  60, 130, 110,  95
+	db  43,  38,  145,  68, 60,  163
 	;   hp  atk  def  spd  sat  sdf
 
-	db ELECTRIC, ELECTRIC
-	db 45 ; catch rate
-	db 197 ; base exp
-	db NO_ITEM ; item 1
-	db NO_ITEM ; item 2
-	db GENDER_F12_5 ; gender
+	db ELECTRIC, ROCK
+	db 92 ; catch rate
+	db 139 ; base exp
+	db BERRY ; item 1
+	db BERRY ; item 2
+	db 79 ; gender
 	db 100 ; unknown
-	db 35 ; step cycles to hatch
+	db 27 ; step cycles to hatch
 	db 5 ; unknown
 	INCBIN "gfx/pokemon/jolteon/front.dimensions"
 	db 0, 0, 0, 0 ; padding
 	db MEDIUM_FAST ; growth rate
-	dn FIELD, FIELD ; egg groups
+	dn FIELD, INSECT ; egg groups
 
 	; tmhm
-	tmhm HEADBUTT, CURSE, ROAR, TOXIC, ZAP_CANNON, HIDDEN_POWER, SUNNY_DAY, SNORE, HYPER_BEAM, PROTECT, RAIN_DANCE, ENDURE, FRUSTRATION, IRON_TAIL, THUNDER, RETURN, SHADOW_BALL, MUD_SLAP, DOUBLE_TEAM, SWAGGER, SLEEP_TALK, SWIFT, DETECT, REST, ATTRACT, FLASH, THUNDERBOLT
+	tmhm HEADBUTT, CURSE, ROLLOUT, ROAR, TOXIC, ZAP_CANNON, ROCK_SMASH, HIDDEN_POWER, SUNNY_DAY, SNORE, HYPER_BEAM, PROTECT, RAIN_DANCE, ENDURE, FRUSTRATION, IRON_TAIL, THUNDER, EARTHQUAKE, RETURN, DIG, SHADOW_BALL, MUD_SLAP, DOUBLE_TEAM, SWAGGER, SLEEP_TALK, SLUDGE_BOMB, SANDSTORM, SWIFT, DEFENSE_CURL, DETECT, REST, ATTRACT, STRENGTH, FLASH, THUNDERBOLT
 	; end

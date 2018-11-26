@@ -1,16 +1,16 @@
 	db MANTINE ; 226
 
-	db  65,  40,  70,  70,  80, 140
+	db  78,  58,  73,  70, 85,  120
 	;   hp  atk  def  spd  sat  sdf
 
 	db WATER, FLYING
-	db 25 ; catch rate
-	db 168 ; base exp
+	db 34 ; catch rate
+	db 177 ; base exp
 	db NO_ITEM ; item 1
-	db NO_ITEM ; item 2
-	db GENDER_F50 ; gender
+	db KINGS_ROCK ; item 2
+	db 127 ; gender
 	db 100 ; unknown
-	db 25 ; step cycles to hatch
+	db 22 ; step cycles to hatch
 	db 5 ; unknown
 	INCBIN "gfx/pokemon/mantine/front.dimensions"
 	db 0, 0, 0, 0 ; padding
@@ -18,5 +18,5 @@
 	dn AMPHIBIAN, AMPHIBIAN ; egg groups
 
 	; tmhm
-	tmhm HEADBUTT, CURSE, TOXIC, HIDDEN_POWER, SNORE, BLIZZARD, ICY_WIND, PROTECT, RAIN_DANCE, ENDURE, FRUSTRATION, RETURN, MUD_SLAP, DOUBLE_TEAM, SWAGGER, SLEEP_TALK, SWIFT, REST, ATTRACT, SURF, WHIRLPOOL, WATERFALL, ICE_BEAM
+	tmhm DYNAMICPUNCH, HEADBUTT, CURSE, TOXIC, ROCK_SMASH, HIDDEN_POWER, SNORE, BLIZZARD, HYPER_BEAM, ICY_WIND, PROTECT, RAIN_DANCE, ENDURE, FRUSTRATION, EARTHQUAKE, RETURN, PSYCHIC_M, MUD_SLAP, DOUBLE_TEAM, ICE_PUNCH, SWAGGER, SLEEP_TALK, SWIFT, DEFENSE_CURL, DETECT, REST, ATTRACT, THIEF, SURF, STRENGTH, WHIRLPOOL, WATERFALL, ICE_BEAM
 	; end

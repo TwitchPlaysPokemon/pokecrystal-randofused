@@ -1,14 +1,14 @@
 	db ESPEON ; 196
 
-	db  65,  65,  60, 110, 130,  95
+	db  80,  65,  85,  88, 95,  113
 	;   hp  atk  def  spd  sat  sdf
 
-	db PSYCHIC, PSYCHIC
+	db PSYCHIC, DARK
 	db 45 ; catch rate
 	db 197 ; base exp
 	db NO_ITEM ; item 1
 	db NO_ITEM ; item 2
-	db GENDER_F12_5 ; gender
+	db 31 ; gender
 	db 100 ; unknown
 	db 35 ; step cycles to hatch
 	db 5 ; unknown

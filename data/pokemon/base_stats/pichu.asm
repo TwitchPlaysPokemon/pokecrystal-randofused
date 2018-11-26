@@ -1,16 +1,16 @@
 	db PICHU ; 172
 
-	db  20,  40,  15,  60,  35,  35
+	db  30,  38,  23,  55, 28,  28
 	;   hp  atk  def  spd  sat  sdf
 
-	db ELECTRIC, ELECTRIC
-	db 190 ; catch rate
-	db 42 ; base exp
+	db ELECTRIC, BUG
+	db 220 ; catch rate
+	db 47 ; base exp
 	db NO_ITEM ; item 1
 	db BERRY ; item 2
-	db GENDER_F50 ; gender
+	db 127 ; gender
 	db 100 ; unknown
-	db 10 ; step cycles to hatch
+	db 12 ; step cycles to hatch
 	db 5 ; unknown
 	INCBIN "gfx/pokemon/pichu/front.dimensions"
 	db 0, 0, 0, 0 ; padding

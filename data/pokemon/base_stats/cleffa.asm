@@ -1,20 +1,20 @@
 	db CLEFFA ; 173
 
-	db  50,  25,  28,  15,  45,  55
+	db  48,  28,  32,  30, 33,  38
 	;   hp  atk  def  spd  sat  sdf
 
-	db NORMAL, NORMAL
-	db 150 ; catch rate
-	db 37 ; base exp
+	db BUG, NORMAL
+	db 196 ; catch rate
+	db 45 ; base exp
 	db MYSTERYBERRY ; item 1
 	db MOON_STONE ; item 2
-	db GENDER_F75 ; gender
+	db 159 ; gender
 	db 100 ; unknown
-	db 10 ; step cycles to hatch
+	db 12 ; step cycles to hatch
 	db 5 ; unknown
 	INCBIN "gfx/pokemon/cleffa/front.dimensions"
 	db 0, 0, 0, 0 ; padding
-	db FAST ; growth rate
+	db SLIGHTLY_FAST ; growth rate
 	dn NO_EGGS, NO_EGGS ; egg groups
 
 	; tmhm

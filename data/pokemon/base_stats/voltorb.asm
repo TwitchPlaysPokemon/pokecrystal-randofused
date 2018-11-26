@@ -1,22 +1,22 @@
 	db VOLTORB ; 100
 
-	db  40,  30,  50, 100,  55,  55
+	db  38,  25,  58,  60, 48,  60
 	;   hp  atk  def  spd  sat  sdf
 
-	db ELECTRIC, ELECTRIC
+	db ELECTRIC, NORMAL
 	db 190 ; catch rate
-	db 103 ; base exp
+	db 89 ; base exp
 	db NO_ITEM ; item 1
 	db NO_ITEM ; item 2
-	db GENDERLESS ; gender
+	db 255 ; gender
 	db 100 ; unknown
-	db 20 ; step cycles to hatch
+	db 15 ; step cycles to hatch
 	db 5 ; unknown
 	INCBIN "gfx/pokemon/voltorb/front.dimensions"
 	db 0, 0, 0, 0 ; padding
-	db MEDIUM_FAST ; growth rate
-	dn INANIMATE, INANIMATE ; egg groups
+	db SLIGHTLY_FAST ; growth rate
+	dn INANIMATE , INANIMATE  ; egg groups
 
 	; tmhm
-	tmhm HEADBUTT, CURSE, ROLLOUT, TOXIC, ZAP_CANNON, HIDDEN_POWER, SNORE, PROTECT, RAIN_DANCE, ENDURE, FRUSTRATION, THUNDER, RETURN, DOUBLE_TEAM, SWAGGER, SLEEP_TALK, SWIFT, REST, FLASH, THUNDERBOLT
+	tmhm HEADBUTT, CURSE, ROLLOUT, TOXIC, ZAP_CANNON, ROCK_SMASH, PSYCH_UP, HIDDEN_POWER, SUNNY_DAY, SNORE, PROTECT, RAIN_DANCE, ENDURE, FRUSTRATION, SOLARBEAM, THUNDER, RETURN, PSYCHIC_M, SHADOW_BALL, MUD_SLAP, DOUBLE_TEAM, SWAGGER, SLEEP_TALK, FIRE_BLAST, SWIFT, DEFENSE_CURL, DREAM_EATER, DETECT, REST, ATTRACT, FLASH, FLAMETHROWER, THUNDERBOLT
 	; end

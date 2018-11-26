@@ -1,22 +1,22 @@
 	db LANTURN ; 171
 
-	db 125,  58,  58,  67,  76,  76
+	db  90,  70,  59,  82, 63,  73
 	;   hp  atk  def  spd  sat  sdf
 
-	db WATER, ELECTRIC
-	db 75 ; catch rate
-	db 156 ; base exp
+	db WATER, NORMAL
+	db 82 ; catch rate
+	db 136 ; base exp
 	db NO_ITEM ; item 1
 	db NO_ITEM ; item 2
-	db GENDER_F50 ; gender
+	db 127 ; gender
 	db 100 ; unknown
-	db 20 ; step cycles to hatch
+	db 17 ; step cycles to hatch
 	db 5 ; unknown
 	INCBIN "gfx/pokemon/lanturn/front.dimensions"
 	db 0, 0, 0, 0 ; padding
-	db SLOW ; growth rate
-	dn FISH, FISH ; egg groups
+	db SLIGHTLY_SLOW ; growth rate
+	dn FISH, FIELD ; egg groups
 
 	; tmhm
-	tmhm CURSE, TOXIC, ZAP_CANNON, HIDDEN_POWER, SNORE, HYPER_BEAM, PROTECT, RAIN_DANCE, ENDURE, FRUSTRATION, THUNDER, RETURN, DOUBLE_TEAM, SWAGGER, SLEEP_TALK, REST, ATTRACT, SURF, FLASH, WHIRLPOOL, WATERFALL, THUNDERBOLT, ICE_BEAM
+	tmhm HEADBUTT, CURSE, ROAR, TOXIC, ZAP_CANNON, ROCK_SMASH, HIDDEN_POWER, SUNNY_DAY, SNORE, BLIZZARD, HYPER_BEAM, ICY_WIND, PROTECT, RAIN_DANCE, ENDURE, FRUSTRATION, IRON_TAIL, THUNDER, RETURN, DIG, SHADOW_BALL, MUD_SLAP, DOUBLE_TEAM, SWAGGER, SLEEP_TALK, SWIFT, DEFENSE_CURL, REST, ATTRACT, THIEF, CUT, SURF, STRENGTH, FLASH, WHIRLPOOL, WATERFALL, THUNDERBOLT, ICE_BEAM
 	; end
