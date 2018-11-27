@@ -695,13 +695,18 @@ OakSpeech: ; 0x5f99
 	call RotateThreePalettesRight
 	call ClearTileMap
 
-	ld a, WOOPER
+	ld a, UNOWN
 	ld [CurSpecies], a
 	ld [CurPartySpecies], a
 	call GetBaseData
 
 	hlcoord 6, 4
-	call PrepMonFrontpic
+	ld a, [rDIV]
+	and a, $0F
+	ld [UnownLetter], a
+	xor a
+	ld [wBoxAlignment], a
+	call _PrepMonFrontpic
 
 	xor a
 	ld [TempMonDVs], a
@@ -755,7 +760,7 @@ OakText1: ; 0x6045
 OakText2: ; 0x604a
 	text_jump _OakText2
 	start_asm
-	ld a, WOOPER
+	ld a, UNOWN
 	call PlayCry
 	call WaitSFX
 	ld hl, OakText3
