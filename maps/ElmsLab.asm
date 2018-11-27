@@ -162,6 +162,7 @@ CyndaquilPokeBallScript:
 	iftrue LookAtElmPokeBallScript
 	spriteface ELMSLAB_ELM, DOWN
 	refreshscreen $0
+	pokenamemem TOGEPI, $0
 	pokepic TOGEPI
 	cry TOGEPI
 	waitbutton
@@ -175,7 +176,6 @@ CyndaquilPokeBallScript:
 	writetext ChoseStarterText
 	buttonsound
 	waitsfx
-	pokenamemem TOGEPI, $0
 	writetext ReceivedStarterText
 	playsound SFX_CAUGHT_MON
 	waitsfx
@@ -192,6 +192,7 @@ TotodilePokeBallScript:
 	iftrue LookAtElmPokeBallScript
 	spriteface ELMSLAB_ELM, DOWN
 	refreshscreen $0
+	pokenamemem PARAS, $0
 	pokepic PARAS
 	cry PARAS
 	waitbutton
@@ -205,7 +206,6 @@ TotodilePokeBallScript:
 	writetext ChoseStarterText
 	buttonsound
 	waitsfx
-	pokenamemem PARAS, $0
 	writetext ReceivedStarterText
 	playsound SFX_CAUGHT_MON
 	waitsfx
@@ -220,8 +220,9 @@ ChikoritaPokeBallScript:
 	iftrue LookAtElmPokeBallScript
 	spriteface ELMSLAB_ELM, DOWN
 	refreshscreen $0
-	pokepic GLOOM
-	cry GLOOM
+	pokenamemem ODDISH, $0
+	pokepic ODDISH
+	cry ODDISH
 	waitbutton
 	closepokepic
 	opentext
@@ -233,12 +234,11 @@ ChikoritaPokeBallScript:
 	writetext ChoseStarterText
 	buttonsound
 	waitsfx
-	pokenamemem GLOOM, $0
 	writetext ReceivedStarterText
 	playsound SFX_CAUGHT_MON
 	waitsfx
 	buttonsound
-	givepoke GLOOM, 5, BERRY
+	givepoke ODDISH, 5, BERRY
 	closetext
 	applymovement PLAYER, AfterChikoritaMovement
 	jump ElmDirectionsScript
@@ -860,20 +860,23 @@ LabWhereGoingText:
 
 TakeCyndaquilText:
 	text "ELM: You'll take"
-	line "CYNDAQUIL, the"
-	cont "fire #MON?"
+	line "@"
+	text_from_ram StringBuffer3
+	text "?"
 	done
 
 TakeTotodileText:
 	text "ELM: Do you want"
-	line "TOTODILE, the"
-	cont "water #MON?"
+	line "@"
+	text_from_ram StringBuffer3
+	text "?"
 	done
 
 TakeChikoritaText:
 	text "ELM: So, you like"
-	line "CHIKORITA, the"
-	cont "grass #MON?"
+	line "@"
+	text_from_ram StringBuffer3
+	text "?"
 	done
 
 DidntChooseStarterText:
