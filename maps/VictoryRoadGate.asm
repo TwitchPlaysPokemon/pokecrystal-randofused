@@ -19,7 +19,7 @@ VictoryRoadGate_MapScriptHeader:
 	end
 
 VictoryRoadGateBadgeCheckScene:
-	spriteface PLAYER, LEFT
+	spriteface PLAYER, RIGHT
 	jump VictoryRoadGateBadgeCheckScript
 
 VictoryRoadGateOfficerScript:
@@ -29,14 +29,14 @@ VictoryRoadGateBadgeCheckScript:
 	writetext VictoryRoadGateOfficerText
 	buttonsound
 	checkcode VAR_BADGES
-	if_greater_than 7, .AllEightBadges
+	if_greater_than 15, .AllBadges
 	writetext VictoryRoadGateNotEnoughBadgesText
 	waitbutton
 	closetext
 	applymovement PLAYER, VictoryRoadGateStepDownMovement
 	end
 
-.AllEightBadges:
+.AllBadges:
 	writetext VictoryRoadGateEightBadgesText
 	waitbutton
 	closetext
@@ -62,7 +62,7 @@ VictoryRoadGateOfficerText:
 VictoryRoadGateNotEnoughBadgesText:
 	text "You don't have all"
 	line "the GYM BADGES of"
-	cont "JOHTO."
+	cont "JOHTO and KANTO."
 
 	para "I'm sorry, but I"
 	line "can't let you go"
@@ -72,6 +72,9 @@ VictoryRoadGateNotEnoughBadgesText:
 VictoryRoadGateEightBadgesText:
 	text "Oh! The eight"
 	line "BADGES of JOHTO!"
+
+	para "And the eight"
+	line "BADGES of KANTO!"
 
 	para "Please, go right"
 	line "on through!"
@@ -113,14 +116,15 @@ VictoryRoadGate_MapEventHeader:
 	warp_def 2, 7, 2, ROUTE_28
 
 .CoordEvents:
-	db 1
-	coord_event 10, 11, 0, VictoryRoadGateBadgeCheckScene
+	db 2
+	coord_event 9, 1, 0, VictoryRoadGateBadgeCheckScene
+	coord_event 10, 1, 0, VictoryRoadGateBadgeCheckScene
 
 .BGEvents:
 	db 0
 
 .ObjectEvents:
 	db 3
-	object_event 8, 11, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, VictoryRoadGateOfficerScript, -1
-	object_event 7, 5, SPRITE_BLACK_BELT, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, VictoryRoadGateLeftBlackBeltScript, EVENT_OPENED_MT_SILVER
-	object_event 12, 5, SPRITE_BLACK_BELT, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, VictoryRoadGateRightBlackBeltScript, EVENT_FOUGHT_SNORLAX
+	object_event 11, 1, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, VictoryRoadGateOfficerScript, -1
+	object_event 3, 5, SPRITE_BLACK_BELT, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, VictoryRoadGateLeftBlackBeltScript, EVENT_OPENED_MT_SILVER
+	object_event 7, 5, SPRITE_BLACK_BELT, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, VictoryRoadGateRightBlackBeltScript, EVENT_BEAT_ELITE_FOUR
