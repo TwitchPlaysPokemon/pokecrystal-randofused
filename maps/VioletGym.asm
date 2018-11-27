@@ -154,15 +154,14 @@ UnknownText_0x685af:
 	done
 
 UnknownText_0x685c8:
-	text "ZEPHYRBADGE"
-	line "raises the attack"
-	cont "power of #MON."
+	text "That BADGE will"
+	line "raise the SPECIAL"
+	cont "stats of #MON."
 
-	para "It also enables"
-	line "#MON to use"
-
-	para "FLASH, if they"
-	line "have it, anytime."
+	para "It also lets your"
+	line "#MON use WHIRL-"
+	cont "POOL to get across"
+	cont "real whirlpools."
 
 	para "Here--take this"
 	line "too."
@@ -179,18 +178,14 @@ UnknownText_0x68648:
 	line "act--a TM can be"
 	cont "used only once."
 
-	para "TM31 contains"
-	line "Squirtbottle."
+	para "That's a"
+	line "SQUIRTBOTTLE."
 
-	para "It reduces the"
-	line "enemy's accuracy"
+	para "Use it to water"
+	line "the flowers."
 
-	para "while it causes"
-	line "damage."
-
-	para "In other words, it"
-	line "is both defensive"
-	cont "and offensive."
+	para "Gardening can"
+	line "be fun!"
 	done
 
 UnknownText_0x68735:

@@ -647,21 +647,10 @@ UnknownText_0x18d9f2:
 	done
 
 UnknownText_0x18da0b:
-	text "RISINGBADGE will"
-	line "enable your"
+	text "Pin it on!"
+	line "Wear it proud!"
 
-	para "#MON to use the"
-	line "move for climbing"
-	cont "waterfalls."
-
-	para "Also, all #MON"
-	line "will recognize you"
-
-	para "as a trainer and"
-	line "obey your every"
-
-	para "command without"
-	line "question."
+	para "You earned it!"
 	done
 
 UnknownText_0x18dab4:

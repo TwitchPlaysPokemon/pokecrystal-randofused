@@ -251,11 +251,11 @@ UnknownText_0x5428b:
 	done
 
 UnknownText_0x54302:
-	text "It's PARLYZ HEAL!"
-	line "It makes full use"
+	text "A PARLYZ HEAL!"
+	line "It makes sure"
 
-	para "of a #MON's"
-	line "charm."
+	para "your #MON's"
+	line "not paralyzed."
 
 	para "Isn't it just per-"
 	line "fect for a cutie"

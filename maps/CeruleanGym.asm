@@ -280,7 +280,7 @@ UnknownText_0x18870c:
 	line "you are skilled..."
 
 	para "Here you go. It's"
-	line "STORM BADGE."
+	line "the STORM BADGE."
 	done
 
 UnknownText_0x188768:
@@ -289,9 +289,22 @@ UnknownText_0x188768:
 	done
 
 UnknownText_0x188782:
-	text "MISTY: Are there"
-	line "many strong train-"
-	cont "ers in JOHTO? Like"
+	text "MISTY: the STORM"
+	line "BADGE makes"
+	line "all #MON up to"
+
+	para "L70 obey, even"
+	line "traded ones."
+
+	para "It also lets your"
+	line "#MON use FLY"
+
+	para "when you're not in"
+	line "a battle."
+
+	para "Are there many"
+	line "strong trainers"
+	cont "in JOHTO? Like"
 	cont "you, I mean."
 
 	para "I'm going to"

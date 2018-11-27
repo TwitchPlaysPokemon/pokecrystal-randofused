@@ -740,20 +740,11 @@ UnknownText_0x6d8e6:
 	done
 
 UnknownText_0x6d8f8:
-	text "That's FULL HEAL."
-	line "Teach it to a"
+	text "Have a FULL HEAL."
+	line "Use it on a"
 
-	para "#MON to get"
-	line "across wild water."
-
-	para "But keep this in"
-	line "mind."
-
-	para "You can use that"
-	line "out of battle only"
-
-	para "with the BADGE"
-	line "from MAHOGANY GYM."
+	para "#MON to get rid of"
+	line "any bad condition."
 	done
 
 UnknownText_0x6d994:

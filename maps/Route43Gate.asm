@@ -238,7 +238,7 @@ OfficerText_FoundTM:
 
 Text_ReceivedTM30:
 	text "<PLAYER> received"
-	line "TM30."
+	line "TM24."
 	done
 
 OfficerText_AvoidGrass:

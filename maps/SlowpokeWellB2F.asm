@@ -47,8 +47,8 @@ UnknownText_0x5ad2a:
 	para "gets bitten by a"
 	line "SHELLDER."
 
-	para "Here, I'll share a"
-	line "SUPER ROD with"
+	para "Here, I'll give a"
+	line "SUPER ROD to"
 	cont "you."
 	done
 

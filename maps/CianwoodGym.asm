@@ -201,31 +201,24 @@ GetStormBadgeText:
 	done
 
 ChuckExplainBadgeText:
-	text "STORMBADGE makes"
-	line "all #MON up to"
+	text "That BOULDER BADGE"
+	line "will make your"
 
-	para "L70 obey, even"
-	line "traded ones."
-
-	para "It also lets your"
-	line "#MON use FLY"
-
-	para "when you're not in"
-	line "a battle."
+	para "#MON even more"
+	line "powerful."
 
 	para "Here, take this"
 	line "too!"
 	done
 
 ChuckExplainTMText:
-	text "That is NUGGET-"
-	line "PUNCH."
+	text "Have a NUGGET."
 
-	para "It doesn't always"
-	line "hit, but when it"
+	para "It doesn't do"
+	line "much, but boy,"
 
-	para "does, it causes"
-	line "confusion!"
+	para "it sells for a"
+	line "ton of cash!"
 	done
 
 ChuckAfterText:

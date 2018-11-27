@@ -228,7 +228,7 @@ CopycatText_Male_2:
 
 	para "<PLAYER>: If I find"
 	line "it, you'll give me"
-	cont "a rail ESCAPE ROPE?"
+	cont "an ESCAPE ROPE?"
 
 	para "<PLAYER>: I'll go"
 	line "find it for you."
@@ -264,14 +264,14 @@ CopycatText_GiveDoll:
 
 CopycatText_GivePass:
 	text "OK. Here's the"
-	line "MAGNET TRAIN ESCAPE ROPE"
+	line "ESCAPE ROPE"
 	cont "like I promised!"
 	done
 
 CopycatText_ExplainPass:
 	text "COPYCAT: That's"
-	line "the ESCAPE ROPE for the"
-	cont "MAGNET TRAIN."
+	line "the ESCAPE ROPE"
+	cont "I had."
 
 	para "The rail company"
 	line "man gave me that"
@@ -284,7 +284,7 @@ CopycatText_ExplainPass:
 CopycatText_Male_3:
 	text "<PLAYER>: Hi!"
 	line "Thanks a lot for"
-	cont "the rail ESCAPE ROPE!"
+	cont "the ESCAPE ROPE!"
 
 	para "<PLAYER>: Pardon?"
 
@@ -317,7 +317,7 @@ CopycatText_Female_2:
 	para "<PLAYER>: You'll"
 	line "really give me a"
 
-	para "rail ESCAPE ROPE if I"
+	para "ESCAPE ROPE if I"
 	line "find it for you?"
 
 	para "<PLAYER>: Sure,"
@@ -330,7 +330,7 @@ CopycatText_Female_2:
 
 CopycatText_Female_3:
 	text "<PLAYER>: Thank you"
-	line "for the rail ESCAPE ROPE!"
+	line "for the ESCAPE ROPE!"
 
 	para "<PLAYER>: ...Pardon?"
 

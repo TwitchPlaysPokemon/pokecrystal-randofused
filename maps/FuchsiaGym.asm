@@ -278,14 +278,30 @@ Text_ReceivedSoulBadge:
 	done
 
 JanineText_ToxicSpeech:
-	text "JANINE: You're so"
+	text "JANINE: Do you"
+	line "know the benefits"
+	cont "of HIVE BADGE?"
+
+	para "If you have it,"
+	line "#MON up to L30"
+
+	para "will obey you,"
+	line "even traded ones."
+
+	para "#MON that know"
+	line "CUT will be able"
+
+	para "to use it outside"
+	line "of battle too."
+
+	para "You're so"
 	line "tough! I have a"
 	cont "special gift!"
 
-	para "It's NIGHTMARE, a pow-"
-	line "erful poison that"
+	para "It's NIGHTMARE, a"
+	line "sleep affliction"
 
-	para "steadily saps the"
+	para "that saps the"
 	line "victim's HP."
 	done
 

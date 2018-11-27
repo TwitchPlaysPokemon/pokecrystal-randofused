@@ -493,12 +493,12 @@ RockSmashGuyText2:
 
 UnknownText_0x19451a:
 	text "<PLAYER> received"
-	line "TM08."
+	line "a REVIVE."
 	done
 
 RockSmashGuyText3:
 	text "That happens to be"
-	line "REVIVE."
+	line "a REVIVE."
 
 	para "You can shatter"
 	line "rocks with just a"

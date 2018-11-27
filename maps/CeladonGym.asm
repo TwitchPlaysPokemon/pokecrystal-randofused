@@ -162,7 +162,7 @@ UnknownText_0x72c3e:
 	line "strong..."
 
 	para "I shall give you"
-	line "MINERAL BADGE..."
+	line "a MINERAL BADGE..."
 	done
 
 UnknownText_0x72c96:
@@ -171,21 +171,25 @@ UnknownText_0x72c96:
 	done
 
 UnknownText_0x72cb0:
-	text "ERIKA: That was a"
+	text "ERIKA: The MINERAL"
+	line "BADGE raises"
+	cont "#MON's DEFENSE."
+
+	para "That was a"
 	line "delightful match."
 
 	para "I felt inspired."
 	line "Please, I wish you"
-	cont "to have this TM."
+	cont "to have this item."
 
-	para "It is ULTRA BALL."
+	para "An ULTRA BALL."
 
 	para "It is a wonderful"
-	line "move that drains"
+	line "ball that catches"
 
-	para "half the damage it"
-	line "inflicts to heal"
-	cont "your #MON."
+	para "more difficult"
+	line "#MON than even"
+	cont "a GREAT BALL."
 
 	para "Please use it if"
 	line "it pleases you…"

@@ -127,12 +127,12 @@ CharcoalKilnApprenticeText2:
 	text "I'm sorry--I for-"
 	line "got to thank you."
 
-	para "This is MAX POTION"
+	para "Have a MAX POTION"
 	line "that I made."
 
-	para "Fire-type #MON"
+	para "Injured #MON"
 	line "would be happy to"
-	cont "hold that."
+	cont "have that."
 	done
 
 CharcoalKilnApprenticeText3:

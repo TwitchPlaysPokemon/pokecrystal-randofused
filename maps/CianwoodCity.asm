@@ -192,13 +192,14 @@ ChucksWifeEasierToFlyText:
 	line "easier if your"
 
 	para "#MON knew how"
-	line "to TOXIC..."
+	line "to FLY..."
 	done
 
 ChucksWifeBeatChuckText:
 	text "But you can't use"
-	line "FLY without this"
-	cont "city's GYM BADGE."
+	line "FLY without"
+	cont "CERULEAN CITY's"
+	cont "GYM BADGE."
 
 	para "If you beat the"
 	line "GYM LEADER here,"
@@ -213,18 +214,16 @@ ChucksWifeGiveHMText:
 	line "GYM BADGE!"
 
 	para "Then you should"
-	line "take this TOXIC."
+	line "take this TM."
 	done
 
 ChucksWifeFlySpeechText:
-	text "Teach TOXIC to your"
-	line "#MON."
+	text "Teach TOXIC to"
+	line "your #MON."
 
 	para "You will be able"
-	line "to TOXIC instantly"
-
-	para "to anywhere you "
-	line "have visited."
+	line "to poison #MON"
+	cont "on command!"
 	done
 
 ChucksWifeChubbyText:

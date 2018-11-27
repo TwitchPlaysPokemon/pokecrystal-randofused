@@ -41,10 +41,10 @@ MrPsychicText1:
 	done
 
 MrPsychicText2:
-	text "TM29 is SUPER POTION."
+	text "A SUPER POTION!"
 
-	para "It may lower the"
-	line "target's SPCL.DEF."
+	para "It may help in"
+	line "times of need…"
 	done
 
 MrPsychicsHouse_MapEventHeader:

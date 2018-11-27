@@ -438,7 +438,7 @@ RadioTower5FDirectorDescribeClearBellText:
 	cont "TOWER."
 
 	para "We dug up that"
-	line "bell during"
+	line "COIN CASE during"
 	cont "construction."
 
 	para "I heard that all"
@@ -449,11 +449,11 @@ RadioTower5FDirectorDescribeClearBellText:
 
 	para "Perhaps…"
 
-	para "That bell has some"
+	para "That CASE has some"
 	line "connection to the"
 
-	para "TIN TOWER in"
-	line "ECRUTEAK CITY…"
+	para "GAME CORNER in"
+	line "CELADON CITY…"
 
 	para "Ah!"
 

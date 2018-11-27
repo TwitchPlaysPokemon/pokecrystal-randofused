@@ -593,10 +593,6 @@ Route32CooltrainerMText_HaveThisSeed:
 	para "As a souvenir of"
 	line "VIOLET CITY, take"
 	cont "this."
-
-	para "It increases the"
-	line "power of grass-"
-	cont "type moves."
 	done
 
 Route32CooltrainerMText_ExperiencesShouldBeUseful:
@@ -850,7 +846,7 @@ Text_RoarIntro:
 	text "WROOOOAR!"
 	line "PEOPLE RUN WHEN I"
 
-	para "OLD ROD! BUT YOU"
+	para "FISH! BUT YOU"
 	line "CAME LOOKING!"
 
 	para "THAT PLEASES ME!"
@@ -859,10 +855,10 @@ Text_RoarIntro:
 
 Text_RoarOutro:
 	text "WROOOAR!"
-	line "IT'S OLD ROD!"
+	line "IT'S AN OLD ROD!"
 
 	para "EVEN #MON RUN"
-	line "FROM A GOOD OLD ROD!"
+	line "FROM A GOOD CAST!"
 	done
 
 MeetFriedaText:

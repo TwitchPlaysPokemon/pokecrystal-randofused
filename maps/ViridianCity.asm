@@ -161,17 +161,17 @@ UnknownText_0x1a9cc4:
 	para "Huh?"
 	line "What's this?"
 
-	para "Where did this TM"
+	para "Where did this"
 	line "come from?"
 
 	para "This is spooky!"
 	line "Here, you can have"
-	cont "this TM."
+	cont "this."
 	done
 
 UnknownText_0x1a9d86:
-	text "TM42 contains"
-	line "DREAM EATER..."
+	text "this is a"
+	line "MAX POTION..."
 
 	para "…Zzzzz…"
 	done

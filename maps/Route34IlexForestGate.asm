@@ -93,20 +93,19 @@ UnknownText_0x62d9d:
 	line "making a #DEX?"
 
 	para "It must be hard if"
-	line "#MON won't"
+	line "#MON get ill."
 
-	para "appear. Try using"
-	line "this TM."
+	para "Try using this."
 	done
 
 UnknownText_0x62df6:
-	text "It's Secret Potion."
+	text "SECRETPOTION."
 
-	para "Use it wherever"
-	line "#MON appear."
+	para "Use it whenever"
+	line "#MON get ill."
 
 	para "#MON will be"
-	line "enticed by it."
+	line "healed by it."
 	done
 
 UnknownText_0x62e41:

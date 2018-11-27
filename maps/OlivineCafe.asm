@@ -41,7 +41,6 @@ UnknownText_0x9c8df:
 	cont "boulders aside."
 
 	para "Here, use this"
-	line "and teach them"
 	cont "X ATTACK!"
 	done
 

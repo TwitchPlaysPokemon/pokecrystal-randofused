@@ -134,8 +134,8 @@ UnknownText_0x5ecef:
 	text "MARY: It's just"
 	line "right for #MON"
 
-	para "that know normal-"
-	line "type moves."
+	para "that need lots"
+	line "of healing."
 	done
 
 UnknownText_0x5ed2c:

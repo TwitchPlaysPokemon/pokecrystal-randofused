@@ -50,7 +50,7 @@ UnknownText_0x69b83:
 	line "fishing spot."
 
 	para "You saw people"
-	line "fishing? How"
+	line "healing? How"
 	cont "about you?"
 
 	para "Would you like one"
@@ -61,17 +61,17 @@ UnknownText_0x69be8:
 	text "Heh, that's good"
 	line "to hear."
 
-	para "Now you're an"
-	line "angler too!"
+	para "Now you're a"
+	line "nurse too!"
 	done
 
 UnknownText_0x69c1b:
-	text "Fishing is great!"
+	text "Healing is great!"
 
-	para "If there's water,"
-	line "be it the sea or a"
+	para "If there's a"
+	line "fainted #MON,"
 
-	para "stream, try out"
+	para "try out"
 	line "your MAX REVIVE."
 	done
 
@@ -82,7 +82,7 @@ UnknownText_0x69c6c:
 
 UnknownText_0x69c8d:
 	text "Yo, kid. How are"
-	line "they biting?"
+	line "they feeling?"
 	done
 
 Route32Pokecenter1FCooltrainerFText:

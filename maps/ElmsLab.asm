@@ -1168,10 +1168,16 @@ ElmGiveMasterBallText2:
 	line "the best!"
 
 	para "It's the ultimate"
-	line "BALL! It'll catch"
+	line "battle item!"
 
-	para "any #MON with-"
-	line "out fail."
+	para "No matter how much"
+	line "damage a #MON"
+	cont "is dealt,"
+
+	para "it will not faint!"
+
+	para "…at least, not on"
+	line "the first hit."
 
 	para "It's given only to"
 	line "recognized #MON"
@@ -1192,7 +1198,7 @@ ElmGiveTicketText1:
 	line "have something for"
 	cont "you."
 
-	para "See? It's an"
+	para "See? It's a"
 	line "MAX REVIVE."
 
 	para "Now you can catch"

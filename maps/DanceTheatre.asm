@@ -280,11 +280,11 @@ SurfGuyLikeADanceText:
 	done
 
 SurfGuySurfExplanationText:
-	text "That's ULTRA BALL."
+	text "An ULTRA BALL."
 
-	para "It's a move that"
-	line "lets #MON swim"
-	cont "across water."
+	para "It's a ball"
+	line "catches #MON"
+	cont "pretty well."
 	done
 
 SurfGuyElegantKimonoGirlsText:

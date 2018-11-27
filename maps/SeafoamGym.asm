@@ -109,17 +109,22 @@ UnknownText_0x1ab646:
 	line "I've burned out..."
 
 	para "You've earned"
-	line "VOLCANOBADGE!"
+	line "the MARSH BADGE!"
 	done
 
 UnknownText_0x1ab683:
 	text "<PLAYER> received"
-	line "VOLCANOBADGE."
+	line "MARSH BADGE."
 	done
 
 UnknownText_0x1ab69d:
-	text "BLAINE: I did lose"
-	line "this time, but I'm"
+	text "BLAINE: the MARSH"
+	line "BADGE draws out"
+
+	para "your best fire"
+	line "power!"
+	para "I did lose this"
+	cont "time, but I'm"
 
 	para "going to win the"
 	line "next time."

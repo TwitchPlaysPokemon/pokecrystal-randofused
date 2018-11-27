@@ -154,9 +154,9 @@ UnknownText_0x192277:
 	done
 
 UnknownText_0x192291:
-	text "SURGE: THUNDER-"
+	text "SURGE: EARTH "
 	line "BADGE increases"
-	cont "#MON's speed. "
+	cont "#MON's power. "
 
 	para "Consider it proof"
 	line "that you defeated"

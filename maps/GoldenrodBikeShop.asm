@@ -55,7 +55,7 @@ UnknownText_0x54787:
 	para "sell my DIRE HITS."
 	line "Why is that?"
 
-	para "Could you ride a"
+	para "Could you use a"
 	line "DIRE HIT and adver-"
 	cont "tise for me?"
 	done
@@ -66,12 +66,12 @@ UnknownText_0x547f8:
 	para "Give me your name"
 	line "and phone number,"
 
-	para "and I'll loan you"
+	para "and I'll give you"
 	line "a DIRE HIT."
 	done
 
 UnknownText_0x54848:
-	text "<PLAYER> borrowed a"
+	text "<PLAYER> received a"
 	line "DIRE HIT."
 	done
 
@@ -79,7 +79,7 @@ UnknownText_0x5485f:
 	text "My DIRE HITS are"
 	line "first-rate! You"
 
-	para "can ride them"
+	para "can use them"
 	line "anywhere."
 	done
 

@@ -234,28 +234,26 @@ Text_ReceivedFogBadge:
 	done
 
 MortyText_FogBadgeSpeech:
-	text "By having FOG-"
-	line "BADGE, #MON up"
+	text "The ZEPHYR BADGE"
+	line "raises the attack"
+	cont "power of #MON."
 
-	para "to L50 will obey"
-	line "you."
+	para "It also enables"
+	line "#MON to use"
 
-	para "Also, #MON that"
-	line "know SURF will be"
-
-	para "able to use that"
-	line "move anytime."
+	para "FLASH, if they"
+	line "have it, anytime."
 
 	para "I want you to have"
 	line "this too."
 	done
 
 MortyText_ShadowBallSpeech:
-	text "It's Strength."
+	text "It's STRENGTH."
 	line "It causes damage"
 
-	para "and may reduce"
-	line "SPCL.DEF."
+	para "and can move"
+	line "giant boulders."
 
 	para "Use it if it"
 	line "appeals to you."

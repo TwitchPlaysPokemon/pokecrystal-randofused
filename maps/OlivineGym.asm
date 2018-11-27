@@ -139,9 +139,17 @@ Text_ReceivedMineralBadge:
 	done
 
 Jasmine_BadgeSpeech:
-	text "MINERALBADGE"
-	line "raises #MON's"
-	cont "DEFENSE."
+	text "By having a FOG"
+	line "BADGE, #MON up"
+
+	para "to L50 will obey"
+	line "you."
+
+	para "Also, #MON that"
+	line "know SURF will be"
+
+	para "able to use that"
+	line "move anytime."
 
 	para "…Um… Please take"
 	line "this too…"
@@ -149,13 +157,12 @@ Jasmine_BadgeSpeech:
 
 Text_ReceivedTM09:
 	text "<PLAYER> received"
-	line "TM09."
+	line "MAX ELIXER."
 	done
 
 Jasmine_IronTailSpeech:
 	text "…You could use"
-	line "that TM to teach"
-	cont "MAX ELIXER."
+	cont "a MAX ELIXER."
 	done
 
 Jasmine_GoodLuck:

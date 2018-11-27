@@ -346,12 +346,8 @@ UnknownText_0x5c265:
 	done
 
 UnknownText_0x5c30d:
-	text "Let a #MON hold"
+	text "Catch a #MON in"
 	line "that ULTRA BALL."
-
-	para "Sometimes it will"
-	line "strike first"
-	cont "during battle."
 	done
 
 NationalParkYoungster1Text:

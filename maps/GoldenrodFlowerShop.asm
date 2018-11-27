@@ -22,7 +22,7 @@ FlowerShopTeacherScript:
 	opentext
 	writetext UnknownText_0x554c2
 	buttonsound
-	verbosegiveitem HM_FLASH
+	verbosegiveitem TM_ROCK_SMASH
 	setevent EVENT_GOT_SQUIRTBOTTLE
 	closetext
 	setevent EVENT_FLORIA_AT_SUDOWOODO
@@ -116,8 +116,8 @@ UnknownText_0x554c2:
 	line "than WHITNEY…"
 
 	para "You'll be OK,"
-	line "then. Here's the"
-	cont "Flash!"
+	line "then. Have my"
+	cont "FLASH TM!"
 	done
 
 UnknownText_0x5550d:

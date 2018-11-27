@@ -85,20 +85,14 @@ ItemfinderExplanationText:
 	text "There are many"
 	line "items lying about"
 
-	para "that aren't ob-"
-	line "vious."
+	para "on forgotten"
+	line "side paths."
 
-	para "Use Cut to"
-	line "check if there is"
+	para "Use CUT to"
+	line "remove trees"
 
-	para "an item on the"
-	line "ground near you."
-
-	para "It doesn't show"
-	line "the exact spot,"
-
-	para "so you'll have to"
-	line "look yourself."
+	para "and grass that"
+	line "may hide items!"
 
 	para "Oh yeah--I heard"
 	line "there are items"

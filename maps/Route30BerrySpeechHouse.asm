@@ -33,8 +33,8 @@ UnknownText_0x196d82:
 	line "eat BERRIES."
 
 	para "Well, my #MON"
-	line "got healthier by"
-	cont "eating a KINGS ROCK."
+	line "evolved holding"
+	cont "a KING'S ROCK."
 
 	para "Here. I'll share"
 	line "one with you!"

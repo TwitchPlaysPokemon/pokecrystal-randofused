@@ -256,9 +256,9 @@ UnknownText_0x19f006:
 
 	para "…Oh? Those BADGES"
 	line "you have… Are they"
-	cont "JOHTO GYM BADGES?"
+	cont "GYM BADGES?"
 
-	para "If you have eight,"
+	para "If you have those,"
 	line "you must be good."
 
 	para "OK, then. Come to"

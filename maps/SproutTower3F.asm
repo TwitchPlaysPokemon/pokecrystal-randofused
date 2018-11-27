@@ -237,22 +237,16 @@ UnknownText_0x184cc2:
 	line "MON should have"
 
 	para "no problem using"
-	line "this move."
+	line "their moves."
 
-	para "Take this MAX ETHER"
-	line "HM."
+	para "Take this MAX-"
+	line "ETHER."
 	done
 
 UnknownText_0x184d13:
-	text "MAX ETHER illuminates"
-	line "even the darkest"
-	cont "of all places."
-
-	para "But to use it out"
-	line "of battle, you"
-
-	para "need the BADGE"
-	line "from VIOLET's GYM."
+	text "MAX ETHER will"
+	line "restore a move"
+	cont "to full power."
 	done
 
 UnknownText_0x184d88:

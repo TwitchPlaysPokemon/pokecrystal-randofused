@@ -493,7 +493,7 @@ UnknownText_0x5dcf4:
 	para "Here you go!"
 
 	para "It's your very own"
-	line "point card!"
+	line "# BALL!"
 	done
 
 UnknownText_0x5de10:

@@ -523,7 +523,7 @@ MysticWaterGuyTextBefore:
 	text "A #MON I caught"
 	line "had an item."
 
-	para "I think it's"
+	para "I think it's a"
 	line "SUPER REPEL."
 
 	para "I don't need it,"

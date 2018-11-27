@@ -219,10 +219,10 @@ UnknownText_0x5e7e2:
 	done
 
 UnknownText_0x5e821:
-	text "It's SMOKE BALL."
-	line "It powers up fire-"
-	cont "type moves for a"
-	cont "while."
+	text "It's a SMOKE BALL."
+	line "It powers up your"
+	cont "ability to run"
+	cont "away."
 	done
 
 UnknownText_0x5e85c:

@@ -177,11 +177,9 @@ UnknownText_0x189e95:
 	done
 
 UnknownText_0x189ead:
-	text "SABRINA: MARSH-"
-	line "BADGE draws out"
-
-	para "your subliminal"
-	line "powers…"
+	text "SABRINA: THUNDER"
+	line "BADGE increases"
+	cont "#MON's speed. "
 
 	para "Although I failed"
 	line "to accurately pre-"

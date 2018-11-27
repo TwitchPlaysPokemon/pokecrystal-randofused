@@ -182,8 +182,8 @@ UnknownText_0x7dbc6:
 
 UnknownText_0x7dc5b:
 	text "DIRECTOR: Use that"
-	line "to open the shut-"
-	cont "ters on 3F."
+	line "to keep your team"
+	cont "fighting fresh."
 	done
 
 UnknownText_0x7dc8d:

@@ -37,7 +37,7 @@ DarkCaveBlackthornEntrancePharmacistText1:
 	text "Whoa! You startled"
 	line "me there!"
 
-	para "I had my MAX ELIXER-"
+	para "I had my BLACK-"
 	line "GLASSES on, so I"
 
 	para "didn't notice you"
@@ -50,8 +50,8 @@ DarkCaveBlackthornEntrancePharmacistText1:
 	line "worry about it."
 
 	para "I'll give you a"
-	line "pair of MAX ELIXER-"
-	cont "GLASSES, so forget"
+	line "MAX ELIXER,"
+	cont "so forget"
 	cont "you saw me, OK?"
 	done
 

@@ -800,17 +800,18 @@ Text_CharcoalMasterIntro:
 	done
 
 Text_CharcoalMasterOutro:
-	text "That's the UP GRADE."
-	line "Teach that to a"
+	text "An UP GRADE."
+	line "Give it to a"
 
-	para "#MON to clear"
-	line "small trees."
+	para "digital #MON"
+	line "to give it new"
+	cont "features."
 
 	para "Of course, you"
 	line "have to have the"
 
-	para "GYM BADGE from"
-	line "AZALEA to use it."
+	para "correct #MON"
+	line "to use it."
 	done
 
 Text_CharcoalMasterTalkAfter:
@@ -827,8 +828,8 @@ Text_CharcoalMasterTalkAfter:
 Text_HeadbuttIntro:
 	text "What am I doing?"
 
-	para "I'm shaking trees"
-	line "using PSYCHIC M."
+	para "I'm blowing minds"
+	line "using PSYCHIC."
 
 	para "It's fun. Here,"
 	line "you try it too!"

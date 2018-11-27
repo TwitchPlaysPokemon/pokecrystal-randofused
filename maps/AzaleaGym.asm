@@ -185,37 +185,37 @@ Text_ReceivedHiveBadge:
 	done
 
 BugsyText_HiveBadgeSpeech:
-	text "Do you know the"
-	line "benefits of HIVE-"
-	cont "BADGE?"
+	text "The RISING BADGE"
+	line "will enable your"
 
-	para "If you have it,"
-	line "#MON up to L30"
+	para "#MON to use the"
+	line "move for climbing"
+	cont "waterfalls."
 
-	para "will obey you,"
-	line "even traded ones."
+	para "Also, all #MON"
+	line "will recognize you"
 
-	para "#MON that know"
-	line "CUT will be able"
+	para "as a trainer and"
+	line "obey your every"
 
-	para "to use it outside"
-	line "of battle too."
+	para "command without"
+	line "question."
 
 	para "Here, I also want"
 	line "you to have this."
 	done
 
 BugsyText_FuryCutterSpeech:
-	text "TM49 contains"
+	text "This is an"
 	line "ESCAPE ROPE."
 
-	para "If you don't miss,"
-	line "it gets stronger"
-	cont "every turn."
+	para "If you get lost"
+	line "in a cave,"
+	cont "don't fret!"
 
-	para "The longer your"
-	line "battle goes, the"
-	cont "better it gets."
+	para "This ESCAPE ROPE"
+	line "will get you out"
+	cont "no problem."
 
 	para "Isn't that great?"
 	line "I discovered it!"

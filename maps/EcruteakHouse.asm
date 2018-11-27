@@ -155,7 +155,7 @@ UnknownText_0x980d1:
 	text "TIN TOWER is off"
 	line "limits to anyone"
 
-	para "without ECRUTEAK"
+	para "without OLIVINE"
 	line "GYM's BADGE."
 
 	para "Sorry, but you'll"
@@ -166,12 +166,12 @@ UnknownText_0x98131:
 	text "TIN TOWER is off"
 	line "limits to anyone"
 
-	para "without ECRUTEAK"
+	para "without OLIVINE"
 	line "GYM's BADGE."
 
 	para "Ah!"
 
-	para "ECRUTEAK's GYM"
+	para "OLIVINE's GYM"
 	line "BADGE! Please, go"
 	cont "right through."
 	done

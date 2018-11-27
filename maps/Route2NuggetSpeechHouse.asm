@@ -43,10 +43,10 @@ UnknownText_0x9b865:
 	done
 
 UnknownText_0x9b8e5:
-	text "That's a ULTRA BALL."
+	text "An ULTRA BALL."
 
 	para "I can't give you"
-	line "any ULTRA BALLs of"
+	line "any of my ultra"
 
 	para "wisdom, so that'll"
 	line "have to do!"

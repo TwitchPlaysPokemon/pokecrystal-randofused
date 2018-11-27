@@ -200,14 +200,8 @@ Text_ReceivedGlacierBadge:
 	done
 
 PryceText_GlacierBadgeSpeech:
-	text "That BADGE will"
-	line "raise the SPECIAL"
-	cont "stats of #MON."
-
-	para "It also lets your"
-	line "#MON use WHIRL-"
-	cont "POOL to get across"
-	cont "real whirlpools."
+	para "That was a"
+	line "delightful match."
 
 	para "And this… This is"
 	line "a gift from me!"
@@ -218,11 +212,12 @@ PryceText_IcyWindSpeech:
 	line "MUD SLAP."
 
 	para "It inflicts damage"
-	line "and lowers speed."
+	line "and lowers"
+	cont "accuracy."
 
 	para "It demonstrates"
 	line "the harshness of"
-	cont "winter."
+	cont "mud."
 	done
 
 PryceText_CherishYourPokemon:

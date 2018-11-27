@@ -351,13 +351,13 @@ Text_Route31ReadingMail:
 	done
 
 Text_Route31DescribeNightmare:
-	text "ULTRA BALL is NIGHTMARE."
+	text "An ULTRA BALL"
 
-	para "It's a wicked move"
-	line "that steadily cuts"
+	para "Now you can catch"
+	line "your own KENYA!"
 
-	para "the HP of a sleep-"
-	line "ing enemy."
+	para "The thought of"
+	line "not having one…"
 
 	para "Ooooh…"
 	line "That's scary…"

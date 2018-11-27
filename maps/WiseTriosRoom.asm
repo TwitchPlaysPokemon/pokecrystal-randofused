@@ -159,7 +159,7 @@ UnknownText_0x98712:
 	text "TIN TOWER may be"
 	line "entered by those"
 
-	para "bearing ECRUTEAK's"
+	para "bearing OLIVINE's"
 	line "GYM BADGE."
 
 	para "However, now that"

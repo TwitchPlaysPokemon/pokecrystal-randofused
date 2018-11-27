@@ -54,12 +54,12 @@ HiddenPowerGuyText2:
 	line "is BLACKGLASSES!"
 
 	para "It draws out the"
-	line "power of #MON"
-	cont "for attacking."
+	line "power of DARK"
+	cont "type #MON."
 
 	para "Remember this: its"
-	line "type and power de-"
-	cont "pend on the #-"
+	line "power depends on"
+	cont "the type of #-"
 	cont "MON using it."
 	done
 

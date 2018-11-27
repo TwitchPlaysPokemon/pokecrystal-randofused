@@ -171,8 +171,9 @@ UnknownText_0x191a3d:
 
 UnknownText_0x191a72:
 	text "It's a MASTER BALL"
-	line "that makes #MON"
-	cont "stronger."
+	line "that catches even"
+	line "the strongest"
+	cont "#MON."
 
 	para "I prefer making my"
 	line "#MON stronger"
