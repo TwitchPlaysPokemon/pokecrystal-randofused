@@ -276,7 +276,8 @@ BugCatcherAlAfterBattleText:
 
 BugCatcherJoshSeenText:
 	text "You saved all the"
-	line "SLOWPOKE? Whew,"
+	line "#MON at the"
+	cont "old well? Whew,"
 	cont "you're mighty!"
 
 	para "But my grown-up"

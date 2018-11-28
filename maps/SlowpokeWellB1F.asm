@@ -24,6 +24,7 @@ TrainerGruntM29:
 
 .Script:
 	end_if_just_battled
+	pokenamemem SLOWPOKE, $0
 	opentext
 	writetext GruntM29AfterBattleText
 	waitbutton
@@ -77,6 +78,7 @@ TrainerGruntM2:
 	trainer EVENT_BEAT_ROCKET_GRUNTM_2, GRUNTM, GRUNTM_2, GruntM2SeenText, GruntM2BeatenText, 0, .Script
 
 .Script:
+	pokenamemem SLOWPOKE, $0
 	end_if_just_battled
 	opentext
 	writetext GruntM2AfterBattleText
@@ -89,6 +91,7 @@ TrainerGruntF1:
 
 .Script:
 	end_if_just_battled
+	pokenamemem SLOWPOKE, $0
 	opentext
 	writetext GruntF1AfterBattleText
 	waitbutton
@@ -96,6 +99,7 @@ TrainerGruntF1:
 	end
 
 SlowpokeWellB1FSlowpokeWithMailScript:
+	pokenamemem SLOWPOKE, $0
 	faceplayer
 	opentext
 	cry SLOWPOKE
@@ -106,6 +110,7 @@ SlowpokeWellB1FSlowpokeWithMailScript:
 	end
 
 .ReadMail:
+	pokenamemem SLOWPOKE, $0
 	writetext SlowpokeWellB1FSlowpokeMailText
 	waitbutton
 	closetext
@@ -113,6 +118,7 @@ SlowpokeWellB1FSlowpokeWithMailScript:
 
 SlowpokeWellB1FTaillessSlowpokeScript:
 	faceplayer
+	pokenamemem SLOWPOKE, $0
 	opentext
 	writetext SlowpokeWellB1FTaillessSlowpokeText
 	cry SLOWPOKE
@@ -209,9 +215,11 @@ GruntM29BeatenText:
 
 GruntM29AfterBattleText:
 	text "Sure, we've been"
-	line "hacking the tails"
+	line "hacking the TAILS"
 
-	para "off SLOWPOKE and"
+	para "off "
+	text_from_ram StringBuffer3
+	text " and"
 	line "selling them."
 
 	para "Everything we do"
@@ -253,8 +261,8 @@ TrainerGruntM1WhenTalkText:
 	done
 
 GruntM2SeenText:
-	text "Quit taking SLOW-"
-	line "POKETAILS?"
+	text "Quit taking these"
+	line "TAILS?"
 
 	para "If we obeyed you,"
 	line "TEAM ROCKET's rep"
@@ -268,8 +276,10 @@ GruntM2BeatenText:
 
 GruntM2AfterBattleText:
 	text "We need the money,"
-	line "but selling SLOW-"
-	cont "POKETAILS?"
+	line "but selling these"
+	cont "@"
+	text_from_ram StringBuffer3
+	text "TAILS?"
 
 	para "It's tough being a"
 	line "ROCKET GRUNT!"
@@ -287,7 +297,9 @@ GruntF1BeatenText:
 	done
 
 GruntF1AfterBattleText:
-	text "SLOWPOKETAILS"
+	text "@"
+	text_from_ram StringBuffer3
+	text "TAILS"
 	line "grow back fast!"
 
 	para "What's wrong with"
@@ -295,7 +307,9 @@ GruntF1AfterBattleText:
 	done
 
 SlowpokeWellB1FSlowpokeWithMailText:
-	text "A SLOWPOKE with"
+	text "A @"
+	text_from_ram StringBuffer3
+	text " with"
 	line "its TAIL cut off…"
 
 	para "Huh? It has MAIL."
@@ -310,13 +324,17 @@ SlowpokeWellB1FSlowpokeMailText:
 	line "after the house"
 
 	para "with Grandpa and"
-	line "SLOWPOKE."
+	line "@"
+	text_from_ram StringBuffer3
+	text "."
 
 	para "Love, Dad"
 	done
 
 SlowpokeWellB1FTaillessSlowpokeText:
-	text "A SLOWPOKE with"
+	text "A @"
+	text_from_ram StringBuffer3
+	text " with"
 	line "its TAIL cut off…"
 	done
 

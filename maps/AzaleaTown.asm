@@ -111,6 +111,7 @@ AzaleaTownRocket1Script:
 	jumptextfaceplayer AzaleaTownRocket1Text
 
 AzaleaTownRocket2Script:
+	pokenamemem SLOWPOKE, $0
 	jumptextfaceplayer AzaleaTownRocket2Text
 
 AzaleaTownGrampsScript:
@@ -118,12 +119,14 @@ AzaleaTownGrampsScript:
 	opentext
 	checkevent EVENT_CLEARED_SLOWPOKE_WELL
 	iftrue .ClearedWell
+	pokenamemem SLOWPOKE, $0
 	writetext AzaleaTownGrampsTextBefore
 	waitbutton
 	closetext
 	end
 
 .ClearedWell:
+	pokenamemem SLOWPOKE, $0
 	writetext AzaleaTownGrampsTextAfter
 	waitbutton
 	closetext
@@ -137,6 +140,7 @@ AzaleaTownYoungsterScript:
 
 AzaleaTownSlowpokeScript:
 	opentext
+	pokenamemem SLOWPOKE, $0
 	writetext AzaleaTownSlowpokeText1
 	pause 60
 	writetext AzaleaTownSlowpokeText2
@@ -193,6 +197,7 @@ AzaleaGymSign:
 	jumptext AzaleaGymSignText
 
 SlowpokeWellSign:
+	pokenamemem SLOWPOKE, $0
 	jumptext SlowpokeWellSignText
 
 CharcoalKilnSign:
@@ -320,7 +325,9 @@ AzaleaTownRocket1Text:
 
 AzaleaTownRocket2Text:
 	text "Do you know about"
-	line "SLOWPOKETAIL? I"
+	line "@"
+	text_from_ram StringBuffer3
+	text "TAIL? I"
 	cont "heard it's tasty!"
 
 	para "Aren't you glad I"
@@ -328,7 +335,9 @@ AzaleaTownRocket2Text:
 	done
 
 AzaleaTownGrampsTextBefore:
-	text "The SLOWPOKE have"
+	text "The @"
+	text_from_ram StringBuffer3
+	text " have"
 	line "disappeared from"
 	cont "town…"
 
@@ -338,8 +347,10 @@ AzaleaTownGrampsTextBefore:
 	done
 
 AzaleaTownGrampsTextAfter:
-	text "The SLOWPOKE have"
-	line "returned."
+	text "The @"
+	text_from_ram StringBuffer3
+	text " have"
+	line "returned!"
 
 	para "Knowing them, they"
 	line "could've just been"
@@ -374,7 +385,9 @@ AzaleaTownYoungsterText:
 	done
 
 AzaleaTownSlowpokeText1:
-	text "SLOWPOKE: …"
+	text "@"
+	text_from_ram StringBuffer3
+	text ": …"
 
 	para "<......> <......> <......>"
 	done
@@ -428,20 +441,28 @@ AzaleaGymSignText:
 	done
 
 SlowpokeWellSignText:
-	text "SLOWPOKE WELL"
+	text "@"
+	text_from_ram StringBuffer3
+	text " WELL"
 
 	para "Also known as the"
 	line "RAINMAKER WELL."
 
 	para "Locals believe"
-	line "that a SLOWPOKE's"
+	line "that a @"
+	text_from_ram StringBuffer3
+	text "'s"
 	cont "yawn summons rain."
 
 	para "Records show that"
-	line "a SLOWPOKE's yawn"
+	line "a @"
+	text_from_ram StringBuffer3
+	text "'s"
 
-	para "ended a drought"
-	line "400 years ago."
+	para "yawn ended a"
+	line "drought 400 years"
+
+	para "ago."
 	done
 
 CharcoalKilnSignText:

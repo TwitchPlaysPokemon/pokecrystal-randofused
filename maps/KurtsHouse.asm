@@ -41,6 +41,7 @@ KurtScript_0x18e178:
 	iftrue .GotLureBall
 	checkevent EVENT_CLEARED_SLOWPOKE_WELL
 	iftrue .ClearedSlowpokeWell
+	pokenamemem SLOWPOKE, $0
 	writetext UnknownText_0x18e473
 	waitbutton
 	closetext
@@ -347,6 +348,7 @@ KurtScript_ImCheckingItNow:
 
 KurtsGranddaughter1:
 	faceplayer
+	pokenamemem SLOWPOKE, $0
 	checkevent EVENT_GAVE_KURT_APRICORNS
 	iftrue KurtsGranddaughter2Subscript
 	checkevent EVENT_RECEIVED_BALLS_FROM_KURT
@@ -366,6 +368,7 @@ KurtsGranddaughter1:
 	end
 
 .SlowpokeBack:
+	pokenamemem SLOWPOKE, $0
 	opentext
 	writetext KurtsGranddaughterSlowpokeBackText
 	waitbutton
@@ -413,6 +416,7 @@ KurtsGranddaughterFunScript:
 	end
 
 KurtsHouseSlowpoke:
+	pokenamemem SLOWPOKE, $0
 	faceplayer
 	opentext
 	writetext KurtsHouseSlowpokeText
@@ -479,14 +483,18 @@ UnknownText_0x18e473:
 	para "Anyway, they're at"
 	line "the WELL, cutting"
 
-	para "off SLOWPOKETAILS"
+	para "off @"
+	text_from_ram StringBuffer3
+	text "TAILS"
 	line "for sale!"
 
 	para "So I'm going to"
 	line "go give them a"
 	cont "lesson in pain!"
 
-	para "Hang on, SLOWPOKE!"
+	para "Hang on, @"
+	text_from_ram StringBuffer3
+	text "!"
 	line "Old KURT is on his"
 	cont "way!"
 	done
@@ -608,7 +616,9 @@ UnknownText_0x18e95c:
 	done
 
 KurtsGranddaughterSlowpokeGoneText:
-	text "The SLOWPOKE are"
+	text "The @"
+	text_from_ram StringBuffer3
+	text " are"
 	line "gone… Were they"
 
 	para "taken away by bad"
@@ -621,7 +631,9 @@ KurtsGranddaughterLonelyText:
 	done
 
 KurtsGranddaughterSlowpokeBackText:
-	text "The SLOWPOKE my"
+	text "The @"
+	text_from_ram StringBuffer3
+	text " my"
 	line "dad gave me came"
 
 	para "back! Its TAIL is"
@@ -635,7 +647,9 @@ KurtsGranddaughterDadText:
 
 	para "I have to stay"
 	line "home with Grandpa"
-	cont "and SLOWPOKE."
+	cont "and @"
+	text_from_ram StringBuffer3
+	text "."
 	done
 
 KurtsGranddaughterHelpText:
@@ -661,7 +675,9 @@ KurtsGranddaughterGSBallText:
 	done
 
 KurtsHouseSlowpokeText:
-	text "SLOWPOKE: …"
+	text "@"
+	text_from_ram StringBuffer3
+	text ": …"
 	line "Yawn?"
 	done
 

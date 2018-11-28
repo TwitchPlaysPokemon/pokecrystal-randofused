@@ -11,6 +11,7 @@ CharcoalKiln_MapScriptHeader:
 	db 0
 
 CharcoalKilnBoss:
+	pokenamemem SLOWPOKE, $0
 	faceplayer
 	opentext
 	checkevent EVENT_GOT_HM01_CUT
@@ -23,6 +24,7 @@ CharcoalKilnBoss:
 	end
 
 .SavedSlowpoke:
+	pokenamemem SLOWPOKE, $0
 	writetext CharcoalKilnBossText2
 	waitbutton
 	closetext
@@ -82,7 +84,8 @@ CharcoalKilnRadio:
 	jumpstd radio2
 
 CharcoalKilnBossText1:
-	text "All the SLOWPOKE"
+	text "All the @"
+	text_from_ram StringBuffer3
 	line "have disappeared"
 	cont "from the town."
 
@@ -96,7 +99,9 @@ CharcoalKilnBossText1:
 	done
 
 CharcoalKilnBossText2:
-	text "The SLOWPOKE have"
+	text "The @"
+	text_from_ram StringBuffer3
+	text " have"
 	line "returned…"
 
 	para "But my APPRENTICE"
@@ -121,7 +126,9 @@ CharcoalKilnBossText3:
 
 CharcoalKilnApprenticeText1:
 	text "Where have all the"
-	line "SLOWPOKE gone?"
+	line "@"
+	text_from_ram StringBuffer3
+	text " gone?"
 
 	para "Are they out play-"
 	line "ing somewhere?"
