@@ -98,6 +98,7 @@ CeladonGymGuyScript:
 CeladonGameCornerGrampsScript:
 	faceplayer
 	opentext
+	pokenamemem PIKACHU, $0
 	writetext CeladonGameCornerGrampsText
 	waitbutton
 	closetext
@@ -245,7 +246,9 @@ CeladonGameCornerGrampsText:
 	text "Hmmm… The odds are"
 	line "surely better for"
 
-	para "PIKACHU's line,"
+	para "@"
+	text_from_ram StringBuffer3
+	text "'s line,"
 	line "but… What to do?"
 	done
 

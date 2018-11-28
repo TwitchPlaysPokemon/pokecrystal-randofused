@@ -15,6 +15,8 @@ ViridianNicknameSpeechHousePokefanMScript:
 	jumptextfaceplayer ViridianNicknameSpeechHousePokefanMText
 
 ViridianNicknameSpeechHouseLassScript:
+	pokenamemem SPEAROW, $0
+	pokenamemem RATTATA, $1
 	jumptextfaceplayer ViridianNicknameSpeechHouseLassText
 
 Speary:
@@ -49,8 +51,13 @@ ViridianNicknameSpeechHousePokefanMText:
 
 ViridianNicknameSpeechHouseLassText:
 	text "They're SPEARY--"
-	line "a SPEAROW--and"
-	cont "RATTEY--a RATTATA."
+	line "a @"
+	text_from_ram StringBuffer3
+	text "--and"
+	cont "RATTEY--a"
+	cont "@"
+	text_from_ram StringBuffer4
+	text "."
 	done
 
 SpearyText:

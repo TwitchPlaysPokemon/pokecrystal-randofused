@@ -20,6 +20,7 @@ OlivineMartCooltrainerFScript:
 	jumptextfaceplayer OlivineMartCooltrainerFText
 
 OlivineMartLassScript:
+	pokenamemem BUTTERFREE, $0
 	jumptextfaceplayer OlivineMartLassText
 
 OlivineMartCooltrainerFText:
@@ -31,7 +32,9 @@ OlivineMartCooltrainerFText:
 	done
 
 OlivineMartLassText:
-	text "My BUTTERFREE came"
+	text "My @"
+	text_from_ram StringBuffer3
+	text " came"
 	line "from my boyfriend"
 	cont "overseas."
 

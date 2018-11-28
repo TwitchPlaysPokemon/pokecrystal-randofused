@@ -25,6 +25,9 @@ TrainerPokefanmCarter:
 .Script:
 	end_if_just_battled
 	opentext
+	pokenamemem SQUIRTLE, $0
+	pokenamemem CHARMANDER, $1
+	pokenamemem BULBASAUR, $2
 	writetext PokefanmCarterAfterBattleText
 	waitbutton
 	closetext
@@ -65,8 +68,15 @@ PokefanmCarterBeatenText:
 	done
 
 PokefanmCarterAfterBattleText:
-	text "SQUIRTLE, CHARMAN-"
-	line "DER and BULBASAUR…"
+	text "@"
+	text_from_ram StringBuffer3
+	text ","
+	line "@"
+	text_from_ram StringBuffer4
+	text " "
+	cont "and @"
+	text_from_ram StringBuffer5
+	text "…"
 
 	para "I think that's a"
 	line "well-balanced mix."

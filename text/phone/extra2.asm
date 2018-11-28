@@ -584,13 +584,17 @@ JoseAromaText: ; 0x174f2f
 
 UnknownText_0x174f90: ; 0x174f90
 	text "A while ago, my"
-	line "FARFETCH'D KO'd"
+	line "@"
+	text_from_ram StringBuffer5
+	text " KO'd"
 	cont "this @"
 	text_from_ram StringBuffer4
 	text "."
 
 	para "You should have"
-	line "seen FARFETCH'D"
+	line "seen @"
+	text_from_ram StringBuffer5
+	text " "
 
 	para "wield that stick."
 	line "Amazing stuff!"
@@ -619,7 +623,9 @@ UnknownText_0x17507d: ; 0x17507d
 	line "again?"
 
 	para "For some reason,"
-	line "my FARFETCH'D is"
+	line "my @"
+	text_from_ram StringBuffer4
+	text " is"
 
 	para "all worked up and"
 	line "raring to go."
@@ -640,7 +646,9 @@ UnknownText_0x175106: ; 0x175106
 ; 0x175116
 
 JoseFoundSomethingText: ; 0x175116
-	text "My FARFETCH'D had"
+	text "My @"
+	text_from_ram StringBuffer4
+	text " had"
 	line "something pretty"
 	cont "in its beak."
 
@@ -674,7 +682,9 @@ UnknownText_0x17520a: ; 0x17520a
 	text "<PLAY_G>, could you"
 	line "hurry over?"
 
-	para "FARFETCH'D is"
+	para "@"
+	text_from_ram StringBuffer4
+	text " is"
 	line "agitated."
 
 	para "If you don't come"
@@ -1435,12 +1445,16 @@ UnknownText_0x17674f: ; 0x17674f
 
 	para "I did once, but"
 	line "all I could catch"
-	cont "was a CATERPIE."
+	cont "was a @"
+	text_from_ram StringBuffer4
+	text "."
 
 	para "But guess what!"
 
 	para "I won with that"
-	line "CATERPIE. Isn't"
+	line "@"
+	text_from_ram StringBuffer4
+	text ". Isn't"
 	cont "that great?"
 	done
 ; 0x176816

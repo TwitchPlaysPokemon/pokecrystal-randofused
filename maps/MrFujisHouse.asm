@@ -20,6 +20,7 @@ MrFujisHouseLassScript:
 
 MrFujisPsyduck:
 	opentext
+	pokenamemem PSYDUCK, $0
 	writetext MrFujisPsyduckText
 	cry PSYDUCK
 	waitbutton
@@ -28,6 +29,7 @@ MrFujisPsyduck:
 
 MrFujisNidorino:
 	opentext
+	pokenamemem NIDORINO, $0
 	writetext MrFujisNidorinoText
 	cry NIDORINO
 	waitbutton
@@ -36,6 +38,7 @@ MrFujisNidorino:
 
 MrFujisPidgey:
 	opentext
+	pokenamemem PIDGEY, $0
 	writetext MrFujisPidgeyText
 	cry PIDGEY
 	waitbutton
@@ -68,15 +71,22 @@ MrFujisHouseLassText:
 	done
 
 MrFujisPsyduckText:
-	text "PSYDUCK: Gu-guwa?"
+	text "@"
+	text_from_ram StringBuffer3
+	text ":"
+	line "Gu-guwa?"
 	done
 
 MrFujisNidorinoText:
-	text "NIDORINO: Gyun!"
+	text "@"
+	text_from_ram StringBuffer3
+	text ": Gyun!"
 	done
 
 MrFujisPidgeyText:
-	text "PIDGEY: Pijji!"
+	text "@"
+	text_from_ram StringBuffer3
+	text ": Pijji!"
 	done
 
 MrFujisHouse_MapEventHeader:

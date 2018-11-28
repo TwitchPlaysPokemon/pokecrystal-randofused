@@ -14,6 +14,7 @@ VioletNicknameSpeechHouseTeacherScript:
 	jumptextfaceplayer VioletNicknameSpeechHouseTeacherText
 
 VioletNicknameSpeechHouseLassScript:
+	pokenamemem PIDGEY, $0
 	jumptextfaceplayer VioletNicknameSpeechHouseLassText
 
 BirdScript_0x693ef:
@@ -36,7 +37,10 @@ VioletNicknameSpeechHouseTeacherText:
 	done
 
 VioletNicknameSpeechHouseLassText:
-	text "I call my PIDGEY"
+	text "I call my"
+	line "@"
+	text_from_ram StringBuffer3
+	text " "
 	line "STRAWBERRY!"
 	done
 

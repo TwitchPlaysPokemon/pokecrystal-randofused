@@ -428,6 +428,7 @@ YoungsterScript_0x6ad92:
 	end
 
 UnknownScript_0x6ada0:
+	pokenamemem CATERPIE, $0
 	writetext UnknownText_0x6b6e9
 	waitbutton
 	closetext
@@ -766,7 +767,9 @@ UnknownText_0x6b6b8:
 UnknownText_0x6b6e9:
 	text "JOSH: I heard that"
 	line "somebody won with"
-	cont "a CATERPIE!"
+	cont "a @"
+	text_from_ram StringBuffer3
+	text "!"
 	done
 
 UnknownText_0x6b71b:

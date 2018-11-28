@@ -94,6 +94,12 @@ ItemfinderExplanationText:
 	para "and grass that"
 	line "may hide items!"
 
+	para "But, you need the"
+	line "HIVE BADGE from"
+	
+	para "FUCHSIA GYM in"
+	line "order to do that."
+
 	para "Oh yeah--I heard"
 	line "there are items"
 

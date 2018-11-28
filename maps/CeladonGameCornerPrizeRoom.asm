@@ -202,14 +202,14 @@ GoldenrodGameCornerPokemonVendor:
 .MenuData2:
 	db $80 ; flags
 	db 4 ; items
-	db "PIKACHU    2222@"
-	db "PORYGON    5555@"
-	db "LARVITAR   8888@"
+	db "PIKAKUNA   2222@"
+	db "PORYDEEN   5555@"
+	db "LARVISH    8888@"
 	db "CANCEL@"
 
 
 CeladonGameCornerPrizeRoomGentlemanText:
-	text "I wanted PORYGON,"
+	text "I wanted PORYDEEN,"
 	line "but I was short by"
 	cont "100 coins…"
 	done

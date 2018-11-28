@@ -311,17 +311,17 @@ UnknownText_0x1bc55d::
 
 UnknownText_0x1bc570::
 	text "It's a poster of a"
-	line "cute PIKACHU."
+	line "cute #MON."
 	done
 
 UnknownText_0x1bc591::
 	text "It's a poster of a"
-	line "cute CLEFAIRY."
+	line "cute #MON."
 	done
 
 UnknownText_0x1bc5b3::
 	text "It's a poster of a"
-	line "cute JIGGLYPUFF."
+	line "cute #MON."
 	done
 
 UnknownText_0x1bc5d7::

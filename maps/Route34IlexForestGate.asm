@@ -69,6 +69,7 @@ UnknownScript_0x62d84:
 
 IlexGateButterfree:
 	opentext
+	pokenamemem BUTTERFREE, $0
 	writetext UnknownText_0x62e83
 	cry BUTTERFREE
 	waitbutton
@@ -117,7 +118,9 @@ UnknownText_0x62e41:
 	done
 
 UnknownText_0x62e83:
-	text "BUTTERFREE: Freeh!"
+	text "@"
+	text_from_ram StringBuffer3, $0
+	text ": Freeh!"
 	done
 
 Route34IlexForestGateLassText:

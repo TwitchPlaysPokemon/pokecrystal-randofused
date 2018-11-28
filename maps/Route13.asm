@@ -29,6 +29,7 @@ TrainerPokefanmJoshua:
 .Script:
 	end_if_just_battled
 	opentext
+	pokenamemem PIKACHU, $0
 	writetext PokefanmJoshuaAfterBattleText
 	waitbutton
 	closetext
@@ -99,18 +100,20 @@ PokefanmAlexAfterBattleText:
 PokefanmJoshuaSeenText:
 	text "Nihihi! Would you"
 	line "like to battle my"
-	cont "PIKACHU gang?"
+	cont "PIKA gang?"
 	done
 
 PokefanmJoshuaBeatenText:
-	text "PI-PIKACHU!"
+	text "PI-KA-PI!"
 	done
 
 PokefanmJoshuaAfterBattleText:
 	text "You look like you"
 	line "have many #MON,"
 
-	para "but PIKACHU is"
+	para "but @"
+	text_from_ram StringBuffer3
+	text " is"
 	line "still the best."
 	done
 

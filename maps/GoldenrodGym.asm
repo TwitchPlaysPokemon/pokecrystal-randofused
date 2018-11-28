@@ -227,7 +227,7 @@ UnknownText_0x54222:
 
 	para "Oh, right."
 	line "I forgot. Here's"
-	cont "PLAIN BADGE."
+	cont "the PLAIN BADGE."
 	done
 
 UnknownText_0x54273:
@@ -236,7 +236,7 @@ UnknownText_0x54273:
 	done
 
 UnknownText_0x5428b:
-	text "PLAINBADGE lets"
+	text "PLAIN BADGE lets"
 	line "your #MON use"
 
 	para "STRENGTH outside"

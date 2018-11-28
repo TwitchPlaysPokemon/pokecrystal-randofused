@@ -184,6 +184,7 @@ TrainerCooltrainerfLois:
 .Script:
 	end_if_just_battled
 	opentext
+	pokenamemem BUTTERFREE, $0
 	writetext CooltrainerfLoisAfterBattleText
 	waitbutton
 	closetext
@@ -442,7 +443,9 @@ CooltrainerfLoisBeatenText:
 CooltrainerfLoisAfterBattleText:
 	text "Come to think of"
 	line "it, I've seen a"
-	cont "pink BUTTERFREE."
+	cont "pink @"
+	text_from_ram StringBuffer3
+	text "."
 	done
 
 MeetWesleyText:

@@ -10,6 +10,7 @@ KrissNeighborsHouse_MapScriptHeader:
 	db 0
 
 KrissNeighborsDaughter:
+	pokenamemem PIKACHU, $0
 	jumptextfaceplayer KrissNeighborsDaughterText
 
 KrissNeighbor:
@@ -47,7 +48,9 @@ KrissNeighborsHouseRadio:
 	end
 
 KrissNeighborsDaughterText:
-	text "PIKACHU is an"
+	text "@"
+	text_from_ram StringBuffer3
+	text "is an"
 	line "evolved #MON."
 
 	para "I was amazed by"

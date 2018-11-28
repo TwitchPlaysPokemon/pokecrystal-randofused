@@ -64,5 +64,7 @@ UnusedSweetHoneyAfterText3: ; 0x558ea
 	done
 
 UnusedSweetHoneyButterfreeText: ; 0x5593f
-	text "BUTTERFREE: Freeh!"
+	text "@"
+	text_from_ram StringBuffer3
+	text ": Freeh!"
 	done

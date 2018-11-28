@@ -119,7 +119,7 @@ LeaderBlueWinText:
 
 	para "Tch, all right..."
 	line "Here, take this--"
-	cont "it's SOUL BADGE."
+	cont "the SOUL BADGE."
 	done
 
 Text_ReceivedEarthBadge:

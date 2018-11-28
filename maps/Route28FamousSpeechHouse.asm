@@ -34,6 +34,7 @@ Celebrity:
 
 CelebritysFearow:
 	opentext
+	pokenamemem FEAROW, $0
 	writetext CelebritysFearowText
 	cry FEAROW
 	waitbutton
@@ -67,7 +68,9 @@ CelebrityText2:
 	done
 
 CelebritysFearowText:
-	text "FEAROW: Feero!"
+	text "@"
+	text_from_ram StringBuffer3
+	text ": Feero!"
 	done
 
 Route28FamousSpeechHouse_MapEventHeader:

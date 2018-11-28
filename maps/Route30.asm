@@ -22,6 +22,7 @@ YoungsterJoey_ImportantBattleScript:
 	waitsfx
 	playmusic MUSIC_JOHTO_TRAINER_BATTLE
 	opentext
+	pokenamemem RATTATA, $0
 	writetext Text_UseTackle
 	pause 30
 	closetext
@@ -264,7 +265,9 @@ Route30_MikeysRattataAttacksMovement:
 	step_end
 
 Text_UseTackle:
-	text "Go, RATTATA!"
+	text "Go, @"
+	text_from_ram StringBuffer3
+	text "!"
 
 	para "TACKLE!"
 	done

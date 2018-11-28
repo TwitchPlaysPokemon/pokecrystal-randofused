@@ -116,6 +116,7 @@ UnknownScript_0xa06da:
 	jump PhoneScript_HangupText_Female
 
 .BugCatchingContest:
+	pokenamemem CATERPIE, $1
 	farwritetext UnknownText_0x17674f
 	buttonsound
 	jump PhoneScript_HangupText_Female
@@ -546,6 +547,7 @@ BethBattleReminderScript:
 	end
 
 UnknownScript_0xa0a41:
+	pokenamemem FARFETCH_D, $1
 	farwritetext UnknownText_0x17520a
 	end
 

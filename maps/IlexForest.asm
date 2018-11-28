@@ -91,6 +91,7 @@ IlexForestCharcoalApprenticeScript:
 	opentext
 	checkevent EVENT_HERDED_FARFETCHD
 	iftrue .DoneFarfetchd
+	pokenamemem FARFETCH_D, $0
 	writetext UnknownText_0x6ef5c
 	waitbutton
 	closetext
@@ -118,6 +119,7 @@ IlexForestFarfetchdScript:
 .Position1:
 	faceplayer
 	opentext
+	pokenamemem FARFETCH_D, $0
 	writetext Text_ItsTheMissingPokemon
 	buttonsound
 	writetext Text_Kwaaaa
@@ -328,6 +330,7 @@ IlexForestFarfetchdScript:
 .Position10:
 	faceplayer
 	opentext
+	pokenamemem FARFETCH_D, $0
 	writetext Text_Kwaaaa
 	cry FARFETCH_D
 	waitbutton
@@ -337,6 +340,7 @@ IlexForestFarfetchdScript:
 .CryAndCheckFacing:
 	faceplayer
 	opentext
+	pokenamemem FARFETCH_D, $0
 	writetext Text_Kwaaaa
 	cry FARFETCH_D
 	waitbutton
@@ -349,6 +353,7 @@ IlexForestCharcoalMasterScript:
 	opentext
 	checkevent EVENT_GOT_HM01_CUT
 	iftrue .AlreadyGotCut
+	pokenamemem FARFETCH_D, $0
 	writetext Text_CharcoalMasterIntro
 	buttonsound
 	verbosegiveitem UP_GRADE
@@ -745,7 +750,9 @@ UnknownText_0x6ef5c:
 	line "is going to be"
 	cont "steaming…"
 
-	para "The FARFETCH'D"
+	para "The @"
+	text_from_ram StringBuffer3
+	text " "
 	line "that CUTS trees"
 
 	para "for charcoal took"
@@ -775,11 +782,15 @@ Text_ItsTheMissingPokemon:
 	done
 
 Text_Kwaaaa:
-	text "FARFETCH'D: Kwaa!"
+	text "@"
+	text_from_ram StringBuffer3
+	text ": Kwaa!"
 	done
 
 Text_CharcoalMasterIntro:
-	text "Ah! My FARFETCH'D!"
+	text "Ah! My @"
+	text_from_ram StringBuffer3
+	text "!"
 
 	para "You found it for"
 	line "us, kid?"

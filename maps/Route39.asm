@@ -67,6 +67,7 @@ PokefanMDerekHasNugget:
 	jump PackIsFull
 
 PokefanMDerekWantsPikachu:
+	pokenamemem PIKACHU, $0
 	writetext PokefanMDerekText_PikachuIsIt
 	waitbutton
 	closetext
@@ -212,12 +213,12 @@ SailorEugeneAfterBattleText:
 PokefanmDerek1SeenText:
 	text "This is a good"
 	line "time to brag about"
-	cont "my PIKACHU!"
+	cont "my #MON!"
 	done
 
 PokefanmDerek1BeatenText:
 	text "I had no time to"
-	line "show off PIKACHU…"
+	line "show off…"
 	done
 
 PokefanMDerekText_NotBragging:
@@ -254,7 +255,9 @@ PokefanfRuthAfterBattleText:
 	done
 
 PokefanMDerekText_PikachuIsIt:
-	text "PIKACHU is it!"
+	text "@"
+	text_from_ram StringBuffer3
+	text " is it!"
 	line "Don't you agree?"
 	done
 

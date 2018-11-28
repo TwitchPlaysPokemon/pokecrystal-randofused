@@ -25,7 +25,9 @@ JoseAskNumber2Text:
 	line "things?"
 
 	para "I could share if"
-	line "FARFETCH'D goes"
+	line "@"
+	text_from_ram StringBuffer3
+	text " goes"
 	cont "and gets more."
 
 	para "What's your phone"
@@ -53,7 +55,9 @@ JoseRematchText:
 	text "Tweet! Tweeeet!"
 
 	para "Kept me waiting!"
-	line "Go, FARFETCH'D!"
+	line "Go, @"
+	text_from_ram StringBuffer3
+	text "!"
 	done
 
 JoseGiftText:

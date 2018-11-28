@@ -241,6 +241,7 @@ Phone_WhoDefeatedMon_Male:
 	end
 
 .Jose:
+	pokenamemem FARFETCH_D, $2
 	farwritetext UnknownText_0x174f90
 	buttonsound
 	end
@@ -566,6 +567,7 @@ PhoneScript_RematchText_Male:
 	end
 
 .Jose:
+	pokenamemem FARFETCH_D, $1
 	farwritetext UnknownText_0x17507d
 	buttonsound
 	end
@@ -904,6 +906,7 @@ PhoneScript_FoundItem_Male:
 	if_equal PHONE_FISHER_WILTON, .Wilton
 
 .Jose:
+	pokenamemem FARFETCH_D, $1
 	farwritetext JoseFoundSomethingText
 	end
 

@@ -41,6 +41,7 @@ CharcoalKilnApprentice:
 	iftrue .YoureTheCoolest
 	checkevent EVENT_GOT_HM01_CUT
 	iftrue .Thanks
+	pokenamemem SLOWPOKE, $0
 	writetext CharcoalKilnApprenticeText1
 	waitbutton
 	closetext
@@ -56,6 +57,8 @@ CharcoalKilnApprentice:
 	end
 
 .YoureTheCoolest:
+	pokenamemem SLOWPOKE, $0
+	pokenamemem FARFETCH_D, $1
 	writetext CharcoalKilnApprenticeText3
 	waitbutton
 .Done:
@@ -64,6 +67,7 @@ CharcoalKilnApprentice:
 
 CharcoalKilnFarfetchd:
 	faceplayer
+	pokenamemem FARFETCH_D, $0
 	opentext
 	writetext FarfetchdText
 	cry FARFETCH_D
@@ -136,16 +140,22 @@ CharcoalKilnApprenticeText2:
 	done
 
 CharcoalKilnApprenticeText3:
-	text "The SLOWPOKE came"
+	text "The @"
+	text_from_ram StringBuffer3
+	text " came"
 	line "back, and you even"
-	cont "found FARFETCH'D."
+	cont "found @"
+	text_from_ram StringBuffer4
+	text "."
 
 	para "You're the cool-"
 	line "est, man!"
 	done
 
 FarfetchdText:
-	text "FARFETCH'D: Kwaa!"
+	text "@"
+	text_from_ram StringBuffer3
+	text ": Kwaa!"
 	done
 
 CharcoalKiln_MapEventHeader:

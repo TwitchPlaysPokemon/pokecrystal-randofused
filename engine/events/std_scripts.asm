@@ -738,6 +738,7 @@ AskNumber2MScript:
 	farwritetext GavenAskNumber2Text
 	end
 .Jose:
+	pokenamemem FARFETCH_D, $0
 	farwritetext JoseAskNumber2Text
 	end
 .Joey:
@@ -1204,6 +1205,7 @@ RematchMScript:
 	closetext
 	end
 .Jose:
+	pokenamemem FARFETCH_D, $0
 	farwritetext JoseRematchText
 	waitbutton
 	closetext

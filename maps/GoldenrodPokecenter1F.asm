@@ -549,8 +549,11 @@ UnknownText_0x61cef:
 	line "new thing for the"
 	cont "TRADE CORNER!"
 
-	para "I make a PIDGEY"
-	line "hold MAIL, then"
+	para "I make a"
+	line "@"
+	text_from_ram StringBuffer3
+	text "hold"
+	cont "MAIL, then"
 
 	para "put it up for"
 	line "trade for another"
@@ -562,8 +565,10 @@ UnknownText_0x61cef:
 	para "be traded with all"
 	line "sorts of people!"
 
-	para "I call it PIDGEY"
-	line "MAIL!"
+	para "I call it"
+	line "@"
+	text_from_ram StringBuffer3
+	text " MAIL!"
 
 	para "If it becomes"
 	line "popular, I might"

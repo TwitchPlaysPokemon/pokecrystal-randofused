@@ -145,6 +145,7 @@ RaticateTailGrunt:
 GruntM28Script:
 	end_if_just_battled
 	opentext
+	pokenamemem RATICATE, $0
 	writetext GruntM28AfterBattleText
 	waitbutton
 	closetext
@@ -491,7 +492,9 @@ GruntM28AfterBattleText:
 	line "the boss's room…"
 
 	para "Uh…, I think it is"
-	line "RATICATE TAIL."
+	line "@"
+	text_from_ram StringBuffer3
+	text " TAIL."
 	done
 
 ScientistRossSeenText:
