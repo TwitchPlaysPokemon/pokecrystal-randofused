@@ -36,12 +36,14 @@ UnknownScript_0x7e217:
 	waitsfx
 	checkcode VAR_PARTYCOUNT
 	if_equal $6, UnknownScript_0x7e237
+	pokenamemem TYROGUE, $0
 	writetext UnknownText_0x7e355
 	playsound SFX_CAUGHT_MON
 	waitsfx
 	givepoke TYROGUE, 10
 	setevent EVENT_GOT_TYROGUE_FROM_KIYO
 UnknownScript_0x7e231:
+	pokenamemem TYROGUE, $0
 	writetext UnknownText_0x7e36a
 	waitbutton
 	closetext
@@ -113,11 +115,15 @@ UnknownText_0x7e2c0:
 
 UnknownText_0x7e355:
 	text "<PLAYER> received"
-	line "TYROGUE."
+	line "@"
+	text_from_ram StringBuffer3
+	text "!"
 	done
 
 UnknownText_0x7e36a:
-	text "TYROGUE is a"
+	text "@"
+	text_from_ram StringBuffer3
+	text " is a"
 	line "fighting-type."
 
 	para "It evolves into a"

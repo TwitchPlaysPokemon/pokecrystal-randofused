@@ -68,6 +68,7 @@ MrPokemonsHouse_MrPokemonScript:
 	end
 
 .RedScale:
+	pokenamemem GYARADOS, $0
 	writetext MrPokemonText_GimmeTheScale
 	yesorno
 	iffalse .refused
@@ -331,7 +332,9 @@ MrPokemonsHouse_OakText2:
 MrPokemonText_GimmeTheScale:
 	text "Hm? That SCALE!"
 	line "What's that?"
-	cont "A red GYARADOS?"
+	cont "A red @"
+	text_from_ram StringBuffer3
+	text "?"
 
 	para "That's rare! "
 	line "I, I want it…"

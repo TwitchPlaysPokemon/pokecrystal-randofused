@@ -30,6 +30,7 @@ GoldenrodDeptStore2FYoungsterScript:
 	jumptextfaceplayer GoldenrodDeptStore2FYoungsterText
 
 GoldenrodDeptStore2FCooltrainerFScript:
+	pokenamemem ABRA, $0
 	jumptextfaceplayer GoldenrodDeptStore2FCooltrainerFText
 
 GoldenrodDeptStore2FGentlemanScript:
@@ -73,8 +74,11 @@ GoldenrodDeptStore2FYoungsterText:
 	done
 
 GoldenrodDeptStore2FCooltrainerFText:
-	text "I got my ABRA at"
-	line "the GAME CORNER."
+	text "I got my @"
+	text_from_ram StringBuffer3
+	text ""
+	line "at the GOLDENROD"
+	cont "GAME CORNER."
 
 	para "Now it's my best"
 	line "partner."

@@ -34,6 +34,7 @@ TrainerSupernerdMarkus:
 .Script:
 	end_if_just_battled
 	opentext
+	pokenamemem SEADRA, $0
 	writetext SupernerdMarkusAfterBattleText
 	waitbutton
 	closetext
@@ -113,8 +114,10 @@ SupernerdMarkusAfterBattleText:
 	para "Did you run into a"
 	line "trainer who uses a"
 
-	para "SEADRA that knows"
-	line "WATERFALL?"
+	para "@"
+	text_from_ram StringBuffer3
+	text " that"
+	line "knows WATERFALL?"
 	done
 
 MountMortar1FInside_MapEventHeader:

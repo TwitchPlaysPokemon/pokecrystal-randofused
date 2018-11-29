@@ -51,6 +51,8 @@ BlackBeltScript_0x6c37b:
 	opentext
 	checkevent EVENT_DECIDED_TO_HELP_LANCE
 	iftrue UnknownScript_0x6c389
+	pokenamemem MAGIKARP, $0
+	pokenamemem GYARADOS, $1
 	writetext UnknownText_0x6c494
 	waitbutton
 	closetext
@@ -65,6 +67,7 @@ UnknownScript_0x6c389:
 UnknownScript_0x6c38f:
 	pause 15
 	opentext
+	pokenamemem DRAGONITE, $0
 	writetext UnknownText_0x6c52a
 	pause 15
 	closetext
@@ -177,11 +180,15 @@ UnknownText_0x6c494:
 	line "ment worked like a"
 	cont "charm."
 
-	para "MAGIKARP are just"
+	para "@"
+	text_from_ram StringBuffer3
+	text " are just"
 	line "worthless, but"
 
-	para "GYARADOS are big"
-	line "moneymakers."
+	para "@"
+	text_from_ram StringBuffer4
+	text " are big"
+	line "moneymakers!"
 	done
 
 UnknownText_0x6c501:
@@ -192,7 +199,9 @@ UnknownText_0x6c501:
 	done
 
 UnknownText_0x6c52a:
-	text "LANCE: DRAGONITE,"
+	text "LANCE: @"
+	text_from_ram StringBuffer3
+	text ","
 	line "HYPER BEAM."
 	done
 

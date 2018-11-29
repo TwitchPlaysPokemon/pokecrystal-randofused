@@ -56,6 +56,7 @@ NationalParkTeacherScript:
 NationalParkPersian:
 	faceplayer
 	opentext
+	pokenamemem PERSIAN, $0
 	writetext NationalParkPersianText
 	cry PERSIAN
 	waitbutton
@@ -241,6 +242,7 @@ UnknownScript_0x5c186:
 	jump UnknownScript_0x5c1ab
 
 UnknownScript_0x5c189:
+	pokenamemem MARILL, $0
 	writetext UnknownText_0x5c68a
 	waitbutton
 	closetext
@@ -348,6 +350,10 @@ UnknownText_0x5c265:
 UnknownText_0x5c30d:
 	text "Catch a #MON in"
 	line "that ULTRA BALL."
+
+	para "It has a higher"
+	line "catch-rate than a"
+	cont "GREAT BALL."
 	done
 
 NationalParkYoungster1Text:
@@ -374,7 +380,10 @@ NationalParkTeacherText:
 	done
 
 NationalParkPersianText:
-	text "PERSIAN: Fufushaa!"
+	text "@"
+	text_from_ram StringBuffer3
+	text ": Fu…fu…"
+	line "Fushaaa!"
 	done
 
 UnknownText_0x5c42a:
@@ -460,13 +469,18 @@ PokefanmWilliamAfterBattleText:
 
 UnknownText_0x5c68a:
 	text "My friend keeps a"
-	line "MARILL!"
+	line "@"
+	text_from_ram StringBuffer3
+	text "!"
 
 	para "I find them very"
 	line "endearing."
 
 	para "Oh, I wish for a"
-	line "MARILL of my own…"
+	line "@"
+	text_from_ram StringBuffer3
+	text " of my"
+	cont " own…"
 	done
 
 LassKriseSeenText:

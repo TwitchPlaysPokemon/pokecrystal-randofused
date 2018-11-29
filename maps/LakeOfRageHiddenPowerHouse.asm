@@ -58,9 +58,9 @@ HiddenPowerGuyText2:
 	cont "type #MON."
 
 	para "Remember this: its"
-	line "power depends on"
-	cont "the type of #-"
-	cont "MON using it."
+	line "effect depends on"
+	cont "the type of moves"
+	cont "being used."
 	done
 
 HiddenPowerGuyText3:

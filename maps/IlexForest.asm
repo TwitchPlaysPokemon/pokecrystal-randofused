@@ -847,10 +847,10 @@ Text_HeadbuttIntro:
 	done
 
 Text_HeadbuttOutro:
-	text "Rattle trees with"
-	line "HEADBUTT. Some-"
-	cont "times, sleeping"
-	cont "#MON fall out."
+	text "You also should"
+	line "HEADBUTT trees."
+	cont "Sleeping #MON"
+	cont "may fall out."
 	done
 
 Text_IlexForestLass:

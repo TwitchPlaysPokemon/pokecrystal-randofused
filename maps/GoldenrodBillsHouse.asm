@@ -15,6 +15,7 @@ BillsHouseBill:
 	opentext
 	checkevent EVENT_GOT_EEVEE
 	iftrue UnknownScript_0x54c1f
+	pokenamemem DODUO, $0c
 	writetext UnknownText_0x54c74
 	yesorno
 	iffalse UnknownScript_0x54c19
@@ -23,11 +24,13 @@ BillsHouseBill:
 	waitsfx
 	checkcode VAR_PARTYCOUNT
 	if_equal $6, UnknownScript_0x54c13
+	pokenamemem DODUO, $0
 	writetext UnknownText_0x54dae
 	playsound SFX_CAUGHT_MON
 	waitsfx
 	givepoke DODUO, 12
 	setevent EVENT_GOT_EEVEE
+	pokenamemem DODUO, $0
 	writetext UnknownText_0x54dc1
 	waitbutton
 	closetext
@@ -111,7 +114,9 @@ BillsHouseRadio:
 UnknownText_0x54c74:
 	text "BILL: Hi, <PLAYER>!"
 	line "Do us a favor and"
-	cont "take this DODUO."
+	cont "take this @"
+	text_from_ram StringBuffer3
+	text "?"
 
 	para "It came over when"
 	line "I was adjusting"
@@ -144,15 +149,20 @@ UnknownText_0x54d3f:
 
 UnknownText_0x54dae:
 	text "<PLAYER> received"
-	line "DODUO!"
+	line "@"
+	text_from_ram StringBuffer3
+	text "!"
 	done
 
 UnknownText_0x54dc1:
-	text "BILL: PROF.ELM"
-	line "claims DODUO may"
+	text "BILL: @"
+	text_from_ram StringBuffer3
+	text " was"
+	line "once an uncommon"
 
-	para "evolve in new and"
-	line "unknown ways."
+	para "#MON found only"
+	line "in the SAFARI"
+	cont "ZONE."
 	done
 
 UnknownText_0x54e02:

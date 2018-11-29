@@ -46,6 +46,8 @@ LakeOfRage_MapScriptHeader:
 LanceScript_0x70022:
 	checkevent EVENT_REFUSED_TO_HELP_LANCE_AT_LAKE_OF_RAGE
 	iftrue UnknownScript_0x70057
+	pokenamemem GYARADOS, $0
+	pokenamemem MAGIKARP, $1
 	opentext
 	writetext UnknownText_0x70157
 	buttonsound
@@ -54,6 +56,7 @@ LanceScript_0x70022:
 	yesorno
 	iffalse UnknownScript_0x7004e
 UnknownScript_0x70035:
+	pokenamemem MAGIKARP, $0
 	writetext UnknownText_0x702c6
 	waitbutton
 	closetext
@@ -82,6 +85,7 @@ UnknownScript_0x70057:
 
 GyaradosScript_0x70063:
 	opentext
+	pokenamemem GYARADOS, $0
 	writetext UnknownText_0x703cb
 	pause 15
 	cry CELEBI
@@ -110,6 +114,7 @@ GrampsScript_0x7008e:
 	opentext
 	checkevent EVENT_CLEARED_ROCKET_HIDEOUT
 	iftrue UnknownScript_0x7009c
+	pokenamemem GYARADOS, $0
 	writetext UnknownText_0x703f8
 	waitbutton
 	closetext
@@ -122,12 +127,15 @@ UnknownScript_0x7009c:
 	end
 
 LakeOfRageSuperNerdScript:
+	pokenamemem GYARADOS, $0
 	jumptextfaceplayer LakeOfRageSuperNerdText
 
 LakeOfRageCooltrainerFScript:
+	pokenamemem GYARADOS, $0
 	jumptextfaceplayer LakeOfRageCooltrainerFText
 
 MapLakeOfRageSignpost0Script:
+	pokenamemem GYARADOS, $0
 	jumptext UnknownText_0x708d7
 
 MapLakeOfRageSignpost1Script:
@@ -250,10 +258,14 @@ MovementData_0x70155:
 
 UnknownText_0x70157:
 	text "This lake is full"
-	line "of GYARADOS but"
+	line "of @"
+	text_from_ram StringBuffer3
+	text " but"
 	cont "nothing else…"
 
-	para "So the MAGIKARP"
+	para "So the @"
+	text_from_ram StringBuffer4
+	text ""
 	line "are being forced"
 	cont "to evolve…"
 	done
@@ -290,7 +302,9 @@ UnknownText_0x702c6:
 	text "LANCE: Excellent!"
 
 	para "It seems that the"
-	line "LAKE's MAGIKARP"
+	line "LAKE's @"
+	text_from_ram StringBuffer3
+	text ""
 
 	para "are being forced"
 	line "to evolve."
@@ -317,7 +331,9 @@ UnknownText_0x703a5:
 	done
 
 UnknownText_0x703cb:
-	text "GYARADOS: Gyashaa!"
+	text "@"
+	text_from_ram StringBuffer3
+	text ": Gyaraa!"
 	done
 
 UnknownText_0x703df:
@@ -326,7 +342,9 @@ UnknownText_0x703df:
 	done
 
 UnknownText_0x703f8:
-	text "The GYARADOS are"
+	text "The @"
+	text_from_ram StringBuffer3
+	text " are"
 	line "angry!"
 
 	para "It's a bad omen!"
@@ -334,13 +352,15 @@ UnknownText_0x703f8:
 
 UnknownText_0x70421:
 	text "Hahah! The MAGI-"
-	line "KARP are biting!"
+	line "KURSA are biting!"
 	done
 
 LakeOfRageSuperNerdText:
 	text "I heard this lake"
 	line "was made by ram-"
-	cont "paging GYARADOS."
+	cont "paging @"
+	text_from_ram StringBuffer3
+	text "."
 
 	para "I wonder if there"
 	line "is any connection"
@@ -353,11 +373,15 @@ LakeOfRageCooltrainerFText:
 	text "Did my eyes de-"
 	line "ceive me? I saw a"
 
-	para "red GYARADOS in"
+	para "red @"
+	text_from_ram StringBuffer3
+	text " in"
 	line "the LAKE…"
 
 	para "But I thought"
-	line "GYARADOS were"
+	line "@"
+	text_from_ram StringBuffer3
+	text " were"
 	cont "usually blue?"
 	done
 
@@ -425,7 +449,7 @@ CooltrainermAaronAfterBattleText:
 
 CooltrainerfLoisSeenText:
 	text "What happened to"
-	line "the red GYARADOS?"
+	line "the red GYARARING?"
 
 	para "It's gone?"
 
@@ -491,7 +515,9 @@ WesleyNotWednesdayText:
 UnknownText_0x708d7:
 	text "LAKE OF RAGE,"
 	line "also known as"
-	cont "GYARADOS LAKE."
+	cont "@"
+	text_from_ram StringBuffer3
+	text " LAKE."
 	done
 
 UnknownText_0x70903:

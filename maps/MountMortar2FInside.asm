@@ -20,6 +20,7 @@ TrainerSupernerdHugh:
 .Script:
 	end_if_just_battled
 	opentext
+	pokenamemem SLOWPOKE, $0
 	writetext SupernerdHughAfterBattleText
 	waitbutton
 	closetext
@@ -63,7 +64,9 @@ SupernerdHughAfterBattleText:
 	para "Have you seen a"
 	line "trainer who has a"
 
-	para "SLOWPOKE that can"
+	para "@"
+	text_from_ram StringBuffer3
+	text " that can"
 	line "use STRENGTH?"
 	done
 

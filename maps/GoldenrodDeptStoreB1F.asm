@@ -57,6 +57,7 @@ GoldenrodDeptStoreB1FBlackBelt3Script:
 
 MachopScript_0x7d7b9:
 	opentext
+	pokenamemem MACHOKE, $0
 	writetext UnknownText_0x7d8bb
 	cry MACHOKE
 	waitbutton
@@ -106,7 +107,9 @@ GoldenrodDeptStoreB1FBlackBelt3Text:
 	done
 
 UnknownText_0x7d8bb:
-	text "MACHOKE: Maaacho!"
+	text "@"
+	text_from_ram StringBuffer3
+	text ": Maacho!"
 	done
 
 GoldenrodDeptStoreB1F_MapEventHeader:

@@ -150,6 +150,7 @@ IndigoPlateauPokecenter1FCooltrainerMScript:
 
 TeleportGuyScript:
 	faceplayer
+	pokenamemem ABRA, $0
 	opentext
 	writetext TeleportGuyText1
 	yesorno
@@ -170,6 +171,7 @@ TeleportGuyScript:
 	end
 
 AbraScript:
+	pokenamemem ABRA, $0
 	opentext
 	writetext AbraText
 	cry ABRA
@@ -277,8 +279,10 @@ TeleportGuyText1:
 	para "If you need to"
 	line "train some more,"
 
-	para "my ABRA can help"
-	line "you."
+	para "my @" 
+	text_from_ram StringBuffer3
+	text " can"
+	line "help you."
 
 	para "It can TELEPORT"
 	line "you home."
@@ -299,7 +303,9 @@ TeleportGuyNoText:
 	done
 
 AbraText:
-	text "ABRA: Aabra…"
+	text "@"
+	text_from_ram StringBuffer3
+	text ": Aabra…"
 	done
 
 IndigoPlateauPokecenter1F_MapEventHeader:

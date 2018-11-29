@@ -30,6 +30,7 @@ YoungsterScript_0x5c8ec:
 YoungsterScript_0x5c8f4:
 	faceplayer
 	opentext
+	pokenamemem PARASECT, $0
 	writetext UnknownText_0x5c973
 	waitbutton
 	closetext
@@ -54,6 +55,7 @@ PokefanMScript_0x5c904:
 YoungsterScript_0x5c90c:
 	faceplayer
 	opentext
+	pokenamemem SCYTHER, $0
 	writetext UnknownText_0x5ca15
 	waitbutton
 	closetext
@@ -125,7 +127,9 @@ UnknownText_0x5c94c:
 	done
 
 UnknownText_0x5c973:
-	text "ED: My PARASECT"
+	text "ED: My @"
+	text_from_ram StringBuffer3
+	text ""
 	line "puts #MON to"
 	cont "sleep with SPORE."
 	done
@@ -147,7 +151,10 @@ UnknownText_0x5c9cc:
 
 UnknownText_0x5ca15:
 	text "BENNY: Ssh! You'll"
-	line "scare off SCYTHER."
+	line "scare off the "
+	cont "@"
+	text_from_ram StringBuffer3
+	text "."
 
 	para "I'll talk to you"
 	line "later."

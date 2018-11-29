@@ -93,8 +93,8 @@ LavRadioTower1FOfficerText:
 	para "Ever since JOHTO's"
 	line "RADIO TOWER was"
 
-	para "taken over by a"
-	line "criminal gang, we"
+	para "taken over by that"
+	line "TEAM ROCKET, we"
 
 	para "have had to step"
 	line "up our security."

@@ -92,12 +92,14 @@ GrampsScript_0x19007e:
 	opentext
 	checkevent EVENT_CLEARED_ROCKET_HIDEOUT
 	iftrue UnknownScript_0x19008c
+	pokenamemem GYARADOS, $0
 	writetext UnknownText_0x1901e5
 	waitbutton
 	closetext
 	end
 
 UnknownScript_0x19008c:
+	pokenamemem MAGIKARP, $0
 	writetext UnknownText_0x19021d
 	waitbutton
 	closetext
@@ -186,12 +188,16 @@ UnknownText_0x1901a6:
 
 UnknownText_0x1901e5:
 	text "Are you off to see"
-	line "the GYARADOS ram-"
+	line "the @"
+	text_from_ram StringBuffer3
+	text " ram-"
 	cont "page at the LAKE?"
 	done
 
 UnknownText_0x19021d:
-	text "MAGIKARP have"
+	text "@"
+	text_from_ram StringBuffer3
+	text " have"
 	line "returned to LAKE"
 	cont "OF RAGE."
 

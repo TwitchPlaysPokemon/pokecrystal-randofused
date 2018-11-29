@@ -79,8 +79,12 @@ UnknownText_0x5485f:
 	text "My DIRE HITS are"
 	line "first-rate! You"
 
-	para "can use them"
-	line "anywhere."
+	para "can use them in"
+	line "battle to boost"
+
+	para "the critical-hit"
+	line "ratios of your" 
+	cont "#MON."
 	done
 
 UnknownText_0x54898:

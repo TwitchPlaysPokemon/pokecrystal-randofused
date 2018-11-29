@@ -89,6 +89,7 @@ Binoculars2:
 	jumptext Binoculars2Text
 
 Binoculars3:
+	pokenamemem MAGIKARP, $0
 	jumptext Binoculars3Text
 
 PokeDollVendingMachine:
@@ -191,7 +192,9 @@ Binoculars2Text:
 
 Binoculars3Text:
 	text "A FISHER caught a"
-	line "lot of MAGIKARP…"
+	line "lot of @"
+	text_from_ram StringBuffer3
+	text "…"
 
 	para "They're SPLASHing"
 	line "at the same time!"

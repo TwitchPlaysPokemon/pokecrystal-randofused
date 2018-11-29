@@ -27,6 +27,9 @@ GoldenrodDeptStore4FBugCatcherScript:
 GameboyKidScript_0x55ef7:
 	faceplayer
 	opentext
+	pokenamemem MACHOKE, $0
+	pokenamemem ALAKAZAM, $1
+	pokenamemem HAUNTER, $2
 	writetext UnknownText_0x55f74
 	waitbutton
 	closetext
@@ -61,10 +64,16 @@ UnknownText_0x55f74:
 	line "Game Link cable."
 
 	para "I know of four:"
-	line "MACHOKE, KADABRA,"
-
-	para "HAUNTER and, um,"
-	line "GRAVELER."
+	line "there's @"
+	text_from_ram StringBuffer3
+	text ","
+	cont "@"
+	text_from_ram StringBuffer4
+	text ","
+	cont "@"
+	text_from_ram StringBuffer5
+	text " and"
+	cont "GRAVITAR."
 
 	para "I heard there are"
 	line "others too."

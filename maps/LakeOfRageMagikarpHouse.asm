@@ -19,6 +19,8 @@ FishingGuruScript_0x19a6ae:
 	iftrue UnknownScript_0x19a6d7
 	checkevent EVENT_LAKE_OF_RAGE_EXPLAINED_WEIRD_MAGIKARP
 	iftrue UnknownScript_0x19a6d1
+	pokenamemem GYARADOS, $0
+	pokenamemem MAGIKARP, $1
 	writetext UnknownText_0x19a72e
 	waitbutton
 	closetext
@@ -32,6 +34,7 @@ UnknownScript_0x19a6d1:
 	end
 
 UnknownScript_0x19a6d7:
+	pokenamemem MAGIKARP, $0
 	writetext UnknownText_0x19a890
 	waitbutton
 	closetext
@@ -42,6 +45,7 @@ UnknownScript_0x19a6e0:
 	writebyte MAGIKARP
 	special Special_FindThatSpecies
 	iffalse UnknownScript_0x19a6d7
+	pokenamemem MAGIKARP, $0
 	writetext UnknownText_0x19a93e
 	waitbutton
 	special Special_CheckMagikarpLength
@@ -73,6 +77,7 @@ UnknownScript_0x19a716:
 	end
 
 UnknownScript_0x19a71c:
+	pokenamemem MAGIKARP, $0
 	writetext UnknownText_0x19aa5c
 	waitbutton
 	closetext
@@ -95,7 +100,9 @@ UnknownText_0x19a72e:
 	line "actually a crater"
 
 	para "made by rampaging"
-	line "GYARADOS."
+	line "@"
+	text_from_ram StringBuffer3
+	text "."
 
 	para "The crater filled"
 	line "up with rainwater"
@@ -112,7 +119,8 @@ UnknownText_0x19a72e:
 	para "It used to be that"
 	line "you could catch"
 
-	para "lively MAGIKARP"
+	para "lively @"
+	text_from_ram StringBuffer4
 	line "there, but…"
 
 	para "I don't understand"
@@ -131,13 +139,17 @@ UnknownText_0x19a890:
 	text "LAKE OF RAGE is"
 	line "back to normal."
 
-	para "The MAGIKARP have"
+	para "The @"
+	text_from_ram StringBuffer3
+	text " have"
 	line "returned."
 
 	para "I may yet realize"
 	line "my dream of see-"
 	cont "ing the world's"
-	cont "largest MAGIKARP."
+	cont "largest @"
+	text_from_ram StringBuffer3
+	text "!"
 
 	para "Do you have a ROD?"
 	line "Please help me if"
@@ -146,7 +158,9 @@ UnknownText_0x19a890:
 
 UnknownText_0x19a93e:
 	text "Ah, you have a"
-	line "MAGIKARP! Let's"
+	line "@"
+	text_from_ram StringBuffer3
+	text "! Let's"
 
 	para "see how big that"
 	line "baby is."
@@ -184,7 +198,9 @@ UnknownText_0x19aa01:
 
 UnknownText_0x19aa5c:
 	text "What? That's not a"
-	line "MAGIKARP!"
+	line "@"
+	text_from_ram StringBuffer3
+	text "!"
 	done
 
 UnknownText_0x19aa79:

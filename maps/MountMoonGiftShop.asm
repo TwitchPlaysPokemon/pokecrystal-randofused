@@ -19,11 +19,14 @@ MountMoonGiftShopClerkScript:
 	end
 
 MountMoonGiftShopLassScript:
+	pokenamemem CLEFAIRY, $0
 	jumptextfaceplayer MountMoonGiftShopLassText
 
 MountMoonGiftShopLassText:
 	text "When the sun goes"
-	line "down, CLEFAIRY"
+	line "down, @"
+	text_from_ram StringBuffer3
+	text ""
 	cont "come out to play."
 	done
 

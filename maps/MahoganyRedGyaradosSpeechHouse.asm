@@ -10,6 +10,7 @@ MahoganyRedGyaradosSpeechHouse_MapScriptHeader:
 	db 0
 
 MahoganyRedGyaradosSpeechHouseBlackBeltScript:
+	pokenamemem GYARADOS, $0
 	jumptextfaceplayer MahoganyRedGyaradosSpeechHouseBlackBeltText
 
 TeacherScript_0x199982:
@@ -36,13 +37,18 @@ UnknownScript_0x195999:
 
 MahoganyRedGyaradosSpeechHouseBlackBeltText:
 	text "I heard that a red"
-	line "GYARADOS appeared"
-	cont "at the LAKE."
+	line "@"
+	text_from_ram StringBuffer3
+	text " app- "
+	cont "eared at the"
+	cont "LAKE!"
 
 	para "That's odd, since"
 	line "even ordinary"
 
-	para "GYARADOS are rare"
+	para "@"
+	text_from_ram StringBuffer3
+	text " are rare"
 	line "in that lake…"
 	done
 
