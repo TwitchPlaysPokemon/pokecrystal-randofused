@@ -77,7 +77,7 @@ PokemonNames::
 	db "GOLEMNITAR"
 	db "PONYGON@@@"
 	db "RAPIDGON2@"
-	db "SLOWABUTO@"
+	db "SLOWBUTO@@"
 	db "SLOWBUTOPS"
 	db "MAGNEAROW@"
 	db "MAGNAROW@@"
