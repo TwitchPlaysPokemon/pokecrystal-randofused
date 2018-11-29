@@ -42,6 +42,7 @@ BurnedTower1F_MapScriptHeader:
 	showemote EMOTE_SHOCK, BURNEDTOWER1F_EUSINE, 15
 	applymovement BURNEDTOWER1F_EUSINE, BurnedTower1FEusineMovement
 	opentext
+	pokenamemem SUICUNE, $0
 	writetext BurnedTower1FEusineIntroText
 	waitbutton
 	closetext
@@ -122,9 +123,13 @@ BurnedTowerRivalBattleScript:
 	end
 
 BurnedTower1FEusineScript:
+	pokenamemem SUICUNE, $0
 	jumptextfaceplayer BurnedTower1FEusineText
 
 BurnedTower1FMortyScript:
+	pokenamemem SUICUNE, $0
+	pokenamemem ENTEI, $1
+	pokenamemem RAIKOU, $2
 	jumptextfaceplayer BurnedTower1FMortyText
 
 BurnedTower1FRock:
@@ -233,7 +238,9 @@ BurnedTower1FEusineIntroText:
 
 	para "I'm on the trail"
 	line "of a #MON named"
-	cont "SUICUNE."
+	cont "@"
+	text_from_ram StringBuffer3
+	text "."
 
 	para "And you are…?"
 
@@ -241,7 +248,9 @@ BurnedTower1FEusineIntroText:
 	line "meet you!"
 
 	para "I heard rumors"
-	line "that SUICUNE is in"
+	line "that @"
+	text_from_ram StringBuffer3
+	text " is in"
 
 	para "this BURNED TOWER,"
 	line "so I came to look."
@@ -252,7 +261,9 @@ BurnedTower1FEusineIntroText:
 
 BurnedTower1FEusineText:
 	text "EUSINE: I heard"
-	line "that SUICUNE is in"
+	line "that @"
+	text_from_ram StringBuffer3
+	text " is in"
 
 	para "this BURNED TOWER,"
 	line "so I came to look."
@@ -269,8 +280,13 @@ BurnedTower1FMortyText:
 	line "said to be the"
 
 	para "legendary #MON"
-	line "--SUICUNE, ENTEI"
-	cont "and RAIKOU."
+	line "--@"
+	text_from_ram StringBuffer3
+	text ", @"
+	text_from_ram StringBuffer4
+	cont "and @"
+	text_from_ram StringBuffer5
+	text "."
 
 	para "EUSINE is here, so"
 	line "I've decided to"

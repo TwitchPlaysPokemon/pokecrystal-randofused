@@ -12,10 +12,12 @@ CeladonMansion1F_MapScriptHeader:
 	db 0
 
 CeladonMansionManager:
+	pokenamemem MEOWTH, $0
 	jumptextfaceplayer CeladonMansionManagerText
 
 CeladonMansion1FMeowth:
 	opentext
+	pokenamemem MEOWTH, $0
 	writetext CeladonMansion1FMeowthText
 	cry MEOWTH
 	waitbutton
@@ -24,6 +26,7 @@ CeladonMansion1FMeowth:
 
 CeladonMansion1FClefairy:
 	opentext
+	pokenamemem CLEFAIRY, $0
 	writetext CeladonMansion1FClefairyText
 	cry CLEFAIRY
 	waitbutton
@@ -32,6 +35,7 @@ CeladonMansion1FClefairy:
 
 CeladonMansion1FNidoranF:
 	opentext
+	pokenamemem NIDORAN_F, $0
 	writetext CeladonMansion1FNidoranFText
 	cry NIDORAN_F
 	waitbutton
@@ -51,21 +55,29 @@ CeladonMansionManagerText:
 	para "so I don't ever"
 	line "feel lonely."
 
-	para "MEOWTH even brings"
-	line "money home."
+	para "@"
+	text_from_ram StringBuffer3
+	text " even"
+	line "brings money home."
 	done
 
 CeladonMansion1FMeowthText:
-	text "MEOWTH: Meow!"
+	text "@"
+	text_from_ram StringBuffer3
+	text ": Meow!"
 	done
 
 CeladonMansion1FClefairyText:
-	text "CLEFAIRY: Clef"
+	text "@"
+	text_from_ram StringBuffer3
+	text ": Clef"
 	line "cleff!"
 	done
 
 CeladonMansion1FNidoranFText:
-	text "NIDORAN: Kya"
+	text "@"
+	text_from_ram StringBuffer3 
+	text ": Kya"
 	line "kyaoo!"
 	done
 

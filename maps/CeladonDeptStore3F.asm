@@ -25,6 +25,7 @@ CeladonDeptStore3FYoungsterScript:
 CeladonDeptStore3FGameboyKid1Script:
 	faceplayer
 	opentext
+	pokenamemem PORYGON, $0
 	writetext CeladonDeptStore3FGameboyKid1Text
 	waitbutton
 	closetext
@@ -34,6 +35,7 @@ CeladonDeptStore3FGameboyKid1Script:
 CeladonDeptStore3FGameboyKid2Script:
 	faceplayer
 	opentext
+	pokenamemem PORYGON, $0
 	writetext CeladonDeptStore3FGameboyKid2Text
 	waitbutton
 	closetext
@@ -59,7 +61,9 @@ CeladonDeptStore3FYoungsterText:
 
 CeladonDeptStore3FGameboyKid1Text:
 	text "Uh-oh! I traded my"
-	line "#MON without"
+	line "@"
+	text_from_ram StringBuffer3
+	text " without"
 
 	para "removing the UP-"
 	line "GRADE from it."
@@ -67,7 +71,9 @@ CeladonDeptStore3FGameboyKid1Text:
 
 CeladonDeptStore3FGameboyKid2Text:
 	text "Yeah! I'm finally"
-	line "getting a PORYGON!"
+	line "getting @"
+	text_from_ram StringBuffer3
+	text ""
 
 	para "I'm no good at the"
 	line "slots, so I could"
@@ -77,7 +83,9 @@ CeladonDeptStore3FGameboyKid2Text:
 
 	para "…Huh?"
 
-	para "The traded PORYGON"
+	para "The @"
+	text_from_ram StringBuffer3
+	text ""
 	line "turned into a dif-"
 	cont "ferent #MON!"
 	done

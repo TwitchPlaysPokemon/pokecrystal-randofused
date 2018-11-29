@@ -102,6 +102,7 @@ ReleaseTheBeasts:
 BurnedTowerB1FEusine:
 	faceplayer
 	opentext
+	pokenamemem SUICUNE, $0
 	writetext BurnedTowerB1FEusineText
 	waitbutton
 	closetext
@@ -198,14 +199,18 @@ BurnedTowerB1FEusineText:
 
 	para "I was shocked!"
 
-	para "SUICUNE raced by"
+	para "@"
+	text_from_ram StringBuffer3
+	text " raced by"
 	line "like a blur, right"
 
 	para "in front of my"
 	line "eyes!"
 
 	para "For ten years I"
-	line "chased SUICUNE,"
+	line "chased @"
+	text_from_ram StringBuffer3
+	text ","
 
 	para "and I finally got"
 	line "to see it."
@@ -227,7 +232,9 @@ BurnedTowerB1FEusineText:
 	line "get close."
 
 	para "I'm going to track"
-	line "SUICUNE."
+	line "@"
+	text_from_ram StringBuffer3
+	text "."
 
 	para "<PLAYER>, let's"
 	line "meet again!"

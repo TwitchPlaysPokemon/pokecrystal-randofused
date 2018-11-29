@@ -22,10 +22,12 @@ CeladonCity_MapScriptHeader:
 	return
 
 CeladonCityFisherScript:
+	pokenamemem POLIWRATH, $0
 	jumptextfaceplayer CeladonCityFisherText
 
 CeladonCityPoliwrath:
 	opentext
+	pokenamemem POLIWRATH, $0
 	writetext CeladonCityPoliwrathText
 	cry POLIWRATH
 	waitbutton
@@ -36,6 +38,7 @@ CeladonCityTeacher1Script:
 	jumptextfaceplayer CeladonCityTeacher1Text
 
 CeladonCityGramps1Script:
+	pokenamemem GRIMER, $0
 	jumptextfaceplayer CeladonCityGramps1Text
 
 CeladonCityGramps2Script:
@@ -78,7 +81,9 @@ CeladonCityHiddenPpUp:
 	dwb EVENT_CELADON_CITY_HIDDEN_PP_UP, PP_UP
 
 CeladonCityFisherText:
-	text "This POLIWRATH is"
+	text "This @"
+	text_from_ram StringBuffer3
+	text " is"
 	line "my partner."
 
 	para "I wonder if it'll"
@@ -87,7 +92,9 @@ CeladonCityFisherText:
 	done
 
 CeladonCityPoliwrathText:
-	text "POLIWRATH: Croak!"
+	text "@"
+	text_from_ram StringBuffer3
+	text ": Croak!"
 	done
 
 CeladonCityTeacher1Text:
@@ -102,14 +109,18 @@ CeladonCityTeacher1Text:
 	done
 
 CeladonCityGramps1Text:
-	text "GRIMER have been"
+	text "@"
+	text_from_ram StringBuffer3
+	text " keep"
 	line "appearing lately."
 
 	para "See that pond out"
 	line "in front of the"
 
-	para "house? GRIMER live"
-	line "there now."
+	para "house? @"
+	text_from_ram StringBuffer3
+	text ""
+	line "live there now."
 
 	para "Where did they"
 	line "come from? This is"

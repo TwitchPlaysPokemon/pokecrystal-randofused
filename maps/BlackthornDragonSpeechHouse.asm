@@ -14,6 +14,7 @@ BlackthornDragonSpeechHouseGrannyScript:
 
 BlackthornDragonSpeechHouseDratiniScript:
 	opentext
+	pokenamemem DRATINI, $0
 	writetext BlackthornDragonSpeechHouseDratiniText
 	cry DRATINI
 	waitbutton
@@ -44,7 +45,9 @@ BlackthornDragonSpeechHouseGrannyText:
 	done
 
 BlackthornDragonSpeechHouseDratiniText:
-	text "DRATINI: Draa!"
+	text "@"
+	text_from_ram StringBuffer3
+	text": Draa!"
 	done
 
 BlackthornDragonSpeechHouse_MapEventHeader:
