@@ -194,6 +194,7 @@ OlivinePortSailorScript:
 FishingGuruScript_0x74a01:
 	faceplayer
 	opentext
+	pokenamemem SHELLDER, $0
 	writetext UnknownText_0x74bf4
 	waitbutton
 	closetext
@@ -342,7 +343,9 @@ UnknownText_0x74bce:
 	done
 
 UnknownText_0x74bf4:
-	text "SHELLDER are easy"
+	text "@"
+	text_from_ram StringBuffer3
+	text " are easy"
 	line "to catch here."
 
 	para "They're kind of"

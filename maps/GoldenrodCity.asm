@@ -296,10 +296,10 @@ GoldenrodCityPokefanMText:
 
 GoldenrodCityYoungster1Text:
 	text "I know there's a"
-	line "new DIRE HIT SHOP,"
+	line "new BIKE SHOP, but"
 
-	para "but I can't find"
-	line "it anywhere."
+	para "I can't find it"
+	line "anywhere."
 	done
 
 UnknownText_0x198ae6:
@@ -452,14 +452,9 @@ GoldenrodCitySignText:
 	done
 
 GoldenrodCityBikeShopSignText:
-	text "Losing battles?"
-
-	para "Come get some DIRE"
-	line "HITS to help you"
-	cont "win!"
-	
-	para "DIRE HIT SHOP"
-	done
+	text "The World is a"
+	line "Cycle Path!"
+	cont "BIKE SHOP"
 
 GoldenrodCityGameCornerSignText:
 	text "Your Playground!"

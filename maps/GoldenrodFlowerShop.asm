@@ -104,12 +104,10 @@ UnknownText_0x55463:
 	text "Do you want to"
 	line "borrow the water"
 
-	para "bottle too? Oh,"
-	line "you came for the"
-
-	para "HM? I don't know…"
+	para "bottle too?"
 	line "I don't want you"
-	cont "doing anything"
+
+	para "doing anything"
 	cont "dangerous with it."
 	done
 
@@ -125,10 +123,6 @@ UnknownText_0x554c2:
 UnknownText_0x5550d:
 	text "Don't do anything"
 	line "too dangerous!"
-
-	para "That TM will help"
-	line "you navigate dark"
-	cont "areas."
 	done
 
 UnknownText_0x5552e:

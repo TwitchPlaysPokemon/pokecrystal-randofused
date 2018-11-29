@@ -21,6 +21,7 @@ PewterCityCooltrainerFScript:
 	jumptextfaceplayer PewterCityCooltrainerFText
 
 PewterCityBugCatcherScript:
+	pokenamemem CLEFAIRY, $0
 	jumptextfaceplayer PewterCityBugCatcherText
 
 GrampsScript_0x18c00f:
@@ -77,8 +78,11 @@ PewterCityCooltrainerFText:
 	done
 
 PewterCityBugCatcherText:
-	text "At night, CLEFAIRY"
-	line "come out to play"
+	text "Some nights, the"
+	line "@"
+	text_from_ram StringBuffer3
+	text " come"
+	cont "out to play at"
 	cont "at MT.MOON."
 
 	para "But not every"

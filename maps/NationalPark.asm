@@ -350,10 +350,6 @@ UnknownText_0x5c265:
 UnknownText_0x5c30d:
 	text "Catch a #MON in"
 	line "that ULTRA BALL."
-
-	para "It has a higher"
-	line "catch-rate than a"
-	cont "GREAT BALL."
 	done
 
 NationalParkYoungster1Text:

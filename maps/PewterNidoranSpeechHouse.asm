@@ -10,10 +10,12 @@ PewterNidoranSpeechHouse_MapScriptHeader:
 	db 0
 
 PewterNidoranSpeechHouseSuperNerdScript:
+	pokenamemem NIDORAN_M, $0
 	jumptextfaceplayer PewterNidoranSpeechHouseSuperNerdText
 
 PewterNidoran:
 	opentext
+	pokenamemem NIDORAN_M, $0
 	writetext PewterNidoranText
 	cry NIDORAN_M
 	waitbutton
@@ -21,11 +23,15 @@ PewterNidoran:
 	end
 
 PewterNidoranSpeechHouseSuperNerdText:
-	text "NIDORAN, shake!"
+	text "@"
+	text_from_ram StringBuffer3
+	text ", shake!"
 	done
 
 PewterNidoranText:
-	text "NIDORAN: Gau gau!"
+	text "@"
+	text_from_ram StringBuffer3
+	text ": Gauau!"
 	done
 
 PewterNidoranSpeechHouse_MapEventHeader:

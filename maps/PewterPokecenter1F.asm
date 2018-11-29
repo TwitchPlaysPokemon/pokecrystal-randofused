@@ -20,6 +20,7 @@ PewterPokecenter1FTeacherScript:
 
 PewterJigglypuff:
 	opentext
+	pokenamemem JIGGLYPUFF, $0
 	writetext PewterJigglypuffText
 	cry JIGGLYPUFF
 	waitbutton
@@ -27,6 +28,7 @@ PewterJigglypuff:
 	end
 
 PewterPokecenter1FBugCatcherScript:
+	pokenamemem JIGGLYPUFF, $0
 	jumptextfaceplayer PewterPokecenter1FBugCatcherText
 
 Chris:
@@ -49,7 +51,9 @@ PewterPokecenter1FTeacherText:
 	done
 
 PewterJigglypuffText:
-	text "JIGGLYPUFF: Puu"
+	text "@"
+	text_from_ram StringBuffer3
+	text ": Puu"
 	line "pupuu."
 	done
 
@@ -57,7 +61,9 @@ PewterPokecenter1FBugCatcherText:
 	text "Most #MON get"
 	line "drowsy if they"
 
-	para "hear a JIGGLYPUFF"
+	para "hear a @"
+	text_from_ram StringBuffer3
+	text ""
 	line "singing."
 
 	para "There are several"

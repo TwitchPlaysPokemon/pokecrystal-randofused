@@ -17,17 +17,24 @@ ClerkScript_0x1a2dcb:
 	end
 
 PewterMartYoungsterScript:
+	pokenamemem GYARADOS, $0
+	pokenamemem MAGIKARP, $1
 	jumptextfaceplayer PewterMartYoungsterText
 
 PewterMartSuperNerdScript:
+	pokenamemem MAGIKARP, $0
 	jumptextfaceplayer PewterMartSuperNerdText
 
 PewterMartYoungsterText:
 	text "Hi! Check out my"
-	line "GYARADOS!"
+	line "@"
+	text_from_ram StringBuffer3
+	text "!"
 
 	para "I raised it from a"
-	line "MAGIKARP. I can't"
+	line "@"
+	text_from_ram StringBuffer4
+	text ". I can't"
 
 	para "believe how strong"
 	line "it has become."
@@ -36,13 +43,17 @@ PewterMartYoungsterText:
 PewterMartSuperNerdText:
 	text "There once was a"
 	line "weird old man who"
-	cont "sold MAGIKARP."
+	cont "sold @"
+	text_from_ram StringBuffer3
+	text "."
 
 	para "He was saying the"
-	line "MAGIKARP from the"
+	line "@"
+	text_from_ram StringBuffer3
+	text " from"
 
-	para "LAKE OF RAGE were"
-	line "excellent."
+	para "the LAKE OF RAGE"
+	line "were excellent."
 	done
 
 PewterMart_MapEventHeader:

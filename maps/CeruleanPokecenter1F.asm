@@ -52,7 +52,7 @@ CeruleanPokecenter1FGymGuyText:
 	text "The MAGNET TRAIN"
 	line "travels at over"
 
-	para "545 kph. It goes"
+	para "340 mph. It goes"
 	line "between KANTO and"
 
 	para "JOHTO in almost no"

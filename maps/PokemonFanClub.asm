@@ -23,6 +23,7 @@ GentlemanScript_0x1917e9:
 	writetext UnknownText_0x191881
 	yesorno
 	iffalse UnknownScript_0x19181b
+	pokenamemem RAPIDASH, $0
 	writetext UnknownText_0x191911
 	buttonsound
 UnknownScript_0x191802:
@@ -59,12 +60,14 @@ FisherScript_0x191824:
 	iftrue UnknownScript_0x19185f
 	checkevent EVENT_RETURNED_MACHINE_PART
 	iftrue UnknownScript_0x191838
+	pokenamemem CLEFAIRY, $0
 	writetext UnknownText_0x191ba0
 	waitbutton
 	closetext
 	end
 
 UnknownScript_0x191838:
+	pokenamemem CLEFAIRY, $0
 	writetext UnknownText_0x191bff
 	checkevent EVENT_MET_COPYCAT_FOUND_OUT_ABOUT_LOST_ITEM
 	iftrue UnknownScript_0x191844
@@ -74,6 +77,7 @@ UnknownScript_0x191838:
 
 UnknownScript_0x191844:
 	buttonsound
+	CLEFAIRY, $0
 	writetext UnknownText_0x191c5a
 	buttonsound
 	waitsfx
@@ -89,6 +93,7 @@ UnknownScript_0x191844:
 	end
 
 UnknownScript_0x19185f:
+	pokenamemem CLEFAIRY, $0
 	writetext UnknownText_0x191d1e
 	waitbutton
 	closetext
@@ -101,13 +106,16 @@ UnknownScript_0x191865:
 	end
 
 PokemonFanClubTeacherScript:
+	pokenamemem BAYLEEF, $0
 	jumptextfaceplayer PokemonFanClubTeacherText
 
 ClefairyDoll:
+	pokenamemem CLEFAIRY, $0
 	jumptext ClefairyDollText
 
 FanClubBayleef:
 	opentext
+	pokenamemem BAYLEEF, $0
 	writetext FanClubBayleefText
 	cry BAYLEEF
 	waitbutton
@@ -142,7 +150,9 @@ UnknownText_0x191911:
 	line "Then listen up!"
 
 	para "So… my favorite"
-	line "RAPIDASH…"
+	line "@"
+	text_from_ram StringBuffer3
+	text "…"
 
 	para "It… cute… lovely…"
 	line "smart… unbearably…"
@@ -208,7 +218,9 @@ PokemonFanClubReceptionistText:
 
 UnknownText_0x191ba0:
 	text "I love the way"
-	line "CLEFAIRY waggles"
+	line "@"
+	text_from_ram StringBuffer3
+	text " waggles"
 
 	para "its finger when"
 	line "it's trying to use"
@@ -218,7 +230,9 @@ UnknownText_0x191ba0:
 	done
 
 UnknownText_0x191bff:
-	text "I love CLEFAIRY,"
+	text "I love @"
+	text_from_ram StringBuffer3
+	text ","
 	line "but I could never"
 
 	para "catch one. So I'm"
@@ -241,7 +255,9 @@ UnknownText_0x191c5a:
 	line "little girl?"
 
 	para "I'll befriend a"
-	line "real CLEFAIRY on"
+	line "real @"
+	text_from_ram StringBuffer3
+	text " on"
 
 	para "my own one day."
 	line "No worries!"
@@ -256,7 +272,9 @@ UnknownText_0x191d1e:
 	text "You watch. I'm"
 	line "going to get a"
 
-	para "real CLEFAIRY as"
+	para "real @"
+	text_from_ram StringBuffer3
+	text " as"
 	line "my friend."
 	done
 
@@ -267,23 +285,31 @@ UnknownText_0x191d58:
 
 PokemonFanClubTeacherText:
 	text "Look at my darling"
-	line "BAYLEEF!"
+	line "@"
+	text_from_ram StringBuffer3
+	text "!"
 
 	para "The leaf on its"
 	line "head is so cute!"
 	done
 
 ClefairyDollText:
-	text "It's a CLEFAIRY!"
+	text "It's a @"
+	text_from_ram StringBuffer3
+	text "!"
 	line "Huh?"
 
 	para "Oh, right. It's a"
-	line "CLEFAIRY #"
+	line "@"
+	text_from_ram StringBuffer3
+	text " #"
 	cont "DOLL."
 	done
 
 FanClubBayleefText:
-	text "BAYLEEF: Li liif!"
+	text "@"
+	text_from_ram StringBuffer3
+	text ": Liiif!"
 	done
 
 UnknownText_0x191dfc:

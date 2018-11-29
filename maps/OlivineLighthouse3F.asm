@@ -28,6 +28,7 @@ TrainerGentlemanPreston:
 .Script:
 	end_if_just_battled
 	opentext
+	pokenamemem ONIX, $0
 	writetext GentlemanPrestonAfterBattleText
 	waitbutton
 	closetext
@@ -78,7 +79,7 @@ SailorTerrellSeenText:
 	done
 
 SailorTerrellBeatenText:
-	text "You are both kind"
+	text "You are both kind,"
 	line "and strong…"
 	done
 
@@ -109,7 +110,9 @@ GentlemanPrestonBeatenText:
 GentlemanPrestonAfterBattleText:
 	text "JASMINE used to"
 	line "use rock #MON"
-	cont "like ONIX."
+	cont "like @"
+	text_from_ram StringBuffer3
+	text "."
 	done
 
 OlivineLighthouse3F_MapEventHeader:

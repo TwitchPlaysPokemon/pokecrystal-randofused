@@ -155,15 +155,10 @@ UnknownText_0x54dae:
 	done
 
 UnknownText_0x54dc1:
-	text "BILL: @"
-	text_from_ram StringBuffer3
-	text " was"
-	line "once an uncommon"
-
-	para "#MON found only"
-	line "in the SAFARI"
-	cont "ZONE."
-	done
+	text "BILL: PROF.ELM"
+	line "claims DODUO may"
+ 	para "evolve in new and"
+	line "unknown ways."
 
 UnknownText_0x54e02:
 	text "Whoa, wait. You"

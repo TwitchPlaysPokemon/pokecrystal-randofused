@@ -141,6 +141,7 @@ CooltrainerFScript_0x5cdd5:
 	iffalse UnknownScript_0x5ce42
 	playsound SFX_ELEVATOR_END
 	waitsfx
+	pokenamemem CHARMANDER, $0
 	writetext UnknownText_0x5d30e
 	yesorno
 	iftrue UnknownScript_0x5ce42
@@ -368,8 +369,10 @@ UnknownText_0x5d30e:
 	para "Do GOLDENROD GAME"
 	line "CORNER's slots"
 
-	para "have CHARMANDER"
-	line "on their reels?"
+	para "have @"
+	text_from_ram StringBuffer3
+	text " on"
+	line "their reels?"
 	done
 
 UnknownText_0x5d37b:

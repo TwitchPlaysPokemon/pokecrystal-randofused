@@ -73,7 +73,7 @@ CeladonDeptStore3FGameboyKid2Text:
 	text "Yeah! I'm finally"
 	line "getting @"
 	text_from_ram StringBuffer3
-	text ""
+	text "!"
 
 	para "I'm no good at the"
 	line "slots, so I could"
