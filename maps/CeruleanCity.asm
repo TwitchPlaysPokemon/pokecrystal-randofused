@@ -39,6 +39,7 @@ CeruleanCitySuperNerdScript:
 
 CeruleanCitySlowbro:
 	opentext
+	pokenamemem SLOWBRO, $0
 	writetext CeruleanCitySlowbroText
 	cry SLOWBRO
 	waitbutton
@@ -48,15 +49,18 @@ CeruleanCitySlowbro:
 CeruleanCityCooltrainerFScript:
 	faceplayer
 	opentext
+	pokenamemem SLOWBRO, $0
 	writetext CeruleanCityCooltrainerFText1
 	waitbutton
 	closetext
 	spriteface CERULEANCITY_COOLTRAINER_F, LEFT
 	opentext
+	pokenamemem SLOWBRO, $0
 	writetext CeruleanCityCooltrainerFText2
 	waitbutton
 	closetext
 	opentext
+	pokenamemem SLOWBRO, $0
 	writetext CeruleanCitySlowbroText
 	cry SLOWBRO
 	waitbutton
@@ -183,18 +187,24 @@ CeruleanCitySuperNerdText:
 	done
 
 CeruleanCitySlowbroText:
-	text "SLOWBRO: Yarah?"
+	text "@"
+	text_from_ram StringBuffer3
+	text ": Yarah?"
 	done
 
 CeruleanCityCooltrainerFText1:
-	text "My SLOWBRO and I"
-	line "make an awesome"
+	text "My @" 
+	text_from_ram StringBuffer3
+	text " and"
+	line "I make an awesome"
 	cont "combination!"
 	done
 
 CeruleanCityCooltrainerFText2:
-	text "SLOWBRO, show me"
-	line "your CONFUSION!"
+	text "@"
+	text_from_ram StringBuffer3
+	text ", use"
+	line "CONFUSION!"
 	done
 
 CeruleanCityCooltrainerFText3:

@@ -212,6 +212,7 @@ ElderScript_0x18d1a5:
 	waitbutton
 	checkcode VAR_PARTYCOUNT
 	if_equal 6, .PartyFull
+	pokenamemem DRATINI, $0
 	writetext UnknownText_0x18d697
 	playsound SFX_CAUGHT_MON
 	waitsfx
@@ -516,7 +517,8 @@ UnknownText_0x18d604:
 	para "I have something"
 	line "for you."
 
-	para "Take this DRATINI"
+	para "Take this #MON"
+	text_from_ram StringBuffer3
 	line "as proof that I"
 
 	para "have recognized"
@@ -525,7 +527,9 @@ UnknownText_0x18d604:
 
 UnknownText_0x18d697:
 	text "<PLAYER> received"
-	line "DRATINI!"
+	line "@"
+	text_from_ram StringBuffer3
+	text "!"
 	done
 
 UnknownText_0x18d6ac:

@@ -59,6 +59,7 @@ CianwoodCitySuicuneAndEusine:
 	appear CIANWOODCITY_EUSINE
 	applymovement CIANWOODCITY_EUSINE, MovementData_0x1a00e7
 	opentext
+	pokenamemem SUICUNE, $0
 	writetext EusineSuicuneText
 	waitbutton
 	closetext
@@ -70,6 +71,7 @@ CianwoodCitySuicuneAndEusine:
 	reloadmapafterbattle
 	playmusic MUSIC_MYSTICALMAN_ENCOUNTER
 	opentext
+	pokenamemem SUICUNE, $0
 	writetext EusineAfterText
 	waitbutton
 	closetext
@@ -281,16 +283,22 @@ EusineSuicuneText:
 	line "<PLAYER>."
 
 	para "Wasn't that"
-	line "SUICUNE just now?"
+	line "@"
+	text_from_ram StringBuffer3
+	text " just now?"
 
 	para "I only caught a"
 	line "quick glimpse, but"
 
 	para "I thought I saw"
-	line "SUICUNE running on"
+	line "@"
+	text_from_ram StringBuffer3
+	text " running on"
 	cont "the waves."
 
-	para "SUICUNE is beau-"
+	para "@"
+	text_from_ram StringBuffer3
+	text " is beau-"
 	line "tiful and grand."
 
 	para "And it races"
@@ -302,13 +310,17 @@ EusineSuicuneText:
 	para "It's wonderful…"
 
 	para "I want to see"
-	line "SUICUNE up close…"
+	line "@"
+	text_from_ram StringBuffer3
+	text " up close…"
 
 	para "I've decided."
 
 	para "I'll battle you as"
 	line "a trainer to earn"
-	cont "SUICUNE's respect!"
+	cont "@"
+	text_from_ram StringBuffer3
+	text "'s respect!"
 
 	para "Come on, <PLAYER>."
 	line "Let's battle now!"
@@ -330,7 +342,9 @@ EusineAfterText:
 
 	para "I'm going to keep"
 	line "searching for"
-	cont "SUICUNE."
+	cont "@"
+	text_from_ram StringBuffer3
+	text "."
 
 	para "I'm sure we'll see"
 	line "each other again."

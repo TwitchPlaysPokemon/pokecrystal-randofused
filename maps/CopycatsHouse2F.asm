@@ -174,6 +174,7 @@ Copycat:
 
 CopycatsDodrio:
 	opentext
+	pokenamemem DODRIO, $0
 	writetext CopycatsDodrioText1
 	cry DODRIO
 	buttonsound
@@ -252,8 +253,8 @@ CopycatText_Worried:
 
 CopycatText_GiveDoll:
 	text "COPYCAT: Yay!"
-	line "That's my CLEFAIRY"
-	cont "# DOLL!"
+	line "That's my"
+	cont "lost # DOLL!"
 
 	para "See the tear where"
 	line "the right leg is"
@@ -342,7 +343,9 @@ CopycatText_Female_3:
 	done
 
 CopycatsDodrioText1:
-	text "DODRIO: Gii giii!"
+	text "@"
+	text_from_ram StringBuffer3
+	text ": Gi gii!"
 	done
 
 CopycatsDodrioText2:

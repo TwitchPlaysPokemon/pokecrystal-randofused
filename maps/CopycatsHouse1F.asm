@@ -31,6 +31,7 @@ UnknownScript_0x18ad24:
 
 ClefairyScript_0x18ad2a:
 	opentext
+	pokenamemem BLISSEY, $0
 	writetext UnknownText_0x18ae4b
 	cry BLISSEY
 	waitbutton
@@ -69,7 +70,9 @@ UnknownText_0x18add3:
 	done
 
 UnknownText_0x18ae4b:
-	text "BLISSEY: Bliisii!"
+	text "@"
+	text_from_ram StringBuffer3
+	text ": Blisii!"
 	done
 
 CopycatsHouse1F_MapEventHeader:

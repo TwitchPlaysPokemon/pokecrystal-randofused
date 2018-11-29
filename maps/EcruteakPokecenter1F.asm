@@ -72,6 +72,7 @@ EcruteakPokecenter1FCooltrainerFScript:
 	jumptextfaceplayer EcruteakPokecenter1FCooltrainerFText
 
 EcruteakPokecenter1FGymGuyScript:
+	pokenamemem GYARADOS, $0
 	jumptextfaceplayer EcruteakPokecenter1FGymGuyText
 
 EcruteakPokecenter1FBillMovement1:
@@ -199,8 +200,10 @@ EcruteakPokecenter1FCooltrainerFText:
 EcruteakPokecenter1FGymGuyText:
 	text "LAKE OF RAGE…"
 
-	para "The appearance of"
-	line "a GYARADOS swarm…"
+	para "There's an unusual"
+	line "@"
+	text_from_ram StringBuffer3
+	text " swarm…"
 
 	para "I smell a conspir-"
 	line "acy. I know it!"

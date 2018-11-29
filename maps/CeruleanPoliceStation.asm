@@ -18,6 +18,7 @@ CeruleanPoliceStationPokefanFScript:
 
 CeruleanDiglett:
 	opentext
+	pokenamemem DIGLETT, $0
 	writetext CeruleanDiglettText
 	cry DIGLETT
 	waitbutton
@@ -40,7 +41,9 @@ CeruleanPoliceStationPokefanFText:
 	done
 
 CeruleanDiglettText:
-	text "DIGLETT: Dug dug."
+	text "@"
+	text_from_ram StringBuffer3
+	text ": Dug dug."
 	done
 
 CeruleanPoliceStation_MapEventHeader:

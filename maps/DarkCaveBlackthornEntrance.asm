@@ -50,15 +50,15 @@ DarkCaveBlackthornEntrancePharmacistText1:
 	line "worry about it."
 
 	para "I'll give you a"
-	line "MAX ELIXER,"
-	cont "so forget"
-	cont "you saw me, OK?"
+	line "MAX ELIXER, so"
+	cont "forget you saw me,"
+	cont "OK?"
 	done
 
 DarkCaveBlackthornEntrancePharmacistText2:
-	text "BLACKGLASSES ups"
-	line "the power of dark-"
-	cont "type moves."
+	text "MAX ELIXER comp- "
+	line "letely restores a"
+	cont "#MON's PP."
 	done
 
 DarkCaveBlackthornEntrance_MapEventHeader:

@@ -70,6 +70,10 @@ PharmacistDescribeSecretpotionText:
 
 	para "I only offer it in"
 	line "an emergency."
+
+	para "and no, it's not"
+	line "cocaine… I should"
+	cont "change the name…"
 	done
 
 CianwoodPharmacy_MapEventHeader:

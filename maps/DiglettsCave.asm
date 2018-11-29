@@ -9,6 +9,7 @@ DiglettsCave_MapScriptHeader:
 	db 0
 
 DiglettsCavePokefanMScript:
+	pokenamemem DIGLETT, $0
 	jumptextfaceplayer DiglettsCavePokefanMText
 
 DiglettsCaveHiddenMaxRevive:
@@ -16,7 +17,9 @@ DiglettsCaveHiddenMaxRevive:
 
 
 DiglettsCavePokefanMText:
-	text "A bunch of DIGLETT"
+	text "A bunch of @"
+	text_from_ram StringBuffer3
+	text ""
 	line "popped out of the"
 
 	para "ground! That was"

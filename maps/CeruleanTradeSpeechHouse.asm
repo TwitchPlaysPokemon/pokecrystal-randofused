@@ -20,6 +20,7 @@ CeruleanTradeSpeechHouseGrampsScript:
 RhydonScript_0x188139:
 	opentext
 	writetext UnknownText_0x18819c
+	pokenamemem KANGASKHAN, $0
 	cry KANGASKHAN
 	waitbutton
 	closetext
@@ -27,6 +28,7 @@ RhydonScript_0x188139:
 
 ZubatScript_0x188143:
 	opentext
+	pokenamemem ZUBAT, $0
 	writetext UnknownText_0x1881b5
 	cry ZUBAT
 	waitbutton
@@ -45,12 +47,17 @@ CeruleanTradeSpeechHouseGrampsText:
 	done
 
 UnknownText_0x18819c:
-	text "KANGASKHAN: Garu"
+	text "@"
+	text_from_ram StringBuffer3
+	text ": Garu"
 	line "garuu."
 	done
 
 UnknownText_0x1881b5:
-	text "ZUBAT: Zuba zubaa."
+	text "@"
+	text_from_ram StringBuffer3
+	text ": Zub, zub"
+	line "zubaa!"
 	done
 
 CeruleanTradeSpeechHouse_MapEventHeader:

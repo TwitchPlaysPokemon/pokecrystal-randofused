@@ -122,6 +122,7 @@ SurfGuyAlreadyGaveSurf:
 
 DanceTheaterRhydon:
 	opentext
+	pokenamemem RHYDON, $0
 	writetext RhydonText
 	cry RHYDON
 	waitbutton
@@ -294,13 +295,15 @@ SurfGuyElegantKimonoGirlsText:
 	done
 
 RhydonText:
-	text "RHYDON: Gugooh"
+	text "@"
+	text_from_ram StringBuffer3
+	text ": Gugooh"
 	line "gugogooh!"
 	done
 
 DanceTheatreCooltrainerMText:
 	text "That man's always"
-	line "with his RHYDON."
+	line "with his #MON"
 
 	para "Says he wants a"
 	line "#MON that can"

@@ -1229,7 +1229,10 @@ ElmsLabSignpostText_Egg:
 AideText_GiveYouPotions:
 	text "<PLAY_G>, I want"
 	line "you to have this"
-	cont "for your errand."
+
+	para "for your errand,"
+	line "it's the TM for"
+	cont "SOLARBEAM."
 	done
 
 AideText_AlwaysBusy:

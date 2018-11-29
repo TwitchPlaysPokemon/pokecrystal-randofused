@@ -17,23 +17,31 @@ ClerkScript_0x99c3b:
 	end
 
 EcruteakMartSuperNerdScript:
+	pokenamemem EEVEE, $0
+	pokenamemem ESPEON, $1
+	pokenamemem UMBREON, $2
 	jumptextfaceplayer EcruteakMartSuperNerdText
 
 EcruteakMartGrannyScript:
 	jumptextfaceplayer EcruteakMartGrannyText
 
 EcruteakMartSuperNerdText:
-	text "My EEVEE evolved"
-	line "into an ESPEON."
+	text "My @"
+	text_from_ram StringBuffer3
+	text " evolved"
+	line "into an @"
+	text_from_ram StringBuffer4
+	text "."
 
 	para "But my friend's"
-	line "EEVEE turned into"
-	cont "an UMBREON."
+	line "became an @"
+	text_from_ram StringBuffer5
+	text "."
 
 	para "I wonder why? We"
 	line "both were raising"
 
-	para "our EEVEE in the"
+	para "our #MON in the"
 	line "same way…"
 	done
 

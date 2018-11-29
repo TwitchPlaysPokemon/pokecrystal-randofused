@@ -34,6 +34,8 @@ CeladonEusine:
 	iffalse .NoSuicune
 	special SpecialBeastsCheck
 	iftrue .HoOh
+	pokenamemem RAIKOU, $0
+	pokenamemem ENTEI, $1
 	writetext NoBeastsText
 	waitbutton
 .NoSuicune:
@@ -130,8 +132,12 @@ NoBeastsText:
 	para "Have you caught"
 	line "the legendary"
 
-	para "#MON RAIKOU and"
-	line "ENTEI?"
+	para "#MON @"
+	text_from_ram StringBuffer3
+	text" and"
+	line "@"
+	text_from_ram StringBuffer4
+	text "?"
 
 	para $56, $56, $56
 
