@@ -455,6 +455,7 @@ GoldenrodCityBikeShopSignText:
 	text "The World is a"
 	line "Cycle Path!"
 	cont "BIKE SHOP"
+	done
 
 GoldenrodCityGameCornerSignText:
 	text "Your Playground!"
