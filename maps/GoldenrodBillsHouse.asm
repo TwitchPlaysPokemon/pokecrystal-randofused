@@ -159,6 +159,7 @@ UnknownText_0x54dc1:
 	line "claims DODUO may"
  	para "evolve in new and"
 	line "unknown ways."
+	done
 
 UnknownText_0x54e02:
 	text "Whoa, wait. You"
