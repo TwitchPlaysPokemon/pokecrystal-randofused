@@ -69,9 +69,7 @@ PharmacistDescribeSecretpotionText:
 	line "a tad too strong."
 
 	para "I only offer it in"
-	line "an emergency. It"
-	cont "will speed up"
-	cont "your search!"
+	line "an emergency."
 	done
 
 CianwoodPharmacy_MapEventHeader:
