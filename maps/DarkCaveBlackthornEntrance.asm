@@ -56,9 +56,9 @@ DarkCaveBlackthornEntrancePharmacistText1:
 	done
 
 DarkCaveBlackthornEntrancePharmacistText2:
-	text "MAX ELIXER comp- "
-	line "letely restores a"
-	cont "#MON's PP."
+	text "BLACKGLASSES ups"
+	line "the power of dark-"
+	cont "type moves."
 	done
 
 DarkCaveBlackthornEntrance_MapEventHeader:
