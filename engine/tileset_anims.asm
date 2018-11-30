@@ -919,8 +919,9 @@ TileAnimationPalette: ; fc6d7
 ; Transition between color values 0-2 for color 0 in palette 3.
 
 ; No palette changes on DMG.
-	ld a, [hCGB]
-	and a
+	; ld a, [hCGB]
+	; and a
+	; No palette changes on anything
 	ret z
 
 ; We don't want to mess with non-standard palettes.
