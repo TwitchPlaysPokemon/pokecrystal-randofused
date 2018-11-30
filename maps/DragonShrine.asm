@@ -518,7 +518,6 @@ UnknownText_0x18d604:
 	line "for you."
 
 	para "Take this #MON"
-	text_from_ram StringBuffer3
 	line "as proof that I"
 
 	para "have recognized"
