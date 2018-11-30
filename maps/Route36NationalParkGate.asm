@@ -37,11 +37,11 @@ Route36NationalParkGate_MapScriptHeader:
 .CheckIfContestRunning:
 	checkflag ENGINE_BUG_CONTEST_TIMER
 	iftrue .BugContestIsRunning
-	setscene 0
+	setscene $0
 	return
 
 .BugContestIsRunning:
-	setscene 2
+	setscene $2
 	return
 
 .CheckIfContestAvailable:
@@ -67,8 +67,8 @@ Route36NationalParkGate_MapScriptHeader:
 	spriteface PLAYER, UP
 	opentext
 	checkcode VAR_CONTESTMINUTES
-	addvar 1
-	vartomem MEM_BUFFER_0
+	addvar $1
+	RAM2MEM $0
 	writetext UnknownText_0x6b284
 	yesorno
 	iffalse .GoBackToContest
@@ -93,7 +93,7 @@ Route36NationalParkGate_MapScriptHeader:
 	playsound SFX_EXIT_BUILDING
 	special FadeOutPalettes
 	waitsfx
-	warpfacing LEFT, NATIONAL_PARK_BUG_CONTEST, 33, 18
+	warpfacing LEFT, NATIONAL_PARK_BUG_CONTEST, $21, $12
 	end
 
 .CopyContestants:
@@ -155,7 +155,7 @@ Route36OfficerScriptContest:
 	yesorno
 	iffalse .DecidedNotToJoinContest
 	checkcode VAR_PARTYCOUNT
-	if_greater_than 1, .LeaveMonsWithOfficer
+	if_greater_than $1, .LeaveMonsWithOfficer
 	special ContestDropOffMons
 	clearevent EVENT_LEFT_MONS_WITH_CONTEST_OFFICER
 .ResumeStartingContest:
@@ -177,17 +177,17 @@ Route36OfficerScriptContest:
 	special FadeOutPalettes
 	waitsfx
 	special Special_SelectRandomBugContestContestants
-	warpfacing LEFT, NATIONAL_PARK_BUG_CONTEST, 33, 18
+	warpfacing LEFT, NATIONAL_PARK_BUG_CONTEST, $21, $12
 	end
 
 .LeaveMonsWithOfficer:
 	checkcode VAR_PARTYCOUNT
-	if_less_than PARTY_LENGTH, .ContinueLeavingMons
+	if_less_than $6, .ContinueLeavingMons
 	checkcode VAR_BOXSPACE
-	if_equal 0, .BoxFull
+	if_equal $0, .BoxFull
 .ContinueLeavingMons:
 	special CheckFirstMonIsEgg
-	if_equal TRUE, .FirstMonIsEgg
+	if_equal $1, .FirstMonIsEgg
 	writetext UnknownText_0x6afb0
 	yesorno
 	iffalse .RefusedToLeaveMons
@@ -380,6 +380,7 @@ YoungsterScript_0x6ad56:
 	end
 
 UnknownScript_0x6ad64:
+	pokenamemem SCYTHER, $0
 	writetext UnknownText_0x6b57c
 	waitbutton
 	closetext
@@ -722,7 +723,9 @@ UnknownText_0x6b54e:
 
 UnknownText_0x6b57c:
 	text "BENNY: I caught a"
-	line "SCYTHER before,"
+	line "@"
+	text_from_ram StringBuffer3
+	text " before,"
 	cont "but I didn't win."
 	done
 

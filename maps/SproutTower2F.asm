@@ -27,6 +27,7 @@ TrainerSageEdmond:
 .Script:
 	end_if_just_battled
 	opentext
+	pokenamemem BELLSPROUT, $0
 	writetext SageEdmondAfterBattleText
 	waitbutton
 	closetext
@@ -68,7 +69,9 @@ SageEdmondBeatenText:
 
 SageEdmondAfterBattleText:
 	text "I tried to copy"
-	line "BELLSPROUT's"
+	line "@"
+	text_from_ram StringBuffer3
+	text "'s"
 
 	para "gentle movements"
 	line "for battle…"

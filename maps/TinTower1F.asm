@@ -79,7 +79,7 @@ TinTower1F_MapScriptHeader:
 .StairsCallback:
 	checkevent EVENT_GOT_RAINBOW_WING
 	iftrue .DontHideStairs
-	changeblock 10, 2, $9
+	changeblock $a, $2, $9
 .DontHideStairs:
 	return
 
@@ -125,38 +125,39 @@ TinTower1F_MapScriptHeader:
 	disappear TINTOWER1F_SUICUNE
 	setevent EVENT_FOUGHT_SUICUNE
 	setevent EVENT_SAW_SUICUNE_ON_ROUTE_42
-	setmapscene ROUTE_42, 0
+	setmapscene ROUTE_42, $0
 	setevent EVENT_SAW_SUICUNE_ON_ROUTE_36
-	setmapscene ROUTE_36, 0
+	setmapscene ROUTE_36, $0
 	setevent EVENT_SAW_SUICUNE_AT_CIANWOOD_CITY
-	setmapscene CIANWOOD_CITY, 0
-	setscene 1
+	setmapscene CIANWOOD_CITY, $0
+	setscene $1
 	clearevent EVENT_SET_WHEN_FOUGHT_HO_OH
 	reloadmapafterbattle
 	pause 20
 	spriteface PLAYER, DOWN
 	playmusic MUSIC_MYSTICALMAN_ENCOUNTER
 	playsound SFX_ENTER_DOOR
-	moveobject TINTOWER1F_EUSINE, 10, 15
+	moveobject TINTOWER1F_EUSINE, $a, $f
 	appear TINTOWER1F_EUSINE
 	applymovement TINTOWER1F_EUSINE, MovementData_0x1851ec
 	playsound SFX_ENTER_DOOR
-	moveobject TINTOWER1F_SAGE1, 9, 15
+	moveobject TINTOWER1F_SAGE1, $9, $f
 	appear TINTOWER1F_SAGE1
 	applymovement TINTOWER1F_SAGE1, MovementData_0x1851f5
 	playsound SFX_ENTER_DOOR
-	moveobject TINTOWER1F_SAGE2, 9, 15
+	moveobject TINTOWER1F_SAGE2, $9, $f
 	appear TINTOWER1F_SAGE2
 	applymovement TINTOWER1F_SAGE2, MovementData_0x1851fb
 	playsound SFX_ENTER_DOOR
-	moveobject TINTOWER1F_SAGE3, 9, 15
+	moveobject TINTOWER1F_SAGE3, $9, $f
 	appear TINTOWER1F_SAGE3
 	applymovement TINTOWER1F_SAGE3, MovementData_0x1851fe
-	moveobject TINTOWER1F_SAGE1, 7, 13
-	moveobject TINTOWER1F_SAGE2, 9, 13
-	moveobject TINTOWER1F_SAGE3, 11, 13
+	moveobject TINTOWER1F_SAGE1, $7, $d
+	moveobject TINTOWER1F_SAGE2, $9, $d
+	moveobject TINTOWER1F_SAGE3, $b, $d
 	spriteface PLAYER, RIGHT
 	opentext
+	pokenamemem SUICUNE, $0
 	writetext TinTowerEusineSuicuneText
 	waitbutton
 	closetext
@@ -173,6 +174,9 @@ TinTower1FSage1Script:
 	jumptextfaceplayer TinTower1FSage1Text
 
 TinTower1FSage2Script:
+	pokenamemem SUICUNE, $0
+	pokenamemem ENTEI, $1
+	pokenamemem RAIKOU, $0
 	jumptextfaceplayer TinTower1FSage2Text
 
 TinTower1FSage3Script:
@@ -181,6 +185,7 @@ TinTower1FSage3Script:
 TinTower1FSage4Script:
 	checkevent EVENT_FOUGHT_HO_OH
 	iftrue .FoughtHoOh
+	pokenamemem HO_OH, $0
 	jumptextfaceplayer TinTower1FSage4Text1
 
 .FoughtHoOh:
@@ -197,11 +202,11 @@ TinTower1FSage5Script:
 	buttonsound
 	verbosegiveitem RAINBOW_WING
 	closetext
-	refreshscreen
+	refreshscreen $0
 	earthquake 72
 	waitsfx
 	playsound SFX_STRENGTH
-	changeblock 10, 2, $20
+	changeblock $a, $2, $20
 	reloadmappart
 	setevent EVENT_GOT_RAINBOW_WING
 	closetext
@@ -224,6 +229,8 @@ TinTower1FSage6Script:
 	jumptextfaceplayer TinTower1FSage6Text1
 
 .FoughtHoOh:
+	pokenamemem SUICUNE, $0
+	pokenamemem HO_OH, $1
 	jumptextfaceplayer TinTower1FSage6Text2
 
 TinTowerEusine:
@@ -319,13 +326,17 @@ TinTowerEusineSuicuneText:
 	para "That was truly"
 	line "inspiring to see."
 
-	para "SUICUNE was tough,"
+	para "@"
+	text_from_ram StringBuffer3
+	text " was tough,"
 	line "but you were even"
 
 	para "more incredible,"
 	line "<PLAYER>."
 
-	para "I heard SUICUNE's"
+	para "I heard @"
+	text_from_ram StringBuffer3
+	text "'s"
 	line "mystic power"
 
 	para "summons a rainbow-"
@@ -384,7 +395,7 @@ TinTower1FSage2Text:
 
 	para "In other words…"
 
-	para "HO-OH descended"
+	para "HO-CUNE descended"
 	line "from the sky and"
 
 	para "gave new life to"
@@ -392,8 +403,14 @@ TinTower1FSage2Text:
 
 	para "They are…"
 
-	para "SUICUNE, ENTEI and"
-	line "RAIKOU."
+	para "@"
+	text_from_ram StringBuffer3
+	text ", @"
+	text_from_ram StringBuffer4
+	text " and"
+	line "@"
+	text_from_ram StringBuffer5
+	text "."
 
 	para "That is what they"
 	line "say."
@@ -417,7 +434,9 @@ TinTower1FSage3Text:
 	done
 
 TinTower1FSage4Text1:
-	text "HO-OH appears to"
+	text "@"
+	text_from_ram StringBuffer3
+	text " appears to"
 	line "have descended"
 
 	para "upon this, the TIN"
@@ -504,10 +523,15 @@ TinTower1FSage5Text3:
 
 TinTower1FSage6Text2:
 	text "Of the legendary"
-	line "#MON, SUICUNE"
+	line "#MON, @"
+	text_from_ram StringBuffer3
+	text ""
 
 	para "is said to be the"
-	line "closest to HO-OH."
+	line "closest to the"
+	cont "#MON @"
+	text_from_ram StringBuffer4
+	text "."
 
 	para "I hear there may"
 	line "also be a link to"
@@ -519,7 +543,9 @@ TinTower1FSage6Text2:
 	line "must be sharing a"
 
 	para "cooperative bond"
-	line "with SUICUNE."
+	line "with @"
+	text_from_ram StringBuffer3
+	text "."
 	done
 
 TinTower1F_MapEventHeader:

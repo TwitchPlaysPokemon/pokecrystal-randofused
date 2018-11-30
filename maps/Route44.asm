@@ -31,6 +31,9 @@ TrainerBirdKeeperVance1:
 	iftrue UnknownScript_0x19d8eb
 	checkevent EVENT_VANCE_ASKED_FOR_PHONE_NUMBER
 	iftrue UnknownScript_0x19d853
+	pokenamemem ARTICUNO, $0
+	pokenamemem ZAPDOS, $0
+	pokenamemem MOLTRES, $0
 	writetext UnknownText_0x19dbf3
 	buttonsound
 	setevent EVENT_VANCE_ASKED_FOR_PHONE_NUMBER
@@ -41,9 +44,9 @@ UnknownScript_0x19d853:
 	scall UnknownScript_0x19d8e3
 UnknownScript_0x19d856:
 	askforphonenumber PHONE_BIRDKEEPER_VANCE
-	if_equal PHONE_CONTACTS_FULL, UnknownScript_0x19d8f3
-	if_equal PHONE_CONTACT_REFUSED, UnknownScript_0x19d8ef
-	trainertotext BIRD_KEEPER, VANCE1, MEM_BUFFER_0
+	if_equal $1, UnknownScript_0x19d8f3
+	if_equal $2, UnknownScript_0x19d8ef
+	trainertotext BIRD_KEEPER, VANCE1, $0
 	scall UnknownScript_0x19d8e7
 	jump UnknownScript_0x19d8eb
 
@@ -175,6 +178,7 @@ TrainerFisherWilton1:
 	iftrue UnknownScript_0x19d8eb
 	checkevent EVENT_WILTON_ASKED_FOR_PHONE_NUMBER
 	iftrue UnknownScript_0x19d957
+	pokenamemem POLIWAG, $0
 	writetext UnknownText_0x19daa8
 	buttonsound
 	setevent EVENT_WILTON_ASKED_FOR_PHONE_NUMBER
@@ -185,9 +189,9 @@ UnknownScript_0x19d957:
 	scall UnknownScript_0x19d8e3
 UnknownScript_0x19d95a:
 	askforphonenumber PHONE_FISHER_WILTON
-	if_equal PHONE_CONTACTS_FULL, UnknownScript_0x19d8f3
-	if_equal PHONE_CONTACT_REFUSED, UnknownScript_0x19d8ef
-	trainertotext FISHER, WILTON1, MEM_BUFFER_0
+	if_equal $1, UnknownScript_0x19d8f3
+	if_equal $2, UnknownScript_0x19d8ef
+	trainertotext FISHER, WILTON1, $0
 	scall UnknownScript_0x19d8e7
 	jump UnknownScript_0x19d8eb
 
@@ -323,7 +327,7 @@ Route44HiddenElixer:
 
 FisherWilton1SeenText:
 	text "Aack! You made me"
-	line "lose a POLIWAG!"
+	line "lose a POLIWASTLY!"
 
 	para "What are you going"
 	line "to do about it?"
@@ -335,8 +339,10 @@ FisherWilton1BeatenText:
 	done
 
 UnknownText_0x19daa8:
-	text "That POLIWAG that"
-	line "got away…"
+	text "That @"
+	text_from_ram StringBuffer3
+	text ""
+	line "that got away…"
 	cont "It was huge."
 
 	para "I swear it must've"
@@ -380,8 +386,14 @@ BirdKeeperVance1BeatenText:
 	done
 
 UnknownText_0x19dbf3:
-	text "ARTICUNO, ZAPDOS"
-	line "and MOLTRES are"
+	text "@"
+	text_from_ram StringBuffer3
+	text ", @"
+	text_from_ram StringBuffer4
+	text ""
+	line "and @"
+	text_from_ram StringBuffer5
+	text " are"
 
 	para "the three legend-"
 	line "ary bird #MON."

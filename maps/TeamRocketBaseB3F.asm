@@ -45,7 +45,7 @@ TeamRocketBaseB3F_MapScriptHeader:
 	return
 
 .OpenSesame:
-	changeblock 10, 8, $7
+	changeblock $a, $8, $7
 	return
 
 LanceGetPasswordScript:
@@ -60,7 +60,7 @@ LanceGetPasswordScript:
 	closetext
 	applymovement TEAMROCKETBASEB3F_LANCE, MovementData_0x6e12c
 	disappear TEAMROCKETBASEB3F_LANCE
-	setscene 1
+	setscene $1
 	end
 
 RocketBaseRival:
@@ -79,7 +79,7 @@ RocketBaseRival:
 	applymovement PLAYER, RocketBaseRivalShovesPlayerMovement
 	applymovement TEAMROCKETBASEB3F_SILVER, RocketBaseRivalLeaveMovement
 	disappear TEAMROCKETBASEB3F_SILVER
-	setscene 2
+	setscene $2
 	special RestartMapMusic
 	end
 
@@ -116,11 +116,12 @@ UnknownScript_0x6e056:
 	playsound SFX_TACKLE
 	applymovement TEAMROCKETBASEB3F_ROCKET1, MovementData_0x6e147
 	disappear TEAMROCKETBASEB3F_ROCKET1
-	setscene 3
+	setscene $3
 	end
 
 RocketBaseMurkrow:
 	opentext
+	pokenamemem MURKROW, $0
 	writetext RocketBaseMurkrowText
 	waitbutton
 	closetext
@@ -133,6 +134,7 @@ SlowpokeTailGrunt:
 GruntF5Script:
 	end_if_just_battled
 	opentext
+	pokenamemem SLOWPOKE, $0
 	writetext GruntF5AfterBattleText
 	waitbutton
 	closetext
@@ -195,7 +197,7 @@ TeamRocketBaseB3FLockedDoor:
 	writetext UnknownText_0x6e9a3
 	waitbutton
 	playsound SFX_ENTER_DOOR
-	changeblock 10, 8, $7
+	changeblock $a, $8, $7
 	reloadmappart
 	closetext
 	setevent EVENT_OPENED_DOOR_TO_GIOVANNIS_OFFICE
@@ -430,7 +432,9 @@ UnknownText_0x6e548:
 	done
 
 RocketBaseMurkrowText:
-	text "MURKROW: The"
+	text "@"
+	text_from_ram StringBuffer3
+	text ": The"
 	line "password is…"
 
 	para "HAIL GIOVANNI."
@@ -455,7 +459,9 @@ GruntF5AfterBattleText:
 	text "The password to"
 	line "the boss's room is"
 
-	para "SLOWPOKETAIL."
+	para "@"
+	text_from_ram StringBuffer3
+	text "TAIL."
 
 	para "But it's useless"
 	line "unless you have"

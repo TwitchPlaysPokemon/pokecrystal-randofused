@@ -20,6 +20,7 @@ SproutTower1FSage2Script:
 	jumptextfaceplayer SproutTower1FSage2Text
 
 SproutTower1FGrannyScript:
+	pokenamemem BELLSPROUT, $0
 	jumptextfaceplayer SproutTower1FGrannyText
 
 SproutTower1FTeacherScript:
@@ -79,7 +80,9 @@ SproutTower1FSage2Text:
 	done
 
 SproutTower1FGrannyText:
-	text "A BELLSPROUT over"
+	text "A @"
+	text_from_ram StringBuffer3
+	text " over"
 	line "100 feet tall…"
 
 	para "People say that it"

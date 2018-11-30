@@ -42,6 +42,7 @@ TeacherScript_0x5d701:
 
 RadioTowerJigglypuff:
 	opentext
+	pokenamemem JIGGLYPUFF, $0
 	writetext RadioTowerJigglypuffText
 	cry JIGGLYPUFF
 	waitbutton
@@ -131,7 +132,7 @@ UnknownScript_0x5d7be:
 	waitbutton
 	closetext
 	spriteface RADIOTOWER2F_BUENA, DOWN
-	refreshscreen
+	refreshscreen $0
 	special SpecialBuenasPassword
 	closetext
 	iffalse UnknownScript_0x5d845
@@ -140,7 +141,7 @@ UnknownScript_0x5d7be:
 	waitbutton
 	closetext
 	checkcode VAR_BLUECARDBALANCE
-	addvar 1
+	addvar $1
 	writevarcode VAR_BLUECARDBALANCE
 	waitsfx
 	playsound SFX_TRANSACTION
@@ -155,7 +156,7 @@ UnknownScript_0x5d7be:
 	pause 20
 	special RestartMapMusic
 	checkcode VAR_BLUECARDBALANCE
-	if_equal 30, UnknownScript_0x5d8a4
+	if_equal $1e, UnknownScript_0x5d8a4
 	end
 
 UnknownScript_0x5d800:
@@ -279,8 +280,8 @@ UnknownScript_0x5d8cc:
 	writetext UnknownText_0x5e2bf
 UnknownScript_0x5d8d0:
 	askforphonenumber PHONE_BUENA
-	if_equal PHONE_CONTACTS_FULL, UnknownScript_0x5d8f6
-	if_equal PHONE_CONTACT_REFUSED, UnknownScript_0x5d8ed
+	if_equal $1, UnknownScript_0x5d8f6
+	if_equal $2, UnknownScript_0x5d8ed
 	writetext UnknownText_0x5e2f3
 	playsound SFX_REGISTER_PHONE_NUMBER
 	waitsfx
@@ -360,7 +361,9 @@ UnknownText_0x5d983:
 	done
 
 RadioTowerJigglypuffText:
-	text "JIGGLYPUFF:"
+	text "@"
+	text_from_ram StringBuffer3
+	text ":"
 	line "Jiggly…"
 	done
 

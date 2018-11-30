@@ -9,11 +9,14 @@ VermilionHouseDiglettsCaveSpeechHouse_MapScriptHeader:
 	db 0
 
 VermilionHouseDiglettsCaveSpeechHouseGentlemanScript:
+	pokenamemem DIGLETT, $0
 	jumptextfaceplayer VermilionHouseDiglettsCaveSpeechHouseGentlemanText
 
 VermilionHouseDiglettsCaveSpeechHouseGentlemanText:
 	text "Over many years,"
-	line "DIGLETT dug a"
+	line "@"
+	text_from_ram StringBuffer3
+	text " dug a"
 	cont "large tunnel."
 
 	para "That tunnel goes"

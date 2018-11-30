@@ -34,6 +34,7 @@ TrainerSwimmerfSusie:
 .Script:
 	end_if_just_battled
 	opentext
+	pokenamemem LAPRAS, $0
 	writetext SwimmerfSusieAfterBattleText
 	waitbutton
 	closetext
@@ -67,6 +68,7 @@ TrainerSwimmerfWendy:
 .Script:
 	end_if_just_battled
 	opentext
+	pokenamemem STARYU, $0
 	writetext SwimmerfWendyAfterBattleText
 	waitbutton
 	closetext
@@ -275,7 +277,9 @@ SwimmerfSusieBeatenText:
 SwimmerfSusieAfterBattleText:
 	text "Wasn't there a hit"
 	line "song about a boy"
-	cont "riding a LAPRAS?"
+	cont "riding a @"
+	text_from_ram StringBuffer3
+	text "?"
 	done
 
 SwimmerfDeniseSeenText:
@@ -323,9 +327,10 @@ SwimmerfKaraAfterBattleText:
 	done
 
 SwimmerfWendySeenText:
-	text "At night, STARYU"
-	line "gather near the"
-	cont "water's surface."
+	text "At night, you see"
+	line "STARIKARP gather"
+	cont "near the water's"
+	cont "surface."
 	done
 
 SwimmerfWendyBeatenText:
@@ -334,7 +339,9 @@ SwimmerfWendyBeatenText:
 
 SwimmerfWendyAfterBattleText:
 	text "The clusters of"
-	line "STARYU light up"
+	line "@"
+	text_from_ram StringBuffer3
+	text " light up"
 	cont "at the same time."
 
 	para "It's so beautiful,"

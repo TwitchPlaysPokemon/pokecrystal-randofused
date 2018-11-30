@@ -127,8 +127,9 @@ Route32WannaBuyASlowpokeTailScript:
 SlowpokeTailSalesmanScript:
 	faceplayer
 _OfferToSellSlowpokeTail:
-	setscene 2
+	setscene $2
 	opentext
+	pokenamemem SLOWPOKE, $0
 	writetext Text_MillionDollarSlowpokeTail
 	yesorno
 	iffalse .refused
@@ -190,9 +191,9 @@ TrainerFisherRalph1:
 	scall .AskNumber2
 .AskForNumber:
 	askforphonenumber PHONE_FISHER_RALPH
-	if_equal PHONE_CONTACTS_FULL, .PhoneFull
-	if_equal PHONE_CONTACT_REFUSED, .NumberDeclined
-	trainertotext FISHER, RALPH1, MEM_BUFFER_0
+	if_equal $1, .PhoneFull
+	if_equal $2, .NumberDeclined
+	trainertotext FISHER, RALPH1, $0
 	scall .RegisteredNumber
 	jump .NumberAccepted
 
@@ -324,9 +325,9 @@ TrainerPicnickerLiz1:
 	scall .AskNumber2
 .AskForNumber:
 	askforphonenumber PHONE_PICNICKER_LIZ
-	if_equal PHONE_CONTACTS_FULL, .PhoneFull
-	if_equal PHONE_CONTACT_REFUSED, .NumberDeclined
-	trainertotext PICNICKER, LIZ1, MEM_BUFFER_0
+	if_equal $1, .PhoneFull
+	if_equal $2, .NumberDeclined
+	trainertotext PICNICKER, LIZ1, $0
 	scall .RegisteredNumber
 	jump .NumberAccepted
 
@@ -608,7 +609,9 @@ Text_MillionDollarSlowpokeTail:
 	line "to have this"
 
 	para "tasty, nutritious"
-	line "SLOWPOKETAIL?"
+	line "@"
+	text_from_ram StringBuffer3
+	text "TAIL?"
 
 	para "For you right now,"
 	line "just ¥1,000,000!"

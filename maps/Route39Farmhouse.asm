@@ -14,6 +14,7 @@ PokefanM_DairyFarmer:
 	opentext
 	checkevent EVENT_HEALED_MOOMOO
 	iftrue FarmerMScript_SellMilk
+	pokenamemem MILTANK, $0
 	writetext FarmerMText_SickCow
 	waitbutton
 	closetext
@@ -27,11 +28,11 @@ FarmerMScript_SellMilk:
 	special PlaceMoneyTopRight
 	yesorno
 	iffalse FarmerMScript_NoSale
-	checkmoney YOUR_MONEY, 500
-	if_equal HAVE_LESS, FarmerMScript_NoMoney
+	checkmoney $0, 500
+	if_equal $2, FarmerMScript_NoMoney
 	giveitem MOOMOO_MILK
 	iffalse FarmerMScript_NoRoom
-	takemoney YOUR_MONEY, 500
+	takemoney $0, 500
 	special PlaceMoneyTopRight
 	waitsfx
 	playsound SFX_TRANSACTION
@@ -72,12 +73,14 @@ PokefanF_SnoreFarmer:
 	iftrue FarmerFScript_GotSnore
 	checkevent EVENT_HEALED_MOOMOO
 	iftrue FarmerFScript_GiveSnore
+	pokenamemem MILTANK, $0
 	writetext FarmerFText_InTrouble
 	waitbutton
 	closetext
 	end
 
 FarmerFScript_GiveSnore:
+	pokenamemem MILTANK, $0
 	writetext FarmerFText_HealedMiltank
 	buttonsound
 	verbosegiveitem TM_SNORE
@@ -94,7 +97,9 @@ FarmhouseBookshelf:
 	jumpstd picturebookshelf
 
 FarmerMText_SickCow:
-	text "My MILTANK ain't"
+	text "My @"
+	text_from_ram StringBuffer3
+	text " ain't"
 	line "givin' me milk"
 	cont "n'more."
 
@@ -155,15 +160,19 @@ FarmerFText_InTrouble:
 	line "out to KANTO."
 
 	para "So if our own"
-	line "MILTANK won't give"
+	line "@" 
+	text_from_ram StringBuffer3
+	text " won't"
 
-	para "us any milk, we're"
-	line "in trouble."
+	para "give us any milk,"
+	line "we're in trouble."
 	done
 
 FarmerFText_HealedMiltank:
 	text "You fixed our"
-	line "MILTANK, hon. Now"
+	line "@"
+	text_from_ram StringBuffer3
+	text ", hon. Now"
 
 	para "it gives MOOMOO"
 	line "MILK again."
