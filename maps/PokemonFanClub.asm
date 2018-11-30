@@ -77,7 +77,7 @@ UnknownScript_0x191838:
 
 UnknownScript_0x191844:
 	buttonsound
-	CLEFAIRY, $0
+	pokenamemem	CLEFAIRY, $0
 	writetext UnknownText_0x191c5a
 	buttonsound
 	waitsfx
