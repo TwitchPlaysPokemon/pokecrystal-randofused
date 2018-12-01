@@ -41,7 +41,7 @@ TilesetKantoAnim: ; 0xfc01b
 	dw NULL,  WaitTileAnimation
 	dw NULL,  WaitTileAnimation
 	dw NULL,  WaitTileAnimation
-	dw NULL,  TileAnimationPalette
+	dw NULL,  WaitTileAnimation
 	dw NULL,  WaitTileAnimation
 	dw NULL,  WaitTileAnimation
 	dw NULL,  WaitTileAnimation
@@ -55,7 +55,7 @@ TilesetParkAnim: ; 0xfc047
 	dw NULL,  WaitTileAnimation
 	dw vTiles2 tile $5f, AnimateFountain
 	dw NULL,  WaitTileAnimation
-	dw NULL,  TileAnimationPalette
+	dw NULL,  WaitTileAnimation
 	dw NULL,  WaitTileAnimation
 	dw NULL,  WaitTileAnimation
 	dw NULL,  WaitTileAnimation
@@ -74,7 +74,7 @@ TilesetIlexForestAnim: ; 0xfc073
 	dw NULL,  ForestTreeRightAnimation2
 	dw NULL,  WaitTileAnimation
 	dw vTiles2 tile $14, AnimateWaterTile
-	dw NULL,  TileAnimationPalette
+	dw NULL,  WaitTileAnimation
 	dw NULL,  StandingTileFrame8
 	dw NULL,  DoneTileAnimation
 ; 0xfc0a3
@@ -83,7 +83,7 @@ TilesetJohto1Anim: ; 0xfc0a3
 	dw vTiles2 tile $14, AnimateWaterTile
 	dw NULL,  WaitTileAnimation
 	dw NULL,  WaitTileAnimation
-	dw NULL,  TileAnimationPalette
+	dw NULL,  WaitTileAnimation
 	dw NULL,  WaitTileAnimation
 	dw NULL,  WaitTileAnimation
 	dw WhirlpoolFrames1, AnimateWhirlpoolTile
@@ -129,7 +129,7 @@ TilesetPortAnim: ; 0xfc12f
 	dw NULL,  WaitTileAnimation
 	dw NULL,  WaitTileAnimation
 	dw NULL,  WaitTileAnimation
-	dw NULL,  TileAnimationPalette
+	dw NULL,  WaitTileAnimation
 	dw NULL,  WaitTileAnimation
 	dw NULL,  WaitTileAnimation
 	dw NULL,  WaitTileAnimation
@@ -211,7 +211,7 @@ TilesetIcePathAnim: ; 0xfc233
 	dw NULL,  FlickeringCaveEntrancePalette
 	dw vTiles2 tile $35, WriteTileFromBuffer
 	dw NULL,  FlickeringCaveEntrancePalette
-	dw NULL,  TileAnimationPalette
+	dw NULL,  WaitTileAnimation
 	dw NULL,  FlickeringCaveEntrancePalette
 	dw vTiles2 tile $31, WriteTileToBuffer
 	dw NULL,  FlickeringCaveEntrancePalette
