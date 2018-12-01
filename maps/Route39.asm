@@ -19,6 +19,7 @@ Route39_MapScriptHeader:
 
 Route39Miltank:
 	opentext
+	pokenamemem MILTANK, $0
 	writetext Route39MiltankText
 	cry MILTANK
 	waitbutton
@@ -50,9 +51,9 @@ PokefanMDerekWantsYourNumber:
 	scall PokefanMDerekAsksNumber2
 PokefanMDerekAsksForPhoneNumber:
 	askforphonenumber PHONE_POKEFANM_DEREK
-	if_equal PHONE_CONTACTS_FULL, PokefanMDerekPhoneFull
-	if_equal PHONE_CONTACT_REFUSED, PokefanMDerekDeclined
-	trainertotext POKEFANM, DEREK1, MEM_BUFFER_0
+	if_equal $1, PokefanMDerekPhoneFull
+	if_equal $2, PokefanMDerekDeclined
+	trainertotext POKEFANM, DEREK1, $0
 	scall PokefanMDerekRegistered
 	jump PokefanMDerekAccepted
 
@@ -157,6 +158,7 @@ PokefanFScript_0x1a5bbe:
 	end
 
 UnknownScript_0x1a5bdf:
+	pokenamemem MEOWTH, $0
 	writetext UnknownText_0x1a5f31
 	waitbutton
 	closetext
@@ -185,7 +187,9 @@ Route39HiddenNugget:
 
 
 Route39MiltankText:
-	text "MILTANK: Mooo!"
+	text "@"
+	text_from_ram StringBuffer3
+	text ": Mooo!"
 	done
 
 SailorEugeneSeenText:
@@ -301,9 +305,11 @@ UnknownText_0x1a5f17:
 	done
 
 UnknownText_0x1a5f31:
-	text "I met my MEOWTH at"
-	line "night, right here"
-	cont "on ROUTE 39."
+	text "I met my @"
+	text_from_ram StringBuffer3
+	text ""
+	line "at night, right"
+	cont "here on ROUTE 39."
 
 	para "I'm not sure why,"
 	line "but it seems to"

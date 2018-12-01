@@ -20,6 +20,7 @@ TeacherScript_0x18a480:
 	jumptextfaceplayer UnknownText_0x18a4a3
 
 .mobile
+	pokenamemem MARILL, $0
 	jumptextfaceplayer UnknownText_0x18a532
 
 FisherScript_0x18a48c:
@@ -71,8 +72,11 @@ UnknownText_0x18a532:
 	para "Then I'll get my"
 	line "friend in JOHTO to"
 
-	para "catch a MARILL and"
-	line "trade it to me!"
+	para "catch a @"
+	text_from_ram StringBuffer3
+	text ""
+	line "and trade it to"
+	cont "me!"
 	done
 
 UnknownText_0x18a5d3:

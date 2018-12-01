@@ -27,11 +27,13 @@ VermilionMachopOwner:
 VermilionMachop:
 	opentext
 	writetext VermilionMachopText1
+	pokenamemem MACHOP, $0
 	cry MACHOP
 	waitbutton
 	closetext
 	earthquake 30
 	opentext
+	pokenamemem MACHOP, $0
 	writetext VermilionMachopText2
 	waitbutton
 	closetext
@@ -44,12 +46,14 @@ VermilionSnorlax:
 	opentext
 	special SpecialSnorlaxAwake
 	iftrue UnknownScript_0x1aa9ab
+	pokenamemem SNORLAX, $0
 	writetext UnknownText_0x1aab64
 	waitbutton
 	closetext
 	end
 
 UnknownScript_0x1aa9ab:
+	pokenamemem SNORLAX, $0
 	writetext UnknownText_0x1aab84
 	pause 15
 	cry MAGNETON
@@ -68,7 +72,7 @@ VermilionGymBadgeGuy:
 	checkevent EVENT_GOT_HP_UP_FROM_VERMILION_GUY
 	iftrue .AlreadyGotItem
 	checkcode VAR_BADGES
-	if_equal NUM_BADGES, .AllBadges
+	if_equal 16, .AllBadges
 	if_greater_than 13, .MostBadges
 	if_greater_than 9, .SomeBadges
 	writetext UnknownText_0x1aabc8
@@ -146,14 +150,20 @@ VermilionMachopOwnerText:
 	done
 
 VermilionMachopText1:
-	text "MACHOP: Guooh"
+	text "@"
+	text_from_ram StringBuffer3
+	text ": Guooh"
 	line "gogogoh!"
 	done
 
 VermilionMachopText2:
-	text "A MACHOP is growl-"
-	line "ing while stomping"
-	cont "the ground flat."
+	text "A @"
+	text_from_ram StringBuffer3
+	text " is"
+
+	para "growling while"
+	text "stomping the"
+	cont "ground flat."
 	done
 
 VermilionCitySuperNerdText:
@@ -166,18 +176,24 @@ VermilionCitySuperNerdText:
 	done
 
 UnknownText_0x1aab64:
-	text "SNORLAX is snoring"
-	line "peacefully…"
+	text "@"
+	text_from_ram StringBuffer3
+	text " is"
+	line "snoring peace- "
+	cont "fully…"
 	done
 
 UnknownText_0x1aab84:
 	text "The #GEAR was"
 	line "placed near the"
-	cont "sleeping SNORLAX…"
+	cont "sleeping #MON…"
 
 	para "…"
 
-	para "SNORLAX woke up!"
+	para "@"
+	text_from_ram StringBuffer3
+	text " woke"
+	cont "up!"
 	done
 
 UnknownText_0x1aabc8:

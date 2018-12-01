@@ -34,6 +34,7 @@ MapTrainerHouse1FSignpost1Script:
 	jumptext UnknownText_0x9b25d
 
 MapTrainerHouse1FSignpost2Script:
+	pokenamemem ONIX, $0
 	jumptext UnknownText_0x9b2c1
 
 TrainerHouse1FReceptionistText:
@@ -131,7 +132,10 @@ UnknownText_0x9b2c1:
 	line "A strategy memo?"
 
 	para "This writing looks"
-	line "like ONIX tracks…"
+	line "like @"
+	text_from_ram StringBuffer3
+	text ""
+	cont "tracks…"
 
 	para "It's completely"
 	line "illegible…"

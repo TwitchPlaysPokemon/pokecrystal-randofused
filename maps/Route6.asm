@@ -16,6 +16,7 @@ TrainerPokefanmRex:
 .Script:
 	end_if_just_battled
 	opentext
+	pokenamemem PHANPY, $0
 	writetext PokefanmRexAfterBattleText
 	waitbutton
 	closetext
@@ -27,6 +28,7 @@ TrainerPokefanmAllan:
 .Script:
 	end_if_just_battled
 	opentext
+	pokenamemem TEDDIURSA, $0
 	writetext PokefanmAllanAfterBattleText
 	waitbutton
 	closetext
@@ -54,18 +56,20 @@ Route6UndergroundPathSignText:
 	done
 
 PokefanmRexSeenText:
-	text "My PHANPY is the"
+	text "My PHEEL is the"
 	line "cutest in the"
 	cont "world."
 	done
 
 PokefanmRexBeatenText:
-	text "My PHANPY!"
+	text "My PHEEL!"
 	done
 
 PokefanmRexAfterBattleText:
 	text "Look how adorable"
-	line "my PHANPY acts!"
+	line "my @"
+	text_from_ram StringBuffer3
+	text " acts!"
 
 	para "Isn't it cute"
 	line "enough to make"
@@ -73,18 +77,20 @@ PokefanmRexAfterBattleText:
 	done
 
 PokefanmAllanSeenText:
-	text "My TEDDIURSA is"
+	text "My TEDDIKID is"
 	line "the cutest in the"
 	cont "world."
 	done
 
 PokefanmAllanBeatenText:
-	text "My TEDDIURSA!"
+	text "My TEDDIKID!"
 	done
 
 PokefanmAllanAfterBattleText:
 	text "Look how adorable"
-	line "my TEDDIURSA acts!"
+	line "my @"
+	text_from_ram StringBuffer3
+	text " acts!"
 
 	para "Isn't it cute"
 	line "enough to make"

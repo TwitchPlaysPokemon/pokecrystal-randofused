@@ -50,6 +50,7 @@ MooMoo:
 	opentext
 	checkevent EVENT_HEALED_MOOMOO
 	iftrue .HappyCow
+	pokenamemem MILTANK, $0
 	writetext Text_WeakMoo
 	writebyte MILTANK
 	special PlaySlowCry
@@ -63,6 +64,7 @@ MooMoo:
 
 .GiveBerry:
 	buttonsound
+	pokenamemem MILTANK, $0
 	writetext Text_AskGiveBerry
 	yesorno
 	iffalse .Refused
@@ -75,6 +77,7 @@ MooMoo:
 	if_equal 3, .ThreeBerries
 	if_equal 5, .FiveBerries
 	if_equal 7, .SevenBerries
+	pokenamemem MILTANK, $0
 	writetext Text_GaveBerry
 	waitbutton
 	closetext
@@ -83,6 +86,7 @@ MooMoo:
 .ThreeBerries:
 	writetext Text_GaveBerry
 	buttonsound
+	pokenamemem MILTANK, $0
 	writetext Text_LittleHealthier
 	waitbutton
 	closetext
@@ -91,6 +95,7 @@ MooMoo:
 .FiveBerries:
 	writetext Text_GaveBerry
 	buttonsound
+	pokenamemem MILTANK, $0
 	writetext Text_QuiteHealthy
 	waitbutton
 	closetext
@@ -102,6 +107,7 @@ MooMoo:
 	pause 60
 	buttonsound
 	special RestartMapMusic
+	pokenamemem MILTANK, $0
 	writetext Text_TotallyHealthy
 	waitbutton
 	closetext
@@ -115,12 +121,14 @@ MooMoo:
 	end
 
 .Refused:
+	pokenamemem MILTANK, $0
 	writetext Text_RefusedToGiveBerry
 	waitbutton
 	closetext
 	end
 
 .HappyCow:
+	pokenamemem MILTANK, $0
 	writetext UnknownText_0x9cd92
 	cry MILTANK
 	waitbutton
@@ -140,7 +148,9 @@ Text_WereFeedingMoomoo:
 	done
 
 Text_WeakMoo:
-	text "MILTANK: …Moo…"
+	text "@"
+	text_from_ram StringBuffer3
+	text ": …Moo…"
 	done
 
 Text_ItsCryIsWeak:
@@ -148,31 +158,43 @@ Text_ItsCryIsWeak:
 	done
 
 UnknownText_0x9cd92:
-	text "MILTANK: Mooo!"
+	text "@"
+	text_from_ram StringBuffer3
+	text ": Mooo!"
 	done
 
 Text_AskGiveBerry:
 	text "Give a BERRY to"
-	line "MILTANK?"
+	line "@"
+	text_from_ram StringBuffer3
+	text "?"
 	done
 
 Text_GaveBerry:
 	text "<PLAYER> gave a"
-	line "BERRY to MILTANK."
+	line "BERRY to @"
+	text_from_ram StringBuffer3
+	text "."
 	done
 
 Text_LittleHealthier:
-	text "MILTANK became a"
+	text "@"
+	text_from_ram StringBuffer3
+	text " became a"
 	line "little healthier!"
 	done
 
 Text_QuiteHealthy:
-	text "MILTANK became"
+	text "@"
+	text_from_ram StringBuffer3
+	text " became"
 	line "quite healthy!"
 	done
 
 Text_TotallyHealthy:
-	text "MILTANK became"
+	text "@"
+	text_from_ram StringBuffer3
+	text " became"
 	line "totally healthy!"
 	done
 
@@ -185,7 +207,10 @@ Text_RefusedToGiveBerry:
 	text "<PLAYER> wouldn't"
 	line "give a BERRY."
 
-	para "MILTANK looks sad."
+	para "@"
+	text_from_ram StringBuffer3
+	text " looks"
+	cont "sad."
 	done
 
 Route39Barn_MapEventHeader:

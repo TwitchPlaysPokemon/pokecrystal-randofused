@@ -38,9 +38,9 @@ TrainerHikerAnthony:
 	scall .AskNumber2
 .AskForPhoneNumber:
 	askforphonenumber PHONE_HIKER_ANTHONY
-	if_equal PHONE_CONTACTS_FULL, .PhoneFull
-	if_equal PHONE_CONTACT_REFUSED, .NumberDeclined
-	trainertotext HIKER, ANTHONY2, MEM_BUFFER_0
+	if_equal $1, .PhoneFull
+	if_equal $2, .NumberDeclined
+	trainertotext HIKER, ANTHONY2, $0
 	scall .RegisteredNumber
 	jump .NumberAccepted
 
@@ -105,6 +105,7 @@ TrainerHikerAnthony:
 	end
 
 .Swarm:
+	pokenamemem DUNSPARCE, $0
 	writetext HikerAnthonyDunsparceText
 	waitbutton
 	closetext
@@ -165,7 +166,9 @@ HikerAnthony2AfterText:
 
 HikerAnthonyDunsparceText:
 	text "Hey, did you get a"
-	line "DUNSPARCE?"
+	line "@"
+	text_from_ram StringBuffer3
+	text "?"
 
 	para "I caught one too."
 

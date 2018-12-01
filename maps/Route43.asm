@@ -19,11 +19,11 @@ Route43_MapScriptHeader:
 .CheckIfRockets:
 	checkevent EVENT_CLEARED_ROCKET_HIDEOUT
 	iftrue .NoRockets
-	setmapscene ROUTE_43_GATE, 0
+	setmapscene ROUTE_43_GATE, $0
 	return
 
 .NoRockets:
-	setmapscene ROUTE_43_GATE, 1
+	setmapscene ROUTE_43_GATE, $1
 	return
 
 TrainerCamperSpencer:
@@ -71,9 +71,9 @@ UnknownScript_0x19d0b8:
 	scall UnknownScript_0x19d130
 UnknownScript_0x19d0bb:
 	askforphonenumber PHONE_POKEMANIAC_BRENT
-	if_equal PHONE_CONTACTS_FULL, UnknownScript_0x19d140
-	if_equal PHONE_CONTACT_REFUSED, UnknownScript_0x19d13c
-	trainertotext POKEMANIAC, BRENT1, MEM_BUFFER_0
+	if_equal $1, UnknownScript_0x19d140
+	if_equal $2, UnknownScript_0x19d13c
+	trainertotext POKEMANIAC, BRENT1, $0
 	scall UnknownScript_0x19d134
 	jump UnknownScript_0x19d138
 
@@ -202,9 +202,9 @@ UnknownScript_0x19d1aa:
 	scall UnknownScript_0x19d23d
 UnknownScript_0x19d1ad:
 	askforphonenumber PHONE_PICNICKER_TIFFANY
-	if_equal PHONE_CONTACTS_FULL, UnknownScript_0x19d24d
-	if_equal PHONE_CONTACT_REFUSED, UnknownScript_0x19d249
-	trainertotext PICNICKER, TIFFANY3, MEM_BUFFER_0
+	if_equal $1, UnknownScript_0x19d24d
+	if_equal $2, UnknownScript_0x19d249
+	trainertotext PICNICKER, TIFFANY3, $0
 	scall UnknownScript_0x19d241
 	jump UnknownScript_0x19d245
 
@@ -268,6 +268,7 @@ UnknownScript_0x19d230:
 	jump UnknownScript_0x19d259
 
 UnknownScript_0x19d233:
+	pokenamemem CLEFAIRY, $0
 	writetext UnknownText_0x19d64b
 	waitbutton
 	closetext
@@ -377,7 +378,7 @@ PokemaniacRonSeenText:
 	done
 
 PokemaniacRonBeatenText:
-	text "My NIDOKING did"
+	text "My NIDUSAUR did"
 	line "pretty right on!"
 	done
 
@@ -459,7 +460,9 @@ UnknownText_0x19d618:
 	done
 
 UnknownText_0x19d64b:
-	text "Isn't my CLEFAIRY"
+	text "Isn't my @"
+	text_from_ram StringBuffer3
+	text ""
 	line "just the most"
 	cont "adorable thing?"
 	done

@@ -24,6 +24,7 @@ TeacherScript_0x5eb85:
 	iftrue UnknownScript_0x5ebac
 	checkevent EVENT_CLEARED_RADIO_TOWER
 	iftrue UnknownScript_0x5eb99
+	pokenamemem MEOWTH, $0
 	writetext UnknownText_0x5ec68
 	waitbutton
 	closetext
@@ -49,6 +50,7 @@ UnknownScript_0x5ebb0:
 
 RadioTowerMeowth:
 	opentext
+	pokenamemem MEOWTH, $0
 	writetext RadioTowerMeowthText
 	cry MEOWTH
 	waitbutton
@@ -119,7 +121,9 @@ UnknownText_0x5ec68:
 	line "I have to suffer"
 	cont "through this?"
 
-	para "MEOWTH, help me!"
+	para "@"
+	text_from_ram StringBuffer3
+	text ", help me!"
 	done
 
 UnknownText_0x5ecab:
@@ -147,7 +151,9 @@ UnknownText_0x5ed2c:
 	done
 
 RadioTowerMeowthText:
-	text "MEOWTH: Meowth…"
+	text "@"
+	text_from_ram StringBuffer3
+	text ": Meowth…"
 	done
 
 GruntM10SeenText:

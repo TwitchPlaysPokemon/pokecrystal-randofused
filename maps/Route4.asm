@@ -28,6 +28,7 @@ TrainerPicnickerHope:
 .Script:
 	end_if_just_battled
 	opentext
+	pokenamemem CLEFAIRY, $0
 	writetext PicnickerHopeAfterBattleText
 	waitbutton
 	closetext
@@ -93,7 +94,9 @@ PicnickerHopeBeatenText:
 	done
 
 PicnickerHopeAfterBattleText:
-	text "I heard CLEFAIRY"
+	text "I heard @"
+	text_from_ram StringBuffer3
+	text ""
 	line "appear at MT.MOON."
 
 	para "But where could"

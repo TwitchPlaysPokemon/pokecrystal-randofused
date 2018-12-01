@@ -59,7 +59,7 @@ UnknownScript_0x184947:
 	disappear SPROUTTOWER3F_SILVER
 	waitsfx
 	special Special_FadeInQuickly
-	setscene 1
+	setscene $1
 	special RestartMapMusic
 	end
 
@@ -126,6 +126,7 @@ TrainerSageNeal:
 	end
 
 MapSproutTower3FSignpost3Script:
+	pokenamemem BELLSPROUT, $0
 	jumptext UnknownText_0x184f37
 
 MapSproutTower3FSignpost5Script:
@@ -313,7 +314,9 @@ SageNealAfterBattleText:
 UnknownText_0x184f37:
 	text "It's a powerful"
 	line "painting of a"
-	cont "BELLSPROUT."
+	cont "@"
+	text_from_ram StringBuffer3
+	text "."
 	done
 
 UnknownText_0x184f61:

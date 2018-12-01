@@ -31,6 +31,7 @@ LassScript_0x19932a:
 	end
 
 UnknownScript_0x199338:
+	pokenamemem CLEFAIRY, $0
 	writetext UnknownText_0x19940d
 	waitbutton
 	closetext
@@ -127,7 +128,9 @@ UnknownText_0x19940d:
 
 	para "She said she lost"
 	line "her favorite #"
-	cont "DOLL--CLEFAIRY."
+	cont "DOLL--@"
+	text_from_ram StringBuffer3
+	text "."
 	done
 
 UnknownText_0x199460:
@@ -276,10 +279,10 @@ SaffronCity_MapEventHeader:
 	warp_def 25, 11, 2, SAFFRON_MART
 	warp_def 9, 29, 1, SAFFRON_POKECENTER_1F
 	warp_def 27, 29, 1, MR_PSYCHICS_HOUSE
-	warp_def 8, 3, 2, SAFFRON_MAGNET_TRAIN_STATION
+	warp_def 8, 3, 2, SAFFRON_TRAIN_STATION
 	warp_def 18, 21, 1, SILPH_CO_1F
 	warp_def 9, 11, 1, COPYCATS_HOUSE_1F
-	warp_def 18, 3, 3, ROUTE_5_SAFFRON_GATE
+	warp_def 18, 3, 3, ROUTE_5_SAFFRON_CITY_GATE
 	warp_def 0, 24, 3, ROUTE_7_SAFFRON_GATE
 	warp_def 0, 25, 4, ROUTE_7_SAFFRON_GATE
 	warp_def 16, 33, 1, ROUTE_6_SAFFRON_GATE
