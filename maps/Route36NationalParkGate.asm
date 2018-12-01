@@ -68,7 +68,7 @@ Route36NationalParkGate_MapScriptHeader:
 	opentext
 	checkcode VAR_CONTESTMINUTES
 	addvar $1
-	RAM2MEM $0
+	vartomem $0
 	writetext UnknownText_0x6b284
 	yesorno
 	iffalse .GoBackToContest

@@ -279,10 +279,10 @@ SaffronCity_MapEventHeader:
 	warp_def 25, 11, 2, SAFFRON_MART
 	warp_def 9, 29, 1, SAFFRON_POKECENTER_1F
 	warp_def 27, 29, 1, MR_PSYCHICS_HOUSE
-	warp_def 8, 3, 2, SAFFRON_TRAIN_STATION
+	warp_def 8, 3, 2, SAFFRON_MAGNET_TRAIN_STATION
 	warp_def 18, 21, 1, SILPH_CO_1F
 	warp_def 9, 11, 1, COPYCATS_HOUSE_1F
-	warp_def 18, 3, 3, ROUTE_5_SAFFRON_CITY_GATE
+	warp_def 18, 3, 3, ROUTE_5_SAFFRON_GATE
 	warp_def 0, 24, 3, ROUTE_7_SAFFRON_GATE
 	warp_def 0, 25, 4, ROUTE_7_SAFFRON_GATE
 	warp_def 16, 33, 1, ROUTE_6_SAFFRON_GATE
