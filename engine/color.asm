@@ -1295,32 +1295,32 @@ LoadMapPals:
 	ld a, BANK(wOBPals1)
 	call FarCopyWRAM
 
-	ld a, [wEnvironment]
-	cp TOWN
-	jr z, .outside
-	cp ROUTE
-	ret nz
-.outside
-	ld a, [MapGroup]
-	ld l, a
-	ld h, 0
-	add hl, hl
-	add hl, hl
-	add hl, hl
-	ld de, RoofPals
-	add hl, de
-	ld a, [TimeOfDayPal]
-	maskbits NUM_DAYTIMES +- 1
-	cp NITE_F
-	jr c, .morn_day
-rept 4
-	inc hl
-endr
-.morn_day
-	ld de, wBGPals1 palette PAL_BG_ROOF + 2
-	ld bc, 4
-	ld a, $5
-	call FarCopyWRAM
+;	ld a, [wEnvironment]
+;	cp TOWN
+;	jr z, .outside
+;	cp ROUTE
+;	ret nz
+;.outside
+;	ld a, [MapGroup]
+;	ld l, a
+;	ld h, 0
+;	add hl, hl
+;	add hl, hl
+;	add hl, hl
+;	ld de, RoofPals
+;	add hl, de
+;	ld a, [TimeOfDayPal]
+;	maskbits NUM_DAYTIMES +- 1
+;	cp NITE_F
+;	jr c, .morn_day
+;rept 4
+;	inc hl
+;endr
+;.morn_day
+;	ld de, wBGPals1 palette PAL_BG_ROOF + 2
+;	ld bc, 4
+;	ld a, $5
+;	call FarCopyWRAM
 	ret
 
 INCLUDE "data/maps/environment_colors.asm"
