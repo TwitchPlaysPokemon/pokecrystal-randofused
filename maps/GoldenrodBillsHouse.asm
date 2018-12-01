@@ -156,7 +156,9 @@ UnknownText_0x54dae:
 
 UnknownText_0x54dc1:
 	text "BILL: PROF.ELM"
-	line "claims DODUO may"
+	line "says @"
+	text_from_ram StringBuffer3
+	text " may"
  	para "evolve in new and"
 	line "unknown ways."
 	done

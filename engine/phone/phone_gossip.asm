@@ -228,6 +228,7 @@ BrentBillTriviaScript:
 	jump PhoneScript_HangupText_Male
 
 .Abra:
+	pokenamemem ABRA, 0
 	farwritetext UnknownText_0x663a1
 	buttonsound
 	jump PhoneScript_HangupText_Male
@@ -327,6 +328,7 @@ IrwinTrainPass:
 	jump PhoneScript_HangupText_Male
 
 IrwinSnorlax:
+	pokenamemem SNORLAX, 0
 	farwritetext UnknownText_0x6455b
 	buttonsound
 	jump PhoneScript_HangupText_Male
@@ -437,6 +439,7 @@ UnknownScript_0xa0980:
 	jump PhoneScript_HangupText_Male
 
 UnknownScript_0xa0988:
+	pokenamemem PIKACHU, 2
 	farwritetext UnknownText_0x65d5c
 	buttonsound
 	jump PhoneScript_HangupText_Male
@@ -452,6 +455,7 @@ UnknownScript_0xa0998:
 	jump PhoneScript_HangupText_Male
 
 UnknownScript_0xa09a0:
+	pokenamemem CLEFAIRY, 1
 	farwritetext UnknownText_0x66882
 	buttonsound
 	jump PhoneScript_HangupText_Female
@@ -608,6 +612,7 @@ UnknownScript_0xa0a87:
 	end
 
 UnknownScript_0xa0a8c:
+	pokenamemem CLEFAIRY, 1
 	farwritetext UnknownText_0x668a3
 	end
 
@@ -668,6 +673,7 @@ UnknownScript_0xa0add:
 	jump PhoneScript_HangupText_Male
 
 UnknownScript_0xa0ae5:
+	pokenamemem CLEFAIRY, 1
 	farwritetext UnknownText_0x6691d
 	buttonsound
 	jump PhoneScript_HangupText_Female
@@ -678,10 +684,12 @@ WiltonWantThis:
 	jump PhoneScript_HangupText_Male
 
 UnknownScript_0xa0af5:
+	pokenamemem QWILFISH, 1
 	farwritetext UnknownText_0x175f70
 	end
 
 UnknownScript_0xa0afa:
+	pokenamemem DUNSPARCE, 1
 	farwritetext UnknownText_0x176dd1
 	end
 

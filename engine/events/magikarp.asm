@@ -74,6 +74,7 @@ Special_CheckMagikarpLength: ; fbb32
 
 .MeasureItText: ; 0xfbba9
 	; Let me measure that MAGIKARP. …Hm, it measures @ .
+	pokenamemem MAGIKARP, 0
 	text_jump UnknownText_0x1c1203
 	db "@"
 ; 0xfbbae

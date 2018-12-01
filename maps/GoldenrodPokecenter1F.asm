@@ -592,7 +592,7 @@ UnknownText_0x61e5c:
 	text "Some girl I don't"
 	line "know sent me her"
 
-	para "HOPPIP."
+	para "HOPPORITA."
 	line "You should trade"
 
 	para "for a #MON that"
@@ -601,8 +601,9 @@ UnknownText_0x61e5c:
 
 UnknownText_0x61eb2:
 	text "I received a"
-	line "female HOPPIP, but"
-	cont "its named STANLEY!"
+	line "female HOPPORITA,"
+	cont "but its name"
+	cont "is STANLEY!"
 
 	para "That's my dad's"
 	line "name!"

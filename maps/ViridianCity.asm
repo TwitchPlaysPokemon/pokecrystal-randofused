@@ -54,6 +54,7 @@ FisherScript_0x1a9a75:
 	opentext
 	checkevent EVENT_GOT_TM42_DREAM_EATER
 	iftrue .GotDreamEater
+	pokenamemem DROWZEE, 0
 	writetext UnknownText_0x1a9cc4
 	buttonsound
 	verbosegiveitem MAX_POTION
@@ -153,7 +154,9 @@ UnknownText_0x1a9cc4:
 	line "off in the sun."
 
 	para "…I had this dream"
-	line "about a DROWZEE"
+	line "about a @"
+	text_from_ram StringBuffer3
+	text ""
 
 	para "eating my dream."
 	line "Weird, huh?"

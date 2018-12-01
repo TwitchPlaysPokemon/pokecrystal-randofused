@@ -287,6 +287,7 @@ Phone_WhoDefeatedMon_Male:
 	end
 
 .Derek:
+	pokenamemem PIKACHU, 2
 	farwritetext UnknownText_0x65b29
 	buttonsound
 	end
@@ -328,6 +329,7 @@ Phone_WhoDefeatedMon_Female:
 	if_equal PHONE_PICNICKER_ERIN, .Erin
 
 .Beverly:
+	pokenamemem SNUBBULL, 2
 	farwritetext UnknownText_0x1746c3
 	buttonsound
 	end
@@ -358,6 +360,7 @@ Phone_WhoDefeatedMon_Female:
 	end
 
 .Tiffany:
+	pokenamemem CLEFAIRY, 2
 	farwritetext UnknownText_0x66605
 	buttonsound
 	end
@@ -484,6 +487,7 @@ Phone_WhoLostAMon_Female:
 	if_equal PHONE_PICNICKER_ERIN, .Erin
 
 .Beverly:
+	pokenamemem MARILL, 2
 	farwritetext UnknownText_0x174734
 	buttonsound
 	end
@@ -514,6 +518,7 @@ Phone_WhoLostAMon_Female:
 	end
 
 .Tiffany:
+	pokenamemem CLEFAIRY, 2
 	farwritetext UnknownText_0x66688
 	buttonsound
 	end
@@ -673,6 +678,7 @@ PhoneScript_RematchText_Female:
 	end
 
 .Tiffany:
+	pokenamemem CLEFAIRY, 1
 	farwritetext UnknownText_0x66730
 	buttonsound
 	end
@@ -687,6 +693,7 @@ LizWrongNumberScript:
 	end
 
 TiffanyItsAwful:
+	pokenamemem CLEFAIRY, 2
 	farwritetext TiffanyItsAwfulText
 	end
 
@@ -867,6 +874,7 @@ PhoneScript_BugCatchingContest:
 	jump PhoneScript_HangupText_Male
 
 .Derek:
+	pokenamemem PIKACHU, 2
 	farwritetext DerekBugCatchingContestText
 	buttonsound
 	jump PhoneScript_HangupText_Male
@@ -919,6 +927,7 @@ PhoneScript_FoundItem_Male:
 	end
 
 .Derek:
+	pokenamemem PIKACHU, 1
 	farwritetext UnknownText_0x65cf9
 	end
 
@@ -950,6 +959,7 @@ PhoneScript_FoundItem_Female:
 	end
 
 .Tiffany:
+	pokenamemem CLEFAIRY, 1
 	farwritetext UnknownText_0x66801
 	end
 

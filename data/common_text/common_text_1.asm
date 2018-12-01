@@ -1256,7 +1256,7 @@ UnknownText_0x1bd286::
 
 UnknownText_0x1bd2a0::
 	text "Obtained the"
-	line "VOLTORBBADGE!"
+	line "MYSTERY BADGE!"
 	done
 
 UnknownText_0x1bd2bc::

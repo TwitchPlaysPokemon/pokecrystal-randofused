@@ -39,7 +39,9 @@ WiltonPhoneFullText:
 
 WiltonRematchText:
 	text "Argh! You startled"
-	line "POLIWAG into"
+	line "@"
+	text_from_ram StringBuffer5
+	text " into"
 	cont "fleeing again!"
 	done
 

@@ -14,6 +14,7 @@ OlivineHouseBetaTeacherScript:
 
 RhydonScript_0x9c592:
 	opentext
+	pokenamemem RHYDON, 0
 	writetext UnknownText_0x9c5f0
 	cry RHYDON
 	waitbutton
@@ -36,7 +37,9 @@ OlivineHouseBetaTeacherText:
 	done
 
 UnknownText_0x9c5f0:
-	text "RHYDON: Gugooh!"
+	text "@"
+	text_from_ram StringBuffer3
+	text ": Gugooh!"
 	done
 
 OlivineHouseBeta_MapEventHeader:

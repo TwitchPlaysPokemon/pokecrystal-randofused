@@ -4,7 +4,9 @@ IrwinAskNumber1Text:
 
 	para "Huh? You're the"
 	line "one who saved all"
-	cont "the SLOWPOKE?"
+	cont "the @"
+	text_from_ram StringBuffer3
+	text "?"
 
 	para "Well, no wonder I"
 	line "couldn't beat you!"

@@ -143,6 +143,7 @@ TrainerBugCatcherArnie1:
 	iftrue UnknownScript_0x19c90f
 	checkevent EVENT_ARNIE_ASKED_FOR_PHONE_NUMBER
 	iftrue UnknownScript_0x19c9a4
+	pokenamemem VENONAT, 0
 	writetext UnknownText_0x19cdf6
 	buttonsound
 	setevent EVENT_ARNIE_ASKED_FOR_PHONE_NUMBER
@@ -402,7 +403,9 @@ BugCatcherArnie1BeatenText:
 	done
 
 UnknownText_0x19cdf6:
-	text "My VENONAT won me"
+	text "My @"
+	text_from_ram StringBuffer3
+	text " won"
 	line "the Bug-Catching"
 
 	para "Contest at the"

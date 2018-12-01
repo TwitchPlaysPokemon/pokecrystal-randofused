@@ -5,6 +5,6 @@
 	db   "It hides any shiny"
 	next "object it finds in"
 	next "a secret location."
-	page "MURKROW and"
-	next "MEOWTH loot one"
+	page "MURFISH and"
+	next "MEOWABBY loot one"
 	next "another's stashes.@"

@@ -245,9 +245,13 @@ UnknownText_0x174688: ; 0x174688
 UnknownText_0x1746c3: ; 0x1746c3
 	text "I happened to come"
 	line "across a wild"
-	cont "SNUBBULL recently."
+	cont "@"
+	text_from_ram StringBuffer5
+	text " recently."
 
-	para "My SNUBBULL, I"
+	para "My @"
+	text_from_ram StringBuffer4
+	text ", I"
 	line "assure you, was"
 
 	para "far cuter than the"
@@ -257,9 +261,11 @@ UnknownText_0x1746c3: ; 0x1746c3
 
 UnknownText_0x174734: ; 0x174734
 	text "I happened to see"
-	line "a wild MARILL the"
+	line "a wild @"
+	text_from_ram StringBuffer5
+	text ""
 
-	para "other day."
+	para "the other day."
 	line "Or so I thought."
 
 	para "A closer look"
@@ -1172,7 +1178,7 @@ UnknownText_0x175eaf: ; 0x175eaf
 
 	para "Recently, all I've"
 	line "been catching are"
-	cont "MAGIKARP, though…"
+	cont "commons, though…"
 	done
 ; 0x175f11
 
@@ -1196,7 +1202,9 @@ UnknownText_0x175f70: ; 0x175f70
 
 	para "Aren't you coming"
 	line "over to fish for"
-	cont "QWILFISH?"
+	cont "@"
+	text_from_ram StringBuffer4
+	text "?"
 
 	para "I'm on ROUTE 32,"
 	line "so hurry up!"
@@ -1354,7 +1362,7 @@ UnknownText_0x176424: ; 0x176424
 	para "But I can't seem"
 	line "to get a hold of a"
 
-	para "SURF PIKACHU DOLL."
+	para "SURF PIKA DOLL."
 	line "None of my friends"
 
 	para "have it. It must"
@@ -1668,14 +1676,18 @@ UnknownText_0x176d85: ; 0x176d85
 
 UnknownText_0x176dd1: ; 0x176dd1
 	text "Hello? What? Where"
-	line "is DUNSPARCE?"
+	line "is @"
+	text_from_ram StringBuffer4
+	text "?"
 
 	para "DARK CAVE! Hurry!"
 
 	para "I know I've said"
 	line "it before, but"
 
-	para "DUNSPARCE don't"
+	para "@"
+	text_from_ram StringBuffer4
+	text " don't"
 	line "appear when there"
 
 	para "are strong #MON"

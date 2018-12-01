@@ -119,6 +119,7 @@ BuenaPhoneScript_Random2:
 	jump .finish
 
 .seven
+	pokenamemem PIKACHU, 0
 	writetext UnknownText_0xa1488
 	jump .finish
 
@@ -131,6 +132,8 @@ BuenaPhoneScript_Random2:
 	jump .finish
 
 .ten
+	pokenamemem DROWZEE, 0
+	pokenamemem MEOWTH, 1
 	writetext UnknownText_0xa183d
 	jump .finish
 

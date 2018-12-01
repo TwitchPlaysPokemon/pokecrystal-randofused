@@ -39,7 +39,7 @@ VermilionPokecenter1FBugCatcherScript:
 UnknownText_0x191620:
 	text "A sleeping #MON"
 	line "is lying in front"
-	cont "of DIGLETT'S CAVE."
+	cont "of DIGVEE'S CAVE."
 
 	para "It's a fantastic"
 	line "opportunity to get"
@@ -53,7 +53,7 @@ UnknownText_0x191698:
 	line "sleeping #MON"
 
 	para "lying in front of"
-	line "DIGLETT'S CAVE."
+	line "DIGVEE'S CAVE."
 
 	para "But it seems to"
 	line "have disappeared."

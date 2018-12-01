@@ -424,7 +424,7 @@ LeafStoneDesc:
 
 MetalPowderDesc:
 	db   "Raises DEFENSE of"
-	next "DITTO. (HOLD)@"
+	next "DITTOPOM. (HOLD)@"
 
 NuggetDesc:
 	db   "Made of pure gold."
@@ -545,7 +545,7 @@ ElixerDesc:
 
 RedScaleDesc:
 	db   "A scale from the"
-	next "red GYARADOS.@"
+	next "red GYARARING.@"
 
 SecretPotionDesc:
 	db   "Fully heals any"
@@ -979,11 +979,11 @@ BrickPieceDesc:
 	next "tile.@"
 
 SurfMailDesc:
-	db   "LAPRAS-print MAIL."
-	next "(HOLD)@"
+	db   "LAPRALEE-print"
+	next "MAIL. (HOLD)@"
 
 LiteBlueMailDesc:
-	db   "DRATINI-print"
+	db   "DRATINSPROUT-print"
 	next "MAIL. (HOLD)@"
 
 PortraitMailDesc:
@@ -995,24 +995,24 @@ LovelyMailDesc:
 	next "(HOLD)@"
 
 EonMailDesc:
-	db   "EEVEE-print MAIL."
-	next "(HOLD)@"
+	db   "EEVDOUR-print"
+	next "MAIL. (HOLD)@"
 
 MorphMailDesc:
-	db   "DITTO-print MAIL."
-	next "(HOLD)@"
+	db   "DITTOPOM-print"
+	next "MAIL. (HOLD)@"
 
 BlueSkyMailDesc:
 	db   "Sky-print MAIL."
 	next "(HOLD)@"
 
 MusicMailDesc:
-	db   "NATU-print MAIL."
-	next "(HOLD)@"
+	db   "NATARILL-print"
+	next "MAIL. (HOLD)@"
 
 MewMailDesc:
-	db   "MEW-print MAIL."
-	next "(HOLD)@"
+	db   "MEWICUNO-print"
+	next "MAIL. (HOLD)@"
 
 TeruSama25Desc:
 	db   "?@"

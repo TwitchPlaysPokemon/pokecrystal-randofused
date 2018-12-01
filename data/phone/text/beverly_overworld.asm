@@ -1,6 +1,8 @@
 BeverlyAskNumber1Text:
-	text "Your MARILL is so"
-	line "cute and adorable!"
+	text "Your @"
+	text_from_ram StringBuffer4
+	text ""
+	line "is so adorable!"
 
 	para "You love #MON"
 	line "just like I do!"
@@ -13,8 +15,10 @@ BeverlyAskNumber1Text:
 	done
 
 BeverlyAskNumber2Text:
-	text "Your MARILL is so"
-	line "cute and adorable!"
+	text "Your @"
+	text_from_ram StringBuffer4
+	text ""
+	line "is so adorable!"
 
 	para "We should chat, it"
 	line "will be fun."
@@ -25,17 +29,24 @@ BeverlyAskNumber2Text:
 
 BeverlyNumberAcceptedText:
 	text "To be honest, I"
-	line "want a MARILL."
+	line "want a @"
+	text_from_ram StringBuffer4
+	text "."
 
 	para "But I make do with"
-	line "my cute SNUBBULL."
+	line "my cute @"
+	text_from_ram StringBuffer5
+	text "."
 	done
 
 BeverlyNumberDeclinedText:
 	text "Oh… That's"
 	line "disappointing…"
 
-	para "Goodbye, MARILL…"
+	para "Goodbye,"
+	line "@"
+	text_from_ram StringBuffer4
+	text "…"
 	done
 
 BeverlyPhoneFullText:

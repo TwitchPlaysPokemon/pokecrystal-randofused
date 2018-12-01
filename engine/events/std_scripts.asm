@@ -673,6 +673,7 @@ AskNumber1MScript:
 	farwritetext ToddAskNumber1Text
 	end
 .Irwin:
+	pokenamemem SLOWPOKE, 0
 	farwritetext IrwinAskNumber1Text
 	end
 .Arnie:
@@ -685,6 +686,7 @@ AskNumber1MScript:
 	farwritetext ChadAskNumber1Text
 	end
 .Derek:
+	pokenamemem PIKACHU, 0
 	farwritetext DerekAskNumber1Text
 	end
 .Tully:
@@ -771,6 +773,7 @@ AskNumber2MScript:
 	farwritetext ChadAskNumber2Text
 	end
 .Derek:
+	pokenamemem PIKACHU, 0
 	farwritetext DerekAskNumber2Text
 	end
 .Tully:
@@ -888,6 +891,7 @@ NumberAcceptedMScript:
 	closetext
 	end
 .Derek:
+	pokenamemem PIKACHU, 0
 	farwritetext DerekNumberAcceptedText
 	waitbutton
 	closetext
@@ -1012,6 +1016,7 @@ NumberDeclinedMScript:
 	closetext
 	end
 .Derek:
+	pokenamemem PIKACHU, 0
 	farwritetext DerekNumberDeclinedText
 	waitbutton
 	closetext
@@ -1136,6 +1141,7 @@ PhoneFullMScript:
 	closetext
 	end
 .Derek:
+	pokenamemem PIKACHU, 0
 	farwritetext DerekPhoneFullText
 	waitbutton
 	closetext
@@ -1268,6 +1274,7 @@ RematchMScript:
 	closetext
 	end
 .Wilton:
+	pokenamemem POLIWAG, 2
 	farwritetext WiltonRematchText
 	waitbutton
 	closetext
@@ -1301,6 +1308,7 @@ GiftMScript:
 	buttonsound
 	end
 .Derek:
+	pokenamemem PIKACHU, 0
 	farwritetext DerekGiftText
 	buttonsound
 	end
@@ -1357,6 +1365,7 @@ PackFullMScript:
 	closetext
 	end
 .Derek:
+	pokenamemem PIKACHU, 0
 	farwritetext DerekPackFullText
 	waitbutton
 	closetext
@@ -1424,6 +1433,7 @@ AskNumber1FScript:
 	if_equal PHONE_PICNICKER_ERIN, .Erin
 
 .Beverly:
+	pokenamemem MARILL, 1
 	farwritetext BeverlyAskNumber1Text
 	end
 .Beth:
@@ -1442,6 +1452,7 @@ AskNumber1FScript:
 	farwritetext DanaAskNumber1Text
 	end
 .Tiffany:
+	pokenamemem CLEFAIRY, 1
 	farwritetext TiffanyAskNumber1Text
 	end
 .Erin:
@@ -1460,6 +1471,7 @@ AskNumber2FScript:
 	if_equal PHONE_PICNICKER_ERIN, .Erin
 
 .Beverly:
+	pokenamemem MARILL, 1
 	farwritetext BeverlyAskNumber2Text
 	end
 .Beth:
@@ -1478,6 +1490,7 @@ AskNumber2FScript:
 	farwritetext DanaAskNumber2Text
 	end
 .Tiffany:
+	pokenamemem CLEFAIRY, 1
 	farwritetext TiffanyAskNumber2Text
 	end
 .Erin:
@@ -1503,6 +1516,8 @@ NumberAcceptedFScript: ; 0xbcbd3
 	if_equal PHONE_PICNICKER_ERIN, .Erin
 
 .Beverly:
+	pokenamemem MARILL, 1
+	pokenamemem SNUBBULL, 2
 	farwritetext BeverlyNumberAcceptedText
 	waitbutton
 	closetext
@@ -1533,6 +1548,7 @@ NumberAcceptedFScript: ; 0xbcbd3
 	closetext
 	end
 .Tiffany:
+	pokenamemem CLEFAIRY, 1
 	farwritetext TiffanyNumberAcceptedText
 	waitbutton
 	closetext
@@ -1555,6 +1571,7 @@ NumberDeclinedFScript:
 	if_equal PHONE_PICNICKER_ERIN, .Erin
 
 .Beverly:
+	pokenamemem MARILL, 1
 	farwritetext BeverlyNumberDeclinedText
 	waitbutton
 	closetext
@@ -1585,6 +1602,7 @@ NumberDeclinedFScript:
 	closetext
 	end
 .Tiffany:
+	pokenamemem CLEFAIRY, 1
 	farwritetext TiffanyNumberDeclinedText
 	waitbutton
 	closetext
@@ -1607,6 +1625,7 @@ PhoneFullFScript:
 	if_equal PHONE_PICNICKER_ERIN, .Erin
 
 .Beverly:
+	pokenamemem MARILL, 1
 	farwritetext BeverlyPhoneFullText
 	waitbutton
 	closetext
@@ -1637,6 +1656,7 @@ PhoneFullFScript:
 	closetext
 	end
 .Tiffany:
+	pokenamemem CLEFAIRY, 1
 	farwritetext TiffanyPhoneFullText
 	waitbutton
 	closetext
@@ -1683,6 +1703,7 @@ RematchFScript:
 	closetext
 	end
 .Tiffany:
+	pokenamemem CLEFAIRY, 1
 	farwritetext TiffanyRematchText
 	waitbutton
 	closetext
@@ -1701,6 +1722,7 @@ GiftFScript:
 	if_equal PHONE_PICNICKER_TIFFANY, .Tiffany
 
 .Beverly:
+	pokenamemem MARILL, 1
 	farwritetext BeverlyGiftText
 	buttonsound
 	end
@@ -1713,6 +1735,7 @@ GiftFScript:
 	buttonsound
 	end
 .Tiffany:
+	pokenamemem CLEFAIRY, 1
 	farwritetext TiffanyGiftText
 	buttonsound
 	end
@@ -1726,6 +1749,7 @@ PackFullFScript:
 	if_equal PHONE_PICNICKER_ERIN, .Erin
 
 .Beverly:
+	pokenamemem MARILL, 1
 	farwritetext BeverlyPackFullText
 	waitbutton
 	closetext
@@ -1741,6 +1765,7 @@ PackFullFScript:
 	closetext
 	end
 .Tiffany:
+	pokenamemem CLEFAIRY, 1
 	farwritetext TiffanyPackFullText
 	waitbutton
 	closetext

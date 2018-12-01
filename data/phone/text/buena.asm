@@ -272,7 +272,9 @@ UnknownText_0xa1488: ; 0xa1488
 	para "taking part in my"
 	line "PASSWORD show."
 
-	para "But when PIKACHU"
+	para "But when @"
+	text_from_ram StringBuffer3
+	text ""
 	line "was the password,"
 
 	para "it was uh… whew…"
@@ -282,7 +284,9 @@ UnknownText_0xa1488: ; 0xa1488
 	line "came in out in"
 
 	para "droves, shouting"
-	line "'PIKACHU!' over"
+	line "'@"
+	text_from_ram StringBuffer3
+	text "!' over"
 
 	para "and over. I mean,"
 	line "they were loud."
@@ -386,19 +390,26 @@ UnknownText_0xa183d: ; 0xa183d
 	line "the first #MON"
 
 	para "MARY caught was a"
-	line "DROWZEE?"
+	line "@"
+	text_from_ram StringBuffer3
+	text "?"
 
 	para "Isn't that so out"
 	line "of character?"
 
-	para "But MARY's DROWZEE"
-	line "kept making her"
+	para "But MARY's"
+	line "@"
+	text_from_ram StringBuffer3
+	text "kept"
+	cont "making her"
 
 	para "fall asleep on the"
 	line "job, so she traded"
 
 	para "with a fan for a"
-	line "MEOWTH."
+	line "@"
+	text_from_ram StringBuffer4
+	text "."
 
 	para "Let's chat about"
 	line "#MON again!"

@@ -999,7 +999,9 @@ ContestJudging_ThirdPlaceScoreText::
 
 UnknownText_0x1c1203::
 	text "Let me measure"
-	line "that MAGIKARP."
+	line "that @"
+	text_from_ram StringBuffer3
+	text "."
 
 	para "…Hm, it measures"
 	line "@"

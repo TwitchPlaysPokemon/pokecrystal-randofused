@@ -238,9 +238,9 @@ GoldenrodGameCornerPrizeMonVendorScript:
 .MenuData2:
 	db $80 ; flags
 	db 4 ; items
-	db "ABRA        100@"
-	db "CUBONE      800@"
-	db "WOBBUFFET  1500@"
+	db "ABRATINI    100@"
+	db "CUBONKERN   800@"
+	db "SNOBBUFFET 1500@"
 	db "CANCEL@"
 
 

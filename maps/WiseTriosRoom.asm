@@ -44,6 +44,9 @@ WiseTriosRoom_MapScriptHeader:
 	return
 
 WiseTriosRoomSage1Script:
+	pokenamemem RAIKOU, 0
+	pokenamemem ENTEI, 1
+	pokenamemem SUICUNE, 2
 	jumptextfaceplayer WiseTriosRoomSage1Text
 
 WiseTriosRoomSage2Script:
@@ -61,6 +64,9 @@ UnknownScript_0x985a3:
 	stopfollow
 	spriteface PLAYER, RIGHT
 	opentext
+	pokenamemem RAIKOU, 0
+	pokenamemem ENTEI, 1
+	pokenamemem SUICUNE, 2
 	writetext UnknownText_0x98712
 	waitbutton
 	closetext
@@ -73,6 +79,9 @@ TrainerSageGaku:
 
 .Script:
 	opentext
+	pokenamemem RAIKOU, 0
+	pokenamemem ENTEI, 1
+	pokenamemem SUICUNE, 2
 	writetext UnknownText_0x98938
 	waitbutton
 	closetext
@@ -97,6 +106,9 @@ TrainerSageKoji:
 	pause 10
 	showemote EMOTE_SHOCK, WISETRIOSROOM_SAGE6, 20
 	opentext
+	pokenamemem RAIKOU, 0
+	pokenamemem ENTEI, 1
+	pokenamemem SUICUNE, 2
 	writetext UnknownText_0x98c6c
 	buttonsound
 	writetext UnknownText_0x98cac
@@ -110,6 +122,9 @@ TrainerSageKoji:
 
 UnknownScript_0x9861b:
 	opentext
+	pokenamemem RAIKOU, 0
+	pokenamemem ENTEI, 1
+	pokenamemem SUICUNE, 2
 	writetext UnknownText_0x98db5
 	waitbutton
 	closetext
@@ -133,9 +148,16 @@ MovementData_0x98628:
 WiseTriosRoomSage1Text:
 	text "Astounding…"
 
-	para "SUICUNE, ENTEI and"
-	line "RAIKOU have arisen"
-	cont "from their sleep…"
+	para "@"
+	text_from_ram StringBuffer5
+	text ", @"
+	text_from_ram StringBuffer4
+	text ""
+	line "and @"
+	text_from_ram StringBuffer3
+	text ""
+	line "have arisen from"
+	cont "their sleep…"
 
 	para "Is the legend"
 	line "coming true?"
@@ -163,9 +185,15 @@ UnknownText_0x98712:
 	line "GYM BADGE."
 
 	para "However, now that"
-	line "SUICUNE, RAIKOU"
+	line "@"
+	text_from_ram StringBuffer5
+	text ", @"
+	text_from_ram StringBuffer3
+	text ""
 
-	para "and ENTEI have"
+	para "and @"
+	text_from_ram StringBuffer4
+	text " have"
 	line "arisen, I ask you"
 
 	para "to refrain from"
@@ -200,7 +228,7 @@ SageGakuSeenText:
 	line "come true!"
 
 	para "The legendary"
-	line "#MON SUICUNE"
+	line "#MON SUITWO"
 	cont "has arrived!"
 
 	para "We, the WISE TRIO,"
@@ -219,8 +247,14 @@ UnknownText_0x98938:
 	text "Ah, so it is you"
 	line "who claim to have"
 
-	para "seen SUICUNE,"
-	line "ENTEI and RAIKOU"
+	para "seen @"
+	text_from_ram StringBuffer5
+	text ","
+	line "@"
+	text_from_ram StringBuffer4
+	text " and @"
+	text_from_ram StringBuffer3
+	text ""
 	cont "while they slept?"
 
 	para "Unbelievable!"
@@ -333,14 +367,18 @@ UnknownText_0x98cac:
 	line "and enter the TIN"
 	cont "TOWER ahead."
 
-	para "SUICUNE will put"
+	para "@"
+	text_from_ram StringBuffer5
+	text " will put"
 	line "you to the test."
 	done
 
 UnknownText_0x98db5:
 	text "Please, do go on."
 
-	para "SUICUNE will put"
+	para "@"
+	text_from_ram StringBuffer5
+	text " will put"
 	line "you to the test."
 	done
 

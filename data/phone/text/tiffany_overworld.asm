@@ -1,6 +1,8 @@
 TiffanyAskNumber1Text:
 	text "Hi! You like"
-	line "CLEFAIRY too?"
+	line "@"
+	text_from_ram StringBuffer4
+	text " too?"
 
 	para "They're so very"
 	line "cute, aren't they?"
@@ -12,7 +14,9 @@ TiffanyAskNumber1Text:
 	line "your phone number!"
 
 	para "Let's talk about"
-	line "CLEFAIRY!"
+	line "@"
+	text_from_ram StringBuffer4
+	text "!"
 	done
 
 TiffanyAskNumber2Text:
@@ -20,12 +24,17 @@ TiffanyAskNumber2Text:
 	line "your phone number!"
 
 	para "Let's talk about"
-	line "CLEFAIRY!"
+	line "@"
+	text_from_ram StringBuffer4
+	text "!"
 	done
 
 TiffanyNumberAcceptedText:
-	text "Isn't my CLEFAIRY"
-	line "super-adorable?"
+	text "Isn't my"
+	line "@"
+	text_from_ram StringBuffer4
+	text ""
+	cont "super-adorable?"
 	done
 
 TiffanyNumberDeclinedText:
@@ -33,7 +42,9 @@ TiffanyNumberDeclinedText:
 	line "Look for me if you"
 
 	para "want to talk about"
-	line "CLEFAIRY."
+	line "@"
+	text_from_ram StringBuffer4
+	text "."
 	done
 
 TiffanyPhoneFullText:
@@ -44,7 +55,9 @@ TiffanyPhoneFullText:
 TiffanyRematchText:
 	text "There you are!"
 
-	para "CLEFAIRY, I want"
+	para "@"
+	text_from_ram StringBuffer4
+	text ", I want"
 	line "you to try hard!"
 	done
 

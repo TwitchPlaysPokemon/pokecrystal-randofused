@@ -4,7 +4,7 @@
 
 	db   "If a tree branch"
 	next "shakes when there"
-	next "is no wind, it's a"
-	page "SUDOWOODO, not a"
-	next "tree. It hides"
+	next "is no wind, it's"
+	page "this #MON, not"
+	next "a tree. It hides"
 	next "from the rain.@"

@@ -52,6 +52,7 @@ Route2Sign:
 	jumptext Route2SignText
 
 MapRoute2Signpost1Script:
+	pokenamemem DIGLETT, 0
 	jumptext UnknownText_0x1ac49f
 
 Route2DireHit:
@@ -143,7 +144,9 @@ Route2SignText:
 	done
 
 UnknownText_0x1ac49f:
-	text "DIGLETT'S CAVE"
+	text "@"
+	text_from_ram StringBuffer3
+	text "'S CAVE"
 	done
 
 Route2_MapEventHeader:

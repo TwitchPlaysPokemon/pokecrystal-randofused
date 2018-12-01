@@ -170,7 +170,9 @@ UnknownText_0x6455b: ; 0x6455b
 	text "I saw, I saw!"
 
 	para "You waking up"
-	line "SNORLAX!"
+	line "@"
+	text_from_ram StringBuffer3
+	text "!"
 
 	para "I was watching you"
 	line "from afar, so I"
@@ -416,7 +418,7 @@ UnknownText_0x64c5a: ; 0x64c5a
 	line "coming or what?"
 
 	para "You're missing out"
-	line "on seeing YANMA!"
+	line "on seeing a swarm!"
 
 	para "Get down to ROUTE"
 	line "35 right now!"
@@ -931,7 +933,9 @@ DerekCheekPincherText: ; 0x65ab2
 
 UnknownText_0x65b29: ; 0x65b29
 	text "Oh, and recently,"
-	line "my PIKACHU beat a"
+	line "my @"
+	text_from_ram StringBuffer5
+	text " beat a"
 	cont "wild @"
 	text_from_ram StringBuffer4
 	text "!"
@@ -944,10 +948,14 @@ UnknownText_0x65b29: ; 0x65b29
 	para "Don't you think"
 	line "that's astounding?"
 
-	para "My PIKACHU is"
+	para "My @"
+	text_from_ram StringBuffer5
+	text " is"
 	line "awesome!"
 
-	para "My PIKACHU is the"
+	para "My @"
+	text_from_ram StringBuffer5
+	text " is the"
 	line "greatest!"
 	done
 ; 0x65bc8
@@ -987,7 +995,9 @@ DerekBugCatchingContestText: ; 0x65c66
 	para "I think I'll"
 	line "participate with"
 
-	para "PIKACHU to show"
+	para "@"
+	text_from_ram StringBuffer5
+	text " to show"
 	line "off its cuteness."
 	done
 ; 0x65cf9
@@ -996,22 +1006,30 @@ UnknownText_0x65cf9: ; 0x65cf9
 	text "I'd like you to"
 	line "have a NUGGET."
 
-	para "My PIKACHU just"
+	para "My @"
+	text_from_ram StringBuffer4
+	text " just"
 	line "loves it."
 
 	para "I'm certain your"
-	line "PIKACHU will love"
+	line "@"
+	text_from_ram StringBuffer4
+	text " will love"
 	cont "it too!"
 	done
 ; 0x65d5c
 
 UnknownText_0x65d5c: ; 0x65d5c
 	text "How is your"
-	line "PIKACHU doing?"
+	line "@"
+	text_from_ram StringBuffer5
+	text " doing?"
 
 	para "Let's get together"
 	line "and brag about our"
-	cont "PIKACHU!"
+	cont "@"
+	text_from_ram StringBuffer5
+	text "!"
 	done
 ; 0x65da6
 
@@ -1248,7 +1266,10 @@ UnknownText_0x66366: ; 0x66366
 
 UnknownText_0x663a1: ; 0x663a1
 	text "Did you know…?"
-	line "ABRA was the first"
+	line "@"
+	text_from_ram StringBuffer3
+	text " was"
+	cont "the first"
 
 	para "#MON that BILL"
 	line "ostensibly caught."
@@ -1346,7 +1367,9 @@ UnknownText_0x66605: ; 0x66605
 	text " a while"
 	line "ago…"
 
-	para "My CLEFAIRY came"
+	para "My @"
+	text_from_ram StringBuffer5
+	text " came"
 	line "close to fainting!"
 
 	para "Isn't that awful?"
@@ -1367,7 +1390,9 @@ UnknownText_0x66688: ; 0x66688
 	text " a while"
 	line "ago…"
 
-	para "My CLEFAIRY got"
+	para "My @"
+	text_from_ram StringBuffer5
+	text " got"
 	line "frightened, so we"
 
 	para "ran away as fast"
@@ -1375,7 +1400,9 @@ UnknownText_0x66688: ; 0x66688
 
 	para "I just can't help"
 	line "feeling protective"
-	cont "of my CLEFAIRY."
+	cont "of my @"
+	text_from_ram StringBuffer5
+	text "."
 	done
 ; 0x66730
 
@@ -1387,7 +1414,9 @@ UnknownText_0x66730: ; 0x66730
 	line "battle?"
 
 	para "I'll be waiting"
-	line "with CLEFAIRY on"
+	line "with @"
+	text_from_ram StringBuffer4
+	text " on"
 	cont "@"
 	text_from_ram StringBuffer5
 	text "."
@@ -1399,7 +1428,9 @@ TiffanyItsAwfulText: ; 0x66796
 	text "!"
 
 	para "It's awful."
-	line "My CLEFAIRY…"
+	line "My @"
+	text_from_ram StringBuffer5
+	text "…"
 
 	para "Huh? <PLAY_G>?"
 
@@ -1421,7 +1452,9 @@ UnknownText_0x66801: ; 0x66801
 	line "BOWS at GOLDENROD"
 
 	para "DEPT.STORE for my"
-	line "CLEFAIRY."
+	line "@"
+	text_from_ram StringBuffer4
+	text "."
 
 	para "I got too many, so"
 	line "I'll give you one!"
@@ -1435,7 +1468,9 @@ UnknownText_0x66801: ; 0x66801
 
 UnknownText_0x66882: ; 0x66882
 	text "I love dressing up"
-	line "my CLEFAIRY!"
+	line "my @"
+	text_from_ram StringBuffer4
+	text "!"
 	done
 ; 0x668a3
 
@@ -1443,8 +1478,11 @@ UnknownText_0x668a3: ; 0x668a3
 	text "What's wrong?"
 	line "Can't you visit?"
 
-	para "CLEFAIRY got tired"
-	line "and fell asleep."
+	para "@"
+	text_from_ram StringBuffer4
+	text "got"
+	line "tired and fell"
+	cont "asleep."
 
 	para "I'm not sure if I"
 	line "can wake it up…"
@@ -1462,7 +1500,9 @@ UnknownText_0x6691d: ; 0x6691d
 
 	para "I'm sure this will"
 	line "look good on your"
-	cont "CLEFAIRY."
+	cont "@"
+	text_from_ram StringBuffer4
+	text "."
 
 	para "Please hurry to"
 	line "@"

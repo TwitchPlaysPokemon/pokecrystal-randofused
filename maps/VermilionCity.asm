@@ -275,7 +275,7 @@ PokemonFanClubSignText:
 	done
 
 VermilionCityDiglettsCaveSignText:
-	text "DIGLETT'S CAVE"
+	text "DIGVEE'S CAVE"
 	done
 
 VermilionCityPortSignText:

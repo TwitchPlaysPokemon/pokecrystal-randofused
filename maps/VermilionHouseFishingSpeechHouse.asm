@@ -9,6 +9,7 @@ VermilionHouseFishingSpeechHouse_MapScriptHeader:
 	db 0
 
 FishingDude:
+	pokenamemem MAGIKARP, 0
 	jumptextfaceplayer FishingDudeText
 
 FishingDudesHousePhoto:
@@ -29,16 +30,20 @@ FishingDudeText:
 
 	para "He dreams about"
 	line "seeing the world's"
-	cont "greatest MAGIKARP."
+	cont "biggest @"
+	text_from_ram StringBuffer3
+	text "."
 
 	para "If you don't mind,"
 	line "could you show him"
 
-	para "any MAGIKARP you"
+	para "any @"
+	text_from_ram StringBuffer3
+	text " you"
 	line "catch?"
 
 	para "Who knows, you may"
-	line "catch the MAGIKARP"
+	line "catch the one"
 	cont "of his dreams."
 	done
 
