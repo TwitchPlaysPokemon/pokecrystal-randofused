@@ -389,9 +389,6 @@ AddSpriteGFX: ; 142e5
 
 
 LoadSpriteGFX: ; 14306
-; Bug: b is not preserved, so it's useless as a next count.
-; Uncomment the lines below to fix.
-
 	ld hl, UsedSprites
 	ld b, SPRITE_GFX_LIST_CAPACITY
 .loop
@@ -409,9 +406,9 @@ LoadSpriteGFX: ; 14306
 	ret
 
 .LoadSprite:
-	; push bc
+	push bc
 	call GetSprite
-	; pop bc
+	pop bc
 	ld a, l
 	ret
 ; 1431e
