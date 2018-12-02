@@ -12,6 +12,10 @@ LoadSpecialMapPalette: ; 494ac
 	jr z, .radio_tower
 	cp TILESET_CELADON_MANSION
 	jr z, .mansion_mobile
+	cp TILESET_LAB
+	jr z, .indoor_nite
+	cp TILESET_GYM_1
+	jr z, .indoor_nite
 	jr .do_nothing
 
 .pokecom_2f
@@ -45,6 +49,15 @@ LoadSpecialMapPalette: ; 494ac
 
 .mansion_mobile
 	call LoadMansionPalette
+	scf
+	ret
+
+.indoor_nite
+	ld a, [TimeOfDayPal]
+	maskbits NUM_DAYTIMES +- 1
+	cp PALETTE_NITE
+	jr nz, .do_nothing
+	call LoadIndoorNitePalette
 	scf
 	ret
 
@@ -198,3 +211,14 @@ MansionPalette2: ; 496fe
 	RGB 14, 16, 31
 	RGB 07, 07, 07
 ; 49706
+
+LoadIndoorNitePalette:
+	ld a, BANK(wBGPals1)
+	ld de, wBGPals1
+	ld hl, IndoorNitePalette
+	ld bc, 8 palettes
+	call FarCopyWRAM
+	ret
+
+IndoorNitePalette:
+INCLUDE "gfx/tilesets/indoor_nite.pal"
