@@ -13,7 +13,9 @@ LoadSpecialMapPalette: ; 494ac
 	cp TILESET_CELADON_MANSION
 	jr z, .mansion_mobile
 	cp TILESET_LAB
-	jr z, .dragon_shrine
+	jr z, .indoor_nite
+	cp TILESET_GYM_1
+	jr z, .indoor_nite
 	jr .do_nothing
 
 .pokecom_2f
@@ -50,12 +52,12 @@ LoadSpecialMapPalette: ; 494ac
 	scf
 	ret
 
-.dragon_shrine
+.indoor_nite
 	ld a, [TimeOfDayPal]
 	maskbits NUM_DAYTIMES +- 1
 	cp PALETTE_NITE
 	jr nz, .do_nothing
-	call LoadDragonShrinePalette
+	call LoadIndoorNitePalette
 	scf
 	ret
 
@@ -210,13 +212,13 @@ MansionPalette2: ; 496fe
 	RGB 07, 07, 07
 ; 49706
 
-LoadDragonShrinePalette:
+LoadIndoorNitePalette:
 	ld a, BANK(wBGPals1)
 	ld de, wBGPals1
-	ld hl, DragonShrinePalette
+	ld hl, IndoorNitePalette
 	ld bc, 8 palettes
 	call FarCopyWRAM
 	ret
 
-DragonShrinePalette:
-INCLUDE "gfx/tilesets/dragon_shrine.pal"
+IndoorNitePalette:
+INCLUDE "gfx/tilesets/indoor_nite.pal"
