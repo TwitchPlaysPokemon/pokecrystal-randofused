@@ -701,9 +701,14 @@ OakSpeech: ; 0x5f99
 	call GetBaseData
 
 	hlcoord 6, 4
-	ld a, [rDIV]
-	and a, $0F
+.resample
+	call Random
+	and $1f
+	jr z, .resample
+	cp 27
+	jr nc, .resample
 	ld [UnownLetter], a
+	
 	xor a
 	ld [wBoxAlignment], a
 	call _PrepMonFrontpic
