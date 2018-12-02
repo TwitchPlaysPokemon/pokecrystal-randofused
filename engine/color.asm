@@ -1230,6 +1230,8 @@ LoadMapPals:
 	; Which palette group is based on whether we're outside or inside
 	ld a, [wEnvironment]
 	and 7
+	cp DUNGEON
+	jr z, .dungeon
 	ld e, a
 	ld d, 0
 	ld hl, EnvironmentColorsPointers
@@ -1294,34 +1296,19 @@ LoadMapPals:
 	ld bc, 8 palettes
 	ld a, BANK(wOBPals1)
 	call FarCopyWRAM
-
-;	ld a, [wEnvironment]
-;	cp TOWN
-;	jr z, .outside
-;	cp ROUTE
-;	ret nz
-;.outside
-;	ld a, [MapGroup]
-;	ld l, a
-;	ld h, 0
-;	add hl, hl
-;	add hl, hl
-;	add hl, hl
-;	ld de, RoofPals
-;	add hl, de
-;	ld a, [TimeOfDayPal]
-;	maskbits NUM_DAYTIMES +- 1
-;	cp NITE_F
-;	jr c, .morn_day
-;rept 4
-;	inc hl
-;endr
-;.morn_day
-;	ld de, wBGPals1 palette PAL_BG_ROOF + 2
-;	ld bc, 4
-;	ld a, $5
-;	call FarCopyWRAM
 	ret
+
+.dungeon
+	ld hl, DungeonPals
+	ld a, [TimeOfDayPal]
+	maskbits NUM_DAYTIMES +- 1
+	ld bc, 8 palettes
+	call AddNTimes
+	ld de, wBGPals1
+	ld bc, 8 palettes
+	ld a, BANK(wBGPals1)
+	call FarCopyWRAM
+	jr .got_pals
 
 INCLUDE "data/maps/environment_colors.asm"
 
@@ -1343,8 +1330,8 @@ INCLUDE "gfx/tilesets/bg_tiles.pal"
 MapObjectPals::
 INCLUDE "gfx/overworld/npc_sprites.pal"
 
-RoofPals:
-INCLUDE "gfx/tilesets/roofs.pal"
+DungeonPals:
+INCLUDE "gfx/tilesets/dungeon.pal"
 
 DiplomaPalettes:
 INCLUDE "gfx/diploma/diploma.pal"
