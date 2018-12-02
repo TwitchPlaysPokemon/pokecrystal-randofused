@@ -414,6 +414,8 @@ UsedSurfScript: ; c986
 	waitbutton
 	closetext
 
+	callasm .fishing_hole_encounters
+
 	callasm .empty_fn ; empty function
 
 	copybytetovar Buffer2
@@ -424,10 +426,26 @@ UsedSurfScript: ; c986
 ; step into the water
 	special Special_SurfStartStep ; (slow_step_x, step_end)
 	applymovement PLAYER, MovementBuffer ; PLAYER, MovementBuffer
+	callasm .encounter
 	end
 
 .empty_fn ; c9a2
 	farcall TrainerRankings_Surf
+	ret
+
+.fishing_hole_encounters:
+	ld a, [PlayerStandingTile]
+	call CheckIceTile
+	ret c
+	ld a, 1
+	ld [wForceEncounter], a
+	ret
+
+.encounter
+	ld a, [wForceEncounter]
+	and a
+	ret z
+	farcall RandomEncounter
 	ret
 
 UsedSurfText: ; c9a9
