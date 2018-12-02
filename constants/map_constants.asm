@@ -101,7 +101,7 @@ ENDM
 	mapgroup TEAM_ROCKET_BASE_B1F,                         9, 15 ; 49
 	mapgroup TEAM_ROCKET_BASE_B2F,                         9, 15 ; 50
 	mapgroup TEAM_ROCKET_BASE_B3F,                         9, 15 ; 51
-	mapgroup ILEX_FOREST,                                 27, 15 ; 52
+	mapgroup ILEX_FOREST,                                 22, 15 ; 52
 	mapgroup GOLDENROD_UNDERGROUND,                       18, 15 ; 53
 	mapgroup GOLDENROD_UNDERGROUND_SWITCH_ROOM_ENTRANCES, 18, 15 ; 54
 	mapgroup GOLDENROD_DEPT_STORE_B1F,                     9, 10 ; 55
@@ -379,7 +379,7 @@ ENDM
 
 	mapgroup ROUTE_7,                                      9, 10 ;  1
 	mapgroup ROUTE_16,                                     9, 10 ;  2
-	mapgroup ROUTE_17,                                    45, 10 ;  3
+	mapgroup ROUTE_17,                                    46, 10 ;  3
 	mapgroup CELADON_CITY,                                18, 20 ;  4
 	mapgroup CELADON_DEPT_STORE_1F,                        4,  8 ;  5
 	mapgroup CELADON_DEPT_STORE_2F,                        4,  8 ;  6
