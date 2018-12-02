@@ -469,12 +469,6 @@ GuideGentPhoneNumberText:
 	para "If you ever get"
 	line "into a scrape,"
 	cont "just call me!"
-	
-	para "I'll also be"
-	line "giving you a"
-	cont "bell if I ever"
-	cont "hear something"
-	cont "useful!"
 
 	para "I wish you luck on"
 	line "your journey!"
