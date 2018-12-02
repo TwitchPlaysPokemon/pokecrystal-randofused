@@ -421,7 +421,7 @@ ENDM
 	mapgroup BATTLE_TOWER_ELEVATOR,                        2,  2 ; 13
 	mapgroup BATTLE_TOWER_HALLWAY,                         2, 11 ; 14
 	mapgroup ROUTE_40_BATTLE_TOWER_GATE,                   4,  5 ; 15
-	mapgroup BATTLE_TOWER_OUTSIDE,                        14, 10 ; 16
+	mapgroup BATTLE_TOWER_OUTSIDE,                        13, 10 ; 16
 
 	newgroup                                                     ; 23
 
