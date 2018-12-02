@@ -29,11 +29,6 @@ CherrygroveCityGuideGent:
 	faceplayer
 	opentext
 	writetext GuideGentIntroText
-	yesorno
-	iffalse .No
-	jump .Yes
-.Yes:
-	writetext GuideGentTourText1
 	waitbutton
 	closetext
 	playmusic MUSIC_SHOW_ME_AROUND
@@ -58,7 +53,17 @@ CherrygroveCityGuideGent:
 	applymovement CHERRYGROVECITY_GRAMPS, GuideGentMovement4
 	spriteface PLAYER, LEFT
 	opentext
-	writetext GuideGentSeaText
+	writetext GuideGentSeaText1
+	waitbutton
+	closetext
+	spriteface CHERRYGROVECITY_GRAMPS, DOWN
+	opentext
+	writetext GuideGentSeaText2
+	waitbutton
+	closetext
+	spriteface CHERRYGROVECITY_GRAMPS, LEFT
+	opentext
+	writetext GuideGentSeaText3
 	waitbutton
 	closetext
 	applymovement CHERRYGROVECITY_GRAMPS, GuideGentMovement5
@@ -75,6 +80,11 @@ CherrygroveCityGuideGent:
 	writetext GotMapCardText
 	buttonsound
 	writetext GuideGentPokegearText
+	waitbutton
+	closetext
+	; GuideGent gives PokeGear Number
+	opentext 
+	writetext GuideGentPhoneNumberText
 	waitbutton
 	closetext
 	stopfollow
@@ -336,24 +346,34 @@ CherrygroveCity_RivalExitsStageLeft:
 	step_end
 
 GuideGentIntroText:
-	text "You're a rookie"
-	line "trainer, aren't"
-	cont "you? I can tell!"
+	text "Will you just look"
+	line "at that face..."
+	
+	para "Are you finding"
+	line "this world mighty"
+	cont "confusing?"
 
 	para "That's OK! Every-"
 	line "one is a rookie"
 	cont "at some point!"
 
+	para "Folks here call me"
+	line "the GUIDE GENT."
+	
 	para "If you'd like, I"
 	line "can teach you a"
 	cont "few things."
+	
+	para "..."
+	
+	para "Ha! I know from"
+	line "your face that"
+	cont "you would!"
+	
+	para "OK, then!"
+	line "Tag along!"
 	done
-
-GuideGentTourText1:
-	text "OK, then!"
-	line "Follow me!"
-	done
-
+	
 GuideGentPokecenterText:
 	text "This is a #MON"
 	line "CENTER. They heal"
@@ -390,13 +410,28 @@ GuideGentRoute30Text:
 	line "there."
 	done
 
-GuideGentSeaText:
+GuideGentSeaText1:
 	text "This is the sea,"
 	line "as you can see."
 
 	para "Some #MON are"
 	line "found only in"
 	cont "water."
+	done
+	
+GuideGentSeaText2:
+	
+	para "Would you believe"
+	line "that I also fished"
+	cont "a trainer here"
+	cont "once?"
+	done
+
+GuideGentSeaText3:
+	
+	para "You never know"
+	line "what the water"
+	cont "will bring!"
 	done
 
 GuideGentGiftText:
@@ -419,17 +454,30 @@ GuideGentPokegearText:
 	text "#GEAR becomes"
 	line "more useful as you"
 	cont "add CARDS."
+	
+	para "But you still look"
+	line "a might confused."
+	
+	para "I know!"
+	done
+	
+GuideGentPhoneNumberText:
+
+	text "That is my #GEAR"
+	line "number."
+	
+	para "If you ever get"
+	line "into a scrape,"
+	cont "just call me!"
+	
+	para "I'll also be"
+	line "giving you a"
+	cont "bell if I ever"
+	cont "hear something"
+	cont "useful!"
 
 	para "I wish you luck on"
 	line "your journey!"
-	done
-
-GuideGentNoText:
-	text "Oh… It's something"
-	line "I enjoy doing…"
-
-	para "Fine. Come see me"
-	line "when you like."
 	done
 
 UnknownText_0x19c4e2:
