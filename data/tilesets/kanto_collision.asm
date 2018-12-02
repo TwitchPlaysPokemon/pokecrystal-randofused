@@ -126,5 +126,25 @@
 	tilecoll WALL, WALL, WALL, WALL ; 7d
 	tilecoll WALL, WALL, WALL, WALL ; 7e
 	tilecoll WALL, WALL, WALL, WALL ; 7f
-	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 80
-	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 81
+	tilecoll ICE, ICE, ICE, ICE ; 80
+	tilecoll ICE, ICE, ICE, ICE ; 81
+	tilecoll ICE, ICE, ICE, ICE ; 82
+	tilecoll ICE, ICE, ICE, ICE ; 83
+	tilecoll ICE, ICE, ICE, ICE ; 84
+	tilecoll ICE, ICE, ICE, ICE ; 85
+	tilecoll ICE, ICE, ICE, ICE ; 86
+	tilecoll ICE, ICE, ICE, ICE ; 87
+	tilecoll WALL, ICE, WALL, ICE ; 88
+	tilecoll ICE, WALL, ICE, WALL ; 89
+	tilecoll WALL, ICE, WALL, ICE ; 8a
+	tilecoll ICE, WALL, ICE, WALL ; 8b
+	tilecoll WALL, ICE, WALL, WALL ; 8c
+	tilecoll ICE, WALL, WALL, WALL ; 8d
+	tilecoll WALL, WALL, ICE, ICE ; 8e
+	tilecoll ICE, ICE, WALL, WALL ; 8f
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 90
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 91
+	tilecoll ICE, ICE, ICE, WALL ; 92
+	tilecoll WALL, ICE, ICE, ICE ; 93
+	tilecoll ICE, ICE, ICE, WALL ; 94
+	tilecoll FLOOR, FLOOR, WARP_CARPET_DOWN, WARP_CARPET_DOWN ; 95

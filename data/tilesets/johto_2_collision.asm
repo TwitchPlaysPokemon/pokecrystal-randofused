@@ -126,3 +126,11 @@
 	tilecoll WALL, WALL, WALL, WALL ; 7d
 	tilecoll WALL, WALL, WALL, WALL ; 7e
 	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 7f
+	tilecoll ICE, ICE, ICE, ICE ; 80
+	tilecoll ICE, ICE, ICE, ICE ; 81
+	tilecoll ICE, ICE, ICE, ICE ; 82
+	tilecoll ICE, ICE, ICE, ICE ; 83
+	tilecoll ICE, ICE, ICE, ICE ; 84
+	tilecoll ICE, ICE, ICE, ICE ; 85
+	tilecoll ICE, ICE, ICE, ICE ; 86
+	tilecoll ICE, ICE, ICE, ICE ; 87
