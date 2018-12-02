@@ -148,3 +148,5 @@
 	tilecoll WALL, ICE, ICE, ICE ; 93
 	tilecoll ICE, ICE, ICE, WALL ; 94
 	tilecoll FLOOR, FLOOR, WARP_CARPET_DOWN, WARP_CARPET_DOWN ; 95
+	tilecoll WALL, WALL, WALL, WALL ; 96
+	tilecoll WALL, WALL, WALL, WALL ; 97
