@@ -188,7 +188,7 @@ wTempObjectCopyX:: db ; c2f6
 wTempObjectCopyY:: db ; c2f7
 wTempObjectCopyRadius:: db ; c2f8
 
-	ds 1
+wForceEncounter:: db
 
 TileDown::  db ; c2fa
 TileUp::    db ; c2fb

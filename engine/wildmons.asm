@@ -204,8 +204,17 @@ TryWildEncounter:: ; 2a0e7
 	call GetMapEncounterRate
 	call ApplyMusicEffectOnEncounterRate
 	call ApplyCleanseTagEffectOnEncounterRate
+	ld a, [wForceEncounter]
+	and a
+	jr nz, .forced
 	call Random
 	cp b
+	ret
+
+.forced
+	xor a
+	ld [wForceEncounter], a
+	scf
 	ret
 ; 2a111
 
