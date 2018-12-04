@@ -3,57 +3,57 @@ JohtoGrassWildMons:
 	map SPROUT_TOWER_2F
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
 	; morn
-	db  3, LEDYBA     ; 30%
-	db  4, SPEAROW     ; 30%
-	db  5, MAREEP     ; 20%
-	db  3, ZUBAT      ; 10%
-	db  6, SPINARAK   ;  5%
-	db  5, CLEFFA     ;  4%
-	db  5, DIGLETT    ;  1%
+	db  4, LEDYBA     ; 30%
+	db  5, SPEAROW     ; 30%
+	db  6, MAREEP     ; 20%
+	db  4, ZUBAT      ; 10%
+	db  7, SPINARAK   ;  5%
+	db  6, CLEFFA     ;  4%
+	db  6, DIGLETT    ;  1%
 	; day
-	db  3, WEEDLE     ; 30%
-	db  4, SWINUB     ; 30%
-	db  5, RATTATA    ; 20%
-	db  3, NIDORAN_F  ; 10%
-	db  6, WOOPER     ;  5%
-	db  5, SPEAROW    ;  4%
-	db  5, SPEAROW    ;  1%
+	db  4, WEEDLE     ; 30%
+	db  5, SWINUB     ; 30%
+	db  6, RATTATA    ; 20%
+	db  4, NIDORAN_F  ; 10%
+	db  7, WOOPER     ;  5%
+	db  6, SPEAROW    ;  4%
+	db  6, SPEAROW    ;  1%
 	; nite
-	db  3, HOUNDOUR   ; 30%
-	db  4, GASTLY     ; 30%
-	db  5, KAKUNA     ; 20%
-	db  3, IGGLYBUFF  ; 10%
-	db  6, CYNDAQUIL  ;  5%
-	db  5, SUNKERN    ;  4%
-	db  5, RATTATA    ;  1%
+	db  4, HOUNDOUR   ; 30%
+	db  5, BELLSPROUT ; 30%
+	db  6, KAKUNA     ; 20%
+	db  4, IGGLYBUFF  ; 10%
+	db  7, CYNDAQUIL  ;  5%
+	db  6, SUNKERN    ;  4%
+	db  6, RATTATA    ;  1%
 
 
 	map SPROUT_TOWER_3F
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
 	; morn
-	db  3, SUNKERN    ; 30%
-	db  4, TYROGUE    ; 30%
-	db  5, SWINUB     ; 20%
-	db  3, SWINUB     ; 10%
-	db  6, HOOTHOOT   ;  5%
-	db  5, ZUBAT      ;  4%
-	db  5, EKANS      ;  1%
+	db  4, SUNKERN    ; 30%
+	db  5, TYROGUE    ; 30%
+	db  6, SWINUB     ; 20%
+	db  4, SWINUB     ; 10%
+	db  7, HOOTHOOT   ;  5%
+	db  6, ZUBAT      ;  4%
+	db  6, EKANS      ;  1%
 	; day
-	db  3, TOGEPI     ; 30%
-	db  4, IGGLYBUFF  ; 30%
-	db  5, PIDGEY     ; 20%
-	db  3, TYROGUE    ; 10%
-	db  6, PIDGEY     ;  5%
-	db  5, HOOTHOOT   ;  4%
-	db  5, EKANS      ;  1%
+	db  4, TOGEPI     ; 30%
+	db  5, IGGLYBUFF  ; 30%
+	db  6, PIDGEY     ; 20%
+	db  4, TYROGUE    ; 10%
+	db  7, PIDGEY     ;  5%
+	db  6, HOOTHOOT   ;  4%
+	db  6, EKANS      ;  1%
 	; nite
-	db  3, NATU       ; 30%
-	db  4, ODDISH     ; 30%
-	db  5, PSYDUCK    ; 20%
-	db  3, NIDORAN_M  ; 10%
-	db  6, VOLTORB    ;  5%
-	db  5, MAREEP     ;  4%
-	db  5, WEEDLE     ;  1%
+	db  4, NATU       ; 30%
+	db  5, ODDISH     ; 30%
+	db  6, PSYDUCK    ; 20%
+	db  4, NIDORAN_M  ; 10%
+	db  7, VOLTORB    ;  5%
+	db  6, MAREEP     ;  4%
+	db  6, WEEDLE     ;  1%
 
 
 	map TIN_TOWER_2F
@@ -423,57 +423,57 @@ JohtoGrassWildMons:
 	map UNION_CAVE_1F
 	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
 	; morn
-	db  6, SNUBBULL   ; 30%
-	db  6, MAGNEMITE  ; 30%
-	db  5, SENTRET    ; 20%
-	db  4, CLEFFA     ; 10%
-	db  7, RATTATA    ;  5%
-	db  6, QWILFISH   ;  4%
-	db  6, OMANYTE    ;  1%
+	db  7, SNUBBULL   ; 30%
+	db  7, MAGNEMITE  ; 30%
+	db  6, SENTRET    ; 20%
+	db  5, CLEFFA     ; 10%
+	db  8, RATTATA    ;  5%
+	db  7, QWILFISH   ;  4%
+	db  7, OMANYTE    ;  1%
 	; day
-	db  6, SMOOCHUM   ; 30%
-	db  6, PSYDUCK    ; 30%
-	db  5, NIDORAN_M  ; 20%
-	db  4, PICHU      ; 10%
-	db  7, PIDGEY     ;  5%
-	db  6, TANGELA    ;  4%
-	db  6, GLOOM      ;  1%
+	db  7, SMOOCHUM   ; 30%
+	db  7, PSYDUCK    ; 30%
+	db  6, NIDORAN_M  ; 20%
+	db  5, PICHU      ; 10%
+	db  8, PIDGEY     ;  5%
+	db  7, TANGELA    ;  4%
+	db  7, GLOOM      ;  1%
 	; nite
-	db  6, POLIWAG    ; 30%
-	db  6, SPINARAK   ; 30%
-	db  5, CATERPIE   ; 20%
-	db  4, DIGLETT    ; 10%
-	db  7, SUNKERN    ;  5%
-	db  6, DELIBIRD   ;  4%
-	db  6, PIKACHU    ;  1%
+	db  7, POLIWAG    ; 30%
+	db  7, SPINARAK   ; 30%
+	db  6, CATERPIE   ; 20%
+	db  5, DIGLETT    ; 10%
+	db  8, SUNKERN    ;  5%
+	db  7, DELIBIRD   ;  4%
+	db  7, PIKACHU    ;  1%
 
 
 	map UNION_CAVE_B1F
 	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
 	; morn
-	db  8, MAGBY      ; 30%
-	db  6, DIGLETT    ; 30%
-	db  8, SENTRET    ; 20%
-	db  8, PIKACHU    ; 10%
-	db  6, WEEDLE     ;  5%
-	db  8, MARILL     ;  4%
-	db  8, MARILL     ;  1%
+	db  9, MAGBY      ; 30%
+	db  7, DIGLETT    ; 30%
+	db  9, SENTRET    ; 20%
+	db  9, PIKACHU    ; 10%
+	db  7, WEEDLE     ;  5%
+	db  9, MARILL     ;  4%
+	db  9, MARILL     ;  1%
 	; day
-	db  8, KAKUNA     ; 30%
-	db  6, HOPPIP     ; 30%
-	db  8, ZUBAT      ; 20%
-	db  8, DELIBIRD   ; 10%
-	db  6, ZUBAT      ;  5%
-	db  8, RATTATA    ;  4%
-	db  8, IGGLYBUFF  ;  1%
+	db  9, KAKUNA     ; 30%
+	db  7, HOPPIP     ; 30%
+	db  9, ZUBAT      ; 20%
+	db  9, DELIBIRD   ; 10%
+	db  7, ZUBAT      ;  5%
+	db  9, RATTATA    ;  4%
+	db  9, IGGLYBUFF  ;  1%
 	; nite
-	db  8, LARVITAR   ; 30%
-	db  6, HOOTHOOT   ; 30%
-	db  8, SWINUB     ; 20%
-	db  8, KABUTO     ; 10%
-	db  6, DIGLETT    ;  5%
-	db  8, CLEFFA     ;  4%
-	db  8, WEEDLE     ;  1%
+	db  9, LARVITAR   ; 30%
+	db  7, HOOTHOOT   ; 30%
+	db  9, SWINUB     ; 20%
+	db  9, KABUTO     ; 10%
+	db  7, DIGLETT    ;  5%
+	db  9, CLEFFA     ;  4%
+	db  9, WEEDLE     ;  1%
 
 
 	map UNION_CAVE_B2F
@@ -507,29 +507,29 @@ JohtoGrassWildMons:
 	map SLOWPOKE_WELL_B1F
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
 	; morn
-	db  5, PIDGEY     ; 30%
-	db  6, MAREEP     ; 30%
-	db  7, SENTRET    ; 20%
-	db  6, ABRA       ; 10%
-	db  8, HOPPIP     ;  5%
-	db  8, MACHOP     ;  4%
-	db  8, CYNDAQUIL  ;  1%
+	db  8, PIDGEY     ; 30%
+	db  9, MAREEP     ; 30%
+	db 10, SENTRET    ; 20%
+	db  9, ABRA       ; 10%
+	db 11, HOPPIP     ;  5%
+	db 11, MACHOP     ;  4%
+	db 11, CYNDAQUIL  ;  1%
 	; day
-	db  5, HOPPIP     ; 30%
-	db  6, PICHU      ; 30%
-	db  7, EKANS      ; 20%
-	db  6, PINECO     ; 10%
-	db  8, NIDORAN_M  ;  5%
-	db  8, VENONAT    ;  4%
-	db  8, GASTLY     ;  1%
+	db  8, HOPPIP     ; 30%
+	db  9, PICHU      ; 30%
+	db 10, EKANS      ; 20%
+	db  9, PINECO     ; 10%
+	db 11, NIDORAN_M  ;  5%
+	db 11, VENONAT    ;  4%
+	db 11, GASTLY     ;  1%
 	; nite
-	db  5, HOOTHOOT   ; 30%
-	db  6, MAREEP     ; 30%
-	db  7, SWINUB     ; 20%
-	db  6, GEODUDE    ; 10%
-	db  8, NIDORAN_F  ;  5%
-	db  8, SNUBBULL   ;  4%
-	db  8, GRIMER     ;  1%
+	db  8, HOOTHOOT   ; 30%
+	db  9, MAREEP     ; 30%
+	db 10, SWINUB     ; 20%
+	db  9, GEODUDE    ; 10%
+	db 11, NIDORAN_F  ;  5%
+	db 11, SNUBBULL   ;  4%
+	db 11, GRIMER     ;  1%
 
 
 	map SLOWPOKE_WELL_B2F
@@ -563,29 +563,29 @@ JohtoGrassWildMons:
 	map ILEX_FOREST
 	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
 	; morn
-	db  5, TYROGUE    ; 30%
-	db  5, WEEDLE     ; 30%
-	db  7, DRATINI    ; 20%
-	db  7, GRIMER     ; 10%
-	db  7, SUNKERN    ;  5%
-	db  6, CHARMANDER ;  4%
-	db  6, SANDSHREW  ;  1%
+	db  9, TYROGUE    ; 30%
+	db  7, WEEDLE     ; 30%
+	db  9, DRATINI    ; 20%
+	db  9, GRIMER     ; 10%
+	db  9, SUNKERN    ;  5%
+	db  8, CHARMANDER ;  4%
+	db  8, SANDSHREW  ;  1%
 	; day
-	db  5, PICHU      ; 30%
-	db  5, CATERPIE   ; 30%
-	db  7, TOTODILE   ; 20%
-	db  7, GOLDEEN    ; 10%
-	db  7, SPEAROW    ;  5%
-	db  6, VOLTORB    ;  4%
-	db  6, ABRA       ;  1%
+	db  9, PICHU      ; 30%
+	db  7, CATERPIE   ; 30%
+	db  9, TOTODILE   ; 20%
+	db  9, GOLDEEN    ; 10%
+	db  9, SPEAROW    ;  5%
+	db  8, VOLTORB    ;  4%
+	db  8, ABRA       ;  1%
 	; nite
-	db  5, SNUBBULL   ; 30%
-	db  5, HORSEA     ; 30%
-	db  7, VOLTORB    ; 20%
-	db  7, PINECO     ; 10%
-	db  7, PICHU      ;  5%
-	db  6, HOUNDOUR   ;  4%
-	db  6, PSYDUCK    ;  1%
+	db  7, SNUBBULL   ; 30%
+	db  7, HORSEA     ; 30%
+	db  9, VOLTORB    ; 20%
+	db  9, PINECO     ; 10%
+	db  9, PICHU      ;  5%
+	db  8, HOUNDOUR   ;  4%
+	db  8, PSYDUCK    ;  1%
 
 
 	map MOUNT_MORTAR_1F_OUTSIDE
@@ -1067,169 +1067,169 @@ JohtoGrassWildMons:
 	map SILVER_CAVE_ROOM_1
 	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
 	; morn
-	db 43, KABUTO     ; 30%
-	db 44, SUNFLORA   ; 30%
-	db 42, GLOOM      ; 20%
-	db 45, RATICATE   ; 10%
-	db 45, ELECTRODE  ;  5%
-	db 45, MACHOP     ;  4%
-	db 45, LARVITAR   ;  1%
+	db 53, KABUTO     ; 30%
+	db 54, SUNFLORA   ; 30%
+	db 52, GLOOM      ; 20%
+	db 55, RATICATE   ; 10%
+	db 55, ELECTRODE  ;  5%
+	db 55, MACHOP     ;  4%
+	db 55, LARVITAR   ;  1%
 	; day
-	db 43, DROWZEE    ; 30%
-	db 44, DRAGONAIR  ; 30%
-	db 42, GROWLITHE  ; 20%
-	db 45, PILOSWINE  ; 10%
-	db 45, HAUNTER    ;  5%
-	db 45, CYNDAQUIL  ;  4%
-	db 45, PSYDUCK    ;  1%
+	db 53, DROWZEE    ; 30%
+	db 54, DRAGONAIR  ; 30%
+	db 52, GROWLITHE  ; 20%
+	db 55, PILOSWINE  ; 10%
+	db 55, HAUNTER    ;  5%
+	db 55, CYNDAQUIL  ;  4%
+	db 55, PSYDUCK    ;  1%
 	; nite
-	db 43, OMANYTE    ; 30%
-	db 44, LANTURN    ; 30%
-	db 42, JIGGLYPUFF ; 20%
-	db 42, BELLOSSOM  ; 10%
-	db 45, STARMIE    ;  5%
-	db 46, NINETALES  ;  4%
-	db 46, ARIADOS    ;  1%
+	db 53, OMANYTE    ; 30%
+	db 54, LANTURN    ; 30%
+	db 52, JIGGLYPUFF ; 20%
+	db 52, BELLOSSOM  ; 10%
+	db 55, STARMIE    ;  5%
+	db 56, NINETALES  ;  4%
+	db 56, ARIADOS    ;  1%
 
 
 	map SILVER_CAVE_ROOM_2
 	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
 	; morn
-	db 48, QUILAVA    ; 30%
-	db 48, PRIMEAPE   ; 30%
-	db 47, ARCANINE   ; 20%
-	db 46, PINSIR     ; 10%
-	db 48, HITMONCHAN ;  5%
-	db 45, VENONAT    ;  4%
-	db 45, PINECO     ;  1%
+	db 58, QUILAVA    ; 30%
+	db 58, PRIMEAPE   ; 30%
+	db 57, ARCANINE   ; 20%
+	db 56, PINSIR     ; 10%
+	db 58, HITMONCHAN ;  5%
+	db 55, VENONAT    ;  4%
+	db 55, PINECO     ;  1%
 	; day
-	db 48, IVYSAUR    ; 30%
-	db 48, CHANSEY    ; 30%
-	db 47, WIGGLYTUFF ; 20%
-	db 46, CHARMELEON ; 10%
-	db 48, FERALIGATR ;  5%
-	db 45, POLIWAG    ;  4%
-	db 45, CHIKORITA  ;  1%
+	db 58, IVYSAUR    ; 30%
+	db 58, CHANSEY    ; 30%
+	db 57, WIGGLYTUFF ; 20%
+	db 56, CHARMELEON ; 10%
+	db 58, FERALIGATR ;  5%
+	db 55, POLIWAG    ;  4%
+	db 55, CHIKORITA  ;  1%
 	; nite
-	db 48, KABUTOPS   ; 30%
-	db 48, FLAREON    ; 30%
-	db 46, HERACROSS  ; 20%
-	db 46, SKARMORY   ; 10%
-	db 48, CHANSEY    ;  5%
-	db 45, GLIGAR     ;  4%
-	db 45, MAGNETON   ;  1%
+	db 58, KABUTOPS   ; 30%
+	db 58, FLAREON    ; 30%
+	db 56, HERACROSS  ; 20%
+	db 56, SKARMORY   ; 10%
+	db 58, CHANSEY    ;  5%
+	db 55, GLIGAR     ;  4%
+	db 55, MAGNETON   ;  1%
 
 
 	map SILVER_CAVE_ROOM_3
 	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
 	; morn
-	db 51, NIDOKING   ; 30%
-	db 48, YANMA      ; 30%
-	db 48, CORSOLA    ; 20%
-	db 50, MAGCARGO   ; 10%
-	db 45, ODDISH     ;  5%
-	db 45, HOUNDOUR   ;  4%
-	db 50, WEEZING    ;  1%
+	db 61, NIDOKING   ; 30%
+	db 58, YANMA      ; 30%
+	db 58, CORSOLA    ; 20%
+	db 60, MAGCARGO   ; 10%
+	db 58, ODDISH     ;  5%
+	db 58, HOUNDOUR   ;  4%
+	db 60, WEEZING    ;  1%
 	; day
-	db 51, NIDOKING   ; 30%
-	db 48, SMEARGLE   ; 30%
-	db 48, TANGELA    ; 20%
-	db 50, HERACROSS  ; 10%
-	db 45, LARVITAR   ;  5%
-	db 45, GEODUDE    ;  4%
-	db 50, XATU       ;  1%
+	db 61, NIDOKING   ; 30%
+	db 58, SMEARGLE   ; 30%
+	db 58, TANGELA    ; 20%
+	db 60, HERACROSS  ; 10%
+	db 58, LARVITAR   ;  5%
+	db 58, GEODUDE    ;  4%
+	db 60, XATU       ;  1%
 	; nite
-	db 51, URSARING   ; 30%
-	db 48, CORSOLA    ; 30%
-	db 48, EEVEE      ; 20%
-	db 49, VILEPLUME  ; 10%
-	db 45, PUPITAR    ;  5%
-	db 53, VILEPLUME  ;  4%
-	db 53, MILTANK    ;  1%
+	db 61, URSARING   ; 30%
+	db 58, CORSOLA    ; 30%
+	db 58, EEVEE      ; 20%
+	db 59, VILEPLUME  ; 10%
+	db 58, PUPITAR    ;  5%
+	db 63, VILEPLUME  ;  4%
+	db 63, MILTANK    ;  1%
 
 
 	map SILVER_CAVE_ITEM_ROOMS
 	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
 	; morn
-	db 48, WIGGLYTUFF ; 30%
-	db 46, PARASECT   ; 30%
-	db 50, PARASECT   ; 20%
-	db 46, URSARING   ; 10%
-	db 49, MUK        ;  5%
-	db 52, KABUTOPS   ;  4%
-	db 50, MAGNETON   ;  1%
+	db 58, WIGGLYTUFF ; 30%
+	db 56, PARASECT   ; 30%
+	db 60, PARASECT   ; 20%
+	db 56, URSARING   ; 10%
+	db 59, MUK        ;  5%
+	db 62, KABUTOPS   ;  4%
+	db 60, MAGNETON   ;  1%
 	; day
-	db 48, STEELIX    ; 30%
-	db 46, TENTACRUEL ; 30%
-	db 50, MAGCARGO   ; 20%
-	db 46, KANGASKHAN ; 10%
-	db 49, LEDIAN     ;  5%
-	db 52, HO_OH      ;  4%
-	db 50, NIDOKING   ;  1%
+	db 58, STEELIX    ; 30%
+	db 56, TENTACRUEL ; 30%
+	db 60, MAGCARGO   ; 20%
+	db 56, KANGASKHAN ; 10%
+	db 59, LEDIAN     ;  5%
+	db 62, HO_OH      ;  4%
+	db 60, NIDOKING   ;  1%
 	; nite
-	db 45, ELECTABUZZ ; 30%
-	db 48, AERODACTYL ; 30%
-	db 50, OCTILLERY  ; 20%
-	db 46, NIDOKING   ; 10%
-	db 49, RHYDON     ;  5%
-	db 52, JUMPLUFF   ;  4%
-	db 50, POLIWRATH  ;  1%
+	db 55, ELECTABUZZ ; 30%
+	db 58, AERODACTYL ; 30%
+	db 60, OCTILLERY  ; 20%
+	db 56, NIDOKING   ; 10%
+	db 59, RHYDON     ;  5%
+	db 62, JUMPLUFF   ;  4%
+	db 60, POLIWRATH  ;  1%
 
 
 	map DARK_CAVE_VIOLET_ENTRANCE
 	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
 	; morn
-	db  3, ODDISH     ; 30%
-	db  2, WOOPER     ; 30%
-	db  2, TEDDIURSA  ; 20%
-	db  4, ELEKID     ; 10%
-	db  2, TEDDIURSA  ;  5%
-	db  4, SLUGMA     ;  4%
-	db  4, CORSOLA    ;  1%
+	db  4, ODDISH     ; 30%
+	db  3, WOOPER     ; 30%
+	db  3, TEDDIURSA  ; 20%
+	db  5, ELEKID     ; 10%
+	db  3, TEDDIURSA  ;  5%
+	db  5, SLUGMA     ;  4%
+	db  5, CORSOLA    ;  1%
 	; day
-	db  3, VULPIX     ; 30%
-	db  2, TYROGUE    ; 30%
-	db  2, PARAS      ; 20%
-	db  4, PARAS      ; 10%
-	db  2, SUNKERN    ;  5%
-	db  4, ZUBAT      ;  4%
-	db  4, AIPOM      ;  1%
+	db  4, VULPIX     ; 30%
+	db  3, TYROGUE    ; 30%
+	db  3, PARAS      ; 20%
+	db  5, PARAS      ; 10%
+	db  3, SUNKERN    ;  5%
+	db  5, ZUBAT      ;  4%
+	db  5, AIPOM      ;  1%
 	; nite
-	db  3, MAGNEMITE  ; 30%
-	db  2, HOPPIP     ; 30%
-	db  2, MAGNEMITE  ; 20%
-	db  4, MACHOP     ; 10%
-	db  2, NIDORAN_M  ;  5%
-	db  4, CLEFFA     ;  4%
-	db  4, DELIBIRD   ;  1%
+	db  4, MAGNEMITE  ; 30%
+	db  3, HOPPIP     ; 30%
+	db  3, MAGNEMITE  ; 20%
+	db  5, MACHOP     ; 10%
+	db  3, NIDORAN_M  ;  5%
+	db  5, CLEFFA     ;  4%
+	db  5, DELIBIRD   ;  1%
 
 
 	map DARK_CAVE_BLACKTHORN_ENTRANCE
 	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
 	; morn
-	db 23, HOUNDOUR   ; 30%
-	db 23, CLEFFA     ; 30%
-	db 25, GRAVELER   ; 20%
-	db 25, AERODACTYL ; 10%
-	db 20, SANDSHREW  ;  5%
-	db 23, BLASTOISE  ;  4%
-	db 23, LEDIAN     ;  1%
+	db 25, HOUNDOUR   ; 30%
+	db 25, CLEFFA     ; 30%
+	db 27, GRAVELER   ; 20%
+	db 27, AERODACTYL ; 10%
+	db 22, SANDSHREW  ;  5%
+	db 25, BLASTOISE  ;  4%
+	db 25, LEDIAN     ;  1%
 	; day
-	db 23, ELEKID     ; 30%
-	db 23, IGGLYBUFF  ; 30%
-	db 25, SEEL       ; 20%
-	db 25, HITMONTOP  ; 10%
-	db 30, XATU       ;  5%
-	db 23, FURRET     ;  4%
-	db 23, KINGLER    ;  1%
+	db 25, ELEKID     ; 30%
+	db 25, IGGLYBUFF  ; 30%
+	db 27, SEEL       ; 20%
+	db 27, HITMONTOP  ; 10%
+	db 32, XATU       ;  5%
+	db 25, FURRET     ;  4%
+	db 25, KINGLER    ;  1%
 	; nite
-	db 23, SQUIRTLE   ; 30%
-	db 23, NIDORAN_M  ; 30%
-	db 25, NIDORINO   ; 20%
-	db 20, POLITOED   ; 10%
-	db 25, AZUMARILL  ;  5%
-	db 23, POLIWRATH  ;  4%
-	db 23, RAPIDASH   ;  1%
+	db 25, SQUIRTLE   ; 30%
+	db 25, NIDORAN_M  ; 30%
+	db 27, NIDORINO   ; 20%
+	db 22, POLITOED   ; 10%
+	db 27, AZUMARILL  ;  5%
+	db 25, POLIWRATH  ;  4%
+	db 25, RAPIDASH   ;  1%
 
 
 	map ROUTE_29
@@ -1319,29 +1319,29 @@ JohtoGrassWildMons:
 	map ROUTE_32
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db  4, MAGIKARP   ; 30%
-	db  5, WEEDLE     ; 30%
-	db  7, MAGNEMITE  ; 20%
-	db  6, NIDORAN_M  ; 10%
-	db  7, DIGLETT    ;  5%
-	db  7, TOGEPI     ;  4%
-	db  7, SPEAROW    ;  1%
+	db  5, MAGIKARP   ; 30%
+	db  6, WEEDLE     ; 30%
+	db  8, MAGNEMITE  ; 20%
+	db  7, NIDORAN_M  ; 10%
+	db  8, DIGLETT    ;  5%
+	db  8, TOGEPI     ;  4%
+	db  8, SPEAROW    ;  1%
 	; day
-	db  4, PICHU      ; 30%
-	db  5, NIDORAN_M  ; 30%
-	db  7, NATU       ; 20%
-	db  6, SPEAROW    ; 10%
-	db  7, MAGIKARP   ;  5%
-	db  7, CLEFFA     ;  4%
-	db  7, TOGEPI     ;  1%
+	db  5, PICHU      ; 30%
+	db  6, NIDORAN_M  ; 30%
+	db  8, NATU       ; 20%
+	db  7, SPEAROW    ; 10%
+	db  8, MAGIKARP   ;  5%
+	db  8, CLEFFA     ;  4%
+	db  8, TOGEPI     ;  1%
 	; nite
-	db  4, CLEFFA     ; 30%
-	db  5, NIDORAN_F  ; 30%
-	db  7, CHARMANDER ; 20%
-	db  6, MARILL     ; 10%
-	db  7, ZUBAT      ;  5%
-	db  7, ODDISH     ;  4%
-	db  7, NATU       ;  1%
+	db  5, CLEFFA     ; 30%
+	db  6, NIDORAN_F  ; 30%
+	db  8, CHARMANDER ; 20%
+	db  7, MARILL     ; 10%
+	db  8, ZUBAT      ;  5%
+	db  8, ODDISH     ;  4%
+	db  8, NATU       ;  1%
 
 
 	map ROUTE_33
@@ -1627,29 +1627,29 @@ JohtoGrassWildMons:
 	map ROUTE_45
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 23, CHARMANDER ; 30%
-	db 23, WEEPINBELL ; 30%
-	db 24, CLOYSTER   ; 20%
-	db 25, AMPHAROS   ; 10%
-	db 20, TOTODILE   ;  5%
-	db 27, CROCONAW   ;  4%
-	db 27, LEDIAN     ;  1%
+	db 24, CHARMANDER ; 30%
+	db 24, WEEPINBELL ; 30%
+	db 25, CLOYSTER   ; 20%
+	db 26, AMPHAROS   ; 10%
+	db 21, TOTODILE   ;  5%
+	db 28, CROCONAW   ;  4%
+	db 28, LEDIAN     ;  1%
 	; day
-	db 23, GASTLY     ; 30%
-	db 23, EEVEE      ; 30%
-	db 24, RAICHU     ; 20%
-	db 25, FERALIGATR ; 10%
-	db 30, RATICATE   ;  5%
-	db 27, DODRIO     ;  4%
-	db 27, ARBOK      ;  1%
+	db 24, GASTLY     ; 30%
+	db 24, EEVEE      ; 30%
+	db 25, RAICHU     ; 20%
+	db 26, FERALIGATR ; 10%
+	db 31, RATICATE   ;  5%
+	db 28, DODRIO     ;  4%
+	db 28, ARBOK      ;  1%
 	; nite
-	db 23, GASTLY     ; 30%
-	db 23, KOFFING    ; 30%
-	db 24, JYNX       ; 20%
-	db 25, DODUO      ; 10%
-	db 27, CHINCHOU   ;  5%
-	db 27, DELIBIRD   ;  4%
-	db 27, KABUTO     ;  1%
+	db 24, GASTLY     ; 30%
+	db 24, KOFFING    ; 30%
+	db 25, JYNX       ; 20%
+	db 26, DODUO      ; 10%
+	db 28, CHINCHOU   ;  5%
+	db 28, DELIBIRD   ;  4%
+	db 28, KABUTO     ;  1%
 
 
 	map ROUTE_46
@@ -1683,29 +1683,29 @@ JohtoGrassWildMons:
 	map SILVER_CAVE_OUTSIDE
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 41, FARFETCH_D ; 30%
-	db 42, GRAVELER   ; 30%
-	db 42, HITMONCHAN ; 20%
-	db 44, OMASTAR    ; 10%
-	db 41, CHINCHOU   ;  5%
-	db 43, GOLEM      ;  4%
-	db 45, DODRIO     ;  1%
+	db 51, FARFETCH_D ; 30%
+	db 52, GRAVELER   ; 30%
+	db 52, HITMONCHAN ; 20%
+	db 54, OMASTAR    ; 10%
+	db 51, CHINCHOU   ;  5%
+	db 53, GOLEM      ;  4%
+	db 55, DODRIO     ;  1%
 	; day
-	db 41, MURKROW    ; 30%
-	db 42, JIGGLYPUFF ; 30%
-	db 42, VICTREEBEL ; 20%
-	db 44, DRAGONAIR  ; 10%
-	db 41, PORYGON    ;  5%
-	db 43, UMBREON    ;  4%
-	db 45, SKARMORY   ;  1%
+	db 51, MURKROW    ; 30%
+	db 52, JIGGLYPUFF ; 30%
+	db 52, VICTREEBEL ; 20%
+	db 54, DRAGONAIR  ; 10%
+	db 51, PORYGON    ;  5%
+	db 53, UMBREON    ;  4%
+	db 55, SKARMORY   ;  1%
 	; nite
-	db 41, TANGELA    ; 30%
-	db 42, POLIWHIRL  ; 30%
-	db 42, DRAGONAIR  ; 20%
-	db 44, GROWLITHE  ; 10%
-	db 40, IVYSAUR    ;  5%
-	db 44, VENOMOTH   ;  4%
-	db 45, JUMPLUFF   ;  1%
+	db 51, TANGELA    ; 30%
+	db 52, POLIWHIRL  ; 30%
+	db 52, DRAGONAIR  ; 20%
+	db 54, GROWLITHE  ; 10%
+	db 50, IVYSAUR    ;  5%
+	db 54, VENOMOTH   ;  4%
+	db 55, JUMPLUFF   ;  1%
 JohtoWaterWildMons:
 
 	map RUINS_OF_ALPH_OUTSIDE
@@ -1738,9 +1738,9 @@ JohtoWaterWildMons:
 
 	map SLOWPOKE_WELL_B1F
 	db 2 percent ; encounter rate
-	db 15, LARVITAR   ; 60%
-	db 20, SANDSHREW  ; 30%
-	db 10, GOLDEEN    ; 10%
+	db 16, LARVITAR   ; 60%
+	db 21, SANDSHREW  ; 30%
+	db 11, GOLDEEN    ; 10%
 
 
 	map SLOWPOKE_WELL_B2F
@@ -1801,30 +1801,30 @@ JohtoWaterWildMons:
 
 	map SILVER_CAVE_ROOM_2
 	db 2 percent ; encounter rate
-	db 35, LAPRAS     ; 60%
-	db 35, URSARING   ; 30%
-	db 35, PARAS      ; 10%
+	db 55, LAPRAS     ; 60%
+	db 55, URSARING   ; 30%
+	db 55, PARAS      ; 10%
 
 
 	map DARK_CAVE_VIOLET_ENTRANCE
 	db 2 percent ; encounter rate
-	db 15, CATERPIE   ; 60%
-	db 10, LEDYBA     ; 30%
-	db  5, DIGLETT    ; 10%
+	db 21, CATERPIE   ; 60%
+	db 16, LEDYBA     ; 30%
+	db 11, DIGLETT    ; 10%
 
 
 	map DARK_CAVE_BLACKTHORN_ENTRANCE
 	db 2 percent ; encounter rate
-	db 15, PIDGEY     ; 60%
-	db 10, DIGLETT    ; 30%
-	db  5, ZUBAT      ; 10%
+	db 32, PIDGEY     ; 60%
+	db 27, DIGLETT    ; 30%
+	db 22, ZUBAT      ; 10%
 
 
 	map DRAGONS_DEN_B1F
 	db 4 percent ; encounter rate
-	db 15, CLEFFA     ; 60%
-	db 10, DIGLETT    ; 30%
-	db 10, LARVITAR   ; 10%
+	db 27, CLEFFA     ; 60%
+	db 22, DIGLETT    ; 30%
+	db 22, LARVITAR   ; 10%
 
 
 	map OLIVINE_PORT
@@ -1962,44 +1962,44 @@ JohtoWaterWildMons:
 
 	map BLACKTHORN_CITY
 	db 4 percent ; encounter rate
-	db 15, EKANS      ; 60%
-	db 10, DIGLETT    ; 30%
-	db  5, SWINUB     ; 10%
+	db 30, MARILL     ; 60%
+	db 25, TYROGUE    ; 30%
+	db 20, JIGGLYPUFF ; 10%
 
 
 	map SILVER_CAVE_OUTSIDE
 	db 2 percent ; encounter rate
-	db 35, DROWZEE    ; 60%
-	db 40, FLAAFFY    ; 30%
-	db 35, MANKEY     ; 10%
+	db 55, DROWZEE    ; 60%
+	db 60, FLAAFFY    ; 30%
+	db 55, MANKEY     ; 10%
 KantoGrassWildMons:
 
 	map DIGLETTS_CAVE
 	db 4 percent, 2 percent, 8 percent ; encounter rates: morn/day/nite
 	; morn
-	db  3, NIDORAN_F  ; 30%
-	db  6, MAGIKARP   ; 30%
-	db 12, SUNKERN    ; 20%
-	db 24, TYROGUE    ; 10%
-	db 24, ARTICUNO   ;  5%
-	db 24, ALAKAZAM   ;  4%
-	db 24, NOCTOWL    ;  1%
+	db 20, NIDORAN_F  ; 30%
+	db 23, MAGIKARP   ; 30%
+	db 29, SUNKERN    ; 20%
+	db 41, TYROGUE    ; 10%
+	db 41, ARTICUNO   ;  5%
+	db 41, ALAKAZAM   ;  4%
+	db 41, NOCTOWL    ;  1%
 	; day
-	db  2, SWINUB     ; 30%
-	db  4, IGGLYBUFF  ; 30%
-	db  8, HOOTHOOT   ; 20%
-	db 16, CLEFFA     ; 10%
-	db 16, GYARADOS   ;  5%
-	db 16, ARTICUNO   ;  4%
-	db 16, SUICUNE    ;  1%
+	db 19, SWINUB     ; 30%
+	db 21, IGGLYBUFF  ; 30%
+	db 25, HOOTHOOT   ; 20%
+	db 33, CLEFFA     ; 10%
+	db 33, GYARADOS   ;  5%
+	db 33, ARTICUNO   ;  4%
+	db 33, SUICUNE    ;  1%
 	; nite
-	db  4, DIGLETT    ; 30%
-	db  8, SPINARAK   ; 30%
-	db 16, HOOTHOOT   ; 20%
-	db 32, DIGLETT    ; 10%
-	db 32, KADABRA    ;  5%
-	db 32, TYRANITAR  ;  4%
-	db 32, TENTACRUEL ;  1%
+	db 21, DIGLETT    ; 30%
+	db 25, SPINARAK   ; 30%
+	db 33, HOOTHOOT   ; 20%
+	db 49, DIGLETT    ; 10%
+	db 49, KADABRA    ;  5%
+	db 49, TYRANITAR  ;  4%
+	db 49, TENTACRUEL ;  1%
 
 
 	map MOUNT_MOON
@@ -2033,57 +2033,57 @@ KantoGrassWildMons:
 	map ROCK_TUNNEL_1F
 	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
 	; morn
-	db 10, VOLTORB    ; 30%
-	db 11, GASTLY     ; 30%
-	db 12, GEODUDE    ; 20%
-	db 12, WOOPER     ; 10%
-	db 15, SCIZOR     ;  5%
-	db 12, CHARIZARD  ;  4%
-	db 12, MACHAMP    ;  1%
+	db 19, VOLTORB    ; 30%
+	db 20, GASTLY     ; 30%
+	db 21, GEODUDE    ; 20%
+	db 21, WOOPER     ; 10%
+	db 24, SCIZOR     ;  5%
+	db 21, CHARIZARD  ;  4%
+	db 21, MACHAMP    ;  1%
 	; day
-	db 10, PARAS      ; 30%
-	db 11, BULBASAUR  ; 30%
-	db 12, CHARMANDER ; 20%
-	db 12, DIGLETT    ; 10%
-	db 15, SUDOWOODO  ;  5%
-	db 12, SLOWKING   ;  4%
-	db 12, WARTORTLE  ;  1%
+	db 19, PARAS      ; 30%
+	db 20, BULBASAUR  ; 30%
+	db 21, CHARMANDER ; 20%
+	db 21, DIGLETT    ; 10%
+	db 24, SUDOWOODO  ;  5%
+	db 21, SLOWKING   ;  4%
+	db 21, WARTORTLE  ;  1%
 	; nite
-	db 12, RATTATA    ; 30%
-	db 11, KAKUNA     ; 30%
-	db 12, PARAS      ; 20%
-	db 17, SHUCKLE    ; 10%
-	db 15, HOPPIP     ;  5%
-	db 15, CATERPIE   ;  4%
-	db 15, NIDORAN_F  ;  1%
+	db 21, RATTATA    ; 30%
+	db 20, KAKUNA     ; 30%
+	db 21, PARAS      ; 20%
+	db 26, SHUCKLE    ; 10%
+	db 24, HOPPIP     ;  5%
+	db 24, CATERPIE   ;  4%
+	db 24, NIDORAN_F  ;  1%
 
 
 	map ROCK_TUNNEL_B1F
 	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
 	; morn
-	db 12, DRATINI    ; 30%
-	db 14, PINECO     ; 30%
-	db 16, PORYGON    ; 20%
-	db 12, IGGLYBUFF  ; 10%
-	db 15, ENTEI      ;  5%
-	db 15, XATU       ;  4%
-	db 15, MOLTRES    ;  1%
+	db 19, DRATINI    ; 30%
+	db 21, PINECO     ; 30%
+	db 23, PORYGON    ; 20%
+	db 19, IGGLYBUFF  ; 10%
+	db 22, ENTEI      ;  5%
+	db 22, XATU       ;  4%
+	db 22, MOLTRES    ;  1%
 	; day
-	db 12, METAPOD    ; 30%
-	db 14, PARAS      ; 30%
-	db 16, CLEFAIRY   ; 20%
-	db 12, ZUBAT      ; 10%
-	db 15, ALAKAZAM   ;  5%
-	db 15, ELECTRODE  ;  4%
-	db 15, NIDOQUEEN  ;  1%
+	db 19, METAPOD    ; 30%
+	db 21, PARAS      ; 30%
+	db 23, CLEFAIRY   ; 20%
+	db 19, ZUBAT      ; 10%
+	db 22, ALAKAZAM   ;  5%
+	db 22, ELECTRODE  ;  4%
+	db 22, NIDOQUEEN  ;  1%
 	; nite
-	db 12, WEEDLE     ; 30%
-	db 14, MEOWTH     ; 30%
-	db 16, TENTACOOL  ; 20%
-	db 15, MARILL     ; 10%
-	db 15, XATU       ;  5%
-	db 15, TOGETIC    ;  4%
-	db 15, DRAGONITE  ;  1%
+	db 19, WEEDLE     ; 30%
+	db 21, MEOWTH     ; 30%
+	db 23, TENTACOOL  ; 20%
+	db 22, MARILL     ; 10%
+	db 22, XATU       ;  5%
+	db 22, TOGETIC    ;  4%
+	db 22, DRAGONITE  ;  1%
 
 
 	map VICTORY_ROAD
@@ -2145,141 +2145,141 @@ KantoGrassWildMons:
 	map ROUTE_1
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db  2, MAREEP     ; 30%
-	db  2, MAREEP     ; 30%
-	db  3, SWINUB     ; 20%
-	db  3, WEEDLE     ; 10%
-	db  6, OMASTAR    ;  5%
-	db  4, MARILL     ;  4%
-	db  4, SPINARAK   ;  1%
+	db 21, MAREEP     ; 30%
+	db 21, MAREEP     ; 30%
+	db 22, SWINUB     ; 20%
+	db 22, WEEDLE     ; 10%
+	db 25, OMASTAR    ;  5%
+	db 23, MARILL     ;  4%
+	db 23, SPINARAK   ;  1%
 	; day
-	db  2, MAGIKARP   ; 30%
-	db  2, NIDORAN_M  ; 30%
-	db  3, CLEFFA     ; 20%
-	db  3, RATTATA    ; 10%
-	db  6, CLEFABLE   ;  5%
-	db  4, RATTATA    ;  4%
-	db  4, HOOTHOOT   ;  1%
+	db 21, MAGIKARP   ; 30%
+	db 21, NIDORAN_M  ; 30%
+	db 22, CLEFFA     ; 20%
+	db 22, RATTATA    ; 10%
+	db 25, CLEFABLE   ;  5%
+	db 23, RATTATA    ;  4%
+	db 23, HOOTHOOT   ;  1%
 	; nite
-	db  2, TOGEPI     ; 30%
-	db  2, PIDGEY     ; 30%
-	db  3, SENTRET    ; 20%
-	db  3, RATTATA    ; 10%
-	db  6, HITMONLEE  ;  5%
-	db  4, MARILL     ;  4%
-	db  4, CATERPIE   ;  1%
+	db 21, TOGEPI     ; 30%
+	db 21, PIDGEY     ; 30%
+	db 22, SENTRET    ; 20%
+	db 22, RATTATA    ; 10%
+	db 25, HITMONLEE  ;  5%
+	db 23, MARILL     ;  4%
+	db 23, CATERPIE   ;  1%
 
 
 	map ROUTE_2
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db  3, SPEAROW    ; 30%
-	db  3, CATERPIE   ; 30%
-	db  5, SLUGMA     ; 20%
-	db  7, SEAKING    ; 10%
-	db  7, BAYLEEF    ;  5%
-	db  4, WEEPINBELL ;  4%
-	db  4, GLOOM      ;  1%
+	db 19, SPEAROW    ; 30%
+	db 19, CATERPIE   ; 30%
+	db 21, SLUGMA     ; 20%
+	db 23, SEAKING    ; 10%
+	db 23, BAYLEEF    ;  5%
+	db 20, WEEPINBELL ;  4%
+	db 20, GLOOM      ;  1%
 	; day
-	db  3, DIGLETT    ; 30%
-	db  3, LEDYBA     ; 30%
-	db  5, SENTRET    ; 20%
-	db  7, PRIMEAPE   ; 10%
-	db  7, DROWZEE    ;  5%
-	db  4, PORYGON    ;  4%
-	db  4, SMEARGLE   ;  1%
+	db 19, DIGLETT    ; 30%
+	db 19, LEDYBA     ; 30%
+	db 21, SENTRET    ; 20%
+	db 23, PRIMEAPE   ; 10%
+	db 23, DROWZEE    ;  5%
+	db 20, PORYGON    ;  4%
+	db 20, SMEARGLE   ;  1%
 	; nite
-	db  3, HOPPIP     ; 30%
-	db  3, LEDYBA     ; 30%
-	db  5, MAGIKARP   ; 20%
-	db  7, GIRAFARIG  ; 10%
-	db  7, AMPHAROS   ;  5%
-	db  4, CHANSEY    ;  4%
-	db  4, POLITOED   ;  1%
+	db 19, HOPPIP     ; 30%
+	db 19, LEDYBA     ; 30%
+	db 21, MAGIKARP   ; 20%
+	db 23, GIRAFARIG  ; 10%
+	db 23, AMPHAROS   ;  5%
+	db 20, CHANSEY    ;  4%
+	db 20, POLITOED   ;  1%
 
 
 	map ROUTE_3
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db  5, MAGIKARP   ; 30%
-	db  5, MAGIKARP   ; 30%
-	db  8, LEDYBA     ; 20%
-	db 10, LUGIA      ; 10%
-	db 10, WEEZING    ;  5%
-	db 10, MAGBY      ;  4%
-	db 10, CUBONE     ;  1%
+	db 21, MAGIKARP   ; 30%
+	db 21, MAGIKARP   ; 30%
+	db 24, LEDYBA     ; 20%
+	db 26, LUGIA      ; 10%
+	db 26, WEEZING    ;  5%
+	db 26, MAGBY      ;  4%
+	db 26, CUBONE     ;  1%
 	; day
-	db  5, RATTATA    ; 30%
-	db  5, CATERPIE   ; 30%
-	db  8, TOGEPI     ; 20%
-	db 10, PRIMEAPE   ; 10%
-	db 10, HERACROSS  ;  5%
-	db 10, STARYU     ;  4%
-	db 10, ODDISH     ;  1%
+	db 21, RATTATA    ; 30%
+	db 21, CATERPIE   ; 30%
+	db 24, TOGEPI     ; 20%
+	db 26, PRIMEAPE   ; 10%
+	db 26, HERACROSS  ;  5%
+	db 26, STARYU     ;  4%
+	db 26, ODDISH     ;  1%
 	; nite
-	db  5, EKANS      ; 30%
-	db 10, PICHU      ; 30%
-	db 10, BUTTERFREE ; 20%
-	db  6, MAREEP     ; 10%
-	db  5, NIDORAN_F  ;  5%
-	db  6, DROWZEE    ;  4%
-	db  6, GLOOM      ;  1%
+	db 21, EKANS      ; 30%
+	db 26, PICHU      ; 30%
+	db 26, BUTTERFREE ; 20%
+	db 22, MAREEP     ; 10%
+	db 21, NIDORAN_F  ;  5%
+	db 22, DROWZEE    ;  4%
+	db 22, GLOOM      ;  1%
 
 
 	map ROUTE_4
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db  5, TOGEPI     ; 30%
-	db  5, WOOPER     ; 30%
-	db  8, HOPPIP     ; 20%
-	db 10, BLASTOISE  ; 10%
-	db 10, PRIMEAPE   ;  5%
-	db 10, SHELLDER   ;  4%
-	db 10, METAPOD    ;  1%
+	db 22, TOGEPI     ; 30%
+	db 22, WOOPER     ; 30%
+	db 25, HOPPIP     ; 20%
+	db 27, BLASTOISE  ; 10%
+	db 27, PRIMEAPE   ;  5%
+	db 27, SHELLDER   ;  4%
+	db 27, METAPOD    ;  1%
 	; day
-	db  5, CATERPIE   ; 30%
-	db  5, LEDYBA     ; 30%
-	db  8, WEEDLE     ; 20%
-	db 10, GOLDUCK    ; 10%
-	db 10, SNORLAX    ;  5%
-	db 10, ABRA       ;  4%
-	db 10, HOUNDOUR   ;  1%
+	db 22, CATERPIE   ; 30%
+	db 22, LEDYBA     ; 30%
+	db 25, WEEDLE     ; 20%
+	db 27, GOLDUCK    ; 10%
+	db 27, SNORLAX    ;  5%
+	db 27, ABRA       ;  4%
+	db 27, HOUNDOUR   ;  1%
 	; nite
-	db  5, SENTRET    ; 30%
-	db 10, CATERPIE   ; 30%
-	db 10, ENTEI      ; 20%
-	db  6, CATERPIE   ; 10%
-	db  5, SUNKERN    ;  5%
-	db  6, TENTACOOL  ;  4%
-	db  6, FLAAFFY    ;  1%
+	db 22, SENTRET    ; 30%
+	db 27, CATERPIE   ; 30%
+	db 27, ENTEI      ; 20%
+	db 23, CATERPIE   ; 10%
+	db 22, SUNKERN    ;  5%
+	db 23, TENTACOOL  ;  4%
+	db 23, FLAAFFY    ;  1%
 
 
 	map ROUTE_5
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 13, SWINUB     ; 30%
-	db 13, MACHOP     ; 30%
-	db 15, SMEARGLE   ; 20%
-	db 12, MAGNEMITE  ; 10%
-	db 14, FLAAFFY    ;  5%
-	db 14, CHARMANDER ;  4%
-	db 14, METAPOD    ;  1%
+	db 14, SWINUB     ; 30%
+	db 14, MACHOP     ; 30%
+	db 16, SMEARGLE   ; 20%
+	db 13, MAGNEMITE  ; 10%
+	db 15, FLAAFFY    ;  5%
+	db 15, CHARMANDER ;  4%
+	db 15, METAPOD    ;  1%
 	; day
-	db 13, SWINUB     ; 30%
-	db 13, MANKEY     ; 30%
-	db 15, MURKROW    ; 20%
-	db 12, STARYU     ; 10%
-	db 14, CORSOLA    ;  5%
-	db 14, ODDISH     ;  4%
-	db 14, MANKEY     ;  1%
+	db 14, SWINUB     ; 30%
+	db 14, MANKEY     ; 30%
+	db 16, MURKROW    ; 20%
+	db 13, STARYU     ; 10%
+	db 15, CORSOLA    ;  5%
+	db 15, ODDISH     ;  4%
+	db 15, MANKEY     ;  1%
 	; nite
-	db 13, RATTATA    ; 30%
-	db 13, MAGBY      ; 30%
-	db 15, VICTREEBEL ; 20%
-	db 12, SQUIRTLE   ; 10%
-	db 14, PORYGON    ;  5%
-	db 14, SANDSHREW  ;  4%
-	db 14, LARVITAR   ;  1%
+	db 14, RATTATA    ; 30%
+	db 14, MAGBY      ; 30%
+	db 16, VICTREEBEL ; 20%
+	db 13, SQUIRTLE   ; 10%
+	db 15, PORYGON    ;  5%
+	db 15, SANDSHREW  ;  4%
+	db 15, LARVITAR   ;  1%
 
 
 	map ROUTE_6
@@ -2425,29 +2425,29 @@ KantoGrassWildMons:
 	map ROUTE_11
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 14, HOOTHOOT   ; 30%
-	db 13, BELLOSSOM  ; 30%
-	db 15, DRATINI    ; 20%
-	db 16, SEEL       ; 10%
-	db 16, PIDGEY     ;  5%
-	db 16, ZUBAT      ;  4%
-	db 16, CATERPIE   ;  1%
+	db 17, HOOTHOOT   ; 30%
+	db 16, BELLOSSOM  ; 30%
+	db 18, DRATINI    ; 20%
+	db 19, SEEL       ; 10%
+	db 19, PIDGEY     ;  5%
+	db 19, ZUBAT      ;  4%
+	db 19, CATERPIE   ;  1%
 	; day
-	db 14, MAGIKARP   ; 30%
-	db 13, PERSIAN    ; 30%
-	db 15, CHIKORITA  ; 20%
-	db 16, MURKROW    ; 10%
-	db 16, EKANS      ;  5%
-	db 16, CATERPIE   ;  4%
-	db 16, MAGIKARP   ;  1%
+	db 17, MAGIKARP   ; 30%
+	db 16, PERSIAN    ; 30%
+	db 18, CHIKORITA  ; 20%
+	db 19, MURKROW    ; 10%
+	db 19, EKANS      ;  5%
+	db 19, CATERPIE   ;  4%
+	db 19, MAGIKARP   ;  1%
 	; nite
-	db 14, GLOOM      ; 30%
-	db 13, MAGNEMITE  ; 30%
-	db 15, SQUIRTLE   ; 20%
-	db 16, MAGCARGO   ; 10%
-	db 16, WARTORTLE  ;  5%
-	db 16, KANGASKHAN ;  4%
-	db 16, GYARADOS   ;  1%
+	db 17, GLOOM      ; 30%
+	db 16, MAGNEMITE  ; 30%
+	db 18, SQUIRTLE   ; 20%
+	db 19, MAGCARGO   ; 10%
+	db 19, WARTORTLE  ;  5%
+	db 19, KANGASKHAN ;  4%
+	db 19, GYARADOS   ;  1%
 
 
 	map ROUTE_13
@@ -2530,7 +2530,7 @@ KantoGrassWildMons:
 	db 25, AMPHAROS   ; 20%
 	db 25, MANTINE    ; 10%
 	db 25, STANTLER   ;  5%
-	db 25, CELEBI     ;  4%
+	db 25, MEWTWO     ;  4%
 	db 25, SLOWKING   ;  1%
 
 
@@ -2621,113 +2621,113 @@ KantoGrassWildMons:
 	map ROUTE_21
 	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
 	; morn
-	db 30, DODUO      ; 30%
-	db 25, NIDORAN_M  ; 30%
-	db 35, DROWZEE    ; 20%
-	db 20, TYPHLOSION ; 10%
-	db 30, STANTLER   ;  5%
-	db 28, DRAGONAIR  ;  4%
-	db 28, CHANSEY    ;  1%
+	db 32, DODUO      ; 30%
+	db 27, NIDORAN_M  ; 30%
+	db 37, DROWZEE    ; 20%
+	db 22, TYPHLOSION ; 10%
+	db 32, STANTLER   ;  5%
+	db 30, DRAGONAIR  ;  4%
+	db 30, CHANSEY    ;  1%
 	; day
-	db 30, AIPOM      ; 30%
-	db 25, MARILL     ; 30%
-	db 35, PIKACHU    ; 20%
-	db 20, NIDOQUEEN  ; 10%
-	db 28, MAGMAR     ;  5%
-	db 30, RAICHU     ;  4%
-	db 30, STANTLER   ;  1%
+	db 32, AIPOM      ; 30%
+	db 27, MARILL     ; 30%
+	db 37, PIKACHU    ; 20%
+	db 22, NIDOQUEEN  ; 10%
+	db 30, MAGMAR     ;  5%
+	db 32, RAICHU     ;  4%
+	db 32, STANTLER   ;  1%
 	; nite
-	db 30, DROWZEE    ; 30%
-	db 25, MAREEP     ; 30%
-	db 35, WEEPINBELL ; 20%
-	db 20, MACHAMP    ; 10%
-	db 30, KABUTO     ;  5%
-	db 28, DELIBIRD   ;  4%
-	db 28, AIPOM      ;  1%
+	db 32, DROWZEE    ; 30%
+	db 27, MAREEP     ; 30%
+	db 37, WEEPINBELL ; 20%
+	db 22, MACHAMP    ; 10%
+	db 32, KABUTO     ;  5%
+	db 30, DELIBIRD   ;  4%
+	db 30, AIPOM      ;  1%
 
 
 	map ROUTE_22
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db  3, SLUGMA     ; 30%
-	db  3, NIDORAN_M  ; 30%
-	db  5, SPINARAK   ; 20%
-	db  4, QWILFISH   ; 10%
-	db  6, CHINCHOU   ;  5%
-	db  7, HITMONLEE  ;  4%
-	db  7, ZAPDOS     ;  1%
+	db 20, SLUGMA     ; 30%
+	db 20, NIDORAN_M  ; 30%
+	db 22, SPINARAK   ; 20%
+	db 21, QWILFISH   ; 10%
+	db 23, CHINCHOU   ;  5%
+	db 24, HITMONLEE  ;  4%
+	db 24, ZAPDOS     ;  1%
 	; day
-	db  3, SPINARAK   ; 30%
-	db  3, HOOTHOOT   ; 30%
-	db  5, WEEDLE     ; 20%
-	db  4, SKIPLOOM   ; 10%
-	db  6, SMEARGLE   ;  5%
-	db  7, MAGNETON   ;  4%
-	db  7, FEAROW     ;  1%
+	db 20, SPINARAK   ; 30%
+	db 20, HOOTHOOT   ; 30%
+	db 22, WEEDLE     ; 20%
+	db 21, SKIPLOOM   ; 10%
+	db 23, SMEARGLE   ;  5%
+	db 24, MAGNETON   ;  4%
+	db 24, FEAROW     ;  1%
 	; nite
-	db  3, TYROGUE    ; 30%
-	db  3, TEDDIURSA  ; 30%
-	db  5, CLEFFA     ; 20%
-	db  4, TEDDIURSA  ; 10%
-	db  6, PIDGEY     ;  5%
-	db  7, PICHU      ;  4%
-	db  7, ZUBAT      ;  1%
+	db 20, TYROGUE    ; 30%
+	db 20, TEDDIURSA  ; 30%
+	db 22, CLEFFA     ; 20%
+	db 21, TEDDIURSA  ; 10%
+	db 23, PIDGEY     ;  5%
+	db 24, PICHU      ;  4%
+	db 24, ZUBAT      ;  1%
 
 
 	map ROUTE_24
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db  8, NIDORAN_F  ; 30%
-	db 10, HOOTHOOT   ; 30%
-	db 12, LARVITAR   ; 20%
-	db 12, NATU       ; 10%
-	db 10, METAPOD    ;  5%
-	db 14, ELECTABUZZ ;  4%
-	db 14, DODRIO     ;  1%
+	db 14, NIDORAN_F  ; 30%
+	db 16, HOOTHOOT   ; 30%
+	db 18, LARVITAR   ; 20%
+	db 18, NATU       ; 10%
+	db 16, METAPOD    ;  5%
+	db 20, ELECTABUZZ ;  4%
+	db 30, DODRIO     ;  1%
 	; day
-	db  8, SLUGMA     ; 30%
-	db 12, MARILL     ; 30%
-	db 10, NIDORAN_M  ; 20%
-	db 12, SMOOCHUM   ; 10%
-	db 10, MANKEY     ;  5%
-	db 14, JUMPLUFF   ;  4%
-	db 14, NIDOKING   ;  1%
+	db 14, SLUGMA     ; 30%
+	db 18, MARILL     ; 30%
+	db 16, NIDORAN_M  ; 20%
+	db 17, SMOOCHUM   ; 10%
+	db 16, MANKEY     ;  5%
+	db 20, JUMPLUFF   ;  4%
+	db 20, NIDOKING   ;  1%
 	; nite
-	db 10, STARYU     ; 30%
-	db 10, VULPIX     ; 30%
-	db 12, NATU       ; 20%
-	db 12, POLIWAG    ; 10%
-	db 10, MACHOP     ;  5%
-	db 14, KABUTO     ;  4%
-	db 14, DELIBIRD   ;  1%
+	db 16, STARYU     ; 30%
+	db 16, VULPIX     ; 30%
+	db 18, NATU       ; 20%
+	db 18, POLIWAG    ; 10%
+	db 16, MACHOP     ;  5%
+	db 20, KABUTO     ;  4%
+	db 20, DELIBIRD   ;  1%
 
 
 	map ROUTE_25
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 10, MAREEP     ; 30%
-	db 10, TYROGUE    ; 30%
-	db 12, QWILFISH   ; 20%
-	db 12, SMOOCHUM   ; 10%
-	db 10, CYNDAQUIL  ;  5%
-	db 14, AMPHAROS   ;  4%
-	db 14, MR__MIME   ;  1%
+	db 14, MAREEP     ; 30%
+	db 14, TYROGUE    ; 30%
+	db 16, QWILFISH   ; 20%
+	db 16, SMOOCHUM   ; 10%
+	db 14, CYNDAQUIL  ;  5%
+	db 18, AMPHAROS   ;  4%
+	db 18, MR__MIME   ;  1%
 	; day
-	db 10, WOOPER     ; 30%
-	db 10, CATERPIE   ; 30%
-	db 12, SMEARGLE   ; 20%
-	db 12, POLIWAG    ; 10%
-	db 10, GEODUDE    ;  5%
-	db 14, SEAKING    ;  4%
-	db 14, RATICATE   ;  1%
+	db 14, WOOPER     ; 30%
+	db 14, CATERPIE   ; 30%
+	db 16, SMEARGLE   ; 20%
+	db 16, POLIWAG    ; 10%
+	db 14, GEODUDE    ;  5%
+	db 18, SEAKING    ;  4%
+	db 18, RATICATE   ;  1%
 	; nite
-	db 10, GOLDEEN    ; 30%
-	db 10, MAGIKARP   ; 30%
-	db 10, MANKEY     ; 20%
-	db 12, FLAREON    ; 10%
-	db 10, MAGBY      ;  5%
-	db 14, SUDOWOODO  ;  4%
-	db 14, SKARMORY   ;  1%
+	db 14, GOLDEEN    ; 30%
+	db 14, MAGIKARP   ; 30%
+	db 14, MANKEY     ; 20%
+	db 16, FLAREON    ; 10%
+	db 14, MAGBY      ;  5%
+	db 18, SUDOWOODO  ;  4%
+	db 18, SKARMORY   ;  1%
 
 
 	map ROUTE_26
@@ -2789,29 +2789,29 @@ KantoGrassWildMons:
 	map ROUTE_28
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 39, WEEPINBELL ; 30%
-	db 40, NIDORINO   ; 30%
-	db 40, ELECTRODE  ; 20%
-	db 42, SHUCKLE    ; 10%
-	db 42, HAUNTER    ;  5%
-	db 43, BEEDRILL   ;  4%
-	db 43, SLOWBRO    ;  1%
+	db 49, WEEPINBELL ; 30%
+	db 50, NIDORINO   ; 30%
+	db 50, ELECTRODE  ; 20%
+	db 52, SHUCKLE    ; 10%
+	db 52, HAUNTER    ;  5%
+	db 53, BEEDRILL   ;  4%
+	db 53, SLOWBRO    ;  1%
 	; day
-	db 39, GLOOM      ; 30%
-	db 40, NIDORINO   ; 30%
-	db 40, HOUNDOOM   ; 20%
-	db 42, ARIADOS    ; 10%
-	db 42, DUGTRIO    ;  5%
-	db 43, NIDOKING   ;  4%
-	db 43, GOLBAT     ;  1%
+	db 49, GLOOM      ; 30%
+	db 50, NIDORINO   ; 30%
+	db 50, HOUNDOOM   ; 20%
+	db 52, ARIADOS    ; 10%
+	db 52, DUGTRIO    ;  5%
+	db 53, NIDOKING   ;  4%
+	db 53, GOLBAT     ;  1%
 	; nite
-	db 39, CLEFAIRY   ; 30%
-	db 40, GRAVELER   ; 30%
-	db 40, PIKACHU    ; 20%
-	db 42, MUK        ; 10%
-	db 42, TANGELA    ;  5%
-	db 43, SLOWBRO    ;  4%
-	db 43, PINSIR     ;  1%
+	db 49, CLEFAIRY   ; 30%
+	db 50, GRAVELER   ; 30%
+	db 50, PIKACHU    ; 20%
+	db 52, MUK        ; 10%
+	db 52, TANGELA    ;  5%
+	db 53, SLOWBRO    ;  4%
+	db 53, PINSIR     ;  1%
 KantoWaterWildMons:
 
 	map TOHJO_FALLS
@@ -2830,23 +2830,23 @@ KantoWaterWildMons:
 
 	map ROUTE_4
 	db 4 percent ; encounter rate
-	db 10, SQUIRTLE   ; 60%
-	db  5, PINECO     ; 30%
-	db 10, URSARING   ; 10%
+	db 27, SQUIRTLE   ; 60%
+	db 22, PINECO     ; 30%
+	db 27, URSARING   ; 10%
 
 
 	map ROUTE_6
 	db 2 percent ; encounter rate
-	db 10, TOTODILE   ; 60%
-	db  5, NATU       ; 30%
-	db 10, WEEZING    ; 10%
+	db 17, TOTODILE   ; 60%
+	db 12, NATU       ; 30%
+	db 17, WEEZING    ; 10%
 
 
 	map ROUTE_9
 	db 4 percent ; encounter rate
-	db 15, PHANPY     ; 60%
-	db 10, KAKUNA     ; 30%
-	db 15, VILEPLUME  ; 10%
+	db 22, GOLDEEN    ; 60%
+	db 17, SQUIRTLE   ; 30%
+	db 22, AZUMARILL  ; 10%
 
 
 	map ROUTE_10_NORTH
@@ -2893,23 +2893,23 @@ KantoWaterWildMons:
 
 	map ROUTE_22
 	db 2 percent ; encounter rate
-	db 10, CYNDAQUIL  ; 60%
-	db  5, TOTODILE   ; 30%
-	db 10, GRAVELER   ; 10%
+	db 25, CYNDAQUIL  ; 60%
+	db 20, TOTODILE   ; 30%
+	db 25, GRAVELER   ; 10%
 
 
 	map ROUTE_24
 	db 4 percent ; encounter rate
-	db 10, PHANPY     ; 60%
-	db  5, VULPIX     ; 30%
-	db 10, STARMIE    ; 10%
+	db 19, PHANPY     ; 60%
+	db 14, VULPIX     ; 30%
+	db 19, STARMIE    ; 10%
 
 
 	map ROUTE_25
 	db 4 percent ; encounter rate
-	db 10, LARVITAR   ; 60%
-	db  5, GRIMER     ; 30%
-	db 10, STARMIE    ; 10%
+	db 19, LARVITAR   ; 60%
+	db 14, GRIMER     ; 30%
+	db 19, STARMIE    ; 10%
 
 
 	map ROUTE_26
@@ -2928,9 +2928,9 @@ KantoWaterWildMons:
 
 	map ROUTE_28
 	db 2 percent ; encounter rate
-	db 40, HO_OH      ; 60%
-	db 40, FERALIGATR ; 30%
-	db 41, TAUROS     ; 10%
+	db 60, HO_OH      ; 60%
+	db 60, FERALIGATR ; 30%
+	db 61, TAUROS     ; 10%
 
 
 	map PALLET_TOWN
