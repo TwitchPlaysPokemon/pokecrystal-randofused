@@ -2089,29 +2089,29 @@ KantoGrassWildMons:
 	map VICTORY_ROAD
 	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
 	; morn
-	db 34, ONIX       ; 30%
-	db 32, KOFFING    ; 30%
-	db 33, WEEPINBELL ; 20%
-	db 34, RHYDON     ; 10%
-	db 35, HOUNDOOM   ;  5%
-	db 35, SCYTHER    ;  4%
-	db 35, BLASTOISE  ;  1%
+	db 44, ONIX       ; 30%
+	db 42, KOFFING    ; 30%
+	db 43, WEEPINBELL ; 20%
+	db 44, RHYDON     ; 10%
+	db 45, HOUNDOOM   ;  5%
+	db 45, SCYTHER    ;  4%
+	db 45, BLASTOISE  ;  1%
 	; day
-	db 34, RHYHORN    ; 30%
-	db 32, QWILFISH   ; 30%
-	db 33, TENTACOOL  ; 20%
-	db 34, STARMIE    ; 10%
-	db 35, BLISSEY    ;  5%
-	db 35, GLIGAR     ;  4%
-	db 35, GRANBULL   ;  1%
+	db 44, RHYHORN    ; 30%
+	db 42, QWILFISH   ; 30%
+	db 43, TENTACOOL  ; 20%
+	db 44, STARMIE    ; 10%
+	db 45, BLISSEY    ;  5%
+	db 45, GLIGAR     ;  4%
+	db 45, GRANBULL   ;  1%
 	; nite
-	db 34, GLIGAR     ; 30%
-	db 34, SMEARGLE   ; 30%
-	db 32, GRAVELER   ; 20%
-	db 36, KOFFING    ; 10%
-	db 38, SEEL       ;  5%
-	db 40, GROWLITHE  ;  4%
-	db 40, DODUO      ;  1%
+	db 44, GLIGAR     ; 30%
+	db 44, SMEARGLE   ; 30%
+	db 42, GRAVELER   ; 20%
+	db 46, KOFFING    ; 10%
+	db 48, SEEL       ;  5%
+	db 50, GROWLITHE  ;  4%
+	db 50, DODUO      ;  1%
 
 
 	map TOHJO_FALLS
