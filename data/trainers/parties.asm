@@ -18,11 +18,19 @@ FalknerGroup:
 
 	; FALKNER (1)
 	db "FALKNER@"
-	db TRAINERTYPE_NORMAL
+	db TRAINERTYPE_MOVES
 
 	; party
 	db  7, WOOPER
+		db WATER_GUN
+		db TAIL_WHIP
+		db POUND
+		db LICK
 	db  9, TANGELA
+		db CONSTRICT
+		db PECK
+		db SUNNY_DAY
+		db SOLARBEAM
 	db -1 ; end
 
 ; ================
@@ -757,7 +765,7 @@ YoungsterGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 45, MURKROW
+	db 25, MURKROW
 	db -1 ; end
 
 ; ================
@@ -767,8 +775,8 @@ YoungsterGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 42, ARBOK
-	db 42, MEGANIUM
+	db 23, ARBOK
+	db 23, MEGANIUM
 	db -1 ; end
 
 ; ================
@@ -817,8 +825,8 @@ SchoolboyGroup:
 	; party
 	db 35, PARAS
 	db 35, ELEKID
-	db 40, ELEKID
-	db 40, HITMONLEE
+	db 38, ELEKID
+	db 38, HITMONLEE
 	db -1 ; end
 
 ; ================
@@ -838,9 +846,9 @@ SchoolboyGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 37, EXEGGCUTE
-	db 40, SMEARGLE
-	db 42, MAGMAR
+	db 35, EXEGGCUTE
+	db 38, SMEARGLE
+	db 40, MAGMAR
 	db -1 ; end
 
 ; ================
@@ -862,8 +870,8 @@ SchoolboyGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 41, PIDGEOT
-	db 44, CROBAT
+	db 33, PIDGEOT
+	db 36, CROBAT
 	db -1 ; end
 
 ; ================
@@ -897,7 +905,7 @@ SchoolboyGroup:
 	db 35, PINECO
 	db 35, ODDISH
 	db 35, CHINCHOU
-	db 45, DELIBIRD
+	db 40, DELIBIRD
 	db -1 ; end
 
 ; ================
@@ -1177,8 +1185,8 @@ BirdKeeperGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 37, PARASECT
-	db 45, SKARMORY
+	db 30, PARASECT
+	db 35, SKARMORY
 	db -1 ; end
 
 ; ================
@@ -1242,7 +1250,7 @@ BirdKeeperGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 44, TANGELA
+	db 27, TANGELA
 	db -1 ; end
 
 ; ================
@@ -1252,8 +1260,8 @@ BirdKeeperGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 41, DITTO
-	db 41, QUAGSIRE
+	db 25, DITTO
+	db 25, QUAGSIRE
 	db -1 ; end
 
 ; ================
@@ -2673,7 +2681,7 @@ GruntMGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 39, SEAKING
+	db 35, SEAKING
 	db -1 ; end
 
 ; ================
@@ -2773,7 +2781,7 @@ TeacherGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 46, DROWZEE
+	db 40, DROWZEE
 	db -1 ; end
 
 ; ================
@@ -2783,8 +2791,8 @@ TeacherGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 41, QWILFISH
-	db 46, VULPIX
+	db 35, QWILFISH
+	db 38, VULPIX
 	db -1 ; end
 
 ; ================
@@ -3081,9 +3089,9 @@ FisherGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 36, BUTTERFREE
-	db 40, TENTACOOL
-	db 40, QUAGSIRE
+	db 18, BUTTERFREE
+	db 21, TENTACOOL
+	db 21, QUAGSIRE
 	db -1 ; end
 
 ; ================
@@ -3186,8 +3194,8 @@ FisherGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 41, KRABBY
-	db 41, LARVITAR
+	db 22, KRABBY
+	db 22, LARVITAR
 	db -1 ; end
 
 ; ================
@@ -3197,10 +3205,10 @@ FisherGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 32, SUNKERN
-	db 32, PICHU
-	db 40, WEEPINBELL
-	db 40, SCIZOR
+	db 15, SUNKERN
+	db 15, PICHU
+	db 21, WEEPINBELL
+	db 21, SCIZOR
 	db -1 ; end
 
 ; ================
@@ -3210,9 +3218,9 @@ FisherGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 39, CROBAT
-	db 39, FERALIGATR
-	db 39, MEWTWO
+	db 20, CROBAT
+	db 20, FERALIGATR
+	db 20, MEWTWO
 	db -1 ; end
 
 ; ================
@@ -3857,8 +3865,8 @@ SailorGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 21, HITMONLEE
-	db 21, MANTINE
+	db 17, HITMONLEE
+	db 17, MANTINE
 	db -1 ; end
 
 ; ================
@@ -3891,9 +3899,9 @@ SailorGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 20, TEDDIURSA
-	db 22, BAYLEEF
-	db 13, BULBASAUR
+	db 16, TEDDIURSA
+	db 18, BAYLEEF
+	db 10, BULBASAUR
 	db -1 ; end
 
 ; ================
@@ -4006,8 +4014,8 @@ SuperNerdGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 37, DRATINI
-	db 37, RHYDON
+	db 34, DRATINI
+	db 34, RHYDON
 	db -1 ; end
 
 ; ================
@@ -4017,9 +4025,9 @@ SuperNerdGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 35, CUBONE
-	db 35, VULPIX
-	db 35, TOTODILE
+	db 32, CUBONE
+	db 32, VULPIX
+	db 32, TOTODILE
 	db -1 ; end
 
 ; ================
@@ -4390,8 +4398,8 @@ HikerGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 20, MAROWAK
-	db 22, MAGMAR
+	db 16, MAROWAK
+	db 18, MAGMAR
 	db -1 ; end
 
 ; ================
@@ -4412,10 +4420,10 @@ HikerGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 35, ELECTRODE
-	db 37, AIPOM
-	db 40, SCIZOR
-	db 37, DELIBIRD
+	db 28, ELECTRODE
+	db 30, AIPOM
+	db 33, SCIZOR
+	db 30, DELIBIRD
 	db -1 ; end
 
 ; ================
@@ -4425,7 +4433,7 @@ HikerGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 45, EXEGGUTOR
+	db 37, EXEGGUTOR
 	db -1 ; end
 
 ; ================
@@ -4521,10 +4529,10 @@ BikerGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 29, GRAVELER
-	db 30, CLEFAIRY
-	db 31, PORYGON
-	db 33, TANGELA
+	db 27, GRAVELER
+	db 28, CLEFAIRY
+	db 29, PORYGON
+	db 30, TANGELA
 	db -1 ; end
 
 ; ================
@@ -4534,7 +4542,7 @@ BikerGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 37, PIDGEOT
+	db 34, PIDGEOT
 	db -1 ; end
 
 ; ================
@@ -4544,8 +4552,8 @@ BikerGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 35, TENTACOOL
-	db 35, NIDORINO
+	db 32, TENTACOOL
+	db 32, NIDORINO
 	db -1 ; end
 
 ; ================
@@ -4743,9 +4751,9 @@ FirebreatherGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 16, GLOOM
-	db 20, MUK
-	db 16, RHYHORN
+	db 12, GLOOM
+	db 16, MUK
+	db 12, RHYHORN
 	db -1 ; end
 
 ; ================
@@ -4774,9 +4782,9 @@ JugglerGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 17, QUILAVA
-	db 17, NIDOQUEEN
-	db 17, MACHOKE
+	db 13, QUILAVA
+	db 13, NIDOQUEEN
+	db 13, MACHOKE
 	db -1 ; end
 
 ; ================
@@ -5027,9 +5035,9 @@ PsychicGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 39, POLIWAG
-	db 39, ABRA
-	db 39, GYARADOS
+	db 20, POLIWAG
+	db 20, ABRA
+	db 20, GYARADOS
 	db -1 ; end
 
 ; ================
@@ -5039,7 +5047,7 @@ PsychicGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 44, PINSIR
+	db 24, PINSIR
 	db -1 ; end
 
 ; ================
@@ -5217,7 +5225,7 @@ PicnickerGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 22, BEEDRILL
+	db 18, BEEDRILL
 	db -1 ; end
 
 ; ================
@@ -6006,7 +6014,7 @@ PokefanMGroup:
 	db TRAINERTYPE_ITEM
 
 	; party
-	db 42, DRAGONAIR,  BERRY
+	db 35, DRAGONAIR,  BERRY
 	db -1 ; end
 
 ; ================
@@ -6016,12 +6024,12 @@ PokefanMGroup:
 	db TRAINERTYPE_ITEM
 
 	; party
-	db 29, DELIBIRD,   BERRY
-	db 29, EEVEE,      BERRY
-	db 29, KOFFING,    BERRY
-	db 29, NIDORINO,   BERRY
-	db 29, SKIPLOOM,   BERRY
-	db 29, CLEFAIRY,   BERRY
+	db 23, DELIBIRD,   BERRY
+	db 23, EEVEE,      BERRY
+	db 23, KOFFING,    BERRY
+	db 23, NIDORINO,   BERRY
+	db 23, SKIPLOOM,   BERRY
+	db 23, CLEFAIRY,   BERRY
 	db -1 ; end
 
 ; ================
@@ -6031,9 +6039,9 @@ PokefanMGroup:
 	db TRAINERTYPE_ITEM
 
 	; party
-	db 37, SHELLDER,   BERRY
-	db 37, VOLTORB,    BERRY
-	db 37, KAKUNA,     BERRY
+	db 30, SHELLDER,   BERRY
+	db 30, VOLTORB,    BERRY
+	db 30, KAKUNA,     BERRY
 	db -1 ; end
 
 ; ================
@@ -6043,7 +6051,7 @@ PokefanMGroup:
 	db TRAINERTYPE_ITEM
 
 	; party
-	db 42, VOLTORB,    BERRY
+	db 33, VOLTORB,    BERRY
 	db -1 ; end
 
 ; ================
@@ -6075,7 +6083,7 @@ PokefanMGroup:
 	db TRAINERTYPE_ITEM
 
 	; party
-	db 21, SKIPLOOM,   BERRY
+	db 17, SKIPLOOM,   BERRY
 	db -1 ; end
 
 ; ================
@@ -6105,9 +6113,9 @@ PokefanMGroup:
 	db TRAINERTYPE_ITEM
 
 	; party
-	db 37, MUK,        BERRY
-	db 37, TENTACRUEL, BERRY
-	db 37, FORRETRESS, BERRY
+	db 30, MUK,        BERRY
+	db 30, TENTACRUEL, BERRY
+	db 30, FORRETRESS, BERRY
 	db -1 ; end
 
 ; ================
@@ -6117,7 +6125,7 @@ PokefanMGroup:
 	db TRAINERTYPE_ITEM
 
 	; party
-	db 38, VULPIX,     BERRY
+	db 22, VULPIX,     BERRY
 	db -1 ; end
 
 ; ================
@@ -6127,7 +6135,7 @@ PokefanMGroup:
 	db TRAINERTYPE_ITEM
 
 	; party
-	db 38, SHELLDER,   BERRY
+	db 22, SHELLDER,   BERRY
 	db -1 ; end
 
 ; ================
@@ -6277,8 +6285,8 @@ TwinsGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 20, METAPOD
-	db 20, KAKUNA
+	db 16, METAPOD
+	db 16, KAKUNA
 	db -1 ; end
 
 ; ================
@@ -6288,8 +6296,8 @@ TwinsGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 40, PSYDUCK
-	db 40, CYNDAQUIL
+	db 16, PSYDUCK
+	db 16, CYNDAQUIL
 	db -1 ; end
 
 ; ================
