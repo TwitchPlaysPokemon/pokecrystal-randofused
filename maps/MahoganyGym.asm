@@ -200,7 +200,7 @@ Text_ReceivedGlacierBadge:
 	done
 
 PryceText_GlacierBadgeSpeech:
-	para "That was a"
+	text "That was a"
 	line "delightful match."
 
 	para "And this… This is"
