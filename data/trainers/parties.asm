@@ -6215,7 +6215,7 @@ TwinsGroup:
 ; ================
 
 	; TWINS (1)
-	db "AMY + MAY@"
+	db "AMY & MAY@"
 	db TRAINERTYPE_NORMAL
 
 	; party
@@ -6226,7 +6226,7 @@ TwinsGroup:
 ; ================
 
 	; TWINS (2)
-	db "ANN + ANNE@"
+	db "ANN & ANNE@"
 	db TRAINERTYPE_NORMAL
 
 	; party
@@ -6237,7 +6237,7 @@ TwinsGroup:
 ; ================
 
 	; TWINS (3)
-	db "ANN + ANNE@"
+	db "ANN & ANNE@"
 	db TRAINERTYPE_NORMAL
 
 	; party
@@ -6248,7 +6248,7 @@ TwinsGroup:
 ; ================
 
 	; TWINS (4)
-	db "AMY + MAY@"
+	db "AMY & MAY@"
 	db TRAINERTYPE_NORMAL
 
 	; party
@@ -6259,7 +6259,7 @@ TwinsGroup:
 ; ================
 
 	; TWINS (5)
-	db "JO + ZOE@"
+	db "JO & ZOE@"
 	db TRAINERTYPE_NORMAL
 
 	; party
@@ -6270,7 +6270,7 @@ TwinsGroup:
 ; ================
 
 	; TWINS (6)
-	db "JO + ZOE@"
+	db "JO & ZOE@"
 	db TRAINERTYPE_NORMAL
 
 	; party
@@ -6281,7 +6281,7 @@ TwinsGroup:
 ; ================
 
 	; TWINS (7)
-	db "MEG + PEG@"
+	db "MEG & PEG@"
 	db TRAINERTYPE_NORMAL
 
 	; party
@@ -6292,7 +6292,7 @@ TwinsGroup:
 ; ================
 
 	; TWINS (8)
-	db "MEG + PEG@"
+	db "MEG & PEG@"
 	db TRAINERTYPE_NORMAL
 
 	; party
@@ -6303,7 +6303,7 @@ TwinsGroup:
 ; ================
 
 	; TWINS (9)
-	db "LEA + PIA@"
+	db "LEA & PIA@"
 	db TRAINERTYPE_NORMAL
 
 	; party
@@ -6314,7 +6314,7 @@ TwinsGroup:
 ; ================
 
 	; TWINS (10)
-	db "LEA + PIA@"
+	db "LEA & PIA@"
 	db TRAINERTYPE_NORMAL
 
 	; party
