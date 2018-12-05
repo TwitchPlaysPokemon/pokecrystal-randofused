@@ -6003,7 +6003,7 @@ PokefanMGroup:
 
 	; POKEFANM (3)
 	db "ROBERT@"
-	db $82
+	db TRAINERTYPE_ITEM
 
 	; party
 	db 42, DRAGONAIR,  BERRY
@@ -6013,7 +6013,7 @@ PokefanMGroup:
 
 	; POKEFANM (4)
 	db "JOSHUA@"
-	db $82
+	db TRAINERTYPE_ITEM
 
 	; party
 	db 29, DELIBIRD,   BERRY
@@ -6028,7 +6028,7 @@ PokefanMGroup:
 
 	; POKEFANM (5)
 	db "CARTER@"
-	db $82
+	db TRAINERTYPE_ITEM
 
 	; party
 	db 37, SHELLDER,   BERRY
@@ -6040,7 +6040,7 @@ PokefanMGroup:
 
 	; POKEFANM (6)
 	db "TREVOR@"
-	db $82
+	db TRAINERTYPE_ITEM
 
 	; party
 	db 42, VOLTORB,    BERRY
@@ -6060,7 +6060,7 @@ PokefanMGroup:
 
 	; POKEFANM (8)
 	db "JEREMY@"
-	db $82
+	db TRAINERTYPE_ITEM
 
 	; party
 	db 16, MANKEY,     BERRY
@@ -6072,7 +6072,7 @@ PokefanMGroup:
 
 	; POKEFANM (9)
 	db "COLIN@"
-	db $82
+	db TRAINERTYPE_ITEM
 
 	; party
 	db 21, SKIPLOOM,   BERRY
@@ -6102,7 +6102,7 @@ PokefanMGroup:
 
 	; POKEFANM (12)
 	db "ALEX@"
-	db $82
+	db TRAINERTYPE_ITEM
 
 	; party
 	db 37, MUK,        BERRY
@@ -6364,7 +6364,7 @@ PokefanFGroup:
 
 	; POKEFANF (5)
 	db "GEORGIA@"
-	db $82
+	db TRAINERTYPE_ITEM
 
 	; party
 	db  9, HOPPIP,     BERRY
