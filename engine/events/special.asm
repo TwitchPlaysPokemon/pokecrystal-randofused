@@ -6,10 +6,10 @@ SpecialGiveShuckle: ; 7305
 	xor a
 	ld [MonType], a
 
-; Level 15 Shuckle.
+; Level 25 Shuckle.
 	ld a, SHUCKLE
 	ld [CurPartySpecies], a
-	ld a, 15
+	ld a, 25
 	ld [CurPartyLevel], a
 
 	predef TryAddMonToParty
