@@ -18,13 +18,13 @@ GuideGentsHouseGuideGentText:
 	text "When I was a wee"
 	line "lad, I was a hot-"
 	cont "shot trainer!"
+	
+	para "I've been all"
+	line "over the world."
 
-	para "Here's a word of"
-	line "advice: Catch lots"
-	cont "of #MON!"
-
-	para "Treat them all"
-	line "with kindness!"
+	para "If you ever get"
+	line "in a fix, give me"
+	cont "a call!"
 	done
 
 GuideGentsHouse_MapEventHeader:
