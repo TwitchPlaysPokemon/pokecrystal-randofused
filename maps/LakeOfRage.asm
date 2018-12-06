@@ -85,12 +85,12 @@ UnknownScript_0x70057:
 
 GyaradosScript_0x70063:
 	opentext
-	pokenamemem GYARADOS, $0
+	pokenamemem CELEBI, $0
 	writetext UnknownText_0x703cb
 	pause 15
 	cry CELEBI
 	closetext
-	loadwildmon CELEBI, 22
+	loadwildmon CELEBI, 30
 	writecode VAR_BATTLETYPE, BATTLETYPE_SHINY
 	startbattle
 	if_equal $1, UnknownScript_0x7007a

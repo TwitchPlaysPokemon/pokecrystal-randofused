@@ -578,8 +578,8 @@ ScientistGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 24, SMEARGLE
-	db 24, DODUO
+	db 32, SMEARGLE
+	db 32, DODUO
 	db -1 ; end
 
 ; ================
@@ -589,7 +589,7 @@ ScientistGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 26, TENTACOOL
+	db 34, TENTACOOL
 	db -1 ; end
 
 ; ================
@@ -599,9 +599,9 @@ ScientistGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 22, GASTLY
-	db 22, STARYU
-	db 22, VULPIX
+	db 32, GASTLY
+	db 32, STARYU
+	db 32, VULPIX
 	db -1 ; end
 
 ; ================
@@ -611,9 +611,9 @@ ScientistGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 29, ODDISH
-	db 29, HOUNDOUR
-	db 29, MANKEY
+	db 37, ODDISH
+	db 37, HOUNDOUR
+	db 37, MANKEY
 	db -1 ; end
 
 ; ================
@@ -623,7 +623,7 @@ ScientistGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 33, DITTO
+	db 43, DITTO
 	db -1 ; end
 
 ; ================
@@ -925,8 +925,8 @@ SchoolboyGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 21, FEAROW
-	db 21, TYRANITAR
+	db 22, FEAROW
+	db 22, TYRANITAR
 	db -1 ; end
 
 ; ================
@@ -936,8 +936,8 @@ SchoolboyGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 21, ONIX
-	db 21, DELIBIRD
+	db 22, ONIX
+	db 22, DELIBIRD
 	db -1 ; end
 
 ; ================
@@ -2053,7 +2053,7 @@ BeautyGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 16, XATU
+	db 18, XATU
 	db 24, PILOSWINE
 	db -1 ; end
 
@@ -2257,8 +2257,8 @@ PokemaniacGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 20, GLOOM
-	db 20, RAPIDASH
+	db 21, GLOOM
+	db 21, RAPIDASH
 	db -1 ; end
 
 ; ================
@@ -2363,96 +2363,96 @@ GruntMGroup:
 
 ; ================
 
-	; GRUNTM (3)
+	; GRUNTM (3) Radio Tower 1F
 	db "GRUNT@"
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 26, STANTLER
-	db 26, FURRET
+	db 36, STANTLER
+	db 36, FURRET
 	db -1 ; end
 
 ; ================
 
-	; GRUNTM (4)
+	; GRUNTM (4) Radio Tower 2F
 	db "GRUNT@"
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 25, PHANPY
-	db 25, ABRA
-	db 27, CLEFABLE
+	db 35, PHANPY
+	db 35, ABRA
+	db 37, CLEFABLE
 	db -1 ; end
 
 ; ================
 
-	; GRUNTM (5)
+	; GRUNTM (5) Radio Tower 2F
 	db "GRUNT@"
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 23, SWINUB
-	db 23, WOOPER
-	db 25, SUNKERN
-	db 25, SPINARAK
-	db 25, NIDORAN_F
+	db 33, SWINUB
+	db 33, WOOPER
+	db 35, SUNKERN
+	db 35, SPINARAK
+	db 35, NIDORAN_F
 	db -1 ; end
 
 ; ================
 
-	; GRUNTM (6)
+	; GRUNTM (6) Radio Tower 2F
 	db "GRUNT@"
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 28, DIGLETT
-	db 28, SUNKERN
+	db 38, DIGLETT
+	db 38, SUNKERN
 	db -1 ; end
 
 ; ================
 
-	; GRUNTM (7)
+	; GRUNTM (7) Radio Tower 3F
 	db "GRUNT@"
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 25, RHYHORN
-	db 25, CYNDAQUIL
-	db 25, WOOPER
-	db 25, RATTATA
+	db 35, RHYHORN
+	db 35, CYNDAQUIL
+	db 35, WOOPER
+	db 35, RATTATA
 	db -1 ; end
 
 ; ================
 
-	; GRUNTM (8)
+	; GRUNTM (8) Radio Tower 3F
 	db "GRUNT@"
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 28, DONPHAN
+	db 38, DONPHAN
 	db -1 ; end
 
 ; ================
 
-	; GRUNTM (9)
+	; GRUNTM (9) Radio Tower 3F
 	db "GRUNT@"
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 26, FEAROW
-	db 28, PORYGON
+	db 36, FEAROW
+	db 38, PORYGON
 	db -1 ; end
 
 ; ================
 
-	; GRUNTM (10)
+	; GRUNTM (10) Radio Tower 4F
 	db "GRUNT@"
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 24, SLUGMA
-	db 26, GOLBAT
-	db 24, MEOWTH
+	db 34, SLUGMA
+	db 36, GOLBAT
+	db 34, MEOWTH
 	db -1 ; end
 
 ; ================
@@ -2511,71 +2511,71 @@ GruntMGroup:
 
 ; ================
 
-	; GRUNTM (16)
+	; GRUNTM (16) Rocket HQ B1F
 	db "GRUNT@"
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 17, RATTATA
-	db 17, NIDORAN_M
-	db 17, MAREEP
-	db 17, CATERPIE
+	db 27, RATTATA
+	db 27, NIDORAN_M
+	db 27, MAREEP
+	db 27, CATERPIE
 	db -1 ; end
 
 ; ================
 
-	; GRUNTM (17)
+	; GRUNTM (17) Rocket HQ B2F
 	db "GRUNT@"
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 19, NOCTOWL
+	db 29, NOCTOWL
 	db -1 ; end
 
 ; ================
 
-	; GRUNTM (18)
+	; GRUNTM (18) Rocket HQ B2F
 	db "GRUNT@"
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 18, CATERPIE
-	db 18, TYROGUE
-	db 18, EKANS
+	db 28, CATERPIE
+	db 28, TYROGUE
+	db 28, EKANS
 	db -1 ; end
 
 ; ================
 
-	; GRUNTM (19)
+	; GRUNTM (19) Rocket HQ B2F
 	db "GRUNT@"
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 19, MACHOP
-	db 19, POLIWAG
+	db 29, MACHOP
+	db 29, POLIWAG
 	db -1 ; end
 
 ; ================
 
-	; GRUNTM (20)
+	; GRUNTM (20) Rocket HQ B1F Guard
 	db "GRUNT@"
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 18, KABUTO
-	db 20, DIGLETT
+	db 28, KABUTO
+	db 30, DIGLETT
 	db -1 ; end
 
 ; ================
 
-	; GRUNTM (21)
+	; GRUNTM (21) Rocket HQ B1F Guard
 	db "GRUNT@"
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 17, SENTRET
-	db 18, MAGNEMITE
-	db 19, PICHU
+	db 27, SENTRET
+	db 28, MAGNEMITE
+	db 29, PICHU
 	db -1 ; end
 
 ; ================
@@ -2585,7 +2585,7 @@ GruntMGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 39, AZUMARILL
+	db 49, AZUMARILL
 	db -1 ; end
 
 ; ================
@@ -2643,12 +2643,12 @@ GruntMGroup:
 
 ; ================
 
-	; GRUNTM (28)
+	; GRUNTM (28) Rocket HQ B3F
 	db "GRUNT@"
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 20, SHUCKLE
+	db 30, SHUCKLE
 	db -1 ; end
 
 ; ================
@@ -2708,7 +2708,7 @@ GentlemanGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 22, PERSIAN
+	db 23, PERSIAN
 	db -1 ; end
 
 ; ================
@@ -2926,8 +2926,8 @@ BugCatcherGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 19, MR__MIME
-	db 21, JUMPLUFF
+	db 20, MR__MIME
+	db 22, JUMPLUFF
 	db -1 ; end
 
 ; ================
@@ -3193,10 +3193,10 @@ FisherGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 12, GEODUDE
-	db 17, GRANBULL
-	db 12, MANKEY
-	db 17, MILTANK
+	db 15, GEODUDE
+	db 19, GRANBULL
+	db 15, MANKEY
+	db 19, MILTANK
 	db -1 ; end
 
 ; ================
@@ -3372,8 +3372,8 @@ SwimmerMGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 22, AIPOM
-	db 22, DROWZEE
+	db 30, AIPOM
+	db 30, DROWZEE
 	db -1 ; end
 
 ; ================
@@ -3383,9 +3383,9 @@ SwimmerMGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 19, KAKUNA
-	db 22, BEEDRILL
-	db 19, VENONAT
+	db 28, KAKUNA
+	db 30, BEEDRILL
+	db 28, VENONAT
 	db -1 ; end
 
 ; ================
@@ -3395,9 +3395,9 @@ SwimmerMGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 23, EXEGGCUTE
-	db 20, SKIPLOOM
-	db 20, PINSIR
+	db 31, EXEGGCUTE
+	db 29, SKIPLOOM
+	db 29, PINSIR
 	db -1 ; end
 
 ; ================
@@ -3407,12 +3407,12 @@ SwimmerMGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 17, JIGGLYPUFF
-	db 18, RHYHORN
-	db 17, FLAAFFY
-	db 20, TEDDIURSA
-	db 18, CLEFAIRY
-	db 20, CHARMANDER
+	db 26, JIGGLYPUFF
+	db 27, RHYHORN
+	db 26, FLAAFFY
+	db 29, TEDDIURSA
+	db 27, CLEFAIRY
+	db 29, CHARMANDER
 	db -1 ; end
 
 ; ================
@@ -3422,7 +3422,7 @@ SwimmerMGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 25, PONYTA
+	db 33, PONYTA
 	db -1 ; end
 
 ; ================
@@ -3432,8 +3432,8 @@ SwimmerMGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 22, RAIKOU
-	db 22, BLISSEY
+	db 30, RAIKOU
+	db 30, BLISSEY
 	db -1 ; end
 
 ; ================
@@ -3443,7 +3443,7 @@ SwimmerMGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 25, BULBASAUR
+	db 33, BULBASAUR
 	db -1 ; end
 
 ; ================
@@ -3612,7 +3612,7 @@ SwimmerFGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 23, PHANPY
+	db 31, PHANPY
 	db -1 ; end
 
 ; ================
@@ -3622,8 +3622,8 @@ SwimmerFGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 20, ODDISH
-	db 20, TEDDIURSA
+	db 29, ODDISH
+	db 29, TEDDIURSA
 	db -1 ; end
 
 ; ================
@@ -3633,9 +3633,9 @@ SwimmerFGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 19, TEDDIURSA
-	db 22, REMORAID
-	db 22, QUILAVA
+	db 28, TEDDIURSA
+	db 30, REMORAID
+	db 30, QUILAVA
 	db -1 ; end
 
 ; ================
@@ -3645,8 +3645,8 @@ SwimmerFGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 22, MAGNEMITE
-	db 24, VOLTORB
+	db 30, MAGNEMITE
+	db 32, VOLTORB
 	db -1 ; end
 
 ; ================
@@ -3656,7 +3656,7 @@ SwimmerFGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 24, TANGELA
+	db 32, TANGELA
 	db -1 ; end
 
 ; ================
@@ -3666,8 +3666,8 @@ SwimmerFGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 22, GEODUDE
-	db 22, GOLEM
+	db 30, GEODUDE
+	db 30, GOLEM
 	db -1 ; end
 
 ; ================
@@ -3677,8 +3677,8 @@ SwimmerFGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 23, PARAS
-	db 23, GRIMER
+	db 31, PARAS
+	db 31, GRIMER
 	db -1 ; end
 
 ; ================
@@ -3877,8 +3877,8 @@ SailorGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 17, HITMONLEE
-	db 17, MANTINE
+	db 19, HITMONLEE
+	db 19, MANTINE
 	db -1 ; end
 
 ; ================
@@ -3898,10 +3898,10 @@ SailorGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 16, BULBASAUR
-	db 16, SQUIRTLE
-	db 16, POLITOED
-	db 16, CHIKORITA
+	db 18, BULBASAUR
+	db 18, SQUIRTLE
+	db 18, POLITOED
+	db 18, CHIKORITA
 	db -1 ; end
 
 ; ================
@@ -3911,9 +3911,9 @@ SailorGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 16, TEDDIURSA
-	db 18, BAYLEEF
-	db 10, BULBASAUR
+	db 18, TEDDIURSA
+	db 20, BAYLEEF
+	db 13, BULBASAUR
 	db -1 ; end
 
 ; ================
@@ -4410,8 +4410,8 @@ HikerGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 16, MAROWAK
-	db 18, MAGMAR
+	db 18, MAROWAK
+	db 20, MAGMAR
 	db -1 ; end
 
 ; ================
@@ -4667,10 +4667,10 @@ BurglarGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 12, EEVEE
-	db 16, SCIZOR
-	db 12, DITTO
-	db 19, NIDORINO
+	db 15, EEVEE
+	db 18, SCIZOR
+	db 15, DITTO
+	db 20, NIDORINO
 	db -1 ; end
 
 ; ================
@@ -4763,9 +4763,9 @@ FirebreatherGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 12, GLOOM
-	db 16, MUK
-	db 12, RHYHORN
+	db 15, GLOOM
+	db 18, MUK
+	db 15, RHYHORN
 	db -1 ; end
 
 ; ================
@@ -4794,9 +4794,9 @@ JugglerGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 13, QUILAVA
-	db 13, NIDOQUEEN
-	db 13, MACHOKE
+	db 16, QUILAVA
+	db 16, NIDOQUEEN
+	db 16, MACHOKE
 	db -1 ; end
 
 ; ================
@@ -4954,8 +4954,8 @@ BlackbeltGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 19, QUAGSIRE
-	db 21, TOGETIC
+	db 20, QUAGSIRE
+	db 22, TOGETIC
 	db 24, PARASECT
 	db -1 ; end
 
@@ -4967,51 +4967,51 @@ ExecutiveMGroup:
 ; ================================
 ; ================
 
-	; EXECUTIVEM (1)
+	; EXECUTIVEM (1) Radio Tower 5F
 	db "EXECUTIVE@"
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 36, PSYDUCK
-	db 36, CLEFAIRY
-	db 38, GOLEM
+	db 46, PSYDUCK
+	db 46, CLEFAIRY
+	db 48, GOLEM
 	db -1 ; end
 
 ; ================
 
-	; EXECUTIVEM (2)
+	; EXECUTIVEM (2) Radio Tower 4F
 	db "EXECUTIVE@"
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 39, KADABRA
+	db 49, KADABRA
 	db -1 ; end
 
 ; ================
 
-	; EXECUTIVEM (3)
+	; EXECUTIVEM (3) Radio Tower 5F
 	db "EXECUTIVE@"
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 33, CLEFAIRY
-	db 33, RHYHORN
-	db 33, JIGGLYPUFF
-	db 35, TENTACRUEL
-	db 33, TANGELA
-	db 33, WEEPINBELL
+	db 43, CLEFAIRY
+	db 43, RHYHORN
+	db 43, JIGGLYPUFF
+	db 45, TENTACRUEL
+	db 43, TANGELA
+	db 43, WEEPINBELL
 	db -1 ; end
 
 ; ================
 
-	; EXECUTIVEM (4)
+	; EXECUTIVEM (4) Rocket HQ B3F
 	db "EXECUTIVE@"
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 24, PICHU
-	db 26, CHARMELEON
-	db 24, ONIX
+	db 32, PICHU
+	db 32, CHARMELEON
+	db 34, ONIX
 	db -1 ; end
 
 ; ================
@@ -5237,7 +5237,7 @@ PicnickerGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 18, BEEDRILL
+	db 20, BEEDRILL
 	db -1 ; end
 
 ; ================
@@ -5707,26 +5707,26 @@ ExecutiveFGroup:
 ; ================================
 ; ================
 
-	; EXECUTIVEF (1)
+	; EXECUTIVEF (1) Radio Tower 5F
 	db "EXECUTIVE@"
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 35, HITMONLEE
-	db 35, WEEZING
-	db 35, GRAVELER
+	db 45, HITMONLEE
+	db 45, WEEZING
+	db 45, GRAVELER
 	db -1 ; end
 
 ; ================
 
-	; EXECUTIVEF (2)
+	; EXECUTIVEF (2) Rocket HQ B2F
 	db "EXECUTIVE@"
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 25, SANDSLASH
-	db 25, DITTO
-	db 27, POLIWHIRL
+	db 33, SANDSLASH
+	db 33, DITTO
+	db 35, POLIWHIRL
 	db -1 ; end
 
 ; ================
@@ -6083,9 +6083,9 @@ PokefanMGroup:
 	db TRAINERTYPE_ITEM
 
 	; party
-	db 16, MANKEY,     BERRY
-	db 16, STARYU,     BERRY
-	db 16, ODDISH,     BERRY
+	db 18, MANKEY,     BERRY
+	db 18, STARYU,     BERRY
+	db 18, ODDISH,     BERRY
 	db -1 ; end
 
 ; ================
@@ -6095,7 +6095,7 @@ PokefanMGroup:
 	db TRAINERTYPE_ITEM
 
 	; party
-	db 17, SKIPLOOM,   BERRY
+	db 19, SKIPLOOM,   BERRY
 	db -1 ; end
 
 ; ================
@@ -6297,8 +6297,8 @@ TwinsGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 16, METAPOD
-	db 16, KAKUNA
+	db 18, METAPOD
+	db 18, KAKUNA
 	db -1 ; end
 
 ; ================
@@ -6308,8 +6308,8 @@ TwinsGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 16, PSYDUCK
-	db 16, CYNDAQUIL
+	db 18, PSYDUCK
+	db 18, CYNDAQUIL
 	db -1 ; end
 
 ; ================
@@ -6387,11 +6387,11 @@ PokefanFGroup:
 	db TRAINERTYPE_ITEM
 
 	; party
-	db  9, HOPPIP,     BERRY
-	db  9, TOGEPI,     BERRY
-	db  9, WOOPER,     BERRY
-	db 16, PERSIAN,    BERRY
-	db  9, SUNKERN,    BERRY
+	db 13, HOPPIP,     BERRY
+	db 13, TOGEPI,     BERRY
+	db 13, WOOPER,     BERRY
+	db 18, PERSIAN,    BERRY
+	db 13, SUNKERN,    BERRY
 	db -1 ; end
 
 ; ================
@@ -6492,12 +6492,12 @@ GruntFGroup:
 
 ; ================
 
-	; GRUNTF (2)
+	; GRUNTF (2) Radio Tower 2F
 	db "GRUNT@"
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 28, HITMONTOP
+	db 38, HITMONTOP
 	db -1 ; end
 
 ; ================
@@ -6513,26 +6513,26 @@ GruntFGroup:
 
 ; ================
 
-	; GRUNTF (4)
+	; GRUNTF (4) Radio Tower 4F
 	db "GRUNT@"
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 23, RATTATA
-	db 25, CUBONE
-	db 23, PIDGEY
-	db 26, JIGGLYPUFF
+	db 35, RATTATA
+	db 37, CUBONE
+	db 35, PIDGEY
+	db 38, JIGGLYPUFF
 	db -1 ; end
 
 ; ================
 
-	; GRUNTF (5)
+	; GRUNTF (5) Rocket HQ B3F
 	db "GRUNT@"
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 19, NIDORAN_M
-	db 19, KABUTO
+	db 29, NIDORAN_M
+	db 29, KABUTO
 	db -1 ; end
 
 ; ================
@@ -6548,9 +6548,9 @@ MysticalmanGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 25, GRAVELER
-	db 25, HITMONLEE
-	db 27, MACHOKE
+	db 35, GRAVELER
+	db 35, HITMONLEE
+	db 37, MACHOKE
 	db -1 ; end
 
 ; ================
