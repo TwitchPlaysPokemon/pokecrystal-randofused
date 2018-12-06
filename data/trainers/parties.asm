@@ -3086,12 +3086,24 @@ FisherGroup:
 
 	; FISHER (4)
 	db "KYLE@"
-	db TRAINERTYPE_NORMAL
+	db TRAINERTYPE_MOVES
 
 	; party
 	db 22, BUTTERFREE
+		db DOUBLESLAP
+		db STUN_SPORE
+		db SUPERSONIC
+		db MINIMIZE
 	db 25, TENTACOOL
+		db BITE
+		db ACID
+		db GLARE
+		db BUBBLEBEAM
 	db 25, QUAGSIRE
+		db POWDER_SNOW
+		db DOUBLESLAP
+		db AMNESIA
+		db ICE_PUNCH
 	db -1 ; end
 
 ; ================
