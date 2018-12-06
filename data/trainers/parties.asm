@@ -46,8 +46,8 @@ WhitneyGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 17, KABUTO
-	db 19, TAUROS
+	db 18, KABUTO
+	db 20, TAUROS
 	db -1 ; end
 
 ; ================
@@ -100,9 +100,9 @@ PryceGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 29, NIDORINO
-	db 31, RAPIDASH
-	db 34, MISDREAVUS
+	db 31, NIDORINO
+	db 33, RAPIDASH
+	db 35, MISDREAVUS
 	db -1 ; end
 
 ; ================
@@ -700,10 +700,10 @@ YoungsterGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db  7, CATERPIE
-	db 11, PARAS
-	db  8, HOOTHOOT
-	db  8, SWINUB
+	db 12, CATERPIE
+	db 16, PARAS
+	db 13, HOOTHOOT
+	db 13, SWINUB
 	db -1 ; end
 
 ; ================
@@ -713,8 +713,8 @@ YoungsterGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 11, POLIWAG
-	db 13, EKANS
+	db 16, POLIWAG
+	db 18, EKANS
 	db -1 ; end
 
 ; ================
@@ -1804,8 +1804,8 @@ CooltrainerFGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 28, GEODUDE
-	db 30, CLEFABLE
+	db 33, GEODUDE
+	db 35, CLEFABLE
 	db -1 ; end
 
 ; ================
@@ -1815,8 +1815,8 @@ CooltrainerFGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 24, SQUIRTLE
-	db 26, SEADRA
+	db 29, SQUIRTLE
+	db 31, SEADRA
 	db -1 ; end
 
 ; ================
@@ -1937,8 +1937,8 @@ CooltrainerFGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 26, HOUNDOUR
-	db 28, POLITOED
+	db 31, HOUNDOUR
+	db 33, POLITOED
 	db -1 ; end
 
 ; ================
@@ -2288,7 +2288,7 @@ PokemaniacGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 13, CROCONAW
+	db 18, CROCONAW
 	db -1 ; end
 
 ; ================
@@ -2298,8 +2298,8 @@ PokemaniacGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 11, GEODUDE
-	db 11, MANKEY
+	db 16, GEODUDE
+	db 16, MANKEY
 	db -1 ; end
 
 ; ================
@@ -2755,7 +2755,7 @@ SkierGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 30, VILEPLUME
+	db 33, VILEPLUME
 	db -1 ; end
 
 ; ================
@@ -2765,7 +2765,7 @@ SkierGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 30, SLOWKING
+	db 33, SLOWKING
 	db -1 ; end
 
 ; ================
@@ -3982,8 +3982,8 @@ SuperNerdGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 12, MEOWTH
-	db 12, BULBASAUR
+	db 17, MEOWTH
+	db 17, BULBASAUR
 	db -1 ; end
 
 ; ================
@@ -4071,10 +4071,10 @@ SuperNerdGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db  7, ABRA
-	db 12, GASTLY
-	db  7, TEDDIURSA
-	db  9, TEDDIURSA
+	db 12, ABRA
+	db 17, GASTLY
+	db 12, TEDDIURSA
+	db 12, TEDDIURSA
 	db -1 ; end
 
 ; ================
@@ -4984,7 +4984,7 @@ ExecutiveMGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 49, KADABRA
+	db 49, ALAKAZAM
 	db -1 ; end
 
 ; ================
@@ -4994,12 +4994,12 @@ ExecutiveMGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 43, CLEFAIRY
-	db 43, RHYHORN
-	db 43, JIGGLYPUFF
+	db 43, CLEFABLE
+	db 43, RHYDON
+	db 43, WIGGLYTUFF
 	db 45, TENTACRUEL
 	db 43, TANGELA
-	db 43, WEEPINBELL
+	db 43, VICTREEBEL
 	db -1 ; end
 
 ; ================
@@ -5009,7 +5009,7 @@ ExecutiveMGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 32, PICHU
+	db 32, PIKACHU
 	db 32, CHARMELEON
 	db 34, ONIX
 	db -1 ; end
@@ -5174,9 +5174,9 @@ PicnickerGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db  9, RATTATA
-	db  9, MARILL
-	db 13, EXEGGCUTE
+	db 14, RATTATA
+	db 14, MARILL
+	db 18, EXEGGCUTE
 	db -1 ; end
 
 ; ================
@@ -5464,7 +5464,7 @@ CamperGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 15, MEOWTH
+	db 18, MEOWTH
 	db -1 ; end
 
 ; ================
@@ -5714,7 +5714,7 @@ ExecutiveFGroup:
 	; party
 	db 45, HITMONLEE
 	db 45, WEEZING
-	db 45, GRAVELER
+	db 45, GOLEM
 	db -1 ; end
 
 ; ================
@@ -5965,9 +5965,9 @@ BoarderGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 26, PIKACHU
-	db 27, PINSIR
-	db 26, FLAAFFY
+	db 28, PIKACHU
+	db 30, PINSIR
+	db 28, FLAAFFY
 	db -1 ; end
 
 ; ================
@@ -5977,8 +5977,8 @@ BoarderGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 28, TYROGUE
-	db 28, CLEFFA
+	db 32, TYROGUE
+	db 32, CLEFFA
 	db -1 ; end
 
 ; ================
@@ -5988,9 +5988,9 @@ BoarderGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 26, KRABBY
-	db 27, RAPIDASH
-	db 26, CYNDAQUIL
+	db 28, KRABBY
+	db 30, RAPIDASH
+	db 28, CYNDAQUIL
 	db -1 ; end
 
 ; ================
@@ -6073,7 +6073,7 @@ PokefanMGroup:
 	db TRAINERTYPE_ITEM
 
 	; party
-	db 14, VOLTORB,    BERRY
+	db 19, VOLTORB,    BERRY
 	db -1 ; end
 
 ; ================
@@ -6459,7 +6459,7 @@ OfficerGroup:
 	db TRAINERTYPE_NORMAL
 
 	; party
-	db 18, KOFFING
+	db 20, KOFFING
 	db -1 ; end
 
 ; ================
