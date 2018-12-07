@@ -11,20 +11,44 @@ GuideGentsHouse_MapScriptHeader:
 GuideGentsHouseGuideGent:
 	jumptextfaceplayer GuideGentsHouseGuideGentText
 
-GuideGentsHouseBookshelf:
-	jumpstd magazinebookshelf
+GuideGentsHouseBookshelf1:
+	jumptext GuideGentsHouseBookshelfText1
+
+GuideGentHouseBookshelf2:
+	jumptext GuideGentsHouseBookshelfText2
 
 GuideGentsHouseGuideGentText:
 	text "When I was a wee"
 	line "lad, I was a hot-"
 	cont "shot trainer!"
 
-	para "Here's a word of"
-	line "advice: Catch lots"
-	cont "of #MON!"
+	para "I've been all"
+	line "over the world."
 
-	para "Treat them all"
-	line "with kindness!"
+	para "If you ever get"
+	line "in a fix, give me"
+	cont "a call!"
+	done
+
+GuideGentsHouseBookshelfText1:
+	text "There's a picture"
+	line "of a young man"
+	cont "and woman next to"
+	cont "each other with"
+	cont "their #MON."
+
+	para "They all look very"
+	line "happy together."
+	done
+
+GuideGentsHouseBookshelfText2:
+	text "It looks like an"
+	line "old diary."
+
+	para "LIFE OF THE"
+	line "LIGHTNING GRANDPA"
+	cont "is written on the"
+	cont "cover."
 	done
 
 GuideGentsHouse_MapEventHeader:
@@ -41,8 +65,8 @@ GuideGentsHouse_MapEventHeader:
 
 .BGEvents:
 	db 2
-	bg_event 0, 1, BGEVENT_READ, GuideGentsHouseBookshelf
-	bg_event 1, 1, BGEVENT_READ, GuideGentsHouseBookshelf
+	bg_event 0, 1, BGEVENT_READ, GuideGentsHouseBookshelf1
+	bg_event 1, 1, BGEVENT_READ, GuideGentsHouseBookshelf2
 
 .ObjectEvents:
 	db 1
