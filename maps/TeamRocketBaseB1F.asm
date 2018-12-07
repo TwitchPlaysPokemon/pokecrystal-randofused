@@ -453,7 +453,7 @@ VoltorbExplodingTrap:
 	special FadeInPalettes
 	setlasttalked -1
 	writecode VAR_BATTLETYPE, BATTLETYPE_TRAP
-	loadwildmon NIDORAN_M, 18
+	loadwildmon NIDORAN_M, 25
 	startbattle
 	end
 
@@ -463,7 +463,7 @@ GeodudeExplodingTrap:
 	special FadeInPalettes
 	setlasttalked -1
 	writecode VAR_BATTLETYPE, BATTLETYPE_TRAP
-	loadwildmon BULBASAUR, 16
+	loadwildmon BULBASAUR, 22
 	startbattle
 	end
 
@@ -473,7 +473,7 @@ KoffingExplodingTrap:
 	special FadeInPalettes
 	setlasttalked -1
 	writecode VAR_BATTLETYPE, BATTLETYPE_TRAP
-	loadwildmon SUNFLORA, 16
+	loadwildmon SUNFLORA, 22
 	startbattle
 	end
 
