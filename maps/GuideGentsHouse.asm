@@ -14,7 +14,7 @@ GuideGentsHouseGuideGent:
 GuideGentsHouseBookshelf1:
 	jumptext GuideGentsHouseBookshelfText1
 
-GuideGentHouseBookshelf2:
+GuideGentsHouseBookshelf2:
 	jumptext GuideGentsHouseBookshelfText2
 
 GuideGentsHouseGuideGentText:

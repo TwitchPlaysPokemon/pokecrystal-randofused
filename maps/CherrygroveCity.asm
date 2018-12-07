@@ -104,12 +104,6 @@ CherrygroveCityGuideGent:
 .mapcardname
 	db "MAP CARD@"
 
-.No:
-	writetext GuideGentNoText
-	waitbutton
-	closetext
-	end
-
 CherrygroveSilverSceneSouth:
 	moveobject CHERRYGROVECITY_SILVER, 39, 7
 CherrygroveSilverSceneNorth:
@@ -421,7 +415,7 @@ GuideGentSeaText1:
 	
 GuideGentSeaText2:
 	
-	para "Would you believe"
+	text "Would you believe"
 	line "that I also fished"
 	cont "a trainer here"
 	cont "once?"
@@ -429,7 +423,7 @@ GuideGentSeaText2:
 
 GuideGentSeaText3:
 	
-	para "You never know"
+	text "You never know"
 	line "what the water"
 	cont "will bring!"
 	done
@@ -463,7 +457,7 @@ GuideGentPokegearText:
 	
 GuideGentPhoneNumberText:
 
-	text "That is my #GEAR"
+	text "That's my #GEAR"
 	line "number."
 	
 	para "If you ever get"
