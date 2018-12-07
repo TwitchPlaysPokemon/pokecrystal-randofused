@@ -18,7 +18,7 @@ PhoneContacts: ; 9045f
 	phone SCHOOLBOY,    JACK1,                 NATIONAL_PARK,             7, JackPhoneScript1,    7, JackPhoneScript2
 	phone POKEFANF,     BEVERLY1,              NATIONAL_PARK,             7, BeverlyPhoneScript1, 7, BeverlyPhoneScript2
 	phone SAILOR,       HUEY1,                 OLIVINE_LIGHTHOUSE_2F,     7, HueyPhoneScript1,    7, HueyPhoneScript2
-	phone TRAINER_NONE, PHONE_00,              N_A,                       0, UnusedPhoneScript,   0, UnusedPhoneScript
+	phone TRAINER_NONE, PHONECONTACT_GUIDE_GENT,GUIDE_GENTS_HOUSE,        7, UnusedPhoneScript,   0, UnusedPhoneScript
 	phone TRAINER_NONE, PHONE_00,              N_A,                       0, UnusedPhoneScript,   0, UnusedPhoneScript
 	phone TRAINER_NONE, PHONE_00,              N_A,                       0, UnusedPhoneScript,   0, UnusedPhoneScript
 	phone COOLTRAINERM, GAVEN3,                ROUTE_26,                  7, GavenPhoneScript1,   7, GavenPhoneScript2

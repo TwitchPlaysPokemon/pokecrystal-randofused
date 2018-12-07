@@ -82,7 +82,13 @@ CherrygroveCityGuideGent:
 	writetext GuideGentPokegearText
 	waitbutton
 	closetext
-	; GuideGent gives PokeGear Number
+	addcellnum PHONE_GUIDE_GENT
+	opentext
+	writetext GuideGentGotNumberText
+	playsound SFX_REGISTER_PHONE_NUMBER
+	waitsfx
+	waitbutton
+	closetext
 	opentext 
 	writetext GuideGentPhoneNumberText
 	waitbutton
@@ -453,6 +459,11 @@ GuideGentPokegearText:
 	line "a might confused."
 	
 	para "I know!"
+	done
+
+GuideGentGotNumberText:
+	text "Got GUIDE GENT's"
+	line "phone number!"
 	done
 	
 GuideGentPhoneNumberText:
