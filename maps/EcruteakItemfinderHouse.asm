@@ -21,6 +21,7 @@ EcruteakItemfinderGuy:
 	buttonsound
 	verbosegiveitem HM_CUT
 	setevent EVENT_GOT_ITEMFINDER
+	setevent EVENT_NEED_ITEM_FINDER
 .itemfinder:
 	writetext ItemfinderExplanationText
 	waitbutton

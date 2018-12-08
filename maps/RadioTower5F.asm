@@ -50,6 +50,7 @@ FakeDirectorScript:
 	closetext
 	setscene 1
 	setevent EVENT_BEAT_ROCKET_EXECUTIVEM_3
+	setevent EVENT_NEED_BASEMENT_KEY
 	end
 
 FakeDirectorScriptB:
@@ -77,6 +78,7 @@ FakeDirectorScriptB:
 	closetext
 	setscene $2
 	setevent EVENT_BEAT_ROCKET_EXECUTIVEM_3
+	setevent EVENT_NEED_BASEMENT_KEY
 	end
 
 Director:
