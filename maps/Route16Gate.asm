@@ -28,6 +28,7 @@ UnknownScript_0x733f3:
 	waitbutton
 	closetext
 	applymovement PLAYER, MovementData_0x73405
+	setevent EVENT_NEED_BICYCLE
 	end
 
 MovementData_0x73405:

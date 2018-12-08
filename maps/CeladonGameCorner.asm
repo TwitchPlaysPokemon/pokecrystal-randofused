@@ -79,6 +79,7 @@ CeladonGameCornerFisherScript:
 	db "COIN@"
 
 .NoCoinCase:
+	setevent EVENT_NEED_COIN_CASE
 	writetext CeladonGameCornerFisherNoCoinCaseText
 	waitbutton
 	closetext

@@ -147,6 +147,354 @@ MomPhoneLectureScript: ; 0xbcfb1
 	iftrue MomPhoneSaveMoneyScript
 	jump MomPhoneWontSaveMoneyScript
 
+; Guide Gent
+
+GuideGentPhoneScript:
+	checkevent EVENT_NEED_SQUIRTBOTTLE
+	iftrue .squirtBottle
+.squirtBottleNeverMind:
+	checkevent EVENT_NEED_SECRETPOTION
+	iftrue .secretPotion
+.secretPotionNeverMind:
+	checkevent EVENT_NEED_SS_TICKET
+	iftrue .ssTicket
+.ssTicketNeverMind:
+	checkevent EVENT_NEED_CARD_KEY
+	iftrue .cardKey
+.cardKeyNeverMind:
+	checkevent EVENT_NEED_BASEMENT_KEY
+	iftrue .basementKey
+.basementKeyNeverMind:
+	checkevent EVENT_NEED_STRENGTH
+	iftrue .hmStrength
+.hmStrengthNeverMind:
+	checkevent EVENT_NEED_BICYCLE
+	iftrue .bicycle
+.bicycleNeverMind:
+	checkevent EVENT_NEED_ROCK_SMASH
+	iftrue .hmRockSmash
+.hmRockSmashNeverMind:
+	checkevent EVENT_NEED_SURF
+	iftrue .hmSurf
+.hmSurfNeverMind:
+	checkevent EVENT_NEED_WHIRLPOOL
+	iftrue .hmWhirlpool
+.hmWhirlpoolNeverMind:
+	checkevent EVENT_NEED_FLASH
+	iftrue .tmFlash
+.tmFlashNeverMind:
+	checkevent EVENT_NEED_CUT
+	iftrue .hmCut
+.hmCutNeverMind:
+	checkevent EVENT_NEED_MACHINE_PART
+	iftrue .machinePart
+.machinePartNeverMind:
+	checkevent EVENT_NEED_FLY
+	iftrue .hmFly
+.hmFlyNeverMind:
+	checkevent EVENT_NEED_WATERFALL
+	iftrue .hmWaterfall
+.hmWaterfallNeverMind:
+	checkevent EVENT_NEED_CLEAR_BELL
+	iftrue .clearBell
+.clearBellNeverMind:
+	checkevent EVENT_NEED_SILVER_WING
+	iftrue .silverWing
+.silverWingNeverMind:
+	checkevent EVENT_NEED_RAIL_PASS
+	iftrue .railPass
+.railPassNeverMind:
+	checkevent EVENT_NEED_BLUE_CARD
+	iftrue .blueCard
+.blueCardNeverMind:
+	checkevent EVENT_NEED_OLD_ROD
+	iftrue .oldRod
+.oldRodNeverMind:
+	checkevent EVENT_NEED_GOOD_ROD
+	iftrue .goodRod
+.goodRodNeverMind:
+	checkevent EVENT_NEED_SUPER_ROD
+	iftrue .superRod
+.superRodNeverMind:
+	checkevent EVENT_NEED_RED_SCALE
+	iftrue .redScale
+.redScaleNeverMind:
+	checkevent EVENT_NEED_EXP_SHARE
+	iftrue .expShare
+.expShareNeverMind:
+	checkevent EVENT_NEED_COIN_CASE
+	iftrue .coinCase
+.coinCaseNeverMind:
+	checkevent EVENT_NEED_ITEM_FINDER
+	iftrue .itemFinder
+.itemFinderNeverMind:
+	checkevent EVENT_NEED_MASTER_BALL
+	iftrue .masterBall
+.masterBallNeverMind:
+; use up any other hints that have yet to be needed
+	checkevent EVENT_GOT_TM31_MUD_SLAP
+	iffalse .squirtBottle
+	checkevent EVENT_GOT_TM12_SWEET_SCENT
+	iffalse .secretPotion
+	checkevent EVENT_SPROUT_TOWER_3F_ESCAPE_ROPE
+	iffalse .ssTicket
+	checkevent EVENT_TEAM_ROCKET_BASE_B1F_HYPER_POTION
+	iffalse .cardKey
+	checkevent EVENT_ROUTE_42_SUPER_POTION
+	iffalse .basementKey
+	checkflag ENGINE_PLAINBADGE
+	iffalse .hmStrength
+	checkevent EVENT_BURNED_TOWER_B1F_TM_ENDURE
+	iffalse .bicycle
+	checkevent EVENT_PICKED_UP_FOCUS_BAND
+	iffalse .hmRockSmash
+	checkflag ENGINE_FOGBADGE
+	iffalse .hmSurf
+	checkflag ENGINE_GLACIERBADGE
+	iffalse .hmWhirlpool
+	checkflag ENGINE_ZEPHYRBADGE
+	iffalse .tmFlash
+	checkflag ENGINE_HIVEBADGE
+	iffalse .hmCut
+	checkevent EVENT_MOUNT_MORTAR_1F_INSIDE_NUGGET
+	iffalse .machinePart
+	checkflag ENGINE_STORMBADGE
+	iffalse .hmFly
+	checkflag ENGINE_RISINGBADGE
+	iffalse .hmWaterfall
+	checkevent EVENT_UNION_CAVE_1F_X_ATTACK
+	iffalse .clearBell
+	checkevent EVENT_GOT_TM24_DRAGONBREATH
+	iffalse .silverWing
+	checkevent EVENT_PICKED_UP_PSNCUREBERRY_FROM_KABUTO_ITEM_ROOM
+	iffalse .railPass
+	checkevent EVENT_ROUTE_25_PROTEIN
+	iffalse .blueCard
+	checkevent EVENT_GOT_TM05_ROAR
+	iffalse .oldRod
+	checkevent EVENT_ROUTE_43_MAX_ETHER
+	iffalse .goodRod
+	checkevent EVENT_GOT_KINGS_ROCK_IN_SLOWPOKE_WELL
+	iffalse .superRod
+	checkevent EVENT_DARK_CAVE_VIOLET_ENTRANCE_FULL_HEAL
+	iffalse .redScale
+	checkevent EVENT_UNION_CAVE_B2F_ELIXER
+	iffalse .expShare
+	checkevent EVENT_GOT_CLEAR_BELL
+	iffalse .coinCase
+	checkevent EVENT_ICE_PATH_B1F_IRON
+	iffalse .itemFinder
+	checkevent EVENT_LISTENED_TO_FAN_CLUB_PRESIDENT
+	iffalse .masterBall
+; ok I guess we're out
+	farwritetext GuideGentHintNoMoreHints
+	end
+
+.basementKey:
+	checkevent EVENT_ROUTE_42_SUPER_POTION
+	iftrue .basementKeyNeverMind
+	farwritetext GuideGentHintBasemetKey
+	end
+
+.bicycle:
+	checkevent EVENT_BURNED_TOWER_B1F_TM_ENDURE
+	iftrue .bicycleNeverMind
+	farwritetext GuideGentHintBicycle
+	end
+
+.cardKey:
+	checkevent EVENT_TEAM_ROCKET_BASE_B1F_HYPER_POTION
+	iftrue .cardKeyNeverMind
+	pokenamemem PERSIAN, 0
+	farwritetext GuideGentHintCardKey
+	end
+
+.coinCase:
+	checkevent EVENT_GOT_CLEAR_BELL
+	iftrue .coinCaseNeverMind
+	farwritetext GuideGentHintCoinCase
+	end
+
+.goodRod:
+	checkevent EVENT_ROUTE_43_MAX_ETHER
+	iftrue .goodRodNeverMind
+	farwritetext GuideGentHintGoodRod
+	end
+
+.itemFinder:
+	checkevent EVENT_ICE_PATH_B1F_IRON
+	iftrue .itemFinderNeverMind
+	farwritetext GuideGentHintItemfinder
+	end
+
+.machinePart:
+	checkevent EVENT_MOUNT_MORTAR_1F_INSIDE_NUGGET
+	iftrue .machinePartNeverMind
+	farwritetext GuideGentHintMachinePart
+	end
+
+.oldRod:
+	checkevent EVENT_GOT_TM05_ROAR
+	iftrue .oldRodNeverMind
+	farwritetext GuideGentHintOldRod
+	end
+
+.railPass:
+	checkevent EVENT_PICKED_UP_PSNCUREBERRY_FROM_KABUTO_ITEM_ROOM
+	iftrue .railPassNeverMind
+	farwritetext GuideGentHintPass
+	end
+
+.redScale:
+	checkevent EVENT_DARK_CAVE_VIOLET_ENTRANCE_FULL_HEAL
+	iftrue .redScaleNeverMind
+	farwritetext GuideGentHintRedScale
+	end
+
+.secretPotion:
+	checkevent EVENT_GOT_TM12_SWEET_SCENT
+	iftrue .secretPotionNeverMind
+	farwritetext GuideGentHintSecretPotion
+	end
+
+.silverWing:
+	checkevent EVENT_GOT_TM24_DRAGONBREATH
+	iftrue .silverWingNeverMind
+	farwritetext GuideGentHintSilverWing
+	end
+
+.squirtBottle:
+	checkevent EVENT_GOT_TM31_MUD_SLAP
+	iftrue .squirtBottleNeverMind
+	farwritetext GuideGentHintSquirtBottle
+	end
+
+.ssTicket:
+	checkevent EVENT_SPROUT_TOWER_3F_ESCAPE_ROPE
+	iftrue .ssTicketNeverMind
+	farwritetext GuideGentHintSSTicket
+	end
+
+.superRod:
+	checkevent EVENT_GOT_KINGS_ROCK_IN_SLOWPOKE_WELL
+	iftrue .superRodNeverMind
+	farwritetext GuideGentHintSuperRod
+	end
+
+.blueCard:
+	checkevent EVENT_ROUTE_25_PROTEIN
+	iftrue .blueCardNeverMind
+	farwritetext GuideGentHintBlueCard
+	end
+
+.clearBell:
+	checkevent EVENT_UNION_CAVE_1F_X_ATTACK
+	iftrue .clearBellNeverMind
+	farwritetext GuideGentHintClearBell
+	end
+
+.masterBall:
+	checkevent EVENT_LISTENED_TO_FAN_CLUB_PRESIDENT
+	iftrue .masterBallNeverMind
+	farwritetext GuideGentHintMasterBall
+	end
+
+.expShare:
+	checkevent EVENT_UNION_CAVE_B2F_ELIXER
+	iftrue .expShareNeverMind
+	farwritetext GuideGentHintExpShare
+	end
+
+.hmCut:
+	checkevent EVENT_GOT_ITEMFINDER
+	iftrue .hmCutHasItem
+	farwritetext GuideGentHintHM01NoItem
+	end
+
+.hmCutHasItem:
+	checkflag ENGINE_HIVEBADGE
+	iftrue .hmCutNeverMind
+	farwritetext GuideGentHintHM01HasItem
+	end
+
+.hmFly:
+	checkevent EVENT_GOLDENROD_UNDERGROUND_COIN_CASE
+	iftrue .hmFlyHasItem
+	farwritetext GuideGentHintHM02NoItem
+	end
+
+.hmFlyHasItem:
+	checkflag ENGINE_STORMBADGE
+	iftrue .hmFlyNeverMind
+	farwritetext GuideGentHintHM02HasItem
+	end
+
+.hmSurf:
+	checkevent EVENT_BURNED_TOWER_1F_HP_UP
+	iftrue .hmSurfHasItem
+	farwritetext GuideGentHintHM03NoItem
+	end
+
+.hmSurfHasItem:
+	checkflag ENGINE_FOGBADGE
+	iftrue .hmSurfNeverMind
+	farwritetext GuideGentHintHM03HasItem
+	end
+
+.hmStrength:
+	checkevent EVENT_GOT_TM30_SHADOW_BALL
+	iftrue .hmStrengthHasItem
+	farwritetext GuideGentHintHM04NoItem
+	end
+
+.hmStrengthHasItem:
+	checkflag ENGINE_PLAINBADGE
+	iftrue .hmStrengthNeverMind
+	farwritetext GuideGentHintHM04HasItem
+	end
+
+.hmRockSmash:
+	checkevent EVENT_PICKED_UP_FOCUS_BAND
+	iftrue .hmRockSmashNeverMind
+	farwritetext GuideGentHintHM05
+	end
+
+.hmWhirlpool:
+	checkevent EVENT_TEAM_ROCKET_BASE_B1F_NUGGET
+	iftrue .hmWhirlpoolHaveItem
+	farwritetext GuideGentHintHM06NoItem
+	end
+
+.hmWhirlpoolHaveItem:
+	checkflag ENGINE_GLACIERBADGE
+	iftrue .hmWhirlpoolNeverMind
+	farwritetext GuideGentHintHM06HasItem
+	end
+
+.hmWaterfall:
+	checkevent EVENT_ICE_PATH_B3F_NEVERMELTICE
+	iftrue .hmWaterfallHasItem
+	farwritetext GuideGentHintHM07NoItem
+	end
+
+.hmWaterfallHasItem:
+	checkflag ENGINE_RISINGBADGE
+	iftrue .hmWaterfallNeverMind
+	farwritetext GuideGentHintHM07HasItem
+	end
+
+.tmFlash:
+	checkevent EVENT_GOT_SQUIRTBOTTLE
+	iftrue .tmFlashHasItem
+	farwritetext GuideGentHintHM08NoItem
+	end
+
+.tmFlashHasItem:
+	checkflag ENGINE_ZEPHYRBADGE
+	iftrue .tmFlashNeverMind
+	farwritetext GuideGentHintHM08HasItem
+	end
+
 ; Bill
 
 BillPhoneScript1: ; 0xbcfc5

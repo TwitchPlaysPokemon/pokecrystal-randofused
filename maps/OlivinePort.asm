@@ -100,6 +100,7 @@ UnknownScript_0x7494e:
 	jump SailorScript_0x748c0
 
 UnknownScript_0x7496d:
+	setevent EVENT_NEED_SS_TICKET
 	writetext UnknownText_0x74b41
 	waitbutton
 	closetext
@@ -171,6 +172,7 @@ UnknownScript_0x749e5:
 	jump SailorScript_0x748c0
 
 UnknownScript_0x749ec:
+	setevent EVENT_NEED_SS_TICKET
 	writetext UnknownText_0x74b41
 	waitbutton
 	closetext

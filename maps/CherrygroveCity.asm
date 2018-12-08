@@ -66,6 +66,9 @@ CherrygroveCityGuideGent:
 	writetext GuideGentSeaText3
 	waitbutton
 	closetext
+	setevent EVENT_NEED_OLD_ROD
+	setevent EVENT_NEED_GOOD_ROD
+	setevent EVENT_NEED_SUPER_ROD
 	applymovement CHERRYGROVECITY_GRAMPS, GuideGentMovement5
 	spriteface PLAYER, UP
 	pause 60

@@ -104,6 +104,7 @@ CianwoodCityChucksWife:
 	verbosegiveitem TM_TOXIC
 	iffalse .Done
 	setevent EVENT_GOT_HM02_FLY
+	setevent EVENT_NEED_FLY
 	writetext ChucksWifeFlySpeechText
 	buttonsound
 .GotFly:

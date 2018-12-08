@@ -47,6 +47,7 @@ OfficerScript_0x550ec:
 	step_end
 
 .PassNotInBag:
+	setevent EVENT_NEED_RAIL_PASS
 	writetext UnknownText_0x5522c
 	waitbutton
 	closetext

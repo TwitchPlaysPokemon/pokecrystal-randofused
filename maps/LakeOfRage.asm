@@ -97,6 +97,7 @@ GyaradosScript_0x70063:
 	disappear LAKEOFRAGE_GYARADOS
 UnknownScript_0x7007a:
 	reloadmapafterbattle
+	setevent EVENT_NEED_RED_SCALE
 	opentext
 	verbosegiveitem SOFT_SAND
 	waitsfx

@@ -8,7 +8,12 @@ DarkCaveBlackthornEntrance_MapScriptHeader:
 	db 0
 
 .MapCallbacks:
-	db 0
+	db 1
+	dbw MAPCALLBACK_NEWMAP, .NeedFlash
+
+.NeedFlash:
+	setevent EVENT_NEED_FLASH
+	return
 
 DarkCaveBlackthornEntrancePharmacistScript:
 	faceplayer

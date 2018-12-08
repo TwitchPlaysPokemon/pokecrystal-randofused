@@ -595,7 +595,6 @@ INCLUDE "data/phone/text/bill.asm"
 INCLUDE "data/phone/text/elm.asm"
 INCLUDE "data/phone/text/trainers1.asm"
 
-
 SECTION "Miscellaneous Text", ROMX
 
 INCLUDE "data/items/names.asm"
@@ -638,7 +637,8 @@ INCLUDE "data/battle_tower/unknown.asm"
 
 SECTION "Mobile News Data", ROMX
 
-INCLUDE "mobile/news/news.asm"
+; INCLUDE "mobile/news/news.asm"
+INCLUDE "data/phone/text/guide_gent.asm"
 
 
 SECTION "Crystal Events", ROMX

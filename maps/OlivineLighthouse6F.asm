@@ -19,6 +19,7 @@ JasmineScript_0x60b91:
 	iftrue UnknownScript_0x60ba5
 	writetext UnknownText_0x60c81
 	buttonsound
+	setevent EVENT_NEED_SECRETPOTION
 	setevent EVENT_JASMINE_EXPLAINED_AMPHYS_SICKNESS
 UnknownScript_0x60ba5:
 	writetext UnknownText_0x60d64

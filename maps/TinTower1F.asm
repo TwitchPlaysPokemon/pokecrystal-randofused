@@ -118,12 +118,14 @@ TinTower1F_MapScriptHeader:
 	applymovement TINTOWER1F_SUICUNE, TinTowerSuicuneMovement
 	cry VENUSAUR
 	pause 20
-	loadwildmon VENUSAUR, 14
+	loadwildmon VENUSAUR, 50
 	writecode VAR_BATTLETYPE, BATTLETYPE_SUICUNE
 	startbattle
 	dontrestartmapmusic
 	disappear TINTOWER1F_SUICUNE
 	setevent EVENT_FOUGHT_SUICUNE
+	setevent EVENT_NEED_CLEAR_BELL
+	setevent EVENT_NEED_SILVER_WING
 	setevent EVENT_SAW_SUICUNE_ON_ROUTE_42
 	setmapscene ROUTE_42, $0
 	setevent EVENT_SAW_SUICUNE_ON_ROUTE_36

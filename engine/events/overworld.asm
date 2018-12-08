@@ -755,6 +755,7 @@ TryWaterfallOW:: ; cb56
 	ret
 
 Script_CantDoWaterfall: ; 0xcb7e
+	setevent EVENT_NEED_WATERFALL
 	jumptext .Text_CantDoWaterfall
 
 .Text_CantDoWaterfall: ; 0xcb81
@@ -1066,6 +1067,7 @@ AskStrengthScript:
 	jump .AlreadyUsedStrength
 
 .DontMeetRequirements: ; 0xcd59
+	setevent EVENT_NEED_STRENGTH
 	jumptext UnknownText_0xcd73
 
 .AlreadyUsedStrength: ; 0xcd5c
@@ -1251,6 +1253,7 @@ TryWhirlpoolOW:: ; ce3e
 	ret
 
 Script_MightyWhirlpool: ; 0xce66
+	setevent EVENT_NEED_WHIRLPOOL
 	jumptext .MightyWhirlpoolText
 
 .MightyWhirlpoolText: ; 0xce69
@@ -1440,6 +1443,7 @@ AskRockSmashScript: ; 0xcf5d
 	closetext
 	end
 .no
+	setevent EVENT_NEED_ROCK_SMASH
 	jumptext UnknownText_0xcf72
 
 UnknownText_0xcf72: ; 0xcf72

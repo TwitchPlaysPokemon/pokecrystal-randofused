@@ -62,6 +62,7 @@ CeladonCafeFisher3:
 CeladonCafeTeacher:
 	checkitem COIN_CASE
 	iftrue .HasCoinCase
+	setevent EVENT_NEED_COIN_CASE
 	opentext
 	writetext TeacherText_CrunchCrunch
 	waitbutton

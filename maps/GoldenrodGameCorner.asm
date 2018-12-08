@@ -133,6 +133,7 @@ GoldenrodGameCornerPrizeVendor_CancelPurchaseScript:
 	end
 
 GoldenrodGameCornerPrizeVendor_NoCoinCaseScript:
+	setevent EVENT_NEED_COIN_CASE
 	writetext GoldenrodGameCornerPrizeVendorNoCoinCaseText
 	waitbutton
 	closetext

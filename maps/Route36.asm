@@ -54,6 +54,7 @@ SudowoodoScript:
 	iftrue .Fight
 
 	waitsfx
+	setevent EVENT_NEED_SQUIRTBOTTLE
 	playsound SFX_SANDSTORM
 	applymovement ROUTE36_WEIRD_TREE, SudowoodoShakeMovement
 	end
@@ -76,8 +77,9 @@ WateredWeirdTreeScript:: ; export (for when you use Squirtbottle from pack)
 	writetext SudowoodoAttackedText
 	waitbutton
 	closetext
-	loadwildmon EXEGGCUTE, 11
+	loadwildmon EXEGGCUTE, 15
 	startbattle
+	clearevent EVENT_NEED_SQUIRTBOTTLE
 	setevent EVENT_FOUGHT_SUDOWOODO
 	if_equal $2, DidntCatchSudowoodo
 	disappear ROUTE36_WEIRD_TREE

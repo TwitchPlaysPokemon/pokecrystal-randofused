@@ -1827,6 +1827,7 @@ GameCornerCoinVendorScript: ; 0xbcdcd
 	buttonsound
 	checkitem COIN_CASE
 	iftrue CoinVendor_IntroScript
+	setevent EVENT_NEED_COIN_CASE
 	farwritetext CoinVendor_NoCoinCaseText
 	waitbutton
 	closetext

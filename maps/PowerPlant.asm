@@ -148,6 +148,7 @@ PowerPlantManager:
 	waitbutton
 	closetext
 	setevent EVENT_MET_MANAGER_AT_POWER_PLANT
+	setevent EVENT_NEED_MACHINE_PART
 	clearevent EVENT_CERULEAN_GYM_ROCKET
 	clearevent EVENT_FOUND_MACHINE_PART_IN_CERULEAN_GYM
 	setmapscene CERULEAN_GYM, 1

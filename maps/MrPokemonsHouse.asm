@@ -75,6 +75,7 @@ MrPokemonsHouse_MrPokemonScript:
 	verbosegiveitem PP_UP
 	iffalse .full
 	takeitem RED_SCALE
+	setevent EVENT_NEED_EXP_SHARE
 	jump .AlwaysNewDiscoveries
 
 .refused

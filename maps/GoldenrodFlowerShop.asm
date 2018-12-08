@@ -22,8 +22,9 @@ FlowerShopTeacherScript:
 	opentext
 	writetext UnknownText_0x554c2
 	buttonsound
-	verbosegiveitem TM_ROCK_SMASH
+	verbosegiveitem TM_ROCK_SMASH ;actually Flash TM
 	setevent EVENT_GOT_SQUIRTBOTTLE
+	setevent EVENT_NEED_SQUIRTBOTTLE
 	closetext
 	setevent EVENT_FLORIA_AT_SUDOWOODO
 	clearevent EVENT_FLORIA_AT_FLOWER_SHOP

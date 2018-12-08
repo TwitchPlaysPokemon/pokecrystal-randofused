@@ -53,6 +53,7 @@ MortyScript_0x99d58:
 	setevent EVENT_BEAT_SAGE_PING
 	setevent EVENT_BEAT_MEDIUM_MARTHA
 	setevent EVENT_BEAT_MEDIUM_GRACE
+	setevent EVENT_NEED_SURF
 	writetext MortyText_FogBadgeSpeech
 	buttonsound
 	verbosegiveitem HM_STRENGTH

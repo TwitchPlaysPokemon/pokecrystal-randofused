@@ -163,6 +163,7 @@ UnknownScript_0x5d800:
 	writetext UnknownText_0x5dcf4
 	buttonsound
 	setevent EVENT_MET_BUENA
+	setevent EVENT_NEED_BLUE_CARD
 	verbosegiveitem POKE_BALL
 UnknownScript_0x5d80a:
 	writetext UnknownText_0x5de10

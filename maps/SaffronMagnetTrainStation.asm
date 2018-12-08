@@ -49,6 +49,7 @@ OfficerScript_0x18a81e:
 	step_end
 
 .PassNotInBag:
+	setevent EVENT_NEED_RAIL_PASS
 	writetext UnknownText_0x18a956
 	waitbutton
 	closetext

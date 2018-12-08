@@ -30,6 +30,7 @@ JasmineScript_0x9c12f:
 	checkcode VAR_BADGES
 	scall OlivineGymActivateRockets
 .FightDone:
+	setevent EVENT_NEED_SURF
 	checkevent EVENT_GOT_TM23_IRON_TAIL
 	iftrue .GotIronTail
 	writetext Jasmine_BadgeSpeech

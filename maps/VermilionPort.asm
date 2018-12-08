@@ -21,6 +21,7 @@ VermilionPort_MapScriptHeader:
 	end
 
 .FlyPoint:
+	setevent EVENT_NEED_CUT
 	setflag ENGINE_FLYPOINT_VERMILION
 	return
 

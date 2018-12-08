@@ -9,6 +9,7 @@ GuideGentsHouse_MapScriptHeader:
 	db 0
 
 GuideGentsHouseGuideGent:
+	setevent EVENT_NEED_MASTER_BALL
 	jumptextfaceplayer GuideGentsHouseGuideGentText
 
 GuideGentsHouseBookshelf1:

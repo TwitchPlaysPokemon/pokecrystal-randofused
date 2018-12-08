@@ -97,6 +97,7 @@ CeladonPrizeRoom_cancel:
 	end
 
 CeladonPrizeRoom_NoCoinCase:
+	setevent EVENT_NEED_COIN_CASE
 	writetext CeladonPrizeRoom_NoCoinCaseText
 	waitbutton
 	closetext
