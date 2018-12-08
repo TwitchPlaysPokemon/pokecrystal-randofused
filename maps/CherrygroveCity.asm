@@ -7,9 +7,10 @@ const_value set 2
 
 CherrygroveCity_MapScriptHeader:
 .SceneScripts:
-	db 2
+	db 3
 	scene_script .DummyScene0
 	scene_script .DummyScene1
+	scene_script .DummyScene2
 
 .MapCallbacks:
 	db 1
@@ -21,12 +22,26 @@ CherrygroveCity_MapScriptHeader:
 .DummyScene1:
 	end
 
+.DummyScene2:
+	end
+
 .FlyPoint:
 	setflag ENGINE_FLYPOINT_CHERRYGROVE
 	return
 
+CherrygroveCityGreetGuideGent:
+	spriteface CHERRYGROVECITY_GRAMPS, RIGHT
+	showemote EMOTE_SHOCK, CHERRYGROVECITY_GRAMPS, 15
+	opentext
+	writetext GuideGentHello
+	waitbutton
+	closetext
+	setscene 2
+	applymovement PLAYER, GuideGentPlayerMovement
+
 CherrygroveCityGuideGent:
 	faceplayer
+	faceobject PLAYER, CHERRYGROVECITY_GRAMPS
 	opentext
 	writetext GuideGentIntroText
 	waitbutton
@@ -184,7 +199,7 @@ CherrygroveSilverSceneNorth:
 	spriteface PLAYER, LEFT
 	applymovement CHERRYGROVECITY_SILVER, CherrygroveCity_RivalExitsStageLeft
 	disappear CHERRYGROVECITY_SILVER
-	setscene 0
+	setscene 2
 	special HealParty
 	playmapmusic
 	end
@@ -249,6 +264,11 @@ CherrygroveCityPokecenterSign:
 
 CherrygroveCityMartSign:
 	jumpstd martsign
+
+GuideGentPlayerMovement:
+	step LEFT
+	step LEFT
+	step_end
 
 GuideGentMovement1:
 	step LEFT
@@ -347,6 +367,10 @@ CherrygroveCity_RivalExitsStageLeft:
 	big_step LEFT
 	big_step LEFT
 	step_end
+
+GuideGentHello:
+	text "Over here!"
+	done
 
 GuideGentIntroText:
 	text "Will you just look"
@@ -609,7 +633,9 @@ CherrygroveCity_MapEventHeader:
 	warp_def 31, 11, 1, CHERRYGROVE_EVOLUTION_SPEECH_HOUSE
 
 .CoordEvents:
-	db 2
+	db 4
+	coord_event 35, 6, 0, CherrygroveCityGreetGuideGent
+	coord_event 34, 7, 0, CherrygroveCityGreetGuideGent
 	coord_event 33, 6, 1, CherrygroveSilverSceneNorth
 	coord_event 33, 7, 1, CherrygroveSilverSceneSouth
 
@@ -622,7 +648,7 @@ CherrygroveCity_MapEventHeader:
 
 .ObjectEvents:
 	db 5
-	object_event 32, 6, SPRITE_GRAMPS, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CherrygroveCityGuideGent, EVENT_GUIDE_GENT_IN_HIS_HOUSE
+	object_event 32, 6, SPRITE_GRAMPS, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CherrygroveCityGuideGent, EVENT_GUIDE_GENT_IN_HIS_HOUSE
 	object_event 39, 6, SPRITE_SILVER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_RIVAL_CHERRYGROVE_CITY
 	object_event 27, 12, SPRITE_TEACHER, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, CherrygroveTeacherScript, -1
 	object_event 23, 7, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, CherrygroveYoungsterScript, -1
