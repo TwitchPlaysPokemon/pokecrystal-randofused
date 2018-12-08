@@ -254,11 +254,11 @@ GuideGentHintSecretPotion:
 	cont "brewers."
 	
 	para "I once came across"
-	line "a nice young man"
+	line "a nice young lady"
 	cont "in a forest west"
 	cont "of AZALEA TOWN."
 	
-	para "His POTIONS could"
+	para "Her POTIONS could"
 	line "cure anything!"
 	done
 
