@@ -124,7 +124,6 @@ TinTower1F_MapScriptHeader:
 	dontrestartmapmusic
 	disappear TINTOWER1F_SUICUNE
 	setevent EVENT_FOUGHT_SUICUNE
-	setevent EVENT_NEED_CLEAR_BELL
 	setevent EVENT_NEED_SILVER_WING
 	setevent EVENT_SAW_SUICUNE_ON_ROUTE_42
 	setmapscene ROUTE_42, $0

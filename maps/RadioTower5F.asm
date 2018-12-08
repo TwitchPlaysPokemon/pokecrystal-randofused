@@ -159,6 +159,7 @@ RadioTower5FRocketBossScene:
 	setscene 2
 	setmapscene ECRUTEAK_HOUSE, 0
 	setevent EVENT_GOT_CLEAR_BELL
+	setevent EVENT_NEED_CLEAR_BELL
 	setevent EVENT_TEAM_ROCKET_DISBANDED
 	jump .UselessJump
 
@@ -219,6 +220,7 @@ RadioTower5FRocketBossSceneB:
 	setscene $3
 	setmapscene ECRUTEAK_HOUSE, $0
 	setevent EVENT_GOT_CLEAR_BELL
+	setevent EVENT_NEED_CLEAR_BELL
 	setevent EVENT_TEAM_ROCKET_DISBANDED
 	jump .UselessJump
 
