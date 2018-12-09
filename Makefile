@@ -41,8 +41,12 @@ all: crystal
 crystal: pokecrystal-randofused.gbc
 crystal11: pokecrystal-randofused11.gbc
 
+patch: crystal
+	chmod +x patch.sh
+	./patch.sh
+
 clean:
-	rm -f $(roms) $(crystal_obj) $(crystal11_obj) $(roms:.gbc=.map) $(roms:.gbc=.sym)
+	rm -f $(roms) $(crystal_obj) $(crystal11_obj) $(roms:.gbc=.map) $(roms:.gbc=.sym) $(roms:.gbc=.bsp)
 	$(MAKE) clean -C tools/
 
 compare: $(roms)
