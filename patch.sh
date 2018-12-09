@@ -17,7 +17,7 @@ function checkfail {
 
 function updaterepo {
 	# $1: repo, $2: URL
-	if [[ ! (-d $1 ) ]]; then
+	if [[ ! ( -d $1 ) ]]; then
 		checkfail git clone --recursive $2 $1
 	fi
 	pushd $1
