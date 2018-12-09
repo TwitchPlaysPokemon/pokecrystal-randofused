@@ -2664,7 +2664,7 @@ Script_loadbytec2cf:
 ; parameters: byte
 
 	call GetScriptByte
-	ld [wc2cf], a
+	ld [wTrainerType], a
 	ret
 
 	db $49 ; XXX

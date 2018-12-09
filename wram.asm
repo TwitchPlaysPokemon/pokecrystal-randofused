@@ -144,7 +144,7 @@ wMonStatusFlags:: db
 wGameLogicPaused:: db ; c2cd
 wSpriteUpdatesEnabled:: db
 
-wc2cf:: db ; ????
+wTrainerType:: db ; ????
 
 wMapTimeOfDay:: db
 

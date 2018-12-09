@@ -6556,6 +6556,18 @@ LoadEnemyMon: ; 3e8eb
 
 ; Update enemy nick
 	ld hl, StringBuffer1
+	ld a, [wBattleMode]
+	cp TRAINER_BATTLE
+	jr nz, .setNick
+	ld a, [wTrainerType]
+	cp TRAINERTYPE_NICKNAMES
+	jr nz, .setNick
+	ld a, [CurOTMon]
+	ld hl, OTPartyMonNicknames
+	ld bc, PKMN_NAME_LENGTH
+	call AddNTimes
+
+.setNick
 	ld de, EnemyMonNick
 	ld bc, PKMN_NAME_LENGTH
 	call CopyBytes

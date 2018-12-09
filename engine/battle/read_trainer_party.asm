@@ -55,6 +55,7 @@ ReadTrainerParty: ; 39771
 	jr nz, .skip_name
 
 	ld a, [hli]
+	ld [wTrainerType], a
 	ld c, a
 	ld b, 0
 	ld d, h
@@ -86,6 +87,7 @@ TrainerTypes: ; 397e3
 	dw TrainerType2 ; level, species, moves
 	dw TrainerType3 ; level, species, item
 	dw TrainerType4 ; level, species, item, moves
+	dw TrainerTypeNicknames; ;level, species, nickname
 ; 397eb
 
 TrainerType1: ; 397eb
@@ -305,6 +307,35 @@ TrainerType4: ; 3989d
 	pop hl
 	jr .loop
 ; 3991b
+
+TrainerTypeNicknames:
+; level species nickname
+	ld h, d
+	ld l, e
+.loop
+	ld a, [hli]
+	cp $ff
+	ret z
+
+	ld [CurPartyLevel], a
+	ld a, [hli]
+	ld [CurPartySpecies], a
+	ld a, OTPARTYMON
+	ld [MonType], a
+	push hl
+	predef TryAddMonToParty
+	ld a, [OTPartyCount]
+	dec a
+	ld hl, OTPartyMonNicknames
+	ld bc, PKMN_NAME_LENGTH
+	call AddNTimes
+	ld d, h
+	ld e, l
+	pop hl
+	ld bc, PKMN_NAME_LENGTH
+	call CopyBytes
+	jr .loop
+; 3989d (e:589d)
 
 ComputeTrainerReward: ; 3991b (e:591b)
 	ld hl, hProduct

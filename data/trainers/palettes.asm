@@ -66,7 +66,7 @@ INCLUDE "gfx/trainers/pokefan_m.pal"
 INCLUDE "gfx/trainers/kimono_girl.pal"
 INCLUDE "gfx/trainers/twins.pal"
 INCLUDE "gfx/trainers/pokefan_f.pal"
-INCLUDE "gfx/trainers/red.pal"
+INCLUDE "gfx/trainers/erika.pal" ; LARRY is green
 INCLUDE "gfx/trainers/blue.pal"
 INCLUDE "gfx/trainers/officer.pal"
 INCLUDE "gfx/trainers/grunt_f.pal"

@@ -6414,15 +6414,15 @@ RedGroup:
 
 	; RED (1)
 	db "LARRY@"
-	db TRAINERTYPE_NORMAL
+	db TRAINERTYPE_NICKNAMES
 
 	; party
-	db 85, MEWTWO
-	db 83, VAPOREON
-	db 80, JOLTEON
-	db 80, FLAREON
-	db 77, CHARIZARD
-	db 75, DODUO
+	db 85, MEWTWO,    "MOM@@@@@@@@"
+	db 83, VAPOREON,  "WEEB@@@@@@@"
+	db 80, JOLTEON,   "SUNRA@@@@@@"
+	db 80, FLAREON,   "GG@@@@@@@@@"
+	db 75, DODUO,     "CUCKO@@@@@@"
+	db 77, CHARIZARD, "@@@@@@@@@@@"
 	db -1 ; end
 
 ; ================
