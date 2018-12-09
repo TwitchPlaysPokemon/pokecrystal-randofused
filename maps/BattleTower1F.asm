@@ -60,6 +60,7 @@ ReceptionistScript_0x9e3e2:
 	opentext
 	writetext Text_BattleTowerWelcomesYou
 	buttonsound
+	jump UnknownScript_0x9e3e0
 	writebyte BATTLETOWERACTION_CHECK_EXPLANATION_READ ; if new save file: bit 1, [sBattleTowerSaveFileFlags]
 	special BattleTowerAction
 	if_not_equal $0, Script_Menu_ChallengeExplanationCancel
@@ -352,8 +353,16 @@ Text_BattleTowerWelcomesYou: ; 0x9e5ab
 	text "BATTLE TOWER"
 	line "welcomes you!"
 
-	para "I could show you"
-	line "to a BATTLE ROOM."
+	para "Unfortunately,"
+	line "due to the strange"
+	cont "#MON changes"
+	cont "this region is"
+	cont "going through,"
+
+	para "BATTLE TOWER is"
+	line "currently closed."
+
+	para "Sorry."
 	done
 
 Text_WantToGoIntoABattleRoom: ; 0x9e5ea
