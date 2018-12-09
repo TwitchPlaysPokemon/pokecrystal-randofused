@@ -13,6 +13,11 @@
 *.gbc
 *.gb
 
+# all of the patch stuff
+patch
+patch/*
+*.bsp
+
 # for any of the poor souls with save game files in their working directory
 *.sgm
 *.sav
