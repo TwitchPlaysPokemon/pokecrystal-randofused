@@ -217,9 +217,7 @@ GruntM29AfterBattleText:
 	text "Sure, we've been"
 	line "hacking the TAILS"
 
-	para "off "
-	text_from_ram StringBuffer3
-	text " and"
+	para "off SLOWBUTO and"
 	line "selling them."
 
 	para "Everything we do"
