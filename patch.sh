@@ -12,7 +12,7 @@ function checkfail {
 		return 0
 	fi
 	echo "[$1] exit status $result" >&2
-	exit $result
+	exit 3
 }
 
 function updaterepo {
@@ -33,7 +33,7 @@ function checkhash {
 	fi
 	[ `sha1sum -b $1 | cut -c 1-40` = $2 ]
 	if [[ $? -ne 0 ]]; then
-	  return 1
+		return 1
 	fi
 	return 0
 }
@@ -88,7 +88,7 @@ if [[ $? -ne 0 ]]; then
 			;;
 		*)
 			echo "[check] unknown error" >&2
-			exit 9
+			exit 3
 			;;
 	esac
 fi
@@ -108,7 +108,7 @@ END
 result=$?
 if [[ $result -ne 0 ]]; then
 	echo "[bspbuild] exit status $result" >&2
-	exit $result
+	exit 3
 fi
 
 # copy the file to the parent directory and we're done
