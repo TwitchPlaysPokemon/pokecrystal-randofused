@@ -46,7 +46,8 @@ patch: crystal
 	./patch.sh
 
 clean:
-	rm -f $(roms) $(crystal_obj) $(crystal11_obj) $(roms:.gbc=.map) $(roms:.gbc=.sym) $(roms:.gbc=.bsp) patch
+	rm -f $(roms) $(crystal_obj) $(crystal11_obj) $(roms:.gbc=.map) $(roms:.gbc=.sym) $(roms:.gbc=.bsp)
+	rm -rf patch
 	$(MAKE) clean -C tools/
 
 compare: $(roms)
