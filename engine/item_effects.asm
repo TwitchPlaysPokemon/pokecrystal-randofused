@@ -449,7 +449,7 @@ ParkBall: ; e8a2
 	set SUBSTATUS_TRANSFORMED, [hl]
 
 	bit SUBSTATUS_TRANSFORMED, a
-	jr .load_data
+	jr nz, .load_data
 
 	ld hl, wEnemyBackupDVs
 	ld a, [EnemyMonDVs]
