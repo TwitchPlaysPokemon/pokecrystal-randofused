@@ -194,6 +194,15 @@ UnknownText_0x1c456d::
 	line "OFF THE POWER."
 	done
 
+WantToChangeBoxText::
+	text "The current"
+	line "<PKMN> BOX is full."
+
+	para "Would you like to"
+	line "switch to the"
+	cont "next <PKMN> BOX?"
+	done
+
 UnknownText_0x1c4590::
 	text "<PLAYER> saved"
 	line "the game."
