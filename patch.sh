@@ -97,7 +97,7 @@ fi
 checkfail cp ../$target .
 
 # build the patch
-bspbuild -m ips -s $base10 $base11 -m xor-rle -t $target -o $output -f 0x4000 -pb 0 --check-fragment-swap --titles-from-stdin <<-END
+./bspbuild -m ips -s $base10 $base11 -m xor-rle -t $target -o $output -f 0x4000 -pb 0 --check-fragment-swap --titles-from-stdin <<-END
 	// base ROMs
 	$base10=Pokémon Crystal v1.0
 	$base11=Pokémon Crystal v1.1
