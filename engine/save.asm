@@ -9,6 +9,12 @@ SaveMenu: ; 14a1a
 	jr nz, .refused
 	call AskOverwriteSaveFile
 	jr c, .refused
+	call CheckIfCurrentBoxIsFull
+	jr c, .continue
+	ld hl, Text_WantToChangeBox
+	call SaveTheGame_yesorno
+	jp z, IncrementPCBox
+.continue
 	call PauseGameLogic
 	call _SavingDontTurnOffThePower
 	call ResumeGameLogic
@@ -22,6 +28,16 @@ SaveMenu: ; 14a1a
 	farcall SaveMenu_CopyTilemapAtOnce
 	scf
 	ret
+
+CheckIfCurrentBoxIsFull:
+	ld a, BANK(sBoxCount)
+	call GetSRAMBank
+	ld hl, sBoxCount
+	ld a, [hl]
+	cp MONS_PER_BOX
+	call CloseSRAM
+	ret
+
 
 SaveAfterLinkTrade: ; 14a58
 	call PauseGameLogic
@@ -37,6 +53,9 @@ SaveAfterLinkTrade: ; 14a58
 	ret
 ; 14a83
 
+DontAskChangeBox:
+	push de
+	jp _DontAskChangeBox
 
 ChangeBoxSaveGame: ; 14a83 (5:4a83)
 	push de
@@ -46,7 +65,11 @@ ChangeBoxSaveGame: ; 14a83 (5:4a83)
 	call ExitMenu
 	jr c, .refused
 	call AskOverwriteSaveFile
-	jr c, .refused
+	jr nc, _DontAskChangeBox
+.refused
+	pop de
+	ret
+_DontAskChangeBox:
 	call PauseGameLogic
 	call SavingDontTurnOffThePower
 	call SaveBox
@@ -58,9 +81,7 @@ ChangeBoxSaveGame: ; 14a83 (5:4a83)
 	call ResumeGameLogic
 	and a
 	ret
-.refused
-	pop de
-	ret
+
 
 Link_SaveGame: ; 14ab2
 	call AskOverwriteSaveFile
@@ -183,7 +204,7 @@ AskOverwriteSaveFile: ; 14b89
 	and a
 	jr z, .erase
 	call CompareLoadedAndSavedPlayerID
-	jr z, .yoursavefile
+	ret z
 	ld hl, Text_AnotherSaveFile
 	call SaveTheGame_yesorno
 	jr nz, .refused
@@ -244,8 +265,8 @@ _SavingDontTurnOffThePower: ; 14be3
 SavedTheGame: ; 14be6
 	call SaveGameData_
 	; wait 32 frames
-	ld c, $20
-	call DelayFrames
+	; ld c, $20
+	; call DelayFrames
 	; copy the original text speed setting to the stack
 	ld a, [Options]
 	push af
@@ -1117,6 +1138,22 @@ EraseBoxes: ; 151fb
 	jr nz, .next
 	ret
 ; 1522d
+
+IncrementPCBox::
+	ld a, [wCurBox]
+	and $7f
+	inc a
+	cp NUM_BOXES
+	jr c, .boxOk
+	xor a
+.boxOk
+	ld e, a
+	jp DontAskChangeBox
+
+Text_WantToChangeBox:
+	text_jump WantToChangeBoxText
+	db "@"
+
 
 BoxAddresses: ; 1522d
 ; dbww bank, address, address
