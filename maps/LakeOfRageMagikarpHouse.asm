@@ -122,6 +122,7 @@ UnknownText_0x19a72e:
 
 	para "lively @"
 	text_from_ram StringBuffer4
+	text ""
 	line "there, but…"
 
 	para "I don't understand"
