@@ -81,6 +81,7 @@ UnknownText_0x5485f:
 
 	para "can use them"
 	line "anywhere."
+	done
 
 UnknownText_0x54898:
 	text "...sigh... Oh, for"
