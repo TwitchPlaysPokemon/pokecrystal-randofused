@@ -1170,15 +1170,6 @@ ElmGiveMasterBallText2:
 	para "It's the ultimate"
 	line "battle item!"
 
-	para "No matter how much"
-	line "damage a #MON"
-	cont "is dealt,"
-
-	para "it will not faint!"
-
-	para "…at least, not on"
-	line "the first hit."
-
 	para "It's given only to"
 	line "recognized #MON"
 	cont "researchers."
