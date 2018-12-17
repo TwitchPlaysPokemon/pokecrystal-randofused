@@ -87,7 +87,7 @@ TrainerTypes: ; 397e3
 	dw TrainerType2 ; level, species, moves
 	dw TrainerType3 ; level, species, item
 	dw TrainerType4 ; level, species, item, moves
-	dw TrainerTypeNicknames; ;level, species, nickname
+	dw TrainerTypeNicknames; ;level, species, nickname, item, moves
 ; 397eb
 
 TrainerType1: ; 397eb
@@ -309,7 +309,7 @@ TrainerType4: ; 3989d
 ; 3991b
 
 TrainerTypeNicknames:
-; level species nickname
+; level species nickname item moves
 	ld h, d
 	ld l, e
 .loop
@@ -324,6 +324,8 @@ TrainerTypeNicknames:
 	ld [MonType], a
 	push hl
 	predef TryAddMonToParty
+
+	; nickname
 	ld a, [OTPartyCount]
 	dec a
 	ld hl, OTPartyMonNicknames
@@ -334,7 +336,82 @@ TrainerTypeNicknames:
 	pop hl
 	ld bc, PKMN_NAME_LENGTH
 	call CopyBytes
-	jr .loop
+
+	; item
+	push hl
+	ld a, [OTPartyCount]
+	dec a
+	ld hl, OTPartyMon1Item
+	ld bc, PARTYMON_STRUCT_LENGTH
+	call AddNTimes
+	ld d, h
+	ld e, l
+	pop hl
+
+	ld a, [hli]
+	ld [de], a
+
+	; moves
+	push hl
+	ld a, [OTPartyCount]
+	dec a
+	ld hl, OTPartyMon1Moves
+	ld bc, PARTYMON_STRUCT_LENGTH
+	call AddNTimes
+	ld d, h
+	ld e, l
+	pop hl
+
+	ld b, NUM_MOVES
+.copy_moves
+	ld a, [hli]
+	ld [de], a
+	inc de
+	dec b
+	jr nz, .copy_moves
+
+	push hl
+
+	ld a, [OTPartyCount]
+	dec a
+	ld hl, OTPartyMon1
+	ld bc, PARTYMON_STRUCT_LENGTH
+	call AddNTimes
+	ld d, h
+	ld e, l
+	ld hl, MON_PP
+	add hl, de
+
+	push hl
+	ld hl, MON_MOVES
+	add hl, de
+	pop de
+
+	ld b, NUM_MOVES
+.copy_pp
+	ld a, [hli]
+	and a
+	jr z, .copied_pp
+
+	push hl
+	push bc
+	dec a
+	ld hl, Moves + MOVE_PP
+	ld bc, MOVE_LENGTH
+	call AddNTimes
+	ld a, BANK(Moves)
+	call GetFarByte
+	pop bc
+	pop hl
+
+	ld [de], a
+	inc de
+	dec b
+	jr nz, .copy_pp
+.copied_pp
+
+	pop hl
+	jp .loop
 ; 3989d (e:589d)
 
 ComputeTrainerReward: ; 3991b (e:591b)

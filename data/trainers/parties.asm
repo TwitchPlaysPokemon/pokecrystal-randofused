@@ -6417,12 +6417,36 @@ RedGroup:
 	db TRAINERTYPE_NICKNAMES
 
 	; party
-	db 85, MEWTWO,    "MOM@@@@@@@@"
-	db 83, VAPOREON,  "WEEB@@@@@@@"
-	db 80, JOLTEON,   "SUNRA@@@@@@"
-	db 80, FLAREON,   "GG@@@@@@@@@"
-	db 75, DODUO,     "CUCKO@@@@@@"
-	db 77, CHARIZARD, "@@@@@@@@@@@"
+	db 15, MEWTWO,    "MOM@@@@@@@@", NO_ITEM
+		db THUNDERBOLT
+		db PSYCHIC_M
+		db BARRIER
+		db RECOVER
+	db 13, VAPOREON,  "WEEB@@@@@@@", NO_ITEM
+		db SURF
+		db HYDRO_PUMP
+		db ICE_BEAM
+		db BLIZZARD
+	db 10, JOLTEON,   "SUNRA@@@@@@", NO_ITEM
+		db DOUBLE_KICK
+		db PIN_MISSILE
+		db THUNDER_WAVE
+		db THUNDER
+	db 10, FLAREON,   "GG@@@@@@@@@", NO_ITEM
+		db BODY_SLAM
+		db LEER
+		db FLAMETHROWER
+		db HYPER_BEAM
+	db 05, DODUO,     "CUCKO@@@@@@", NO_ITEM
+		db FLY
+		db CONFUSE_RAY
+		db DRILL_PECK
+		db TRI_ATTACK
+	db 07, CHARIZARD, "@@@@@@@@@@@", BERSERK_GENE
+		db CUT
+		db TAKE_DOWN
+		db STRENGTH
+		db DOUBLE_TEAM
 	db -1 ; end
 
 ; ================
