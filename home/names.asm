@@ -52,7 +52,14 @@ GetName:: ; 33c3
 	call GetNthString
 
 	ld de, StringBuffer1
+	ld a, [wNamedObjectTypeBuffer]
+	cp BOOTLEG_MOVE_NAME
+	jr nz, .NotBootlegName
+	ld bc, BOOTLEG_LENGTH
+	jr .continue
+.NotBootlegName:
 	ld bc, ITEM_NAME_LENGTH
+.continue:
 	call CopyBytes
 
 .done
