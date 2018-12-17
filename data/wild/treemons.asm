@@ -15,7 +15,7 @@ TreeMons:
 ;	db  %, species, level
 
 TreeMonSet_City:
-TreeMonSet_Canyon
+TreeMonSet_Canyon:
 ;common
 	db  50, IGGLYBUFF,  10
 	db  15, PIDGEY,     10
@@ -35,7 +35,7 @@ TreeMonSet_Canyon
 	db -1
 
 
-TreeMonSet_Azalea
+TreeMonSet_Azalea:
 ;common
 	db  50, WOOPER,     10
 	db  15, WOOPER,     10
@@ -55,7 +55,7 @@ TreeMonSet_Azalea
 	db -1
 
 
-TreeMonSet_Route
+TreeMonSet_Route:
 ;common
 	db  50, TOGEPI,     10
 	db  15, RATTATA,    10
@@ -75,7 +75,7 @@ TreeMonSet_Route
 	db -1
 
 
-TreeMonSet_Kanto
+TreeMonSet_Kanto:
 ;common
 	db  50, EKANS,      10
 	db  15, CLEFFA,     10
@@ -95,7 +95,7 @@ TreeMonSet_Kanto
 	db -1
 
 
-TreeMonSet_Lake
+TreeMonSet_Lake:
 ;common
 	db  50, HOOTHOOT,   10
 	db  15, SNUBBULL,   10
@@ -115,7 +115,7 @@ TreeMonSet_Lake
 	db -1
 
 
-TreeMonSet_Forest
+TreeMonSet_Forest:
 ;common
 	db  50, RATTATA,    10
 	db  15, MEOWTH,     10
@@ -135,8 +135,7 @@ TreeMonSet_Forest
 	db -1
 
 
-TreeMonSet_Rock
+TreeMonSet_Rock:
 	db  90, METAPOD,    15
 	db  10, ALAKAZAM,   15
 	db -1
-    
