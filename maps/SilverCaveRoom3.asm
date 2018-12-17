@@ -26,6 +26,7 @@ Red:
 	writetext .Text3
 	waitbutton
 	closetext
+	clearflag ENGINE_BOOTLEG_TRAINER
 	special Special_FadeBlackQuickly
 	special Special_ReloadSpritesNoPalettes
 	disappear SILVERCAVEROOM3_RED
