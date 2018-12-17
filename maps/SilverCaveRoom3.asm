@@ -10,6 +10,7 @@ SilverCaveRoom3_MapScriptHeader:
 
 Red:
 	special Special_FadeOutMusic
+	setflag ENGINE_BOOTLEG_TRAINER
 	faceplayer
 	opentext
 	writetext .Text1

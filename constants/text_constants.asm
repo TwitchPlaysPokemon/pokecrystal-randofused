@@ -9,14 +9,14 @@ TRAINER_CLASS_NAME_LENGTH EQU 13
 NAME_LENGTH_JAPANESE EQU 6
 
 ; GetName types (see home/names.asm)
-PKMN_NAME     EQU 1
-MOVE_NAME     EQU 2
-; dummied out EQU 3
-ITEM_NAME     EQU 4
-PARTY_OT_NAME EQU 5
-ENEMY_OT_NAME EQU 6
-TRAINER_NAME  EQU 7
-; broken ptr  EQU 8
+PKMN_NAME         EQU 1
+MOVE_NAME         EQU 2
+BOOTLEG_MOVE_NAME EQU 3
+ITEM_NAME         EQU 4
+PARTY_OT_NAME     EQU 5
+ENEMY_OT_NAME     EQU 6
+TRAINER_NAME      EQU 7
+; broken ptr      EQU 8
 
 ; see home/text.asm
 BORDER_WIDTH   EQU 2

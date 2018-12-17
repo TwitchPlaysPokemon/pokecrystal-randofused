@@ -601,6 +601,7 @@ INCLUDE "data/items/names.asm"
 INCLUDE "data/items/descriptions.asm"
 INCLUDE "data/moves/names.asm"
 INCLUDE "engine/landmarks.asm"
+INCLUDE "data/moves/bootleg_names.asm"
 
 
 SECTION "bank77", ROMX

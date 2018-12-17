@@ -146,6 +146,27 @@ EndUsedMove5Text: ; 105e57
 GetMoveGrammar: ; 105e5c
 ; store move grammar type in wd265
 
+; 	push bc
+; 	ld a, [hBattleTurn]
+; 	and a
+; 	jr z, .normalBehavior ; Player's move
+; 	ld de, ENGINE_BOOTLEG_TRAINER
+; 	ld b, CHECK_FLAG
+; 	farcall EngineFlagAction
+; 	ld a, c
+; 	and a
+; 	jr z, .normalBehavior ; flag not set
+; 	ld a, $3
+; 	jr .continue
+
+; .normalBehavior:
+; 	ld a, $0
+
+; .continue:
+; 	ld [wd265], a
+; 	pop bc
+; 	ret
+
 	push bc
 ; c = move id
 	ld a, [wd265]

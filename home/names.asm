@@ -2,7 +2,7 @@ NamesPointers:: ; 33ab
 ; entries correspond to GetName constants (see constants/misc_constants.asm)
 	dba PokemonNames
 	dba MoveNames
-	dbw 0, 0
+	dba BootlegMoveNames
 	dba ItemNames
 	dbw 0, PartyMonOT
 	dbw 0, OTPartyMonOT
@@ -263,8 +263,22 @@ INCLUDE "home/hm_moves.asm"
 
 GetMoveName:: ; 34f8
 	push hl
+	ld a, [hBattleTurn]
+	and a
+	jr z, .normalBehavior ; Player's move
+	ld de, ENGINE_BOOTLEG_TRAINER
+	ld b, CHECK_FLAG
+	farcall EngineFlagAction
+	ld a, c
+	and a
+	jr z, .normalBehavior ; flag not set
+	ld a, BOOTLEG_MOVE_NAME
+	jr .continue
 
+.normalBehavior:
 	ld a, MOVE_NAME
+
+.continue:
 	ld [wNamedObjectTypeBuffer], a
 
 	ld a, [wNamedObjectIndexBuffer] ; move id

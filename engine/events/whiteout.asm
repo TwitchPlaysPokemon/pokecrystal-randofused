@@ -15,6 +15,7 @@ Script_Whiteout: ; 0x124ce
 	special HealParty
 	checkflag ENGINE_BUG_CONTEST_TIMER
 	iftrue .bug_contest
+	clearflag ENGINE_BOOTLEG_TRAINER
 	callasm HalveMoney
 	callasm GetWhiteoutSpawn
 	farscall Script_AbortBugContest
