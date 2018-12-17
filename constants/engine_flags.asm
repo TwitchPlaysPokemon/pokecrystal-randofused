@@ -15,7 +15,7 @@
 	const ENGINE_MOM_SAVING_MONEY
 	const ENGINE_DST
 ; wUnusedTwoDayTimerOn
-	const ENGINE_0A
+	const ENGINE_BOOTLEG_TRAINER
 ; wStatusFlags
 	const ENGINE_POKEDEX
 	const ENGINE_UNOWN_DEX

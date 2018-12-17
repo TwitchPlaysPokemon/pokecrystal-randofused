@@ -147,37 +147,58 @@ GetMoveGrammar: ; 105e5c
 ; store move grammar type in wd265
 
 	push bc
-; c = move id
-	ld a, [wd265]
-	ld c, a
-	ld b, $0
-
-; read grammar table
-	ld hl, MoveGrammar
-.loop
-	ld a, [hli]
-; end of table?
-	cp -1
-	jr z, .end
-; match?
-	cp c
-	jr z, .end
-; advance grammar type at 0
+	ld a, [hBattleTurn]
 	and a
-	jr nz, .loop
-; next grammar type
-	inc b
-	jr .loop
+	jr z, .normalBehavior ; Player's move
+	ld de, ENGINE_BOOTLEG_TRAINER
+	ld b, CHECK_FLAG
+	farcall EngineFlagAction
+	ld a, c
+	and a
+	jr z, .normalBehavior ; flag not set
+	ld a, $3
+	jr .continue
 
-.end
-; wd265 now contains move grammar
-	ld a, b
+.normalBehavior:
+	ld a, $0
+
+.continue:
 	ld [wd265], a
-
-; we're done
 	pop bc
 	ret
-; 105e7a
+
+; 	push bc
+; ; c = move id
+; 	ld a, [wd265]
+; 	ld c, a
+; 	ld b, $0
+
+; ; read grammar table
+; 	ld hl, MoveGrammar
+; .loop
+; 	ld a, [hli]
+; ; end of table?
+; 	cp -1
+; 	jr z, .end
+; ; match?
+; 	cp c
+; 	jr z, .end
+; ; advance grammar type at 0
+; 	and a
+; 	jr nz, .loop
+; ; next grammar type
+; 	inc b
+; 	jr .loop
+
+; .end
+; ; wd265 now contains move grammar
+; 	ld a, b
+; 	ld [wd265], a
+
+; ; we're done
+; 	pop bc
+; 	ret
+; ; 105e7a
 
 INCLUDE "data/moves/grammar.asm"
 

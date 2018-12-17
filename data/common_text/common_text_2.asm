@@ -721,8 +721,8 @@ _ActorNameText::
 	text "<USER>@@"
 
 _UsedMove1Text::
-	text ""
-	line "used @@"
+	text "'s"
+	line "@@"
 
 _UsedMove2Text::
 	text ""
