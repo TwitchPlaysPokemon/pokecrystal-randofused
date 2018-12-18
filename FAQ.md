@@ -3,18 +3,12 @@
 
 ## Questions
 
-- [What is pokecrystal11.gbc?](#what-is-pokecrystal11gbc)
 - [Can't build ROM; "ERROR: `UNION` already defined"](#cant-build-rom-error-union-already-defined)
 - [Can't build ROM; "Segmentation fault" from `rgbgfx`](#cant-build-rom-segmentation-fault-from-rgbgfx)
 - [Can't build ROM; "Section is too big" or "Unable to place section in bank"](#cant-build-rom-section-is-too-big-or-unable-to-place-section-in-bank)
 - [How do I edit maps?](#how-do-i-edit-maps)
 - [How do I write new features?](#how-do-i-write-new-features)
 - [I need more help!](#i-need-more-help)
-
-
-## What is pokecrystal11.gbc?
-
-Version 1.1 of Pokémon Crystal, which fixed some issues with the initial international release. `make crystal11` defines `_CRYSTAL11` so the assembly builds the changed version.
 
 
 ## Can't build ROM; "ERROR: `UNION` already defined"
