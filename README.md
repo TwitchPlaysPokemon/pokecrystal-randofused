@@ -13,6 +13,7 @@ and by these TPP members:
 * Rangi - Winter tiles, maps, and code fixes
 * Legtendga - Fused Pokémon Sprites
 * Tustin - Winter Trainer Sprites
+* Ax6 - Code Consultant, Patch Script
 * Kip - Guide Gent Dialogue
 * Monstarules - Text Cleanup
 * Egobuff - Balance Testing
