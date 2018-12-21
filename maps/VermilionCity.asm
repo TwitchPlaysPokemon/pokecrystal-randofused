@@ -26,8 +26,8 @@ VermilionMachopOwner:
 
 VermilionMachop:
 	opentext
-	writetext VermilionMachopText1
 	pokenamemem MACHOP, $0
+	writetext VermilionMachopText1
 	cry MACHOP
 	waitbutton
 	closetext
@@ -161,8 +161,8 @@ VermilionMachopText2:
 	text_from_ram StringBuffer3
 	text " is"
 
-	para "growling while"
-	text "stomping the"
+	line "growling while"
+	cont "stomping the"
 	cont "ground flat."
 	done
 
