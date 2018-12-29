@@ -131,6 +131,10 @@ gfx/pokemon/%/normal.pal: gfx/pokemon/%/normal.gbcpal
 	tools/palette -p $< > $@
 gfx/pokemon/%/normal.gbcpal: gfx/pokemon/%/front.png
 	$(RGBGFX) -p $@ $<
+gfx/pokemon/%/shiny.pal: gfx/pokemon/%/shiny.gbcpal
+	tools/palette -p $< > $@
+gfx/pokemon/%/shiny.gbcpal: gfx/pokemon/%/back.png
+	$(RGBGFX) -p $@ $<
 gfx/pokemon/%/back.2bpp: gfx/pokemon/%/back.png
 	$(RGBGFX) -h -o $@ $<
 gfx/pokemon/%/bitmask.asm: gfx/pokemon/%/front.animated.tilemap gfx/pokemon/%/front.dimensions
