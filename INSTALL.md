@@ -16,8 +16,8 @@ cd rgbds
 sudo make install
 cd ..
 
-git clone https://github.com/pret/pokecrystal
-cd pokecrystal
+git clone https://github.com/twitchplayspokemon/pokecrystal-randofused
+cd pokecrystal-randofused
 ```
 
 To build **pokecrystal.gbc**:
@@ -39,8 +39,8 @@ cd rgbds
 sudo make install
 cd ..
 
-git clone https://github.com/pret/pokecrystal
-cd pokecrystal
+git clone https://github.com/twitchplayspokemon/pokecrystal-randofused
+cd pokecrystal-randofused
 ```
 
 To build **pokecrystal.gbc**:
@@ -67,18 +67,12 @@ Then download [**rgbds**](https://github.com/rednex/rgbds/releases/): the latest
 In the **Cygwin terminal**, enter these commands:
 
 ```bash
-git clone https://github.com/pret/pokecrystal
-cd pokecrystal
+git clone https://github.com/twitchplayspokemon/pokecrystal-randofused
+cd pokecrystal-randofused
 ```
 
 To build **pokecrystal.gbc**:
 
 ```bash
 make
-```
-
-To build **pokecrystal11.gbc**:
-
-```bash
-make crystal11
 ```
